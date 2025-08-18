@@ -1,0 +1,32 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Joshua",
+    "timestamp": "2025-08-18T13:24:38.496424"
+  },
+  {
+    "phase": 0,
+    "question": "Thanks, Joshua! It's great to meet you. Now let's learn a bit about your business so I can find your ideal referral partners. First question: What's the name of your business?",
+    "message": "PC SMART ULTRA",
+    "timestamp": "2025-08-18T13:24:49.478842"
+  },
+  {
+    "phase": 0,
+    "question": "Great \u2014 PC SMART ULTRA sounds very catchy! Next up: What products or services do you offer?",
+    "message": "PC repairs",
+    "timestamp": "2025-08-18T13:25:39.278756"
+  },
+  {
+    "phase": 0,
+    "question": "Awesome \u2014 PC repairs are in high demand, especially with so many people relying on their devices! Next question: Who is your ideal customer or target market? (e.g., specific demographics, business types, etc.)",
+    "message": "Young school students",
+    "timestamp": "2025-08-18T13:25:55.399076"
+  },
+  {
+    "phase": 0,
+    "question": "Perfect \u2014 targeting young school students gives us a great range to work with. Now, last question: What makes PC SMART ULTRA unique or different from your competitors? (e.g., pricing, speed, customization, support, community, etc.)",
+    "message": "Low cost for high quality",
+    "timestamp": "2025-08-18T13:26:11.664665"
+  }
+]

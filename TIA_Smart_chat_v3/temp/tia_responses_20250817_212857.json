@@ -1,0 +1,68 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "John Smith",
+    "timestamp": "2025-08-17T21:27:32.455185"
+  },
+  {
+    "phase": 0,
+    "question": "Great to meet you, John! It's wonderful to have the opportunity to chat with you. Now, could you tell me what your company name is?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-08-17T21:27:37.675925"
+  },
+  {
+    "phase": 0,
+    "question": "Tech Innovations LLC \u2014 I love the sound of that! It emphasizes progress and creativity. What role do you play in your company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-08-17T21:27:42.481708"
+  },
+  {
+    "phase": 0,
+    "question": "Amazing! As the Founder and CEO, you're at the helm of Tech Innovations LLC, steering it toward success. That\u2019s quite a responsibility! Now, I\u2019d love to know, what kind of product or service do you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-08-17T21:27:47.165053"
+  },
+  {
+    "phase": 0,
+    "question": "That sounds so interesting! AI-powered customer service automation is a game-changer for many businesses. You're providing valuable solutions that can really enhance customer experiences. Now, can you share who your typical customer or client is?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-08-17T21:27:51.669810"
+  },
+  {
+    "phase": 0,
+    "question": "Fantastic! Focusing on small to medium businesses means you're helping those businesses grow and thrive through your innovative solutions. It\u2019s so important to support them! Thank you for sharing all of this with me, John. \n\nNow we've laid a great foundation for understanding your brand. If you're ready, we can dive deeper into your \"why\" and the vision behind Tech Innovations LLC. Just let me know!",
+    "message": "I imagined having more freedom and helping businesses grow",
+    "timestamp": "2025-08-17T21:27:56.979506"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s such a meaningful vision! It sounds like you have a strong desire to create impact and empower others. Let\u2019s dive into your story a little more. What is your name?",
+    "message": "More challenging but rewarding than expected",
+    "timestamp": "2025-08-17T21:28:01.773493"
+  },
+  {
+    "phase": 0,
+    "question": "It sounds like you\u2019re truly embracing the journey, even with its ups and downs. That resilience will definitely play a big role in your success. Now, let\u2019s explore your business a bit! What is your company name?",
+    "message": "Peace of mind and time savings for business owners",
+    "timestamp": "2025-08-17T21:28:06.491374"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s a fantastic focus! Helping business owners achieve peace of mind and save time is incredibly valuable. You\u2019re really tapping into something that many entrepreneurs desire. Moving forward, what is your role in the company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-08-17T21:28:37.332968"
+  },
+  {
+    "phase": 0,
+    "question": "Wow, that's an important role! As the Founder and CEO, you\u2019re not only shaping the vision of your company but also leading the charge in making that peace of mind and time savings a reality for your clients. Let\u2019s build on this. What kind of product or service do you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-08-17T21:28:47.099071"
+  },
+  {
+    "phase": 0,
+    "question": "That sounds cutting-edge! AI-powered customer service automation can certainly make a huge difference for businesses by improving efficiency and enhancing customer experiences. You\u2019re in a truly exciting field! Now, let\u2019s talk about the people you aim to help. Who is your typical customer or client?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-08-17T21:28:54.665904"
+  }
+]
