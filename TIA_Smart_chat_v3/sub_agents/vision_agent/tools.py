@@ -18,12 +18,12 @@ from .prompts import (
 
 load_dotenv()
 
-BLOG_AMOUNT = 3
+BLOG_AMOUNT = 1
 CHAT_PROMPTS = [
     TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
     #TIA_VISION_CHAT_2_REFLECTION_PROMPT, 
-    # TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
-    # TIA_VISION_CHAT_4_STRATEGY_PROMPT
+    #TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
+    #TIA_VISION_CHAT_4_STRATEGY_PROMPT
 ]
 
 # JOSHUA - TODO: IMPLENENT SESSION ID CONNECTION TO DB
@@ -159,7 +159,7 @@ def generate_blog(tool_context: ToolContext) -> dict:
             "output": f"Failed to generate blog: {e}"
         }
 
-def start_session_phases(tool_context: ToolContext) -> Dict[str, Any]:
+def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start anew chat but if existing session, continue it"""
     try:
         state = tool_context.state

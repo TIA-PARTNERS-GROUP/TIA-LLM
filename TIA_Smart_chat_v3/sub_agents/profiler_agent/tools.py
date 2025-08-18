@@ -3,11 +3,11 @@ from datetime import datetime
 import os, json, re
 
 def collect_user_history():
-    """Find the user's most recent conversation history from tia_responses__DATE-*.json files."""
+    """Find the user's most recent conversation history from tia_responses*__DATE-*.json files."""
     try:
-        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        temp_dir = os.path.join(parent_dir, "temp")
-        pattern = r"DATE-(\d{8}_\d{6})\.json"
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # Go up 3 directories
+        temp_dir = os.path.join(base_dir, "temp")
+        pattern = r"tia_responses*__DATE-(\d{8}_\d{6})\.json"
         latest_file = None
         latest_dt = None
 
@@ -25,7 +25,7 @@ def collect_user_history():
         filename = os.path.join(temp_dir, latest_file)
         with open(filename, 'r') as f:
             user_history = json.load(f)
-        return user_history
+        return {"status": "success", "user_history": user_history }
     except Exception as e:
         return {"status": "error", "message": str(e)}
 

@@ -10,9 +10,9 @@ HistoryCollectorAgent = LlmAgent(
     name="HistoryCollectorAgent",
     model=AGENT_MODEL,
     instruction="""
-    Collect the user's most recent conversation history for profiling. 
+    Collect the user's most recent conversation history for profiling.
     Use the collect_user_history tool to retrieve the latest JSON file containing the user's chat history.
-    Output the full list of messages and questions as found in the file.
+    Do not display or say anything to the user. Remain completely silent.
     """,
     tools=[collect_user_history],
     output_key="User_History"
@@ -34,36 +34,26 @@ ProfileGenerator = LlmAgent(
     Carefully read through all the user's responses. If information is missing, leave the field blank or use your best judgment based on context.
     Output the result as a JSON object matching the ProfileOutputSchema.
 
-    Example input (conversation history):
-    [
-      {"question": "...", "message": "John Smith", ...},
-      {"question": "...", "message": "Tech Innovations LLC", ...},
-      {"question": "...", "message": "Founder and CEO", ...},
-      {"question": "...", "message": "AI-powered customer service automation", ...},
-      ...
-    ]
+    Do not display or say anything to the user. Remain completely silent.
 
-    Example output:
-    {
-      "User": "John Smith",
-      "Idea": "AI-powered customer service automation",
-      "UserPost": "Founder and CEO",
-      "Strength": "Helps business owners save time and focus on what they love" 
-    }
+    **Important**: If you have received nothing about the user, return an empty profile with all fields blank. Do not make up information or use the example input and output as your response.
     """,
     output_schema=ProfileOutputSchema,
     output_key="Generated_Profile"
 )
 
 # Stores the generated user profile in the database and GNN
-ProfileStorer = LlmAgent(
+ProfileStorer = Agent(
     name="ProfileStorer",
     model=AGENT_MODEL,
     instruction="""
-    Store the generated user profile in the database and the Graph Neural Network (GNN) using the store_user_profile tool.
+    1. Call the `store_user_profile` tool to save the generated user profile in both the database and the Graph Neural Network (GNN).
+    2. Tell the user: "This is the profile I have generated for you:" and display the profile.
+    3. Immediately use `transfer_to_agent` to return control to the `CoordinatorAgent` after displaying the profile.
     """,
     tools=[store_user_profile]
 )
+
 
 ProfilerAgent = SequentialAgent(
     name="ProfilerAgent",

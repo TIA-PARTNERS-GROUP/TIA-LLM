@@ -1,0 +1,80 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "My name is John Smith.",
+    "timestamp": "2025-08-18T21:17:04.755491"
+  },
+  {
+    "phase": 0,
+    "question": "Great to meet you, John! It's lovely to connect. Now, could you share your company name with me?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-08-18T21:17:12.435042"
+  },
+  {
+    "phase": 0,
+    "question": "Tech Innovations LLC \u2014 I like the sound of that! It feels modern and forward-thinking. What role do you play in your company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-08-18T21:17:19.393462"
+  },
+  {
+    "phase": 0,
+    "question": "Fantastic! As the Founder and CEO, you hold a pivotal role in shaping the vision of Tech Innovations LLC. What kind of product or service do you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-08-18T21:17:25.230233"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s impressive! AI-powered customer service automation is such a valuable service, especially in today\u2019s fast-paced business environment. Who would you say is your typical customer or client?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-08-18T21:17:31.886785"
+  },
+  {
+    "phase": 1,
+    "question": "Perfect! Targeting small to medium businesses makes a lot of sense, especially since they often need efficient ways to enhance their customer support. Thank you for sharing all this, John! This gives us a solid foundation to work from. \n\nIf you have any other questions or areas you'd like to explore further, just let me know!",
+    "message": "yes",
+    "timestamp": "2025-08-18T21:17:42.847005"
+  },
+  {
+    "phase": 1,
+    "question": "Hello there! I\u2019m really excited to dive into this journey with you. To start off, let\u2019s take a moment to reflect on the beginnings of your business. When you first started, what did you imagine life would look like?",
+    "message": "I imagined having more freedom and helping businesses grow.",
+    "timestamp": "2025-08-18T21:17:56.667530"
+  },
+  {
+    "phase": 1,
+    "question": "That sounds wonderful! The vision of freedom and the ability to help others grow is such a powerful motivator. It really highlights your desire to create positive change. How do you feel about your business now compared to back then?",
+    "message": "More challenging but rewarding than expected.",
+    "timestamp": "2025-08-18T21:18:03.222079"
+  },
+  {
+    "phase": 1,
+    "question": "It\u2019s interesting how the journey often brings unexpected challenges along with those rewards. It sounds like you\u2019ve really grown through the experience. Now, let's think about your product or service. What does it do for the end user in human terms?",
+    "message": "Peace of mind and time savings for business owners.",
+    "timestamp": "2025-08-18T21:18:09.981903"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s invaluable! Providing peace of mind and saving time can truly transform the lives of business owners, allowing them to focus on other important areas. Can you recall a time when your business made a difference to someone?",
+    "message": "We helped a restaurant handle COVID order surge.",
+    "timestamp": "2025-08-18T21:18:17.148274"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s an incredible example of your impact! Assisting a restaurant during such a challenging time must have been incredibly rewarding for both you and them. It highlights the real, tangible difference your service can make. Now, imagine your ideal client \u2013 what would you love for them to say about your service after working with you?",
+    "message": "Made their business efficient and stress-free.",
+    "timestamp": "2025-08-18T21:18:24.316440"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s a fantastic outcome! Hearing that your service made their business efficient and stress-free speaks volumes about your dedication to serving your clients well. It must be gratifying to know that your work helps alleviate their stress. What\u2019s the deeper impact of your work for others?",
+    "message": "Help owners focus on what they love.",
+    "timestamp": "2025-08-18T21:18:31.075617"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s beautiful! Helping owners focus on what they love really emphasizes the human element of your work. It\u2019s about empowering them to pursue their passions while you take care of the details. Now, how would you like your team to feel about their work?",
+    "message": "Proud of positive impact we make.",
+    "timestamp": "2025-08-18T21:18:37.859559"
+  }
+]
