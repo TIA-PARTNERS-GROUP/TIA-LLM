@@ -1,4 +1,5 @@
 # python3 -m venv dir
 *./venv/
+*.venv
 *.env
 *__pycache__/
