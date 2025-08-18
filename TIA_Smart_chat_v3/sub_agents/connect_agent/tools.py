@@ -18,9 +18,6 @@ CONNECT_PROMPTS = [
     CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
 ]
 
-
-    
-
 _user_sessions = {}
 CITY_COORDS = {
     "brisbane": (-27.4698, 153.0251),
@@ -72,6 +69,7 @@ def search_businesses_in_area(business_type: str,
         return json.loads(body)
     finally:
         conn.close()
+
 
 def get_or_create_assistant(session_id: str):
     """Get or create an assistant instance for a specific session"""
@@ -150,13 +148,7 @@ def recommended_connection(attributes: List[Dict[str, Any]], tool_context: ToolC
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
 
-def grab_user_profile():
-    return -1
-
-
-#REMOVE at some point
-#=========================================================================================
-def start_session_phases(tool_context: ToolContext) -> Dict[str, Any]:
+def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
     try:
         state = tool_context.state
@@ -228,4 +220,3 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
     
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
-#=========================================================================================

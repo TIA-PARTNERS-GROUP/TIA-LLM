@@ -1,0 +1,32 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "John Smith",
+    "timestamp": "2025-08-18T22:21:35.757995"
+  },
+  {
+    "phase": 0,
+    "question": "Thank you, John! It\u2019s lovely to meet you. Now, can you share what your company\u2019s name is?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-08-18T22:21:41.593263"
+  },
+  {
+    "phase": 0,
+    "question": "Great name, John! Tech Innovations LLC sounds like it has a lot of potential. What role do you play in the company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-08-18T22:21:48.356312"
+  },
+  {
+    "phase": 0,
+    "question": "That's fantastic, John! As the Founder and CEO, you must be deeply involved in shaping the vision for Tech Innovations LLC. Can you tell me what kind of product or service you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-08-18T22:21:54.092000"
+  },
+  {
+    "phase": 0,
+    "question": "That sounds cutting-edge, John! AI-powered customer service automation is such an exciting field that can really transform businesses and improve customer experiences. Now, who would you say is your typical customer or client?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-08-18T22:22:01.774664"
+  }
+]

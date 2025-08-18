@@ -7,9 +7,7 @@ def check_for_existing_user(tool_context: ToolContext):
         # Database query logic here
         state = tool_context.state
 
-        # TEST: ADD SQL DB LOGIC LATER
-        state["user_id"] = "1"#user_id
-        state["user_name"] = "John Doe" #user_name
+        # TEST: ADD GNN/SQL LOGIC LATER
         profile_exist = False
         sample_profile = {
             "User": "John Doe",
