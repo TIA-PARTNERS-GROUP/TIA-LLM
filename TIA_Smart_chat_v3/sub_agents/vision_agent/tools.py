@@ -30,20 +30,19 @@ CHAT_PROMPTS = [
 # JOSHUA - TODO: FIX FORGOT LAST MESSAGE BUG AFTER EXIT
 _user_sessions = {}
 
-def get_or_create_assistant(session_id: str):
-    """Get or create an assistant instance for a specific session"""
+def get_or_create_assistant(session_id: str, user_id: int = None):
+    """Get or create an assistant instance for a specific session."""
     global _user_sessions
-    print(f"DEBUG SESSION: {_user_sessions}")
-    
-    if session_id is None or session_id not in _user_sessions:
-        print(f"DEBUG: {session_id} not found, creating new assistant instance")
-        unique_id = str(uuid.uuid4())
-        assistant = DynamicChatAssistant(CHAT_PROMPTS, DYNAMIC_CHAT_RULE_PROMPT)
-        assistant.session_unique_id = unique_id
+
+    if not session_id:
+        session_id = str(uuid.uuid4())
+
+    # If the session doesn't exist, create a new assistant
+    if session_id not in _user_sessions:
+        assistant = DynamicChatAssistant(CHAT_PROMPTS, DYNAMIC_CHAT_RULE_PROMPT, user_id)
+        assistant.session_id = session_id
         _user_sessions[session_id] = assistant
-        print(f"DEBUG: Created new session with ID: {unique_id}")
-    
-    print(f"DEBUG SESSION AFTER: {_user_sessions}")
+
     return _user_sessions[session_id]
 
 def _generate_content_why_statement(collected_context):
@@ -92,13 +91,16 @@ def generate_blog(tool_context: ToolContext) -> dict:
     """
     try:
         state = tool_context.state
-        session_id = state.get("session_id")
+        if "VisionAgent" not in state:
+            state["VisionAgent"] = {}
+        vision_state = state["VisionAgent"]
+        session_id = vision_state.get("session_id")
         if session_id is None:
             return {"status": "error", "output": "No session ID found."}
         assistant = get_or_create_assistant(session_id)
-        
+
         collected_context = "\n".join([
-            f"Phase {resp['phase']}: {resp['message']}" 
+            f"Phase {resp['phase']}: {resp['message']}"
             for resp in assistant.user_responses
         ])
 
@@ -163,15 +165,20 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start anew chat but if existing session, continue it"""
     try:
         state = tool_context.state
-        session_id = state.get("session_id", None)
+        user_id = state.get("user_id", None)
+        print(f"USER ID: {user_id}")
+        if "VisionAgent" not in state:
+            state["VisionAgent"] = {}
+        vision_state = state["VisionAgent"]
+        session_id = vision_state.get("session_id", None)
 
-        assistant = get_or_create_assistant(session_id)
-        print(f"DEBUG: Chat session with ID: {assistant.session_unique_id}")
-        session_id = state["session_id"] = assistant.session_unique_id
+        assistant = get_or_create_assistant(session_id, user_id)
+        print(f"DEBUG: Chat session with ID: {assistant.session_id}")
+        session_id = vision_state["session_id"] = assistant.session_id
 
-        chat_state = state["chat_state"] = "chat"
-        current_phase = state["current_phase"] = assistant.current_phase
-        total_phases = state["total_phases"] = len(assistant.prompts) - 1
+        chat_state = vision_state["chat_state"] = "chat"
+        current_phase = vision_state["current_phase"] = assistant.current_phase
+        total_phases = vision_state["total_phases"] = len(assistant.prompts) - 1
 
         response = assistant.send_message("Help me Build my Vision")
 
@@ -182,7 +189,6 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
                 "phase": current_phase, 
                 "total_phases": total_phases
                 }
-    
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
 
@@ -190,27 +196,32 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
     """Return message from the dynamic TIA assistant chat"""
     try:
         state = tool_context.state
-        session_id = state.get("session_id", None)
-        assistant = get_or_create_assistant(session_id)
-        session_id = state.get("session_id")
+        vision_state = state["VisionAgent"]
 
-        chat_state = state.get("chat_state")
-        current_phase = state.get("current_phase")
-        total_phases = state.get("total_phases")
+        if vision_state is None:
+            raise ValueError("VisionAgent state is not initialized.")
+        session_id = vision_state.get("session_id", None)
+        assistant = get_or_create_assistant(session_id)
+
+        chat_state = vision_state.get("chat_state")
+        current_phase = vision_state.get("current_phase")
+        total_phases = vision_state.get("total_phases")
         
         if user_input.lower() in ['quit', 'exit', 'bye', 'end session', 'reset']:
-            chat_state = state["chat_state"] = "exit"
+            chat_state = vision_state["chat_state"] = "exit"
             assistant.save_responses()
             return {"status": "success", "chat_state": chat_state}
         
         response = assistant.send_message(user_input)
 
         current_phase = assistant.current_phase
-        state["current_phase"] = current_phase
-        
+        vision_state["current_phase"] = current_phase
+
+        state["VisionAgent"] = vision_state
         if "<exit>" in response:
-            chat_state = state["chat_state"] = "exit"
-            state["user_profile"] = "generated"
+            chat_state = vision_state["chat_state"] = "exit"
+            vision_state["user_profile"] = "generated"
+            state["VisionAgent"] = vision_state
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response
@@ -220,9 +231,8 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
                 "session_id": session_id, 
                 "chat_state": chat_state, 
                 "response": response, 
-                "phase": current_phase, 
+                "current_phase": current_phase, 
                 "total_phases": total_phases
                 }
-    
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}

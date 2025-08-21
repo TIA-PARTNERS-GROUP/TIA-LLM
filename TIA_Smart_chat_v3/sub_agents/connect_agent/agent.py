@@ -35,6 +35,7 @@ ConnectAgent = Agent(
     - Call this tool when chat_state becomes "complete" or when business info collection is finished
     - Pass the collected business attributes as parameters
     - This generates the 4 ideal partner categories with email templates
+    - Only call this once
 
     **CRITICAL RULES**: 
     - When the `chat_state` is "exit", IMMEDIATELY stop and use the `transfer_to_agent` tool to return to the coordinatorAgent

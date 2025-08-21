@@ -2,12 +2,14 @@ from google.adk.tools import ToolContext
 from datetime import datetime
 import os, json, re
 
-def collect_user_history():
-    """Find the user's most recent conversation history from tia_responses*__DATE-*.json files."""
+# Search through the temp directory for the users most recent saved conversation history
+def collect_user_history(tool_context: ToolContext):
+    """Find the user's most recent conversation history from "__DATE-*.json" files under temp"""
     try:
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # Go up 3 directories
         temp_dir = os.path.join(base_dir, "temp")
-        pattern = r"tia_responses*__DATE-(\d{8}_\d{6})\.json"
+        user_id = tool_context.state.get("user_id", "UNKNOWN_USER")
+        pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
         latest_file = None
         latest_dt = None
 
@@ -33,6 +35,8 @@ def store_user_profile(tool_context: ToolContext):
     """Store the generated user profile"""
     try:
         state = tool_context.state
+        # JOSHUA TODO - Find a way to delete User_History from the state
+        #del state["User_History"]
         profile = state.get("Generated_Profile")
 
         # INSERT ADD TO SQL NODE OR GNN CODE HERE
