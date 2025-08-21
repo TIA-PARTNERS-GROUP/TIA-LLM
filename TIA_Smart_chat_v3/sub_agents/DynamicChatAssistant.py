@@ -12,8 +12,9 @@ def generate_response(message):
     return response.choices[0].message.content
 
 class DynamicChatAssistant:
-    def __init__(self, prompts: list, rule_prompt: str):
+    def __init__(self, prompts: list, rule_prompt: str, user_id: int):
         # Phase tracking, user history and responses
+        self.user_id = user_id
         self.current_phase = 0
         self.prompts = prompts
         self.rule_prompt = rule_prompt
@@ -98,17 +99,17 @@ class DynamicChatAssistant:
         
         return self.assistant_response
 
-    def save_responses(self, id=None):
+    def save_responses(self):
         """Save responses to JSON file"""
-        if id is None:
-            id = "UNKNOWN_USER__DATE-" + datetime.now().strftime("%Y%m%d_%H%M%S")
+        if self.user_id is None:
+            search_string = "UNKNOWN_USER__DATE-" + datetime.now().strftime("%Y%m%d_%H%M%S")
         else:
-            id += "__DATE-" + datetime.now().strftime("%Y%m%d_%H%M%S")
+            search_string = f"{self.user_id}__DATE-" + datetime.now().strftime("%Y%m%d_%H%M%S")
         # Get the parent directory of the current file
         parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         temp_dir = os.path.join(parent_dir, "temp")
         os.makedirs(temp_dir, exist_ok=True)
-        filename = os.path.join(temp_dir, f"tia_responses_{id}.json")
+        filename = os.path.join(temp_dir, f"tia_responses_{search_string}.json")
 
         with open(filename, 'w') as f:
             json.dump(self.user_responses, f, indent=2)

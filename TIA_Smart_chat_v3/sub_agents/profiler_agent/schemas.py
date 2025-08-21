@@ -7,3 +7,4 @@ class ProfileOutputSchema(BaseModel):
     Idea: str = Field(description="The user's business idea")
     UserPost: str = Field(description="The user's job title or post")
     Strength: str = Field(description="The user's main strength")
+    SILENT_AGENT: str = Field(default="<SILENT_AGENT>", description="Silent agent tag to hide from user")

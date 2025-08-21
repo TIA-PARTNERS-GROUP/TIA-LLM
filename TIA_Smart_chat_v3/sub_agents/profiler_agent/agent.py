@@ -11,8 +11,10 @@ HistoryCollectorAgent = LlmAgent(
     model=AGENT_MODEL,
     instruction="""
     Collect the user's most recent conversation history for profiling.
-    Use the collect_user_history tool to retrieve the latest JSON file containing the user's chat history.
-    Do not display or say anything to the user. Remain completely silent.
+    Use the `collect_user_history` tool to retrieve the latest JSON file containing the user's chat history.
+    
+    **Important**:
+    - At the end of your response add the tag <SILENT_AGENT>
     """,
     tools=[collect_user_history],
     output_key="User_History"
@@ -23,7 +25,7 @@ ProfileGenerator = LlmAgent(
     name="ProfileGenerator",
     model=AGENT_MODEL,
     instruction="""
-    You are given a list of conversation turns between the user and the assistant, where each turn contains a question and the user's answer.
+    You are given a list of conversation (User_History) turns between the user and the assistant, where each turn contains a question and the user's answer.
     Your job is to analyze the conversation and extract the following information to fill out the user profile schema:
 
     - User: The user's full name.
@@ -34,9 +36,9 @@ ProfileGenerator = LlmAgent(
     Carefully read through all the user's responses. If information is missing, leave the field blank or use your best judgment based on context.
     Output the result as a JSON object matching the ProfileOutputSchema.
 
-    Do not display or say anything to the user. Remain completely silent.
-
-    **Important**: If you have received nothing about the user, return an empty profile with all fields blank. Do not make up information or use the example input and output as your response.
+    **Important**: 
+    - If you have received nothing about the user, return an empty profile with all fields blank. Do not make up information or use the example input and output as your response.
+    - At the end of your response add the tag <SILENT_AGENT>
     """,
     output_schema=ProfileOutputSchema,
     output_key="Generated_Profile"
