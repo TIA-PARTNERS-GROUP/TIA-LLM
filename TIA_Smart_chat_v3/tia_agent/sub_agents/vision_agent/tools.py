@@ -165,7 +165,7 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start anew chat but if existing session, continue it"""
     try:
         state = tool_context.state
-        user_id = state.get("user_id", None)
+        user_id = state.get("user_id", "UNKNOWN_USER")
         print(f"USER ID: {user_id}")
         if "VisionAgent" not in state:
             state["VisionAgent"] = {}
@@ -234,5 +234,6 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
                 "current_phase": current_phase, 
                 "total_phases": total_phases
                 }
+    
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
