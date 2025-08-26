@@ -93,7 +93,8 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     """
     Fallback: Uses LLM to turn attributes into a business query, then searches RapidAPI.
     """
-    business_type = attributes.get("business_type", "")
+    #business_type = attributes.get("business_type", "") # STILL NEED TO TEST ONCE AGENT IS HOOKED UP TO SITE
+
     region = attributes.get("region", "au")
     lat = attributes.get("lat", 0.0)
     lng = attributes.get("lng", 0.0)
@@ -146,20 +147,19 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
     try:
         state = tool_context.state
-        state["ConnectAgent"] = {}
-
         user_id = state.get("user_id", "UNKNOWN_USER")
+        if "ConnectAAgent" not in state:
+            state["ConnectAgent"] = {}
         connect_state = state["ConnectAgent"]
         session_id = connect_state.get("session_id", None)
         print(f"DEBUG: start_session_phases called with session_id={session_id}")
 
         assistant = get_or_create_assistant(session_id, user_id)
-        print(f"DEBUG: Chat session with ID: {assistant.session_unique_id}")
-        session_id = connect_state["session_id"] = assistant.session_unique_id
+        print(f"DEBUG: Chat session with ID: {assistant.session_id}")
+        session_id = connect_state["session_id"] = assistant.session_id
 
         chat_state = connect_state["chat_state"] = "chat"
         current_phase = connect_state["current_phase"] = assistant.current_phase
-        phase_prompt = connect_state["phase_prompt"] = assistant.system_prompt
         total_phases = connect_state["total_phases"] = len(assistant.prompts) - 1
 
         response = assistant.send_message("Lets Begin!")
@@ -168,8 +168,7 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
                 "session_id": session_id, 
                 "chat_state": chat_state, 
                 "response": response, 
-                "phase": current_phase, 
-                "phase_prompt": phase_prompt,
+                "phase": current_phase,
                 "total_phases": total_phases
                 }
     except Exception as e:
@@ -180,10 +179,11 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
     try:
         state = tool_context.state
         connect_state = state["ConnectAgent"]
+
+        if connect_state is None:
+            raise ValueError("VisionAgent state is not initialized.")
         session_id = connect_state.get("session_id", None)
-        print(f"DEBUG: start_session_phases called with session_id={session_id}")
         assistant = get_or_create_assistant(session_id)
-        session_id = connect_state.get("session_id")
 
         chat_state = connect_state["chat_state"] = "chat"
         current_phase = connect_state.get("current_phase")
@@ -196,14 +196,14 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
         
         response = assistant.send_message(user_input)
 
-        current_phase = connect_state["current_phase"] = assistant.current_phase
-        phase_prompt = connect_state["phase_prompt"] = assistant.system_prompt
-        
-        connect_state = state["ConnectAgent"]
-        if current_phase > total_phases:
+        current_phase = assistant.current_phase
+        connect_state["current_phase"] = current_phase
+
+        state["ConnectAgent"] = connect_state
+        if "<exit>" in response:
             chat_state = connect_state["chat_state"] = "exit"
-            _user_sessions[session_id] = None
-            connect_state = state["ConnectAgent"]
+            connect_state["user_profile"] = "generated"
+            state["ConnectAgent"] = connect_state
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response
@@ -214,8 +214,8 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
                 "chat_state": chat_state, 
                 "response": response, 
                 "phase": current_phase, 
-                "phase_prompt": phase_prompt,
                 "total_phases": total_phases
                 }
+    
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
