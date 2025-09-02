@@ -79,7 +79,8 @@ app = FastAPI()
 async def chat_endpoint(requests: Request):
     data = await requests.json()
     try:
-        user_id = data.get("user_id")
+        print("DEBUG: Received data =", data)
+        user_id = str((data.get("user_id")))
         name = data.get("name")
         message = data.get("message")
         print(f"DEBUG: Received message from user_id={user_id}, name={name}: {message}")
