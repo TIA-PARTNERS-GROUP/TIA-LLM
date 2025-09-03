@@ -143,6 +143,9 @@ def recommended_connection(tool_context: ToolContext):
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
 
+def generate_email(tool_context: ToolContext):
+    return "Test"
+
 # BUG: Total phase = 939?
 def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
@@ -203,8 +206,17 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
         state["ConnectAgent"] = connect_state
         if "<exit>" in response:
             chat_state = connect_state["chat_state"] = "exit"
-            connect_state["user_profile"] = "generated"
+            state["user_profile"] = "generated"
             state["ConnectAgent"] = connect_state
+
+
+            # TODO: CONTINUE FROM HERE
+            state["Generated_Profile"] = "some_profile_data"
+
+
+
+
+            tool_context.actions.transfer_to_agent = "CoordinatorAgent"
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response

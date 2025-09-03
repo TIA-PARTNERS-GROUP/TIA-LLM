@@ -27,16 +27,23 @@ runner = Runner(
     session_service=session_service
 )
 
-async def run_chat(user_id: str, name: str, message: str, session_id=None):
+async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, message: str, session_id=None):
     try:
         if not session_id:
             session_id = str(uuid.uuid4())
-            user_state = {"name": name, "user_id": user_id}
+            state = {
+                "name": name,
+                "user_id": user_id,
+                "region": region,
+                "lat": lat,
+                "lng": lng,
+                "user_profile": "n/a"
+            }
             session = await session_service.create_session(
                 app_name="tia_smart_chat",
                 user_id=user_id,
                 session_id=session_id,
-                state=user_state
+                state=state
             )
         else:
             session = await session_service.get_session(
@@ -83,10 +90,12 @@ async def chat_endpoint(requests: Request):
         user_id = str((data.get("user_id")))
         name = data.get("name")
         message = data.get("message")
-        print(f"DEBUG: Received message from user_id={user_id}, name={name}: {message}")
+        region = data.get("region", "au")
+        lat = data.get("lat", 0.0)
+        lng = data.get("lng", 0.0)
         session_id = data.get("session_id", None)
 
-        session, result = await run_chat(user_id, name, message, session_id)
+        session, result = await run_chat(user_id, name, region, lat, lng, message, session_id)
         return {
             "result": result,
             "session_id": session.id,
@@ -101,13 +110,16 @@ if __name__ == "__main__":
     user_id = input("User ID: ")
     name = input("Name: ")
     session_id = None
+    region = "au" #input("Region: ")
+    lat = 27.4705#float(input("Latitude: "))
+    lng = 153.0245#float(input("Longitude: "))
 
     while True:
         message = input("Message (or 'exit' to quit): ")
         if message.lower() in ['exit', 'quit']:
             break
 
-        session, result = asyncio.run(run_chat(user_id, name, message, session_id))
+        session, result = asyncio.run(run_chat(user_id, name, region, lat, lng, message, session_id))
         print(f"\n\nResponse: {result['response']}\nSession ID: {result['session_id']}\n\n")
         session_id = result['session_id']
         
