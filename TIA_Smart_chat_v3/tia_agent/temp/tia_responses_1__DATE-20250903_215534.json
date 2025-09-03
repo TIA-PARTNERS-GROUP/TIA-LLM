@@ -1,0 +1,44 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Lets Begin!",
+    "timestamp": "2025-09-03T21:54:32.289206"
+  },
+  {
+    "phase": 0,
+    "question": "Hi there, and welcome to **SmartConnect** \u2014 your AI-powered referral matchmaker at **Technology Integrators Australia**. We help small tech businesses grow through meaningful connections with like-minded partners. Let's get started! To begin, what's your **first name** so I can address you properly?",
+    "message": "Joshua",
+    "timestamp": "2025-09-03T21:54:44.692746"
+  },
+  {
+    "phase": 0,
+    "question": "Thanks, Joshua! Now let's learn a bit about your business so I can find your ideal referral partners. **First question:** What's the **name of your business**?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-09-03T21:54:53.140777"
+  },
+  {
+    "phase": 0,
+    "question": "Great \u2014 **Tech Innovations LLC** sounds like a very promising name! Next up: What **products or services** do you offer?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-09-03T21:54:58.269114"
+  },
+  {
+    "phase": 0,
+    "question": "It\u2019s wonderful to meet the Founder and CEO of **Tech Innovations LLC**! However, I\u2019d love to know more about the specific **products or services** you offer. Can you share that with me?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-03T21:55:07.320444"
+  },
+  {
+    "phase": 0,
+    "question": "Awesome \u2014 AI-powered customer service automation is an exciting and growing field! This definitely has a lot of market potential. Next question: Who is your **ideal customer or target market**? (e.g., specific demographics, business types, etc.)",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-09-03T21:55:16.458760"
+  },
+  {
+    "phase": 0,
+    "question": "Perfect \u2014 targeting **small to medium businesses** gives us a great range to work with. Now, last question: What makes **Tech Innovations LLC** unique or different from your competitors? (e.g., pricing, speed, customization, support, community, etc.)",
+    "message": "We are cheap and effective",
+    "timestamp": "2025-09-03T21:55:32.594013"
+  }
+]

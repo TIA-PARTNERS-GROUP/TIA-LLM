@@ -29,7 +29,7 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
 
     # If the session doesn't exist, create a new assistant
     if session_id not in _user_sessions:
-        assistant = DynamicChatAssistant(CONNECT_RULE_PROMPT, CONNECT_CHAT_1_BUSINESS_INFO_PROMPT, user_id)
+        assistant = DynamicChatAssistant(CONNECT_PROMPTS, CONNECT_RULE_PROMPT, user_id)
         assistant.session_id = session_id
         _user_sessions[session_id] = assistant
 
@@ -143,6 +143,7 @@ def recommended_connection(tool_context: ToolContext):
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
 
+# BUG: Total phase = 939?
 def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
     try:
