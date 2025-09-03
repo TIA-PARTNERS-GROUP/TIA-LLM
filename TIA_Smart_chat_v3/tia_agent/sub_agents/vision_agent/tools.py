@@ -220,8 +220,9 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
         state["VisionAgent"] = vision_state
         if "<exit>" in response:
             chat_state = vision_state["chat_state"] = "exit"
-            vision_state["user_profile"] = "generated"
+            state["user_profile"] = "collected"
             state["VisionAgent"] = vision_state
+            tool_context.actions.transfer_to_agent = "CoordinatorAgent"
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response

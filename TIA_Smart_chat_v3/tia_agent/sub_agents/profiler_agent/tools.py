@@ -38,6 +38,7 @@ def store_user_profile(tool_context: ToolContext):
         # JOSHUA TODO - Find a way to delete User_History from the state
         #del state["User_History"]
         profile = state.get("Generated_Profile")
+        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
 
         # INSERT ADD TO SQL NODE OR GNN CODE HERE
 

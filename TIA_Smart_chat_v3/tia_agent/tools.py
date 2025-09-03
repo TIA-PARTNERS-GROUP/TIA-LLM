@@ -4,32 +4,30 @@ from google.adk.tools import ToolContext
 def check_for_existing_user(tool_context: ToolContext):
     "Check the database to see if there is an existing user."
     try:
-        # Database query logic here
         state = tool_context.state
 
+        # Check for generated profile in state
+        user_profile = state.get("user_profile")
+        profile_exists = False
+        if user_profile:
+            # Assuming user_profile is a dict or string; parse for essentials
+            if isinstance(user_profile, dict):
+                user = user_profile.get("User")
+                idea = user_profile.get("Idea")
+                user_post = user_profile.get("UserPost")
+            else:
+                user = idea = user_post = None
 
-        # INSERT ADD TO SQL NODE OR GNN CODE HERE
-        # TEST: ADD GNN/SQL LOGIC LATER
-        profile_exist = False
-        sample_profile = {
-            "User": "John Doe",
-            "Idea": "Build an AI-powered chatbot",
-            "UserPost": "Software Engineer",
-            "Strength": "Problem-solving"
-        }
+            # Check if all 3 essentials are present
+            if user and idea and user_post:
+                profile_exists = True
 
-
-        # Sample user ID
-        state["user_id"] = 1
-        state["region"] = "au"
-        state["lat"] = 0.0
-        state["lng"] = 0.0
-
-        if profile_exist:
-            state["user_profile"] = sample_profile
-            return {"status": "success", "user_profile": sample_profile}
+        # Update state based on check
+        if profile_exists:
+            state["user_profile"] = "generated"
+            return {"status": "success", "profile_exists": True}
         else:
             state["user_profile"] = None
-            return {"status": "success", "user_profile": None}
+            return {"status": "success", "profile_exists": False}
     except Exception as e:
         return {"status": "error", "message": str(e)}

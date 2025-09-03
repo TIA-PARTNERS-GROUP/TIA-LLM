@@ -1,0 +1,38 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Help me Build my Vision",
+    "timestamp": "2025-09-03T22:46:45.500862"
+  },
+  {
+    "phase": 0,
+    "question": "I\u2019d love to help you uncover your vision! Let\u2019s start with something simple. What is your name?",
+    "message": "John Smith",
+    "timestamp": "2025-09-03T22:46:51.588802"
+  },
+  {
+    "phase": 0,
+    "question": "Nice to meet you, John! Now that I know your name, can you tell me what your company name is?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-09-03T22:46:56.950676"
+  },
+  {
+    "phase": 0,
+    "question": "Great name, John! Tech Innovations LLC has a nice ring to it. What role do you play in the company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-09-03T22:47:02.004467"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s fantastic, John! Being the Founder and CEO means you have a lot of vision and leadership in shaping your company. Now, can you share what kind of product or service you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-03T22:47:08.094131"
+  },
+  {
+    "phase": 0,
+    "question": "AI-powered customer service automation sounds incredibly impactful! It\u2019s a crucial area that can really enhance customer experiences. Lastly, can you tell me who your typical customer or client is?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-09-03T22:47:14.576568"
+  }
+]
