@@ -71,7 +71,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
         if response_text is None:
             response_text = "No response generated."
 
-        return session, {"response": response_text, "session_id": session.id}
+        return session, response_text
     except Exception as e:
         print("ERROR in run_chat:", e)
         raise Exception("Error during chat: " + str(e))
@@ -82,7 +82,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
 app = FastAPI()
 
 # To run: uvicorn TIA_Smart_chat_v3.main:app --reload --port 8080
-@app.post("/tia_chat")
+@app.post("/chat/tia-chat")
 async def chat_endpoint(requests: Request):
     data = await requests.json()
     try:
@@ -95,9 +95,11 @@ async def chat_endpoint(requests: Request):
         lng = data.get("lng", 0.0)
         session_id = data.get("session_id", None)
 
-        session, result = await run_chat(user_id, name, region, lat, lng, message, session_id)
+        session, response = await run_chat(user_id, name, region, lat, lng, message, session_id)
+
+        print("DEBUG: Session state after chat:", session.state)
         return {
-            "result": result,
+            "response": response,
             "session_id": session.id,
             "state": dict(session.state)
         }

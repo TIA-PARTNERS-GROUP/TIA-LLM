@@ -3,8 +3,10 @@ from typing import Optional
 
 class ProfileOutputSchema(BaseModel):
     """Schema for generated user profile information"""
-    User: str = Field(description="The user's name")
-    Idea: str = Field(description="The user's business idea")
-    UserPost: str = Field(description="The user's job title or post")
-    Strength: str = Field(description="The user's main strength")
-    SILENT_AGENT: str = Field(default="<SILENT_AGENT>", description="Silent agent tag to hide from user")
+    Business_Name: str = Field(description="The user's business idea")
+    Business_Type: Optional[str] = Field(description="The user's business type")
+    UserJob: str = Field(description="The user's job or role")
+    User_Strength: str = Field(description="The user's main strength")
+    User_skills: str = Field(description="The user's skills")
+    Business_Strength: str = Field(description="The user's job business strength")
+    

@@ -1,0 +1,38 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Help me Build my Vision",
+    "timestamp": "2025-09-08T16:29:47.258613"
+  },
+  {
+    "phase": 0,
+    "question": "Absolutely! I\u2019d love to help you with that. Let's start by getting to know you a little better. What is your name?",
+    "message": "Joshua Smith",
+    "timestamp": "2025-09-08T16:30:23.854623"
+  },
+  {
+    "phase": 0,
+    "question": "Great to meet you, Joshua! It\u2019s wonderful to have you here. Now, could you tell me the name of your company?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-09-08T16:30:42.958443"
+  },
+  {
+    "phase": 0,
+    "question": "Tech Innovations LLC \u2014 I love the sound of that! It evokes a sense of creativity and forward-thinking. Now, what is your role in the company?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-09-08T16:30:48.301075"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s impressive, Joshua! Being the Founder and CEO puts you at the helm of your vision for Tech Innovations LLC. Now, can you share what kind of product or service you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-08T16:30:54.289551"
+  },
+  {
+    "phase": 0,
+    "question": "AI-powered customer service automation \u2014 that\u2019s cutting-edge! It sounds like a game-changer for businesses looking to enhance their customer interactions. Now, who would you say is your typical customer or client?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-09-08T16:31:01.610021"
+  }
+]

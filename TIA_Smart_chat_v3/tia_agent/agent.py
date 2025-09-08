@@ -34,7 +34,9 @@ coordinatorAgent = Agent(
     - Always start with `check_for_existing_user`.
     - Only ever change to the `ProfilerAgent` after they have used the `VisionAgent` and you see that the `user_profile` is "generated".
     - If the user chats with you, mention that chatting more through the `VisionAgent` can help you better understand them and build their vision.
-
+    - **If the user requests to use the VisionAgent or mentions building their vision, immediately transfer to VisionAgent.**
+    - **If the user requests to use the ConnectAgent or mentions finding connections, immediately transfer to ConnectAgent.**
+    
     Always act friendly and conversational if the user is not asking for a specific agent or task.
     """,
     tools=[check_for_existing_user],

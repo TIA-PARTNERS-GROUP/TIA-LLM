@@ -21,7 +21,7 @@ load_dotenv()
 BLOG_AMOUNT = 1
 CHAT_PROMPTS = [
     TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
-    #TIA_VISION_CHAT_2_REFLECTION_PROMPT, 
+    TIA_VISION_CHAT_2_REFLECTION_PROMPT, 
     #TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
     #TIA_VISION_CHAT_4_STRATEGY_PROMPT
 ]
@@ -131,6 +131,7 @@ def generate_blog(tool_context: ToolContext) -> dict:
 
         # Clear the session
         _user_sessions[session_id] = None
+        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             blog_filename = f"blog_output_{timestamp}.txt"
@@ -222,7 +223,6 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
             chat_state = vision_state["chat_state"] = "exit"
             state["user_profile"] = "collected"
             state["VisionAgent"] = vision_state
-            tool_context.actions.transfer_to_agent = "CoordinatorAgent"
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response

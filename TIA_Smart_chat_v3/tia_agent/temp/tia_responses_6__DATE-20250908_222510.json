@@ -1,0 +1,32 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Lets Begin!",
+    "timestamp": "2025-09-08T22:24:43.048636"
+  },
+  {
+    "phase": 0,
+    "question": "I'm excited to start this journey with you! First, can you tell me the name of your business?",
+    "message": "Tech Innovations LLC",
+    "timestamp": "2025-09-08T22:24:47.566199"
+  },
+  {
+    "phase": 0,
+    "question": "Great \u2014 Tech Innovations LLC sounds like a name full of potential! Next up: What products or services do you offer?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-08T22:24:55.369810"
+  },
+  {
+    "phase": 0,
+    "question": "Awesome \u2014 AI-powered customer service automation is such an impactful service! There's definitely a growing market for that. Now, who is your ideal customer or target market? (e.g., specific demographics, business types, etc.)",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-09-08T22:25:01.591388"
+  },
+  {
+    "phase": 0,
+    "question": "Perfect \u2014 targeting small to medium businesses gives us a solid range to work with. Now, just one last question: What makes Tech Innovations LLC unique or different from your competitors? (e.g., pricing, speed, customisation, support, community, etc.)",
+    "message": "Peace of mind and time savings for business owners",
+    "timestamp": "2025-09-08T22:25:09.118231"
+  }
+]
