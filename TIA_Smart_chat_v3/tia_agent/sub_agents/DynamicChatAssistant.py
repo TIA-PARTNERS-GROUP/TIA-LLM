@@ -115,3 +115,34 @@ class DynamicChatAssistant:
             json.dump(self.user_responses, f, indent=2)
         print(f"Responses saved to {filename}")
         return filename
+    
+    def collect_user_history(self):
+        """Find the user's most recent conversation history from tia_responses_{user_id}__DATE-*.json files under temp"""
+        try:
+            # Use the same temp_dir path as in the class
+            parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            temp_dir = os.path.join(parent_dir, "temp")
+            user_id = self.user_id or "UNKNOWN_USER"
+            pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
+            latest_file = None
+            latest_dt = None
+
+            for fname in os.listdir(temp_dir):
+                match = re.match(pattern, fname)
+                if match:
+                    dt_str = match.group(1)
+                    dt = datetime.strptime(dt_str, "%Y%m%d_%H%M%S")
+                    if latest_dt is None or dt > latest_dt:
+                        latest_dt = dt
+                        latest_file = fname
+
+            if latest_file is None:
+                self.logger.info("No conversation history found.")
+                return None
+            filename = os.path.join(temp_dir, latest_file)
+            with open(filename, 'r') as f:
+                user_history = json.load(f)
+            return user_history
+        except Exception as e:
+            self.logger.error(f"Error collecting user history: {e}")
+            return None

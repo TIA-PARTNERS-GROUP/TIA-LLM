@@ -1,25 +1,25 @@
 from google.adk.tools import ToolContext
 
-# IMPLEMENT WITH GNN AND DATABASE
+# TODO: IMPLEMENT WITH GNN AND DATABASE
 def check_for_existing_user(tool_context: ToolContext):
     "Check the database to see if there is an existing user."
     try:
         state = tool_context.state
 
         # Check for generated profile in state
-        user_profile = state.get("user_profile")
+        gen_profile = state.get("Generated_Profile")
         profile_exists = False
-        if user_profile:
-            # Assuming user_profile is a dict or string; parse for essentials
-            if isinstance(user_profile, dict):
-                user = user_profile.get("User")
-                idea = user_profile.get("Idea")
-                user_post = user_profile.get("UserPost")
+        if gen_profile:
+            # Updated to match new schema fields
+            if isinstance(gen_profile, dict):
+                business_name = gen_profile.get("Business_Name")
+                user_job = gen_profile.get("UserJob")
+                user_strength = gen_profile.get("User_Strength")
             else:
-                user = idea = user_post = None
+                business_name = user_job = user_strength = None
 
             # Check if all 3 essentials are present
-            if user and idea and user_post:
+            if business_name and user_job and user_strength:
                 profile_exists = True
 
         # Update state based on check
@@ -27,7 +27,7 @@ def check_for_existing_user(tool_context: ToolContext):
             state["user_profile"] = "generated"
             return {"status": "success", "profile_exists": True}
         else:
-            state["user_profile"] = None
+            state["user_profile"] = "not_generated"
             return {"status": "success", "profile_exists": False}
     except Exception as e:
         return {"status": "error", "message": str(e)}

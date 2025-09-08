@@ -135,18 +135,85 @@ def recommended_connection(tool_context: ToolContext):
             "profile": state.get("Generated_Profile"),
         }
         GNN_CALL = recommended_GNN_connection(attributes)
-        if GNN_CALL != None: return GNN_CALL
+        if GNN_CALL is not None:
+            # Store the result in state
+            if "ConnectAgent" not in state:
+                state["ConnectAgent"] = {}
+            state["ConnectAgent"]["connection_result"] = GNN_CALL
+            return GNN_CALL
 
         WEB_CALL = recommended_WEB_connection(attributes)
+        
+        # Store the result in state
+        if "ConnectAgent" not in state:
+            state["ConnectAgent"] = {}
+        state["ConnectAgent"]["connection_result"] = WEB_CALL
+        
         return WEB_CALL
     
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
+        return {"status": "error", "message": str(e)}
 
 def generate_email(tool_context: ToolContext):
-    return "Test"
+    """
+    Generate email templates for the recommended businesses.
+    Pulls the connection_result from the state.
+    """
+    try:
+        state = tool_context.state
+        if "ConnectAgent" not in state or "connection_result" not in state["ConnectAgent"]:
+            return {"status": "error", "message": "No connection_result found in state. Call recommended_connection first."}
+        
+        # Retrieve the stored result
+        connection_result = state["ConnectAgent"]["connection_result"]
+        businesses = connection_result.get("data", [])
+        if not businesses:
+            return {"status": "error", "message": "No business data found in connection_result."}
+        
+        # Generate email templates for each business
+        email_templates = []
+        for business in businesses:
+            name = business.get("name", "Business")
+            email = business.get("emails_and_contacts", {}).get("emails", [""])[0] if business.get("emails_and_contacts", {}).get("emails") else ""
+            address = business.get("full_address", "")
+            website = business.get("website", "")
+            
+            # Prompt for generating a personalized email template
+            # TODO: Use CONNECT_GENERATION_PROMPT instead
+            email_prompt = f"""
+            Generate a personalized email template for outreach to the following business:
+            - Name: {name}
+            - Email: {email}
+            - Address: {address}
+            - Website: {website}
+            
+            The email should be professional, introduce the sender's business (Tech Innovations LLC), highlight mutual benefits for referral partnerships, and include a call to action.
+            Format: Subject, Greeting, Body, Closing.
+            """
+            
+            input_messages = [
+                {"role": "system", "content": "You are an assistant that generates professional email templates for business outreach."},
+                {"role": "user", "content": email_prompt}
+            ]
+            email_output = completion(
+                model=CHAT_MODEL,
+                messages=input_messages,
+                api_key=OPENAI_API_KEY
+            ).choices[0].message.content.strip()
+            
+            email_templates.append({
+                "business_name": name,
+                "email": email,
+                "template": email_output
+            })
+        
+        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+        return {"status": "success", "email_templates": email_templates}
+    
+    except Exception as e:
+        return {"status": "error", "message": str(e), "chat_state": "exit"}
 
-# BUG: Total phase = 939?
 def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
     try:
@@ -209,14 +276,36 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
             state["user_profile"] = "generated"
             state["ConnectAgent"] = connect_state
 
+            # Initialize Generated_Profile if not present
+            if "Generated_Profile" not in state:
+                state["Generated_Profile"] = {}
+            
+            # Extract conversation history for analysis
+            conversation_history = assistant.collect_user_history()  # Assuming this method exists in DynamicChatAssistant
+            
+            # Use LLM to determine business_type from conversation (keep to 2-3 words)
+            business_type_prompt = f"""
+            Analyze the following conversation history and determine the most appropriate business_type for the user.
+            Business_type should be a short phrase of 2-3 words max (e.g., "AI Consulting", "Tech Automation").
+            Keep it under 50 characters.
 
-            # TODO: CONTINUE FROM HERE
-            state["Generated_Profile"] = "some_profile_data"
+            Conversation:
+            {conversation_history}
 
+            Output only the business_type as a string.
+            """
+            input_messages = [
+                {"role": "system", "content": "You are an assistant that extracts short business types from conversations."},
+                {"role": "user", "content": business_type_prompt}
+            ]
+            business_type = completion(
+                model=CHAT_MODEL,
+                messages=input_messages,
+                api_key=OPENAI_API_KEY
+            ).choices[0].message.content.strip()
+            
+            state["Generated_Profile"]["business_type"] = business_type
 
-
-
-            tool_context.actions.transfer_to_agent = "CoordinatorAgent"
             return {"status": "success", 
                     "chat_state": chat_state, 
                     "response": response
