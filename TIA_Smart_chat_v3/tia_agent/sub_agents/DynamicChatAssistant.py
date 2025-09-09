@@ -107,7 +107,7 @@ class DynamicChatAssistant:
             search_string = f"{self.user_id}__DATE-" + datetime.now().strftime("%Y%m%d_%H%M%S")
         # Get the parent directory of the current file
         parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        temp_dir = os.path.join(parent_dir, "temp")
+        temp_dir = os.path.join(parent_dir, "tmp/sub_agent_chat_history")
         os.makedirs(temp_dir, exist_ok=True)
         filename = os.path.join(temp_dir, f"tia_responses_{search_string}.json")
 
