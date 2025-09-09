@@ -112,6 +112,7 @@ async def chat_endpoint(requests: Request):
             new_entry = {
                 "message": message,
                 "response": response,
+                "state": dict(session.state),
                 "author": author,
                 "timestamp": str(uuid.uuid4())
             }
