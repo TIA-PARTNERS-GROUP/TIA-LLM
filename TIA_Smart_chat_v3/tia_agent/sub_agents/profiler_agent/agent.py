@@ -30,10 +30,10 @@ ProfileGenerator = LlmAgent(
 
     - Business_Name: The user's main business idea or what their company does (keep under 100 characters).
     - UserJob: The user's job title or role (keep under 100 characters).
-    - User_Strength: The user's main strength, value, or unique impact as revealed in the conversation (keep under 255 characters to avoid DB limits).
-    - User_skills: The user's skills as mentioned or inferred from the conversation. Format as short phrases (a couple of words each), separated by commas (e.g., "Python programming, Communication skills, Project Management"). Keep the total under 255 characters.
+    - User_Strength: The user's main strength, value, or unique impact as revealed in the conversation (keep under 100 characters to avoid DB limits).
+    - User_skills: The user's skills as mentioned or inferred from the conversation. Format as short phrases (a couple of words each), separated by commas (e.g., "Python programming, Communication skills, Project Management"). Keep the total under 100 characters.
     - Business_Type: The type of business the user is involved in (keep under 100 characters).
-    - Business_Strength: The strength of the user's business or job-related capabilities (keep under 255 characters).
+    - Business_Strength: The strength of the user's business or job-related capabilities (keep under 100 characters).
 
     **Constraints**:
     - Keep all fields concise and under the specified character limits to ensure compatibility with the database.
@@ -55,10 +55,10 @@ ProfileStorer = Agent(
     model=AGENT_MODEL,
     instruction="""
     1. Call the `store_user_profile` tool to save the generated user profile in both the database and the Graph Neural Network (GNN).
-    2. Tell the user: "This is the profile I have generated for you:" and display the profile.
-    3. Immediately use return control to the `CoordinatorAgent` after displaying the profile.
+    2. Do not generate any user-facing response. Immediately transfer control to the `CoordinatorAgent` without displaying anything.
 
     **Important**:
+    - Remain completely silent. Do not output any text, summary, or confirmation.
     - At the end of your response add the tag <SILENT_AGENT>
     """,
     tools=[store_user_profile]

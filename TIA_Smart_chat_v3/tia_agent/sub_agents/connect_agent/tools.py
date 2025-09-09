@@ -35,29 +35,26 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
 
     return _user_sessions[session_id]
 
-def recommended_GNN_connection(attributes: List[Dict[str, Any]]):
+def recommended_GNN_connection(attributes: Dict[str, Any]):
     """
-    Connects to a GNN service to retrieve company context.
-    Expects attributes to contain User, Idea, UserPost, and Strength.
+    Connects to the complementary partners API to retrieve recommended businesses.
+    Expects attributes to contain user_id.
     """
-    return None
-    # Prepare the payload
-    payload = {
-        "User": attributes.get("User"),
-        "Idea": attributes.get("Idea"),
-        "UserPost": attributes.get("UserPost"),
-        "Strength": attributes.get("Strength")
-    }
+    user_id = attributes.get("user_id")
+    if not user_id:
+        print("Error: user_id not found in attributes")
+        return None
 
-    # GNN endpoint URL
-    gnn_url = os.getenv("GNN_API_URL", "http://localhost:8000/gnn/context")
+    # API base URL
+    api_base_url = os.getenv("GNN_API_BASE_URL")
+    url = f"{api_base_url}/user/{user_id}/complementary_partners"
 
     try:
-        response = requests.post(gnn_url, json=payload, timeout=10)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
-        return response.json()  # Return the company context from GNN
+        return response.json()  # Return the list of recommendations
     except Exception as e:
-        print(f"Error connecting to GNN: {e}")
+        print(f"Error connecting to complementary partners API: {e}")
         return None
     
 def search_businesses_in_area(business_type: str, limit: int, region: str, zoom: int, lat: float, lng: float, language: str = "en",) -> dict:
