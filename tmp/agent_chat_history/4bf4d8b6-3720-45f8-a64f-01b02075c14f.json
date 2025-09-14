@@ -1,0 +1,74 @@
+{
+    "session_id": "4bf4d8b6-3720-45f8-a64f-01b02075c14f",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! It looks like I don't have any information about you yet. Would you like to build your business vision with the VisionAgent, or are you interested in finding connections with the ConnectAgent?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "n/a"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "a27a1096-6cd1-41b2-82ee-d410e25294cd"
+        },
+        {
+            "message": "I would like to connect",
+            "response": "Thanks! I'm excited to help you find the right referral partners. Let's learn a bit about your business. First question: What's the name of your business?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "23e02a86-aa3c-4529-b0dd-fe136ade66ac"
+        },
+        {
+            "message": "Tech Innovations LLC",
+            "response": "Great \u2014 Tech Innovations LLC sounds fantastic! Now, let's dive a bit deeper. What products or services do you offer?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "ConnectAgent": {
+                    "session_id": "ad085793-c4ae-4654-9a4e-fcd45b8a3e2f",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "2f75a538-4db0-4955-88fe-879b793acd3c"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "Awesome \u2014 AI-powered customer service automation is a cutting-edge solution with lots of market potential! Next question: Who is your ideal customer or target market? This could include specific demographics, business types, or industries you typically serve.",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "ConnectAgent": {
+                    "session_id": "ad085793-c4ae-4654-9a4e-fcd45b8a3e2f",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "07ddfa53-3f17-494c-90d3-32603a59890b"
+        }
+    ]
+}

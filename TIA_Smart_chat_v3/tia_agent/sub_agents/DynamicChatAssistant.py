@@ -121,7 +121,7 @@ class DynamicChatAssistant:
         try:
             # Use the same temp_dir path as in the class
             parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            temp_dir = os.path.join(parent_dir, "temp")
+            temp_dir = os.path.join(parent_dir, "tmp", "sub_agent_chat_history")
             user_id = self.user_id or "UNKNOWN_USER"
             pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
             latest_file = None

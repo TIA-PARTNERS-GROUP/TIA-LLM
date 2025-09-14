@@ -34,6 +34,10 @@ ProfileGenerator = LlmAgent(
     - User_skills: The user's skills as mentioned or inferred from the conversation. Format as short phrases (a couple of words each), separated by commas (e.g., "Python programming, Communication skills, Project Management"). Keep the total under 100 characters.
     - Business_Type: The type of business the user is involved in (keep under 100 characters).
     - Business_Strength: The strength of the user's business or job-related capabilities (keep under 100 characters).
+    - Business_Skills: The skills related to the user's business (keep under 100 characters).
+    - Business_Category: A singular categorising of the user's business (keep under 100 characters).
+    - Skill_Category: A singular categorising of the user's skills (keep under 100 characters).
+    - Strength_Category: A singular categorising of the user's strengths (keep under 100 characters).
 
     **Constraints**:
     - Keep all fields concise and under the specified character limits to ensure compatibility with the database.

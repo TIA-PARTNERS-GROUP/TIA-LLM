@@ -32,11 +32,10 @@ Your task is to guide the user through Steps 0 to 4 using friendly, clear langua
 - Purpose: Help them articulate what they do and who they serve in simple, authentic terms
  
 🪜 Steps to ask (in order):
-1. “What is your name?”
-2. “What is your company name?”
-3. “What is your role in the company?”
-4. “What kind of product or service do you offer?”
-5. “Who is your typical customer or client?”
+1. "Let's start with the basics. What's your business name and a bit about the business?"
+2. “What is your role in the company?”
+3. “What kind of product or service do you offer?”
+4. “Who is your typical customer or client?”
 """
 
 TIA_VISION_CHAT_2_REFLECTION_PROMPT = """

@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import uuid, json, os
 from dotenv import load_dotenv
 from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService
+from google.adk.sessions import InMemorySessionService, DatabaseSessionService
 from google.adk.runners import RunConfig
 from google.genai import types
 from .utils import compare_responses
@@ -18,7 +18,13 @@ except ImportError:
 load_dotenv()
 
 # Initialize session service with MySQL
-session_service = InMemorySessionService()
+db_user = os.getenv("DB_USER", "root")
+db_pass = os.getenv("DB_PASS", "password")
+db_host = os.getenv("DB_HOST", "localhost")
+db_name = os.getenv("DB_NAME", "tiapartners")
+db_port = os.getenv("DB_PORT", "3333")
+db_url = f"mysql+mysqlconnector://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
+session_service = DatabaseSessionService(db_url=db_url)
 
 # Create runner
 runner = Runner(
@@ -27,17 +33,19 @@ runner = Runner(
     session_service=session_service
 )
 
-async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, message: str, session_id=None):
+async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, connection_type: str, message: str, session_id=None):
     try:
-        if not session_id:
+        if session_id is None:
+            # No session_id provided: Create a new session
             session_id = str(uuid.uuid4())
             state = {
                 "name": name,
                 "user_id": user_id,
+                "connection_type": connection_type,
                 "region": region,
                 "lat": lat,
                 "lng": lng,
-                "user_profile": "n/a"
+                "user_profile": "check"
             }
             session = await session_service.create_session(
                 app_name="tia_smart_chat",
@@ -46,11 +54,31 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                 state=state
             )
         else:
-            session = await session_service.get_session(
-                app_name="tia_smart_chat",
-                user_id=user_id,
-                session_id=session_id
-            )
+            # session_id provided: Try to get existing session
+            try:
+                session = await session_service.get_session(
+                    app_name="tia_smart_chat",
+                    user_id=user_id,
+                    session_id=session_id
+                )
+            except Exception:
+                # session_id provided but doesn't exist: Create a new session
+                session_id = str(uuid.uuid4())
+                state = {
+                    "name": name,
+                    "user_id": user_id,
+                    "connection_type": connection_type,
+                    "region": region,
+                    "lat": lat,
+                    "lng": lng,
+                    "user_profile": "check"
+                }
+                session = await session_service.create_session(
+                    app_name="tia_smart_chat",
+                    user_id=user_id,
+                    session_id=session_id,
+                    state=state
+                )
 
         # Prepare message
         new_message = types.Content(
@@ -77,8 +105,6 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
         print("ERROR in run_chat:", e)
         raise Exception("Error during chat: " + str(e))
 
-
-
 # FastAPI app
 app = FastAPI()
 CONVERSATIONS_DIR = os.path.join(os.getcwd(), "tmp", "agent_chat_history")
@@ -95,14 +121,15 @@ async def chat_endpoint(requests: Request):
         region = data.get("region", "au")
         lat = data.get("lat", 0.0)
         lng = data.get("lng", 0.0)
+        connection_type = data.get("connection_type")
         session_id = data.get("session_id", None)
         save_conversation = data.get("save_conversation", False)
 
-        session, response, author = await run_chat(user_id, name, region, lat, lng, message, session_id)
+        session, response, author = await run_chat(user_id, name, region, lat, lng, connection_type, message, session_id)
 
         result = {
             "response": response,
-            "session_id": session.id,
+            "session_id": session.id,   
             "state": dict(session.state),
             "author": author
         }

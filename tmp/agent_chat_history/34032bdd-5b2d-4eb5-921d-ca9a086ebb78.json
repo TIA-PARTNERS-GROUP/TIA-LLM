@@ -1,0 +1,34 @@
+{
+    "session_id": "34032bdd-5b2d-4eb5-921d-ca9a086ebb78",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! How can I assist you today? If you're looking to build your business vision or find connections, I can help with that. Just let me know!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "5f15e752-abf1-4b70-837d-8f040b9ca3e0"
+        },
+        {
+            "message": "I would like to build my vision",
+            "response": "I\u2019d love to help you build your vision! Let\u2019s start by getting to know you a little better. \n\nWhat is your name?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "cc37c7f3-227f-4e49-81de-ac4e5671e1ab"
+        }
+    ]
+}

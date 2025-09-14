@@ -1,0 +1,20 @@
+{
+    "session_id": "42099a2d-cd58-49b0-bb96-cc657e707397",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! How can I assist you today? If you're looking to build a vision for your project or connect with potential partners, I'm here to help!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "705e01c8-570a-4d65-ad28-b30084e2ca18"
+        }
+    ]
+}
