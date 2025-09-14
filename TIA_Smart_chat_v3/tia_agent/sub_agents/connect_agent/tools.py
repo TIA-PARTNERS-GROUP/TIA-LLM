@@ -1,18 +1,12 @@
-from dotenv import load_dotenv
-from litellm import completion
-from urllib.parse import urlencode
-from typing import Dict, Any, List
+from typing import Dict, Any
 from google.adk.tools.tool_context import ToolContext
 from ..DynamicChatAssistant import DynamicChatAssistant
-import os, requests, json, http.client, uuid
-from ...config import CHAT_MODEL, OPENAI_API_KEY, RAPIDAPI_HOST, RAPIDAPI_KEY
+from .utils import recommended_GNN_connection, recommended_WEB_connection, generate_email_templates, extract_business_type
 from .prompts import (
     CONNECT_RULE_PROMPT,
-    CONNECT_CHAT_1_BUSINESS_INFO_PROMPT,
-    CONNECT_GENERATION_PROMPT
+    CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
 )
-
-load_dotenv()
+import uuid
 
 CONNECT_PROMPTS = [
     CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
@@ -35,87 +29,7 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
 
     return _user_sessions[session_id]
 
-def recommended_GNN_connection(attributes: Dict[str, Any]):
-    """
-    Connects to the complementary partners API to retrieve recommended businesses.
-    Expects attributes to contain user_id.
-    """
-    user_id = attributes.get("user_id")
-    if not user_id:
-        print("Error: user_id not found in attributes")
-        return None
-
-    # API base URL
-    api_base_url = os.getenv("GNN_API_BASE_URL")
-    url = f"{api_base_url}/user/{user_id}/complementary_partners"
-
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        return response.json()  # Return the list of recommendations
-    except Exception as e:
-        print(f"Error connecting to complementary partners API: {e}")
-        return None
-    
-def search_businesses_in_area(business_type: str, limit: int, region: str, zoom: int, lat: float, lng: float, language: str = "en",) -> dict:
-    params = {
-        "query": business_type,
-        "lat": f"{lat:.6f}",
-        "lng": f"{lng:.6f}",
-        "limit": str(limit),
-        "language": language,
-        "region": region,
-        "zoom": zoom,
-        "extract_emails_and_contacts": str(True).lower(),
-    }
-
-    headers = {
-        "x-rapidapi-host": RAPIDAPI_HOST,
-        "x-rapidapi-key": RAPIDAPI_KEY,
-    }
-
-    conn = http.client.HTTPSConnection(RAPIDAPI_HOST, timeout=30)
-    try:
-        path = f"/search-in-area?{urlencode(params)}"
-        conn.request("GET", path, headers=headers)
-        res = conn.getresponse()
-        body = res.read()
-        if res.status != 200:
-            raise RuntimeError(f"HTTP {res.status}: {body.decode('utf-8', 'ignore')}")
-        return json.loads(body)
-    finally:
-        conn.close()
-
-def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
-    """
-    Fallback: Uses LLM to turn attributes into a business query, then searches RapidAPI.
-    """
-    #business_type = attributes.get("business_type", "") # STILL NEED TO TEST ONCE AGENT IS HOOKED UP TO SITE
-
-    region = attributes.get("region", "au")
-    lat = attributes.get("lat", 0.0)
-    lng = attributes.get("lng", 0.0)
-    limit = 5
-    zoom = 10
-
-    # Compose a prompt for the LLM to generate a business query string
-    message = [
-        {"role": "system", "content": "You are an assistant that generates concise business search queries for local business data APIs."},
-        {"role": "user", "content": f"Attributes: {json.dumps(attributes.get("profile"))}\nTurn these into a business search query string for finding relevant businesses."}
-    ]
-    query = completion(
-        model=CHAT_MODEL,
-        messages=message,
-        api_key=OPENAI_API_KEY
-    ).choices[0].message.content.strip()
-
-    try:
-        results = search_businesses_in_area(query, limit, region, zoom, lat, lng)
-        return results
-    except Exception as e:
-        print(f"Error in recommended_WEB_connection: {e}")
-        return {"error": str(e)}
-
+# TODO: FACTOR IN DIFFERENT CONNECTION TYPES
 def recommended_connection(tool_context: ToolContext):
     try:
         state = tool_context.state
@@ -125,6 +39,7 @@ def recommended_connection(tool_context: ToolContext):
             return {"status": "error", "message": f"Missing required attributes: {', '.join(missing)}"}
         
         attributes = {
+            "name": state.get("name"),
             "user_id": state.get("user_id"),
             "region": state.get("region"),
             "lat": state.get("lat"),
@@ -168,42 +83,14 @@ def generate_email(tool_context: ToolContext):
         if not businesses:
             return {"status": "error", "message": "No business data found in connection_result."}
         
-        # Generate email templates for each business
-        email_templates = []
-        for business in businesses:
-            name = business.get("name", "Business")
-            email = business.get("emails_and_contacts", {}).get("emails", [""])[0] if business.get("emails_and_contacts", {}).get("emails") else ""
-            address = business.get("full_address", "")
-            website = business.get("website", "")
-            
-            # Prompt for generating a personalized email template
-            # TODO: Use CONNECT_GENERATION_PROMPT instead
-            email_prompt = f"""
-            Generate a personalized email template for outreach to the following business:
-            - Name: {name}
-            - Email: {email}
-            - Address: {address}
-            - Website: {website}
-            
-            The email should be professional, introduce the sender's business (Tech Innovations LLC), highlight mutual benefits for referral partnerships, and include a call to action.
-            Format: Subject, Greeting, Body, Closing.
-            """
-            
-            input_messages = [
-                {"role": "system", "content": "You are an assistant that generates professional email templates for business outreach."},
-                {"role": "user", "content": email_prompt}
-            ]
-            email_output = completion(
-                model=CHAT_MODEL,
-                messages=input_messages,
-                api_key=OPENAI_API_KEY
-            ).choices[0].message.content.strip()
-            
-            email_templates.append({
-                "business_name": name,
-                "email": email,
-                "template": email_output
-            })
+        # Get user details for email personalization
+        user_name = state.get("name")
+        user_job = state.get("job_title")
+        user_email = state.get("email")
+        business_name = state.get("business_name")
+
+        # Generate email templates using the new function
+        email_templates = generate_email_templates(businesses, user_name, user_job, user_email, business_name)
         
         tool_context.actions.transfer_to_agent = "CoordinatorAgent"
         return {"status": "success", "email_templates": email_templates}
@@ -215,6 +102,17 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a new SmartConnect session"""
     try:
         state = tool_context.state
+
+        # Check for profile generation
+        if state.get("user_profile") == "generated":
+            print("DEBUG: Profile already generated, calling recommended_connection directly")
+            connection_result = recommended_connection(tool_context)
+            if connection_result.get("status") == "success":
+                email_result = generate_email(tool_context)
+                return email_result
+            else:
+                return connection_result
+
         user_id = state.get("user_id", "UNKNOWN_USER")
         if "ConnectAAgent" not in state:
             state["ConnectAgent"] = {}
@@ -280,27 +178,8 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
             # Extract conversation history for analysis
             conversation_history = assistant.collect_user_history()  # Assuming this method exists in DynamicChatAssistant
             
-            # Use LLM to determine business_type from conversation (keep to 2-3 words)
-            business_type_prompt = f"""
-            Analyze the following conversation history and determine the most appropriate business_type for the user.
-            Business_type should be a short phrase of 2-3 words max (e.g., "AI Consulting", "Tech Automation").
-            Keep it under 50 characters.
-
-            Conversation:
-            {conversation_history}
-
-            Output only the business_type as a string.
-            """
-            input_messages = [
-                {"role": "system", "content": "You are an assistant that extracts short business types from conversations."},
-                {"role": "user", "content": business_type_prompt}
-            ]
-            business_type = completion(
-                model=CHAT_MODEL,
-                messages=input_messages,
-                api_key=OPENAI_API_KEY
-            ).choices[0].message.content.strip()
-            
+            # Extract business_type using the new function
+            business_type = extract_business_type(conversation_history)
             state["Generated_Profile"]["business_type"] = business_type
 
             return {"status": "success", 

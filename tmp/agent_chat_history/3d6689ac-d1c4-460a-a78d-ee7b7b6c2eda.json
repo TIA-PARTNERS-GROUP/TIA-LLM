@@ -1,0 +1,20 @@
+{
+    "session_id": "3d6689ac-d1c4-460a-a78d-ee7b7b6c2eda",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! It looks like there is no existing profile information in our database. We can work together to build your vision or find potential referral connections. \n\nWould you like to start with the VisionAgent to help build your business vision, or the ConnectAgent to find referral partners?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "0e53d973-54d2-4f25-9a60-038bce794464"
+        }
+    ]
+}

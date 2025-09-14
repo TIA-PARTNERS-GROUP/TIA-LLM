@@ -1,0 +1,104 @@
+{
+    "session_id": "7fc150b6-a732-4c7e-a1f1-55d18d7e3107",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "It looks like there's a persistent issue with checking for your existing profile. I apologize for the inconvenience. \n\nHow can I assist you today? Would you like to explore building a business vision or perhaps find some referral partners?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "78c143d7-6ce8-4ea9-9b9f-f97f648e88c8"
+        },
+        {
+            "message": "ok",
+            "response": "Great! Since we're starting fresh, would you like to explore building a business vision with the VisionAgent or would you prefer to find some referral partners through the ConnectAgent? Let me know your choice!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "8e2b38ee-34a3-4e8d-a9e7-cb9fd5754e90"
+        },
+        {
+            "message": "hello",
+            "response": "Hello again! It appears that there is no existing profile for you in the system. This means we can focus on building one from scratch!\n\nWould you like to start by building your business vision with the VisionAgent, or would you prefer to find some referral partners through the ConnectAgent? Let me know your preference!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "7cc8ff85-5f11-48eb-954b-37c591164b7b"
+        },
+        {
+            "message": "what was out last conversation?",
+            "response": "In our last conversation, I tried checking for your existing profile and found that you did not have one in the system. I then offered you two options: to build your business vision with the VisionAgent or to find referral partners through the ConnectAgent. \n\nIs there something specific you'd like to continue with or any other questions I can help with today?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "a95d9a13-ba53-454c-87e7-c131027e5248"
+        },
+        {
+            "message": "could you check for my profile again?",
+            "response": "I've checked for your profile again, and it appears that there is still no existing profile for you in the system. \n\nWould you like to start building your business vision with the VisionAgent, or perhaps find some referral partners with the ConnectAgent? Let me know how you'd like to proceed!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "1b885aee-643d-4210-bc31-1608d98a7d23"
+        },
+        {
+            "message": "try again",
+            "response": "It looks like there was an error when attempting to check for your profile again. I apologize for the confusion.\n\nSince we don\u2019t have an existing profile, would you like to move forward by building your business vision with the VisionAgent, or would you prefer to find some referral partners through the ConnectAgent? Your choice!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "089d15e5-a38d-4715-bad6-b8b70f9c98d3"
+        },
+        {
+            "message": "try again",
+            "response": "I've checked for your profile again, and it seems that there is still no complete profile data available. However, I do have some information:\n\n- **User Name**: johusa wlod\n- **Contact Email**: joshua@gmail.com\n- **Contact Phone No**: 0412345678\n\nWould you like to proceed by building your business vision with the VisionAgent, or would you prefer to find some referral partners through the ConnectAgent? Let me know what you'd like to do next!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "db36ee21-d2a2-48cf-9cb1-871fdb099150"
+        }
+    ]
+}

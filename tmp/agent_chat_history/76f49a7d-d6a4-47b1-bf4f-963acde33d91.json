@@ -1,0 +1,34 @@
+{
+    "session_id": "76f49a7d-d6a4-47b1-bf4f-963acde33d91",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Hello! How can I assist you today? If you have any questions or need help with something specific, feel free to let me know!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "b88f3cfb-f062-4998-a605-82e8496dd97f"
+        },
+        {
+            "message": "wheres my profile",
+            "response": "It looks like you don't have an existing profile in our system. We can work on building a business vision together if that interests you, or we can also look for referral partners. What would you like to do?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "c3028ad1-4d62-4da8-b5c1-27ea77ba394b"
+        }
+    ]
+}

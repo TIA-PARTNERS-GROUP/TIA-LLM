@@ -1,0 +1,21 @@
+{
+    "session_id": "4e42ee40-5cd4-4530-a7f3-8f4c9048d594",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "test",
+            "response": "It looks like there is no existing profile for you. However, I found your basic information:\n\n- **Name:** Joshua Wlodarczyk\n- **Email:** joshua@gmail.com\n- **Phone Number:** 0412345678\n\nWould you like to build a business vision with the help of our VisionAgent or find some referral partners through our ConnectAgent?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "7cd3572e-94d2-4a6f-a627-dfb2384171a3"
+        }
+    ]
+}

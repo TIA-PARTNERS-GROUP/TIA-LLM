@@ -1,0 +1,48 @@
+{
+    "session_id": "de4aa7d0-66ae-41ba-9939-656bb61b5e27",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! It looks like we don't have an existing profile for you in our database. You might want to build your vision for your goals, or if you're looking to find some connections or partners, I can help you with that too. What would you like to do? \n\nYou can choose between:\n- **VisionAgent**: To build your business vision.\n- **ConnectAgent**: To find referral partners.",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "a69ebbc6-b06c-4c1c-b085-2f31287b3e52"
+        },
+        {
+            "message": "exit",
+            "response": "If you need assistance in the future, feel free to come back! Have a great day!",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "e9166de8-e904-453f-a24a-0c8daaa80e3e"
+        },
+        {
+            "message": "I would like to connect",
+            "response": "Great! I'm excited to help you with finding meaningful connections for your business. To get started, what products or services do you offer?",
+            "state": {
+                "name": "johusa",
+                "user_id": "6",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "32de1d8d-bc29-4753-ac8a-521e5b774e2f"
+        }
+    ]
+}
