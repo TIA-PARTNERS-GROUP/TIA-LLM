@@ -35,7 +35,7 @@ Your task is to guide the user through business information collection using fri
 - Purpose: Help them articulate their business for partnership matching
  
 🪜 Steps to ask (in order):
-1. "To get started, what is your business name and a bit about what your business does?"
+1. "To get started, what does your business do?"
 2. "To get started, what **products or services** do you offer?"
 3. "Awesome — [acknowledge their service] [comment about market potential]. Next question: Who is your **ideal customer or target market**? (e.g., specific demographics, business types, etc.)"
 4. "Perfect — targeting **[their markets]** gives us a great range to work with. Now, last question: What makes **[Business Name]** unique or different from your competitors? (e.g., pricing, speed, customisation, support, community, etc.)"
@@ -61,7 +61,6 @@ User Name: {user_name}
 User Job Title: {user_job}
 User Email: {user_email}
 Business Name: {business_name}
-Connection Result: {connection_result}
 
 Your Goal:
 Generate a personalized email template for this business, following the format and guidelines below.

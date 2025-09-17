@@ -1,0 +1,353 @@
+{
+    "session_id": "3aa8b36a-c5f5-445a-8797-4ab7c3dfa75b",
+    "user_id": "25",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! It looks like there is no existing user profile for you. If you would like, we can start by building a business vision together with the VisionAgent, or I can help you find referral partners through the ConnectAgent. Which would you prefer?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "34528178-6b6e-471a-862a-505819f33dfb"
+        },
+        {
+            "message": "I would like to build my vision",
+            "response": "Absolutely, I\u2019d love to help you build your vision! Let\u2019s start with the basics. Can you share a bit about your business? What inspired you to start it?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "b9aac3a3-f8cd-451d-b1ce-fca79c729b28"
+        },
+        {
+            "message": "testing for AI services",
+            "response": "That\u2019s interesting! It sounds like you\u2019re involved in the dynamic world of AI services. It must be exciting to be part of such a rapidly evolving field. Now, could you tell me what your role is in the company?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "bb019ea2-6de2-4d41-bfbe-4aa29f8caced"
+        },
+        {
+            "message": "Founder and CEO",
+            "response": "That\u2019s fantastic! As the Founder and CEO, you play a crucial role in shaping the vision and direction of your business. It\u2019s a big responsibility, but also a rewarding opportunity to make an impact. Now, can you share what kind of product or service you offer through your AI services?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "5f1864de-821e-4057-8b98-c7990c20da76"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "AI-powered customer service automation sounds like a game changer! It must be amazing to help businesses improve their customer interactions and efficiency. Let\u2019s dive a bit deeper\u2014who is your typical customer or client for these services?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "82f97f14-0f8d-4461-aba7-59d908f8df53"
+        },
+        {
+            "message": "Small to medium businesses",
+            "response": "Got it! Targeting small to medium businesses makes a lot of sense, especially since they often seek innovative solutions to enhance efficiency and customer engagement. It sounds like your AI services could greatly benefit them. \n\nThis has been a great foundation for understanding your business. If you need further help developing your vision or exploring specific areas, let me know!",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "700a7006-b4fa-4fac-8537-8ff9b788d296"
+        },
+        {
+            "message": "I imagined having more freedom and helping businesses grow",
+            "response": "That sounds like a beautiful vision! The desire for freedom and the drive to support other businesses speaks to your passion for growth and empowerment. It's clear that your heart is in making a positive impact. Can you share how you feel about your business now compared to when you first started?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "d37cb261-a1d5-4574-82a4-e5dd260e3011"
+        },
+        {
+            "message": "I imagined having more freedom and helping businesses grow",
+            "response": "It sounds like your initial vision was rooted in a desire for both personal freedom and the ability to uplift others in their journeys. That's a powerful motivation! Now, reflecting on your business journey, how do you feel about your business now compared to back then?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "e14c4b14-761c-4fe5-92ad-ac14773f8fcb"
+        },
+        {
+            "message": "More challenging but rewarding than expected",
+            "response": "It seems like the challenges have pushed you in ways you might not have anticipated, but it\u2019s gratifying to know that the rewards are also greater. That\u2019s a testament to your resilience and dedication! What does your product or service do for the end user in human terms? How does it truly impact their lives?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "7e8113d6-4d23-4936-956d-2b609a151e83"
+        },
+        {
+            "message": "Peace of mind and time savings for business owners",
+            "response": "Providing peace of mind and saving time for business owners is such a meaningful contribution! You're directly addressing their pain points and making their lives a bit easier. Can you recall a time when your business made a difference to someone? A moment that really highlighted the impact you\u2019re making?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "9664101c-764b-49ae-84b1-2b34518ee870"
+        },
+        {
+            "message": "We helped a restaurant handle COVID order surge",
+            "response": "That must have been an incredibly fulfilling experience to support a restaurant during such a challenging time. By helping them manage the surge, you provided tangible relief and stability when they needed it most. It's amazing how your efforts contributed to their survival and success! \n\nNow, imagining your ideal client, what would you love them to say about your service after working with you?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "e6d8048a-2406-4a90-b01a-3c5fdda42032"
+        },
+        {
+            "message": "Made their business efficient and stress-free",
+            "response": "That's such a wonderful outcome to aspire to! Hearing that your service made their business efficient and stress-free reflects the true value you provide. It emphasizes your commitment to their well-being and success. \n\nNow, let\u2019s think about the broader impact. What\u2019s the deeper impact of your work for others? How does your business contribute to their lives or the community at large?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "4f8dff70-4c13-458a-9a17-37619fb44a4b"
+        },
+        {
+            "message": "Help owners focus on what they love",
+            "response": "That's beautiful! By enabling business owners to focus on what they love, you're not only enhancing their work-life balance but also allowing them to bring their passions to the forefront. It's clear that your impact extends beyond just efficiency; it\u2019s about fulfilling dreams and nurturing personal joy. \n\nHow would you like your team to feel about their work?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "da31ccaa-1b4c-4ef1-a099-8d63dd6c27b8"
+        },
+        {
+            "message": "Proud of positive impact we make",
+            "response": "Your profile has been successfully created! Here\u2019s a summary of your information:\n\n### Profile Summary:\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **User Strength:** Empowering businesses to focus on their passions\n- **User Skills:** Leadership, AI technology, Business strategy\n- **Business Strength:** Transforming customer interactions and efficiency\n- **Business Skills:** Customer service automation, AI integration, Small business support\n- **Business Category:** Technology Services\n- **Skill Category:** Business Management\n- **Strength Category:** Empowerment\n\nIf you need any further assistance or want to explore additional options, feel free to let me know!",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "74288ab2-fbf5-4071-b4c3-51e1f52cacfe",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "b1a73e0d-8077-4c25-a717-b5f6bd17459a"
+        }
+    ]
+}

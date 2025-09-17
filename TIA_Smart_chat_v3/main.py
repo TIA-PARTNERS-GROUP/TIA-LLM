@@ -33,7 +33,45 @@ runner = Runner(
     session_service=session_service
 )
 
-async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, connection_type: str, message: str, session_id=None):
+def handle_chat_type(agent: str, session):
+    """
+    Handles agent switching by sending a transfer message to the runner.
+    Maps short agent names to full names and triggers the transfer.
+    """
+    agent_lower = agent.lower()
+    if agent_lower == "default":
+        print("DEBUG: Chat type is 'Default' – skipping agent switching.")
+        return
+    
+    set_agent = session.state.get("set_agent", "CoordinatorAgent")
+    if set_agent != "CoordinatorAgent":
+        print(f"DEBUG: Current agent is '{set_agent}' – not switching from non-Coordinator.")
+        return
+    
+    if agent_lower == "profiler":
+        full_agent = "ProfilerAgent"
+    elif agent_lower == "connect":
+        full_agent = "ConnectAgent"
+    else:
+        raise ValueError("Invalid agent type. Must be 'Profiler', 'Connect', or 'Default'.")
+    
+    new_message = types.Content(
+        role="user",
+        parts=[types.Part(text=f"Transfer to {full_agent} Agent")]
+    )
+    
+    for event in runner.run(
+        user_id=session.user_id,
+        session_id=session.id,
+        new_message=new_message
+    ):
+        print("DEBUG: Transfer event =", event)
+        if event.is_final_response():
+            event.actions.transfer_to_agent
+            session.state["set_agent"] = event.author
+            print(f"DEBUG: Agent switched to {full_agent}")
+
+async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str, connection_type: str, message: str, session_id=None):
     try:
         if session_id is None:
             # No session_id provided: Create a new session
@@ -45,7 +83,8 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                 "region": region,
                 "lat": lat,
                 "lng": lng,
-                "user_profile": "check"
+                "user_profile": "check",
+                "set_agent": "CoordinatorAgent"
             }
             session = await session_service.create_session(
                 app_name="tia_smart_chat",
@@ -53,16 +92,17 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                 session_id=session_id,
                 state=state
             )
+            session.state
         else:
             # session_id provided: Try to get existing session
-            try:
-                session = await session_service.get_session(
-                    app_name="tia_smart_chat",
-                    user_id=user_id,
-                    session_id=session_id
-                )
-            except Exception:
-                # session_id provided but doesn't exist: Create a new session
+            session = await session_service.get_session(
+                app_name="tia_smart_chat",
+                user_id=user_id,
+                session_id=session_id
+            )
+
+            # session_id provided but doesn't exist: Create a new session
+            if session is None:
                 session_id = str(uuid.uuid4())
                 state = {
                     "name": name,
@@ -71,7 +111,8 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                     "region": region,
                     "lat": lat,
                     "lng": lng,
-                    "user_profile": "check"
+                    "user_profile": "check",
+                    "set_agent": "CoordinatorAgent"
                 }
                 session = await session_service.create_session(
                     app_name="tia_smart_chat",
@@ -79,6 +120,8 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                     session_id=session_id,
                     state=state
                 )
+        
+        handle_chat_type(chat_type, session)
 
         # Prepare message
         new_message = types.Content(
@@ -121,11 +164,12 @@ async def chat_endpoint(requests: Request):
         region = data.get("region", "au")
         lat = data.get("lat", 0.0)
         lng = data.get("lng", 0.0)
+        chat_type = data.get("chat_type", "Default")
         connection_type = data.get("connection_type")
         session_id = data.get("session_id", None)
         save_conversation = data.get("save_conversation", False)
 
-        session, response, author = await run_chat(user_id, name, region, lat, lng, connection_type, message, session_id)
+        session, response, author = await run_chat(user_id, name, region, lat, lng, chat_type, connection_type, message, session_id)
 
         result = {
             "response": response,
@@ -241,48 +285,3 @@ async def test_eval(requests: Request):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-# CLI for testing
-import asyncio
-if __name__ == "__main__":
-    user_id = input("User ID: ")
-    name = input("Name: ")
-    session_id = None
-    region = "au" #input("Region: ")
-    lat = 27.4705#float(input("Latitude: "))
-    lng = 153.0245#float(input("Longitude: "))
-
-    while True:
-        message = input("Message (or 'exit' to quit): ")
-        if message.lower() in ['exit', 'quit']:
-            break
-
-        session, response_text = asyncio.run(run_chat(user_id, name, region, lat, lng, message, session_id))
-        print(f"\n\nResponse: {response_text}\nSession ID: {session.id}\n\n")
-        session_id = session.id
-        
-        print("DEBUG: Session state:", session.state)
-
-# @app.post("/chat/tia-chat")
-# async def chat_endpoint(requests: Request):
-#     data = await requests.json()
-#     try:
-#         print("DEBUG: Received data =", data)
-#         user_id = str((data.get("user_id")))
-#         name = data.get("name")
-#         message = data.get("message")
-#         region = data.get("region", "au")
-#         lat = data.get("lat", 0.0)
-#         lng = data.get("lng", 0.0)
-#         session_id = data.get("session_id", None)
-
-#         session, response = await run_chat(user_id, name, region, lat, lng, message, session_id)
-
-#         print("DEBUG: Session state after chat:", session.state)
-#         return {
-#             "response": response,
-#             "session_id": session.id,
-#             "state": dict(session.state)
-#         }
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))

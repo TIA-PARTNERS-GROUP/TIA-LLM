@@ -1,0 +1,436 @@
+{
+    "session_id": "e29edcf7-9c4e-4111-83a5-c7ccebd9c636",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! It looks like we don't have an existing user profile for you right now. But I do have your information on file, like your name, business name, and contact details. Would you like to build a business vision with the VisionAgent, or perhaps find referral partners through the ConnectAgent?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check",
+                "current_agent": "CoordinatorAgent"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "91fc3b5f-76c9-45fc-81b4-312b82bf1145"
+        },
+        {
+            "message": "testing for AI services",
+            "response": "It seems you're testing AI services today! If you're looking to build some vision for your business or find potential connections, I can assist you with that. Would you like to work with the VisionAgent to create a business vision or connect with potential partners through the ConnectAgent?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "0270c6dd-90c8-49be-b324-e1af6ff3294b"
+        },
+        {
+            "message": "I want to create my vision",
+            "response": "Absolutely! I\u2019d love to help you build your vision. Let\u2019s start with the basics\u2014can you share a bit about your business? What drives you and what is it all about?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "64ed42db-539e-4c5b-944c-89a5fc278b2a"
+        },
+        {
+            "message": "testing for AI services",
+            "response": "Thanks for sharing that! It sounds like you\u2019re involved in the exciting and evolving field of AI services. Now, could you tell me more about your role in the company? What do you do?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "604aa792-d437-48fa-b433-83d04d94651d"
+        },
+        {
+            "message": "Founder and CEO",
+            "response": "That's fantastic! Being the Founder and CEO means you're at the helm, guiding the vision and direction of your AI services. It sounds like you have a significant impact on the company\u2019s journey. Now, could you share what kind of product or service you offer? I'm curious to know what solutions your AI services provide!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "a5145b40-ede8-4d6b-99af-d7c2c31316ce"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "AI-powered customer service automation sounds like a game-changer! It\u2019s great that you\u2019re helping businesses enhance their customer interactions through technology. Now, let\u2019s dive into who you typically serve. Who is your typical customer or client?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "919fc21e-8c2c-4b94-8ef6-1be83b6ad1a6"
+        },
+        {
+            "message": "Small to medium businesses",
+            "response": "Targeting small to medium-sized businesses is a smart move! Those businesses often need efficient solutions to enhance their customer service without overwhelming costs. It sounds like your services can really make a difference for them!\n\nThis gives us a strong foundation for understanding your brand's essence. If you'd like to explore further or have any specific aspects in mind, let me know! Would you like to continue to the next phase?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "cb790f86-d8a5-44e9-83d2-0a0c897a88f5"
+        },
+        {
+            "message": "I imagined having more freedom and helping businesses grow",
+            "response": "That sounds like a really fulfilling vision! Freedom often comes with the opportunity to make a significant impact on others, especially when you're helping businesses grow. It must have felt exciting to think about the potential you could unleash. What inspired you to want that freedom and to help others in that way?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "9b14e2e9-9cf4-48d3-bd74-6e481ff597a2"
+        },
+        {
+            "message": "I imagined having more freedom and helping businesses grow",
+            "response": "That's a beautiful vision! The desire for freedom coupled with the intent to help others grow speaks to a deep sense of purpose. It's wonderful to think about how your journey started with that aspiration in mind. Reflecting on how far you\u2019ve come, how do you feel about your business now compared to back then?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "3ef127c3-149e-4935-846b-0178590491e1"
+        },
+        {
+            "message": "More challenging but rewarding than expected",
+            "response": "It sounds like you've encountered quite a journey! The challenges often come with incredible learning experiences, and it's amazing that you find it rewarding despite those hurdles. Those ups and downs can really shape the way we connect with our work and our clients. \n\nWith that in mind, what does your product or service do for the end user in human terms? How does it improve their lives or solve their problems?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "12df7527-7be1-4703-aa28-94b72f762fac"
+        },
+        {
+            "message": "Peace of mind and time savings for business owners",
+            "response": "Providing peace of mind and saving time for business owners is such a valuable service! It highlights your role in alleviating stress and allowing them to focus on what they love most about their business. That connection is truly impactful. \n\nCan you recall a time when your business made a difference to someone? I'd love to hear that story!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "f748e0a1-821f-4f37-a293-e53ff95f258d"
+        },
+        {
+            "message": "We helped a restaurant handle COVID order surge",
+            "response": "That\u2019s an incredible example of how your business stepped up during a challenging time! Helping a restaurant navigate the surge of orders during COVID shows not only your ability to adapt but also your commitment to supporting others when they needed it most. It must have been a rewarding experience to see the direct impact of your work.\n\nNow, imagining your ideal client, what would you love them to say about your service after working with you?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "c2b6daa3-2f32-4e73-9fca-f0f7172e2d86"
+        },
+        {
+            "message": "Made their business efficient and stress-free",
+            "response": "That\u2019s a wonderful affirmation! Knowing that your work leads to efficiency and a stress-free experience for your clients speaks volumes about the value you provide. It\u2019s such a relief when business owners can finally breathe a little easier, which is exactly what you aim to achieve.\n\nNow, let\u2019s expand on that. What do you see as the deeper impact of your work for others? How does it ripple out into their lives and communities?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "bbd93635-8618-41d8-8539-2d82fe46122e"
+        },
+        {
+            "message": "Help owners focus on what they love",
+            "response": "That's a powerful impact! By helping owners focus on what they love, you\u2019re not only enabling them to thrive in their business but also fostering their passions, creativity, and overall well-being. The positive ripple effects from that can extend to their employees, customers, and communities. \n\nAs we wrap up this reflection phase, I\u2019d love to know: how would you like your team to feel about their work? What kind of atmosphere or emotions do you want to cultivate within your team?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "e6d4a489-c1bb-48d7-90d6-d095ee9f8b97"
+        },
+        {
+            "message": "Proud of positive impact we make",
+            "response": "Your profile has been successfully created! Here\u2019s a summary of the information we've gathered:\n\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **User Strength:** Empowering small businesses to thrive\n- **User Skills:** Leadership, Strategic planning, AI implementation\n- **Business Strength:** Enhancing efficiency and reducing stress for clients\n- **Business Skills:** AI solutions, Customer service automation, Problem-solving\n- **Business Category:** Technology and services\n- **Skill Category:** Business and technology\n- **Strength Category:** Empowerment\n\nIf there's anything else you would like to add or modify, or if you need further assistance, feel free to let me know!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "41d9ad0b-033f-47d6-8d0d-a992ff2a65e6"
+        },
+        {
+            "message": "hello",
+            "response": "Hello again, Joshua! It seems we already have your user profile on file. Here's a quick overview of your information:\n\n- **Name**: Joshua Wlodarczyk\n- **Business Name**: TIA TEST\n- **Contact Email**: joshuawlod2003@gmail.com\n- **Contact Phone**: 0423158014\n- **Business Type**: AI-powered customer service automation\n- **Job Title**: Founder and CEO\n- **Strength**: Empowering small businesses to thrive\n- **Skills**: Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Strength**: Enhancing efficiency and reducing stress for clients\n\nWould you like to explore anything specific today, such as vision building or making connections with partners?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "collected",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "AI solutions, Customer service automation, Problem-solving",
+                    "Business_Catergory": "Technology and services",
+                    "Skill_Category": "Business and technology",
+                    "Strength_Category": "Empowerment"
+                },
+                "VisionAgent": {
+                    "session_id": "b03865d9-b0da-4fc6-9d17-c6e520f97c0c",
+                    "chat_state": "exit",
+                    "current_phase": 1,
+                    "total_phases": 1
+                },
+                "User_History": "I have successfully retrieved your recent conversation history, which provides insights into your journey as a founder and CEO focused on delivering AI-powered customer service automation to small and medium businesses. Here\u2019s a summary of key points:\n\n- You aim to empower businesses, helping them achieve peace of mind and time savings, allowing owners to focus on their core passions.\n- Your services were particularly impactful during the COVID pandemic, aiding a local restaurant to manage an order surge effectively.\n- Your vision involves creating a team culture where team members feel proud of the positive impact they contribute to clients and the community.\n- You have crafted a strong \"Why Statement\" that encapsulates your mission: *\"We exist to empower small and medium businesses to thrive with peace of mind and freedom, by transforming customer service through AI-driven solutions that ease the stress of daily operations.\"*\n\nAdditionally, various taglines, slogans, and messaging elements were proposed to strengthen your brand.\n\nIf you need any more assistance or specific details, feel free to ask! \n\n<SILENT_AGENT>"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "4de263a0-3aad-464c-9058-a983c070d18d"
+        }
+    ]
+}

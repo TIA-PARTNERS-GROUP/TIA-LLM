@@ -1,0 +1,21 @@
+{
+    "session_id": "097a78de-98d0-46e1-b489-e63ff029edca",
+    "user_id": "25",
+    "conversations": [
+        {
+            "message": "asas",
+            "response": "It looks like we don't have an existing profile for you. However, I see the following information:\n\n- **User Name:** ben james\n- **Contact Email:** joshua@gmail.com\n- **Contact Phone Number:** 0412345678\n\nWould you like to build a business vision with the VisionAgent, or explore referral partners with the ConnectAgent? You can choose either option!",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "8f3f8324-356c-4f92-8453-3bdc9aeb39bc"
+        }
+    ]
+}

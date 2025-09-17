@@ -37,29 +37,35 @@ def store_user_profile(tool_context: ToolContext):
     """Store the generated user profile"""
     try:
         state = tool_context.state
-        # JOSHUA TODO - Find a way to delete User_History from the state
-        #del state["User_History"]
         user_id = state.get("user_id")
-        profile = state.get("Generated_Profile")
-
-        # --- DUMMY DATA FOR TESTING ---
-        # if not profile.get("User_Strength"):
-        #     profile["User_Strength"] = "Leadership, Problem Solving"
-        # if not profile.get("User_skills"):
-        #     profile["User_skills"] = "Python, Communication, Project Management"
-        # if not profile.get("Business_Strength"):
-        #     profile["Business_Strength"] = "Innovation, Customer Focus"
-        # if not profile.get("Business_Type"):
-        #     profile["Business_Type"] = "AI Consulting"
-        # --- END DUMMY DATA ---
+        profile = state.get("Generated_Profile", {})
 
         user_role = profile.get("UserJob")
-        user_strengths = [s.strip() for s in profile.get("User_Strength").split(",") if s.strip()]
-        user_skills = [s.strip() for s in profile.get("User_skills").split(",") if s.strip()]
-        business_strengths = [s.strip() for s in profile.get("Business_Strength").split(",") if s.strip()]
+        user_strengths = [s.strip() for s in profile.get("User_Strength", "").split(",") if s.strip()]
+        user_skills = [s.strip() for s in profile.get("User_skills", "").split(",") if s.strip()]
+        business_strengths = [s.strip() for s in profile.get("Business_Strength", "").split(",") if s.strip()]
+        business_skills = [s.strip() for s in profile.get("Business_Skills", "").split(",") if s.strip()]
         business_type = profile.get("Business_Type")
-        model_update_user_details(user_id, user_role, user_strengths, user_skills, business_strengths, business_type)
+        business_category = profile.get("Business_Category")
+        skill_category = profile.get("Skill_Category")
+        strength_category = profile.get("Strength_Category")
 
+        print("DEBUG: RUNNING model_update_user_details")
+        if not model_update_user_details(
+            user_id,
+            user_role,
+            user_strengths,
+            user_skills,
+            business_strengths,
+            business_skills,
+            business_type,
+            business_category,
+            skill_category,
+            strength_category
+        ):
+            raise Exception("Failed to update user profile in database.")
+
+        # Return to cooridantor to return to the starting agent
         tool_context.actions.transfer_to_agent = "CoordinatorAgent"
         return {"status": "success", "profile": profile}
     except Exception as e:

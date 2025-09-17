@@ -65,20 +65,31 @@ def search_businesses_in_area(business_type: str, limit: int, region: str, zoom:
 
 def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     """
-    Fallback: Uses LLM to turn attributes into a business query, then searches RapidAPI.
+    Fallback: Generates a query based on connection_type-specific attributes, then searches RapidAPI.
     """
-    #business_type = attributes.get("business_type", "") # STILL NEED TO TEST ONCE AGENT IS HOOKED UP TO SITE
-
+    connection_type = attributes.get("connection_type", "complementary")
+    profile = attributes.get("profile", {})
     region = attributes.get("region", "au")
     lat = attributes.get("lat", 0.0)
     lng = attributes.get("lng", 0.0)
     limit = 5
     zoom = 10
 
+    # Select attributes based on connection_type (using required fields from validate_connection_options)
+    attribute_mappings = {
+        "complementary": ["Business_Type", "Business_Category", "Business_Name"],
+        "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
+        "mastermind": ["User_Strength"],
+        "intelligent": ["User_skills", "Business_Type", "Business_Name"],
+    }
+    
+    required_fields = attribute_mappings.get(connection_type, ["Business_Type"])
+    selected_attributes = {k: v for k, v in profile.items() if k in required_fields}
+    
     # Compose a prompt for the LLM to generate a business query string
     message = [
         {"role": "system", "content": "You are an assistant that generates concise business search queries for local business data APIs."},
-        {"role": "user", "content": f"Attributes: {json.dumps(attributes.get("profile"))}\nTurn these into a business search query string for finding relevant businesses."}
+        {"role": "user", "content": f"Connection Type: {connection_type}\nSelected Attributes: {json.dumps(selected_attributes)}\nGenerate a 1-5 word search query that best fits this for finding relevant businesses."}
     ]
     query = completion(
         model=CHAT_MODEL,
@@ -86,90 +97,108 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
         api_key=OPENAI_API_KEY
     ).choices[0].message.content.strip()
 
-    print(f"DEBUG: Generated query: {query}")
+    print(f"DEBUG: Generated query for {connection_type}: {query}")
 
     try:
         results = search_businesses_in_area(query, limit, region, zoom, lat, lng)
         return results
     except Exception as e:
-        print(f"Error in recommended_WEB_connection: {e}")
+        print(f"Error in recommended_WEB_connection for {connection_type}: {e}")
         return {"error": str(e)}
 
 def recommended_GNN_connection(attributes: Dict[str, Any]):
     """
-    Connects to the complementary partners API to retrieve recommended businesses.
-    Expects attributes to contain user_id.
+    Connects to different APIs based on connection_type to retrieve recommended businesses.
+    Expects attributes to contain user_id and connection_type.
     """
     user_id = attributes.get("user_id")
+    connection_type = attributes.get("connection_type", "complementary")
     if not user_id:
         print("Error: user_id not found in attributes")
         return None
 
-    # API base URL
-    api_base_url = os.getenv("GNN_API_BASE_URL")
-    url = f"{api_base_url}/user/{user_id}/complementary_partners"
-
+    # API base URL (can be environment variable)
+    api_base_url = os.getenv("GNN_API_BASE_URL", "http://localhost:8000/api/v1")
+    
+    # Different endpoints for each connection type
+    endpoints = {
+        "complementary": f"{api_base_url}/user/{user_id}/complementary_partners",
+        "alliance": f"{api_base_url}/user/{user_id}/alliance_partners",
+        "mastermind": f"{api_base_url}/user/{user_id}/mastermind_partners",
+        "intelligent": f"{api_base_url}/user/{user_id}/intelligent_partners",
+    }
+    
+    url = endpoints.get(connection_type)
+    
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        return response.json()  # Return the list of recommendations
+        return response.json()
     except Exception as e:
-        print(f"Error connecting to complementary partners API: {e}")
+        print(f"Error connecting to {connection_type} partners API: {e}")
         return None
     
 def generate_email_templates(businesses, user_name, user_job, user_email, business_name):
     """Generate email templates for a list of businesses."""
     email_templates = []
-    # TODO: Implement connection_result
+    
     for business in businesses:
-        name = business.get("name")
+        name = business.get("name", "")
         email = business.get("emails_and_contacts", {}).get("emails", [""])[0] if business.get("emails_and_contacts", {}).get("emails") else ""
-        address = business.get("full_address")
-        website = business.get("website")
-        phone = business.get("phone_number")
-        rating = business.get("rating")
-        review_count = business.get("review_count")
-        business_type = business.get("type")
-        opening_status = business.get("opening_status")
-        about_summary = business.get("about", {}).get("summary") if business.get("about") else ""
+        address = business.get("full_address", "")
+        website = business.get("website", "")
+        phone = business.get("phone_number", "")
+        rating = business.get("rating", "")
+        review_count = business.get("review_count", "")
+        business_type = business.get("type", "")
+        opening_status = business.get("opening_status", "")
+        about_summary = business.get("about", {}).get("summary", "")
 
-        
-        # Prompt for generating a personalized email template
-        email_prompt = CONNECT_GENERATION_PROMPT.format(
-            name=name,
-            email=email,
-            address=address,
-            website=website,
-            phone=phone,
-            rating=rating,
-            review_count=review_count,
-            business_type=business_type,
-            opening_status=opening_status,
-            about_summary=about_summary,
-            user_name=user_name,
-            user_job=user_job,
-            user_email=user_email,
-            business_name=business_name
-        )
-        
-        input_messages = [
-            {"role": "system", "content": "You are an assistant that generates professional email templates for business outreach."},
-            {"role": "user", "content": email_prompt}
-        ]
-        email_output = completion(
-            model=CHAT_MODEL,
-            messages=input_messages,
-            api_key=OPENAI_API_KEY
-        ).choices[0].message.content.strip()
-        
-        email_templates.append({
-            "business_name": name,
-            "email": email,
-            "phone": phone,
-            "rating": rating,
-            "review_count": review_count,
-            "business_type": business_type,
-            "template": email_output
-        })
+        try:
+            email_prompt = CONNECT_GENERATION_PROMPT.format(
+                name=name,
+                email=email,
+                address=address,
+                website=website,
+                phone=phone,
+                rating=rating,
+                review_count=review_count,
+                business_type=business_type,
+                opening_status=opening_status,
+                about_summary=about_summary,
+                user_name=user_name,
+                user_job=user_job,
+                user_email=user_email,
+                business_name=business_name
+            )
+            
+            input_messages = [
+                {"role": "system", "content": "You are an assistant that generates professional email templates for business outreach."},
+                {"role": "user", "content": email_prompt}
+            ]
+            email_output = completion(
+                model=CHAT_MODEL,
+                messages=input_messages,
+                api_key=OPENAI_API_KEY
+            ).choices[0].message.content.strip()
+            
+            email_output += "\n<GENERATION_BREAK>"
+            
+            email_templates.append({
+                "business_name": name,
+                "email": email,
+                "phone": phone,
+                "rating": rating,
+                "review_count": review_count,
+                "business_type": business_type,
+                "template": email_output
+            })
+        except Exception as e:
+            print(f"Error generating email for {name}: {e}")
+            email_templates.append({
+                "business_name": name,
+                "email": email,
+                "template": f"Error: {str(e)}\n<GENERATION_BREAK>"
+            })
     
     return email_templates

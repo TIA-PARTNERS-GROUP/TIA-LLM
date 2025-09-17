@@ -1,0 +1,51 @@
+{
+    "session_id": "b4516700-2764-4d8e-acad-42a2ad13badc",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello, Joshua Wlodarczyk! I found your existing profile, here's a quick overview:\n\n- **Business Name:** TIA TEST\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **Your Strength:** Empowering small businesses to thrive\n- **Your Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Strength:** Enhancing efficiency and reducing stress for clients\n- **Business Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Category:** Technology and services\n\nSince you have an existing profile, would you like to explore more about building your business vision with the **VisionAgent** or find referral partners through the **ConnectAgent**?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check",
+                "set_agent": "CoordinatorAgent"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "cad7fba7-1c2c-42f9-a506-90efe0cf995e"
+        },
+        {
+            "message": "I would like to make a connection",
+            "response": "Here are the recommended connections for your AI-powered customer service automation business:\n\n1. **Industrial Automation Australia**\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Phone:** +61733483505\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n\n2. **Customer Service**\n   - **Email:** info@wiseupenergy.com\n   - **Phone:** +61736300483\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n\n3. **Ai-Menu Systems**\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n\nYou can reach out to these businesses to explore potential referral partnerships. Would you like help with drafting an email to any of them?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "generated",
+                "set_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "310f0153-5513-4527-8c50-10581a4db957"
+        }
+    ]
+}
