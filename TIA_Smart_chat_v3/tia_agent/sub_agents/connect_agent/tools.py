@@ -2,6 +2,7 @@ from typing import Dict, Any
 from google.adk.tools.tool_context import ToolContext
 from ..DynamicChatAssistant import DynamicChatAssistant
 from .utils import recommended_GNN_connection, recommended_WEB_connection, generate_email_templates, extract_business_type
+from TIA_Smart_chat_v3.tia_agent.utils import validate_connection_options
 from .prompts import (
     CONNECT_RULE_PROMPT,
     CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
@@ -29,11 +30,10 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
 
     return _user_sessions[session_id]
 
-# TODO: FACTOR IN DIFFERENT CONNECTION TYPES
 def recommended_connection(tool_context: ToolContext):
     try:
         state = tool_context.state
-        required_keys = ["user_id", "region", "lat", "lng", "Generated_Profile"]
+        required_keys = ["user_id", "region", "lat", "lng", "Generated_Profile", "connection_type"]
         missing = [k for k in required_keys if state.get(k) is None]
         if missing:
             return {"status": "error", "message": f"Missing required attributes: {', '.join(missing)}"}
@@ -45,14 +45,21 @@ def recommended_connection(tool_context: ToolContext):
             "lat": state.get("lat"),
             "lng": state.get("lng"),
             "profile": state.get("Generated_Profile"),
+            "connection_type": state.get("connection_type"),  # Add this
         }
+        
+        # Optional: Validate profile before proceeding
+        is_valid, msg = validate_connection_options(attributes["connection_type"], attributes["profile"])
+        if not is_valid:
+            return {"status": "error", "message": msg}
+        
         GNN_CALL = recommended_GNN_connection(attributes)
         if GNN_CALL is not None:
             # Store the result in state
             if "ConnectAgent" not in state:
                 state["ConnectAgent"] = {}
             state["ConnectAgent"]["connection_result"] = GNN_CALL
-            return GNN_CALL
+            return {"status": "success", "connection_result": GNN_CALL}
 
         WEB_CALL = recommended_WEB_connection(attributes)
         
@@ -61,7 +68,7 @@ def recommended_connection(tool_context: ToolContext):
             state["ConnectAgent"] = {}
         state["ConnectAgent"]["connection_result"] = WEB_CALL
         
-        return WEB_CALL
+        return {"status": "success", "connection_result": WEB_CALL}
     
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
@@ -84,21 +91,28 @@ def generate_email(tool_context: ToolContext):
             return {"status": "error", "message": "No business data found in connection_result."}
         
         # Get user details for email personalization
-        user_name = state.get("name")
-        user_job = state.get("job_title")
-        user_email = state.get("email")
-        business_name = state.get("business_name")
-
+        generated_profile = state.get("Generated_Profile", {})
+        user_name = generated_profile.get("UserName")
+        user_job = generated_profile.get("UserJob")
+        user_email = generated_profile.get("Contact_Email")
+        business_name = generated_profile.get("Business_Name")
         # Generate email templates using the new function
+        print(f"DEBUG: User details - Name: {user_name}, Job: {user_job}, Email: {user_email}, Business: {business_name}")
+        print(f"DEBUG: Number of businesses to generate emails for: {len(businesses)}")
+        print(f"DEBUG: Connection results: {connection_result}")
+        print("DEBUG: Generating email templates...")
         email_templates = generate_email_templates(businesses, user_name, user_job, user_email, business_name)
+        if not email_templates:
+            return {"status": "error", "message": "Failed to generate email templates."}
         
-        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+        # tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+        state["set_agent"] = "CoordinatorAgent"
         return {"status": "success", "email_templates": email_templates}
     
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
 
-def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
+def start_new_conversation(tool_context: ToolContext):
     """Start a new SmartConnect session"""
     try:
         state = tool_context.state

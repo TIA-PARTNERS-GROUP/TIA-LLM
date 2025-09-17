@@ -1,9 +1,10 @@
 from google.adk.tools.tool_context import ToolContext
-from ..DynamicChatAssistant import DynamicChatAssistant, generate_response
+from ..DynamicChatAssistant import DynamicChatAssistant
 from typing import Dict, Any
 import uuid
 from datetime import datetime
 from dotenv import load_dotenv
+from .utils import generate_content_blog, generate_content_messaging, generate_content_why_statement
 
 from .prompts import (
     DYNAMIC_CHAT_RULE_PROMPT,
@@ -11,14 +12,10 @@ from .prompts import (
     TIA_VISION_CHAT_2_REFLECTION_PROMPT,
     TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
     TIA_VISION_CHAT_4_STRATEGY_PROMPT,
-    TIA_VISION_BLOG_1_WHY_STATEMENT_PROMPT,
-    TIA_VISION_BLOG_2_MESSAGING_PROMPT,
-    TIA_VISION_BLOG_3_CONTENT_PROMPT
 )
 
 load_dotenv()
 
-BLOG_AMOUNT = 1
 CHAT_PROMPTS = [
     TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
     TIA_VISION_CHAT_2_REFLECTION_PROMPT, 
@@ -44,38 +41,6 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
         _user_sessions[session_id] = assistant
 
     return _user_sessions[session_id]
-
-def _generate_content_why_statement(collected_context):
-    """Generate Why Statement using collected responses"""
-    why_prompt = TIA_VISION_BLOG_1_WHY_STATEMENT_PROMPT.format(collected_context=collected_context)
-    input_messages = [
-        {"role": "system", "content": why_prompt},
-        {"role": "user", "content": "Please generate my Why Statement based on the context provided."}
-    ]
-    return generate_response(input_messages)
-
-def _generate_content_messaging(collected_context):
-    """Generate messaging (taglines, slogans, bios) using collected responses"""
-    messaging_prompt = TIA_VISION_BLOG_2_MESSAGING_PROMPT.format(collected_context=collected_context)
-    input_messages = [
-        {"role": "system", "content": messaging_prompt},
-        {"role": "user", "content": "Please generate messaging elements including taglines, slogans, and bio based on the context."}
-    ]
-    return generate_response(input_messages)
-
-def _generate_content_blog(collected_context, blog_amount=BLOG_AMOUNT):
-    """Generate blog content and social captions using collected responses"""
-    all_content = []
-    for i in range(blog_amount):
-        print(f"[Generating content batch {i+1}/{blog_amount}]")
-        content_prompt = TIA_VISION_BLOG_3_CONTENT_PROMPT.format(collected_context=collected_context)
-        input_messages = [
-            {"role": "system", "content": content_prompt},
-            {"role": "user", "content": f"Please generate blog content batch {i+1} with social media captions based on the context."}
-        ]
-        assistant_response = generate_response(input_messages)
-        all_content.append(f"\n{'='*20} CONTENT BATCH {i+1} {'='*20}\n{assistant_response}")
-    return "\n".join(all_content)
 
 def generate_blog(tool_context: ToolContext) -> dict:
     """
@@ -111,17 +76,17 @@ def generate_blog(tool_context: ToolContext) -> dict:
 
         results = []
         try:
-            why_statement = _generate_content_why_statement(collected_context)
+            why_statement = generate_content_why_statement(collected_context)
             results.append("WHY STATEMENT:\n" + "="*50 + "\n" + why_statement + "\n")
         except Exception as e:
             results.append(f"Error generating Why Statement: {e}\n")
         try:
-            messaging = _generate_content_messaging(collected_context)
+            messaging = generate_content_messaging(collected_context)
             results.append("MESSAGING:\n" + "="*50 + "\n" + messaging + "\n")
         except Exception as e:
             results.append(f"Error generating Messaging: {e}\n")
         try:
-            content = _generate_content_blog(collected_context)
+            content = generate_content_blog(collected_context)
             results.append("CONTENT:\n" + "="*50 + "\n" + content + "\n")
         except Exception as e:
             results.append(f"Error generating Content: {e}\n")
@@ -131,7 +96,11 @@ def generate_blog(tool_context: ToolContext) -> dict:
 
         # Clear the session
         _user_sessions[session_id] = None
-        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+
+        # TODO: SAVE BLOG TO "POST /api/users/addpost"
+
+        # tool_context.actions.transfer_to_agent = "ProfilerAgent"
+        state["set_agent"] = "ProfilerAgent"
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             blog_filename = f"blog_output_{timestamp}.txt"

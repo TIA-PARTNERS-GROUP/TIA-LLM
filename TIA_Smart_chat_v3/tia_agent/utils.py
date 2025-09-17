@@ -72,6 +72,17 @@ def get_business_type(cursor, user_id):
     business_type_result = cursor.fetchone()
     return business_type_result[0] if business_type_result else None
 
+def get_business_category(cursor, user_id):
+    """Get business category."""
+    cursor.execute("""
+        SELECT bc.name FROM business_categories bc
+        JOIN businesses b ON bc.id = b.business_category_id
+        WHERE b.operator_user_id = %s
+    """, (user_id,))
+    business_category_result = cursor.fetchone()
+    return business_category_result[0] if business_category_result else None
+
+
 def get_user_job(cursor, user_id):
     """Get user job."""
     cursor.execute("""
@@ -107,12 +118,7 @@ def load_user_profile(user_id: int):
             conn.close()
             return {"status": "success", "profile_exists": False, "message": "User not found in database."}
 
-        first_name, last_name, contact_email, contact_phone_no = user_details
-
-        #=================TESTING=================
-        contact_email = "joshua@gmail.com"
-        contact_phone_no = "0412345678"
-        #=========================================
+        first_name, last_name, _, _ = user_details
 
         # Get business details
         # BUG
@@ -136,9 +142,12 @@ def load_user_profile(user_id: int):
         print(f"DEBUG: Business strengths retrieved: {business_strengths_str}")
 
         # Get business type
-        # BUG
         business_type = get_business_type(cursor, user_id)
         print(f"DEBUG: Business type retrieved: {business_type}")
+
+        # Get business category
+        business_category = get_business_category(cursor, user_id)
+        print(f"DEBUG: Business category retrieved: {business_category}")
 
         # Get user job
         user_job = get_user_job(cursor, user_id)
@@ -154,19 +163,20 @@ def load_user_profile(user_id: int):
 
         profile = {
             "UserName": f"{first_name} {last_name}",
-            "Contact_Email": contact_email,
-            "Contact_Phone_No": contact_phone_no
+            "Business_Name": business_name,
+            "Contact_Email": business_email,
+            "Contact_Phone_No": business_phone
         }
         if profile_exists:
             # Construct and set the profile
             profile.update({
-                "Business_Name": business_name,
                 "Business_Type": business_type,
                 "UserJob": user_job,
                 "User_Strength": user_strengths_str,
                 "User_skills": user_skills_str,
                 "Business_Strength": business_strengths_str,
                 "Business_Skills": business_skills_str,
+                "Business_Category": business_category,
             })
             print(f"DEBUG: Profile data: {profile}")
             return {"status": "success", "profile_exists": True, "profile": profile}
@@ -188,10 +198,10 @@ def validate_connection_options(connection_type: str, profile: dict = None):
     
     # Define required fields for each connection type based on data requirements
     requirements = {
-        "intelligent": ["User_skills", "User_Strength", "Business_Type", "Business_Name"],
-        "complementary": ["Business_Type", "Business_Name"],
-        "alliance": ["User_skills", "Business_Skills"],
-        "mastermind": ["User_Strength", "Business_Strength"]
+        "intelligent": ["User_skills", "Business_Type", "Business_Name"],
+        "complementary": ["Business_Type", "Business_Category", "Business_Name"],
+        "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
+        "mastermind": ["User_Strength"],
     }
     
     required_fields = requirements.get(connection_type, [])

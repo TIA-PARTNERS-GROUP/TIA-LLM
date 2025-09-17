@@ -1,0 +1,51 @@
+{
+    "session_id": "7ce8c89b-c48a-4b89-986c-027ba0a2df6e",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello Joshua Wlodarczyk! \n\nI found your existing profile with the following information:\n\n- **Business Name**: TIA TEST\n- **Contact Email**: joshuawlod2003@gmail.com\n- **Contact Phone No**: 0423158014\n- **Business Type**: AI-powered customer service automation\n- **Job Title**: Founder and CEO\n- **User Strength**: Empowering small businesses to thrive\n- **User Skills**: Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Strength**: Enhancing efficiency and reducing stress for clients\n- **Business Skills**: Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Category**: Technology and services\n\nWould you like to connect with potential partners or build on your business vision? I can help with either! Please let me know your preference: **ConnectAgent** for finding connections or **VisionAgent** for building your vision.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check",
+                "current_agent": "CoordinatorAgent"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "c703203b-e5ed-4f55-8272-019398d17b7d"
+        },
+        {
+            "message": "connection agent",
+            "response": "It seems there was an error while generating the email templates. However, I have identified potential partners for your business focused on AI-powered customer service automation. Here are the connections:\n\n1. **Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd**  \n   - Email: sales@automated.net.au, reply@automated.net.au  \n   - Phone: +61418139559  \n   - Website: [automated.net.au](http://www.automated.net.au)  \n   - Address: Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006  \n   - [View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7)  \n\n2. **Industrial Automation Australia**  \n   - Email: vaughn@iaarobotics.com.au  \n   - Phone: +61733483505  \n   - Website: [iaarobotics.com.au](https://www.iaarobotics.com.au)  \n   - Address: 15 Lavarack Ave, Eagle Farm QLD 4009  \n   - [View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)  \n\n3. **Ai-Menu Systems**  \n   - Phone: +611300246368  \n   - Website: [ai-menu.com](http://ai-menu.com)  \n   - Address: 33/50 Sanders St, Upper Mount Gravatt QLD 4122  \n   - [View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)  \n\nWould you like to reach out to any of these businesses, or do you need assistance with anything else?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "generated",
+                "current_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "63c2ba76-ab15-4473-aae5-8587bc7c44c0"
+        }
+    ]
+}

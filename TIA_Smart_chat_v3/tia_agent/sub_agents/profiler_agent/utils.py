@@ -61,10 +61,10 @@ def ensure_business_phase_and_role(cursor, user_role: str):
         cursor.execute("SELECT id FROM business_phases WHERE name=%s", ("TIA Agent Chatting",))
         result = cursor.fetchone()
         if result:
-            chat_test_phase_id = result[0]
+            business_phase_id = result[0]
         else:
             cursor.execute("INSERT INTO business_phases (name) VALUES (%s)", (business_phase_name,))
-            chat_test_phase_id = cursor.lastrowid
+            business_phase_id = cursor.lastrowid
         
         # Ensure business role exists
         cursor.execute("SELECT id FROM business_roles WHERE name=%s", (user_role,))
@@ -75,7 +75,7 @@ def ensure_business_phase_and_role(cursor, user_role: str):
             cursor.execute("INSERT INTO business_roles (name) VALUES (%s)", (user_role,))
             business_role_id = cursor.lastrowid
         
-        return chat_test_phase_id, business_role_id
+        return business_phase_id, business_role_id
     except Exception as e:
         print("ERROR in ensure_business_phase_and_role:", e)
         raise e
@@ -128,7 +128,7 @@ def insert_business_skills(cursor, user_id: int, business_skills: list, skill_ca
         raise e
     return skill_ids
 
-def insert_business_strengths(cursor, user_id: int, business_strengths: list, business_role_id: int, chat_test_phase_id: int):
+def insert_business_strengths(cursor, user_id: int, business_strengths: list, business_role_id: int, business_phase_id: int):
     """Insert business strengths. Returns list of business_strength_ids."""
     business_strength_ids = []
     try:
@@ -141,7 +141,7 @@ def insert_business_strengths(cursor, user_id: int, business_strengths: list, bu
             else:
                 cursor.execute(
                     "INSERT INTO business_strengths (name, business_role_id, business_phase_id) VALUES (%s, %s, %s)",
-                    (b_strength, business_role_id, chat_test_phase_id)
+                    (b_strength, business_role_id, business_phase_id)
                 )
                 business_strength_id = cursor.lastrowid
             cursor.execute("INSERT IGNORE INTO user_business_strengths (user_id, business_strength_id) VALUES (%s, %s)", (user_id, business_strength_id))
@@ -152,29 +152,24 @@ def insert_business_strengths(cursor, user_id: int, business_strengths: list, bu
     return business_strength_ids
     
 #TODO: Update business table
-def update_business_info(cursor, user_id: int, business_type_id: int, business_category_id: int, business_phase_id: int, business_name: str):
-    """Update the businesses table with correct IDs and phase for the user."""
+def update_business_info(cursor, user_id: int, business_type_id: int, business_category_id: int, business_phase_id: int):
+    """Update the existing businesses table row with correct IDs, phase, and name for the user."""
     try:
         print("DEBUG: Updating business info for user_id:", user_id)
         
         cursor.execute("""
-            INSERT INTO businesses (operator_user_id, business_type_id, business_category_id, business_phase_id, name)
-            VALUES (%s, %s, %s, %s, %s)
-            ON DUPLICATE KEY UPDATE
-                business_type_id = VALUES(business_type_id),
-                business_category_id = VALUES(business_category_id),
-                business_phase_id = VALUES(business_phase_id),
-                name = COALESCE(VALUES(name), name)
-        """, (user_id, business_type_id, business_category_id, business_phase_id, business_name))
+            UPDATE businesses 
+            SET business_type_id = %s, business_category_id = %s, business_phase_id = %s
+            WHERE operator_user_id = %s
+        """, (business_type_id, business_category_id, business_phase_id, user_id))
         
         print("DEBUG: Business info updated successfully")
+        return True
     except Exception as e:
         print("ERROR in update_business_info:", e)
-        raise e
-
+        return False
 
 def model_update_user_details(user_id: int, 
-                              business_name: str, 
                               user_role: str, 
                               user_strengths: list, 
                               user_skills: list,
@@ -200,29 +195,30 @@ def model_update_user_details(user_id: int,
         business_category_id, business_type_id, skill_category_id, strength_category_id = ensure_business_type_and_categories(cursor, business_type, business_category, skill_category, strength_category)
         
         # Ensure business phase and role
-        chat_test_phase_id, business_role_id = ensure_business_phase_and_role(cursor, user_role)
+        business_phase_id, business_role_id = ensure_business_phase_and_role(cursor, user_role)
         
         # Insert user skills
-        user_skill_ids = insert_user_skills(cursor, user_id, user_skills, skill_category_id)
+        insert_user_skills(cursor, user_id, user_skills, skill_category_id)
         
         # Insert user strengths
-        user_strength_ids = insert_user_strengths(cursor, user_id, user_strengths, strength_category_id)
+        insert_user_strengths(cursor, user_id, user_strengths, strength_category_id)
 
         # Insert business skills
-        business_skill_ids = insert_business_skills(cursor, user_id, business_skills, skill_category_id)
+        insert_business_skills(cursor, user_id, business_skills, skill_category_id)
         
         # Insert business strengths
-        business_strength_ids = insert_business_strengths(cursor, user_id, business_strengths, business_role_id, chat_test_phase_id)
+        insert_business_strengths(cursor, user_id, business_strengths, business_role_id, business_phase_id)
 
         # Update Business table
-        update_business_info(cursor, user_id, business_type_id, business_category_id, chat_test_phase_id, business_name)
+        if not update_business_info(cursor, user_id, business_type_id, business_category_id, business_phase_id):
+            raise Exception("Failed to update business info")
 
         conn.commit()
         print("DEBUG: DB commit successful")
         cursor.close()
         conn.close()
 
-        return {"status": "success", "message": "User profile updated in database."}
+        return True
     except Exception as e:
         print("DB ERROR in model_update_user_details:", e)
-        return {"status": "error", "message": str(e)}
+        return False

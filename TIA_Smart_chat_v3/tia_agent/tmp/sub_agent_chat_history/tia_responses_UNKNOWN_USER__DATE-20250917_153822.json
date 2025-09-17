@@ -1,0 +1,86 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "hello",
+    "timestamp": "2025-09-17T15:34:12.153680"
+  },
+  {
+    "phase": 0,
+    "question": "Hey there! It's great to connect with you. How about we dive into your business journey? Let\u2019s start with the basics\u2014can you share a bit about your business?",
+    "message": "hello",
+    "timestamp": "2025-09-17T15:34:29.272537"
+  },
+  {
+    "phase": 0,
+    "question": "Hi again! I\u2019m here to help you uncover the heart of your brand. Let's get started! Can you tell me a bit about your business?",
+    "message": "testing for AI services",
+    "timestamp": "2025-09-17T15:35:48.959200"
+  },
+  {
+    "phase": 0,
+    "question": "That's interesting! It sounds like you're exploring AI services. What specifically drew you to this field? If you're ready, we can continue by talking about your role in the company. What position do you hold?",
+    "message": "Founder and CEO",
+    "timestamp": "2025-09-17T15:35:54.239461"
+  },
+  {
+    "phase": 0,
+    "question": "That\u2019s fantastic! As the Founder and CEO, you must have a unique vision for your business. It\u2019s exciting to see a leader like you at the helm. Now, let\u2019s talk about what you offer. What kind of product or service do you provide in the AI space?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-17T15:36:02.422525"
+  },
+  {
+    "phase": 0,
+    "question": "AI-powered customer service automation sounds like a game-changer! It must be so rewarding to create solutions that help businesses enhance their customer interactions. Now, let's think about who you serve. Who is your typical customer or client for these services?",
+    "message": "Small to medium businesses",
+    "timestamp": "2025-09-17T15:36:08.922617"
+  },
+  {
+    "phase": 1,
+    "question": "Got it! So, you\u2019re focused on helping small to medium businesses with your AI customer service solutions. That\u2019s a vital market that can greatly benefit from automation. Thanks for sharing all this information! It really helps in understanding the core of your brand.  \n\nIf you're ready, we can move forward from here. Let me know if there's anything else you'd like to explore!",
+    "message": "I imagined having more freedom and helping businesses grow",
+    "timestamp": "2025-09-17T15:36:16.122958"
+  },
+  {
+    "phase": 1,
+    "question": "That sounds like a beautiful vision! Freedom in your work often allows for creativity and personal growth, while helping other businesses grow is such a fulfilling way to make an impact. It\u2019s clear that your initial motivation was rooted in a desire for both personal fulfillment and to support others on their journeys. \n\nHow do you feel about your business now compared to back then?",
+    "message": "I imagined having more freedom and helping businesses grow",
+    "timestamp": "2025-09-17T15:36:28.784079"
+  },
+  {
+    "phase": 1,
+    "question": "It seems like that initial vision of freedom and support for other businesses really shaped your aspirations. \n\nReflecting on how you feel about your business now compared to those early days can reveal just how far you've come, or even what challenges you may have faced along the way. What\u2019s your perspective on that?",
+    "message": "More challenging but rewarding than expected",
+    "timestamp": "2025-09-17T15:36:40.539432"
+  },
+  {
+    "phase": 1,
+    "question": "It sounds like the journey has been quite an adventure for you\u2014challenging, but also filled with rewarding moments that make it all worthwhile. Those ups and downs often lead to significant personal and professional growth. \n\nWhat does your product or service do for the end user in human terms? How does it touch their lives?",
+    "message": "Peace of mind and time savings for business owners",
+    "timestamp": "2025-09-17T15:36:50.607343"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s wonderful! Providing peace of mind and time savings is incredibly valuable. It's clear that your work not only enhances efficiency but also brings a sense of relief to business owners, which is so crucial in today's fast-paced environment. \n\nCan you recall a time your business made a difference to someone? I'd love to hear about a specific story.",
+    "message": "We helped a restaurant handle COVID order surge",
+    "timestamp": "2025-09-17T15:37:10.135335"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s an inspiring example! Helping a restaurant navigate such a challenging time speaks volumes about the impact your business can have on others. It must have been fulfilling to assist them in managing that surge during a period of uncertainty. \n\nImagine your ideal client \u2013 what would you love them to say about your service after working with you?",
+    "message": "Made their business efficient and stress-free",
+    "timestamp": "2025-09-17T15:38:04.841280"
+  },
+  {
+    "phase": 1,
+    "question": "That\u2019s a fantastic sentiment! Wanting your clients to feel that your service has made their business more efficient and stress-free really highlights the core value you aim to deliver. It's about transforming their work life in a positive way. \n\nNow, let's dig a little deeper. What's the deeper impact of your work for others? How does it go beyond just efficiency and stress relief?",
+    "message": "Help owners focus on what they love",
+    "timestamp": "2025-09-17T15:38:12.368159"
+  },
+  {
+    "phase": 1,
+    "question": "That's such a beautiful mission! Helping owners focus on what they love allows them to channel their passion and creativity into their business, rather than getting bogged down by stress and operational challenges. It\u2019s about enabling them to live out their vision and build their dreams. \n\nHow would you like your team to feel about their work? What kind of environment or culture do you envision?",
+    "message": "Proud of positive impact we make",
+    "timestamp": "2025-09-17T15:38:20.094641"
+  }
+]

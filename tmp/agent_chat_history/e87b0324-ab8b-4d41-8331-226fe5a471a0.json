@@ -1,0 +1,42 @@
+{
+    "session_id": "e87b0324-ab8b-4d41-8331-226fe5a471a0",
+    "user_id": "25",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello! How can I assist you today? If you're looking to build your business vision or find connections, I can help with that! Let me know what you're interested in.",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "0703e255-f08d-4494-acf9-c68a45590cd4"
+        },
+        {
+            "message": "I want to build my vision",
+            "response": "Absolutely, I\u2019d love to help you with that! Let's start with the basics. Can you share a little bit about your business? What\u2019s it all about?",
+            "state": {
+                "name": "ben",
+                "user_id": "25",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "ben james",
+                    "Business_Name": "TIA TEST BUSINESS",
+                    "Contact_Email": "joshua@gmail.com",
+                    "Contact_Phone_No": "0412345678"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "6d80b556-8c11-4ab3-ad63-2c1a1a692230"
+        }
+    ]
+}

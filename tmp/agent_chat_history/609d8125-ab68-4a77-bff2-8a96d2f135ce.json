@@ -1,0 +1,22 @@
+{
+    "session_id": "609d8125-ab68-4a77-bff2-8a96d2f135ce",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "It seems that there is missing information related to your profile, specifically the \"Business_Category.\" \n\nWould you like to work on defining your business vision with the VisionAgent, or are you interested in finding connections through the ConnectAgent?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check",
+                "current_agent": "CoordinatorAgent"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "17f53d01-d5ba-4a85-9714-0640d3015569"
+        }
+    ]
+}

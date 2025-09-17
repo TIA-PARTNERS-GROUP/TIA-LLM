@@ -1,0 +1,51 @@
+{
+    "session_id": "02fa7f5d-cc6f-4a34-bd0f-f06c86b9349d",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello, Joshua Wlodarczyk! It looks like you already have an existing profile with the following details:\n\n- **Business Name:** TIA TEST\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **Your Job Title:** Founder and CEO\n- **Your Strength:** Empowering small businesses to thrive\n- **Your Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Strength:** Enhancing efficiency and reducing stress for clients\n- **Business Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Category:** Technology and services\n\nWould you like to connect with potential referral partners through our ConnectAgent, or would you like to build your business vision with our VisionAgent?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check",
+                "set_agent": "CoordinatorAgent"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "c3de95c0-5971-448d-9b63-62bb66a13403"
+        },
+        {
+            "message": "I would like to make a connection",
+            "response": "It seems there was an error while generating the email templates. However, I have successfully identified potential referral partners for you. Here are your recommended connections:\n\n1. **Industrial Automation Australia**\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Phone:** +61733483505\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **LinkedIn:** [Industrial Automation Australia](https://www.linkedin.com/company/industrial-automation-australia)\n\n2. **Customer Service**\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Phone:** +61736300483\n   - **Email:** info@wiseupenergy.com, sharon@wiseupenergy.com\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **LinkedIn:** [Wise Up Energy Solutions](https://www.linkedin.com/company/wise-up-energy-solutions)\n\n3. **Ai-Menu Systems**\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Phone:** +611300246368\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **LinkedIn:** [Ai-Menu](https://www.linkedin.com/company/ai-menu)\n\nPlease let me know if you'd like to proceed with contacting any of these businesses or if you have any other questions!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "generated",
+                "set_agent": "CoordinatorAgent",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "3d0cf5f4-5947-4ae3-aa0d-826c0d77f934"
+        }
+    ]
+}
