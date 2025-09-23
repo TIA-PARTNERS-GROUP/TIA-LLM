@@ -1,0 +1,23 @@
+{
+    "session_id": "c6facb59-2ed2-455d-860c-89df0c7e65e0",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "It seems there was an issue generating the email templates. The session has now ended. If you would like to try again or need further assistance, please let me know!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "01ace268-f5e3-482d-b315-23518c244795"
+        }
+    ]
+}

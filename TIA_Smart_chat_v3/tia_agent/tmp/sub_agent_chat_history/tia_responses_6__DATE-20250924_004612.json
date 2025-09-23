@@ -1,0 +1,32 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Lets Begin!",
+    "timestamp": "2025-09-24T00:40:42.396482"
+  },
+  {
+    "phase": 0,
+    "question": "Fantastic! I'm excited to help you grow your business through meaningful connections. To get started, what does your business do?",
+    "message": "AI-powered customer service automation",
+    "timestamp": "2025-09-24T00:42:18.880685"
+  },
+  {
+    "phase": 0,
+    "question": "That sounds innovative! AI-powered customer service automation is definitely a growing field with great potential. Next, what products or services do you offer?",
+    "message": "We offer AI chatbots and automation tools that handle customer questions, streamline support, and improve response times.",
+    "timestamp": "2025-09-24T00:44:06.542335"
+  },
+  {
+    "phase": 0,
+    "question": "Awesome! Offering AI chatbots and automation tools is a smart way to enhance customer support and efficiency. There's certainly a strong demand for that. Now, who is your ideal customer or target market? For example, are you focusing on specific demographics, business types, or industries?",
+    "message": "Our ideal customers are small to medium-sized businesses that want to improve customer support without hiring large teams. We also focus on online retailers, service providers, and startups who need fast, efficient, and affordable support solutions.",
+    "timestamp": "2025-09-24T00:44:43.177991"
+  },
+  {
+    "phase": 0,
+    "question": "Perfect! Targeting small to medium-sized businesses, online retailers, service providers, and startups gives us a great range to work with. Now, last question: What makes your business unique or different from your competitors? For instance, is it your pricing, speed, customization, support, or community involvement?",
+    "message": "What makes us unique is that we combine affordable pricing with fast setup and easy customization. Our AI tools are designed to adapt to each business, so you don\u2019t need a big budget or technical team to get started.",
+    "timestamp": "2025-09-24T00:46:09.627567"
+  }
+]

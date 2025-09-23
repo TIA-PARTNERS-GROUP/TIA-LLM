@@ -100,7 +100,7 @@ def generate_blog(tool_context: ToolContext) -> dict:
         # TODO: SAVE BLOG TO "POST /api/users/addpost"
 
         # tool_context.actions.transfer_to_agent = "ProfilerAgent"
-        state["set_agent"] = "ProfilerAgent"
+        state["end_session"] = True
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             blog_filename = f"blog_output_{timestamp}.txt"

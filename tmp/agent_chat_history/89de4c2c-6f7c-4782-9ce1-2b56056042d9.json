@@ -3,23 +3,8 @@
     "user_id": "6",
     "conversations": [
         {
-            "message": "hello",
-            "response": "Hello, Joshua Wlodarczyk! \ud83d\udd90\ufe0f \n\nI see that you have an existing profile with the following information:\n\n- **Business Name:** TIA TEST\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **Strengths:** Empowering small businesses to thrive, enhancing efficiency, and reducing stress for clients.\n- **Skills:** Leadership, Strategic planning, AI implementation, Customer service automation, Problem-solving.\n- **Business Category:** Technology and services.\n\nWould you like to explore referral partners through our **ConnectAgent** or would you prefer to build a business vision using our **VisionAgent**?",
-            "state": {
-                "name": "joshua",
-                "user_id": "6",
-                "connection_type": "Complementary",
-                "region": "au",
-                "lat": -27.4705,
-                "lng": 153.026,
-                "user_profile": "check"
-            },
-            "author": "CoordinatorAgent",
-            "timestamp": "85ff940a-25ad-4799-86a2-7e821d2bac08"
-        },
-        {
-            "message": "I want to Connect",
-            "response": "I've found some potential referral partners for your business, TIA TEST. Here are the details along with personalized email templates for each connection:\n\n1. **Industrial Automation Australia**\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Phone:** +61733483505\n   - **Rating:** 3 (2 reviews)\n   - **Business Type:** Automation company\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n   Hi Vaughn and the Industrial Automation Australia Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. We specialize in innovative solutions within the automation sector, and I'm reaching out to explore potential partnership opportunities that could benefit both of our businesses.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Enhance service offerings by integrating our technologies and expertise.\n   \u2705 Increase market outreach through collaborative marketing initiatives.\n   \u2705 Join forces on innovative projects to stay ahead of the competition.\n\n   I believe a partnership between TIA TEST and Industrial Automation Australia could yield significant benefits for both sides, leveraging our strengths to drive mutual growth. I would love the opportunity to discuss this further and explore how we can collaborate effectively.\n\n   Looking forward to your thoughts!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\n2. **Customer Service**\n   - **Email:** info@wiseupenergy.com\n   - **Phone:** +61736300483\n   - **Rating:** 1 (1 review)\n   - **Business Type:** Computer training school\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n   Hi Customer Service Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I came across your business, Wise Up Energy, and noticed that you provide valuable computer training services. I believe there is a significant opportunity for collaboration between our organizations that could enhance our offerings and drive mutual growth.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Access to our extensive network of technology enthusiasts and professionals who could benefit from your training courses.  \n   \u2705 Opportunities to co-host workshops or seminars that integrate your training with our resources.  \n   \u2705 Potential to create referral programs that drive more traffic to both of our businesses.\n\n   I would love to discuss how we can work together to create a partnership that benefits both TIA TEST and Wise Up Energy. Could we schedule a time for a quick call or meeting in the coming days?\n\n   Looking forward to your thoughts!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\n3. **Ai-Menu Systems**\n   - **Email:** sales@ai-menu.com\n   - **Phone:** +611300246368\n   - **Rating:** 4.9 (28 reviews)\n   - **Business Type:** Software company\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Partnership Opportunity with TIA TEST and Ai-Menu Systems\n\n   Hi Ai-Menu Systems Team,\n\n   I hope this message finds you well! My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I've been following your progress, and I'm impressed with Ai-Menu Systems' innovative solutions in the software sector, especially your high rating and positive customer feedback.\n\n   \ud83d\udca1 Exploring Partnership Opportunities:\n\n   \u2705 Collaborate on AI-driven menu management solutions to enhance customer engagement.  \n   \u2705 Leverage TIA TEST's technology to streamline user experiences for your software solutions.  \n   \u2705 Create joint marketing campaigns that highlight the strengths of both our platforms, reaching a broader audience together.  \n\n   I believe that a partnership between TIA TEST and Ai-Menu Systems could lead to incredible synergy and mutual growth. I would love to schedule a time to discuss how we can work together to create value for our businesses.\n\n   Looking forward to the possibility of collaborating!\n\n   Warm regards,   \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\nPlease let me know if you would like to proceed with sending these emails or if there's anything else you'd like to do!",
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today? Would you like to explore referral partners or anything else?",
             "state": {
                 "name": "joshua",
                 "user_id": "6",
@@ -40,10 +25,754 @@
                     "Business_Strength": "Enhancing efficiency and reducing stress for clients",
                     "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
                     "Business_Category": "Technology and services"
-                }
+                },
+                "ConnectAgent": {
+                    "connection_result": {
+                        "status": "OK",
+                        "request_id": "6d45962f-df2d-4a14-b286-78229a9375f8",
+                        "parameters": {
+                            "query": "\"AI customer service automation\"",
+                            "language": "en",
+                            "region": "au",
+                            "lat": -27.4705,
+                            "lng": 153.026,
+                            "zoom": 10,
+                            "limit": 5,
+                            "extract_emails_and_contacts": true
+                        },
+                        "data": [
+                            {
+                                "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                                "google_mid": "/g/11ty3zjq85",
+                                "phone_number": "+61733483505",
+                                "name": "Industrial Automation Australia",
+                                "latitude": -27.4335074,
+                                "longitude": 153.0933689,
+                                "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "review_count": 2,
+                                "rating": 3,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 7\u202fam Tue",
+                                "working_hours": {
+                                    "Monday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Thursday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Friday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ]
+                                },
+                                "website": "https://www.iaarobotics.com.au",
+                                "tld": "iaarobotics.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "cid": "15391164233997453660",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "110865635980628362194",
+                                "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                                "owner_name": "Industrial Automation Australia",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Automation company",
+                                "subtypes": [
+                                    "Automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw=w1000-h536-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.4330955,
+                                        "longitude": 153.093211,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                        "photo_timestamp": 1712361600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 20,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true,
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "15 Lavarack Ave",
+                                "city": "Eagle Farm",
+                                "zipcode": "4009",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "vaughn@iaarobotics.com.au"
+                                    ],
+                                    "phone_numbers": [
+                                        "0733483505"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": "https://www.instagram.com/industrialautomationaustralia",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "google_id": "0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "place_id": "ChIJHW_h1wNZkWsRxgb1_yzqHBE",
+                                "google_mid": "/g/11gzj8c_9",
+                                "phone_number": "+61736300483",
+                                "name": "Customer Service",
+                                "latitude": -27.4324949,
+                                "longitude": 153.0677431,
+                                "full_address": "Customer Service, 21 Napier St, Brisbane City QLD 4007",
+                                "review_count": 1,
+                                "rating": 1,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open 24 hours",
+                                "working_hours": {
+                                    "Monday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Tuesday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Wednesday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Thursday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Friday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Saturday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Sunday": [
+                                        "Open 24 hours"
+                                    ]
+                                },
+                                "website": "http://wiseupenergy.com",
+                                "tld": "wiseupenergy.com",
+                                "verified": false,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "cid": "1233117876986382022",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJHW_h1wNZkWsRxgb1_yzqHBE&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "112290065157958972817",
+                                "owner_link": "https://maps.google.com/maps/contrib/112290065157958972817",
+                                "owner_name": "Customer Service",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Computer training school",
+                                "subtypes": [
+                                    "Computer training school"
+                                ],
+                                "subtype_gcids": [
+                                    "computer_training_school"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "ovKHA_SHKIv1laY3PRMhzw",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ovKHA_SHKIv1laY3PRMhzw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=95.73632&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.432468202454398,
+                                        "longitude": 153.0674436592194,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2022-09-02T00:00:00.000Z",
+                                        "photo_timestamp": 1662076800
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 1,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true,
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "21 Napier St, Brisbane City QLD 4007",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "21 Napier St",
+                                "city": "Brisbane City",
+                                "zipcode": "4007",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "info@wiseupenergy.com",
+                                        "sharon@wiseupenergy.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "0428918180"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": null,
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/wise-up-energy-solutions",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                                "google_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                                "place_id": "ChIJUehSH0RakWsRJj1Xk1Smhjk",
+                                "google_mid": "/g/11cm11x97t",
+                                "phone_number": "+611300246368",
+                                "name": "Ai-Menu Systems",
+                                "latitude": -27.558676,
+                                "longitude": 153.0824994,
+                                "full_address": "Ai-Menu Systems, 33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                                "review_count": 28,
+                                "rating": 4.9,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 9\u202fam Tue",
+                                "working_hours": {
+                                    "Monday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Thursday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ]
+                                },
+                                "website": "http://ai-menu.com",
+                                "tld": "ai-menu.com",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26",
+                                "cid": "4145183389220551974",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJUehSH0RakWsRJj1Xk1Smhjk&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "115161147304147906800",
+                                "owner_link": "https://maps.google.com/maps/contrib/115161147304147906800",
+                                "owner_name": "Ai-Menu Systems",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Software company",
+                                "subtypes": [
+                                    "Software company"
+                                ],
+                                "subtype_gcids": [
+                                    "software_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD=w1809-h531-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.5586809,
+                                        "longitude": 153.082204,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2020-11-26T00:00:00.000Z",
+                                        "photo_timestamp": 1606348800
+                                    },
+                                    {
+                                        "photo_id": "grRKgFNkAv2eM2YtDwZedA",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=grRKgFNkAv2eM2YtDwZedA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=91.26477&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.55867011618606,
+                                        "longitude": 153.08219879082114,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-11-14T00:00:00.000Z",
+                                        "photo_timestamp": 1731542400
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 10,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Service options": {
+                                            "Online appointments": true,
+                                            "On-site services": true
+                                        },
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true
+                                        }
+                                    }
+                                },
+                                "address": "33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "33/50 Sanders St",
+                                "city": "Upper Mount Gravatt",
+                                "zipcode": "4122",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "sales@ai-menu.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "0731954257"
+                                    ],
+                                    "facebook": "https://www.facebook.com/aimenusystems",
+                                    "instagram": "https://www.instagram.com/aimenusystems",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": "https://twitter.com/aimenuengine",
+                                    "linkedin": "https://www.linkedin.com/company/ai-menu",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "set_agent": "CoordinatorAgent"
             },
             "author": "ConnectAgent",
-            "timestamp": "9e779a5b-fe4e-4563-9a24-0540d95e5805"
+            "timestamp": "ca3c8f33-af17-4a9b-a8bc-d30f90a7154d"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today? Would you like to find referral partners for your business, or is there something else on your mind?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                },
+                "ConnectAgent": {
+                    "connection_result": {
+                        "status": "OK",
+                        "request_id": "6d45962f-df2d-4a14-b286-78229a9375f8",
+                        "parameters": {
+                            "query": "\"AI customer service automation\"",
+                            "language": "en",
+                            "region": "au",
+                            "lat": -27.4705,
+                            "lng": 153.026,
+                            "zoom": 10,
+                            "limit": 5,
+                            "extract_emails_and_contacts": true
+                        },
+                        "data": [
+                            {
+                                "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                                "google_mid": "/g/11ty3zjq85",
+                                "phone_number": "+61733483505",
+                                "name": "Industrial Automation Australia",
+                                "latitude": -27.4335074,
+                                "longitude": 153.0933689,
+                                "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "review_count": 2,
+                                "rating": 3,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 7\u202fam Tue",
+                                "working_hours": {
+                                    "Monday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Thursday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Friday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ]
+                                },
+                                "website": "https://www.iaarobotics.com.au",
+                                "tld": "iaarobotics.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "cid": "15391164233997453660",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "110865635980628362194",
+                                "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                                "owner_name": "Industrial Automation Australia",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Automation company",
+                                "subtypes": [
+                                    "Automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw=w1000-h536-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.4330955,
+                                        "longitude": 153.093211,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                        "photo_timestamp": 1712361600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 20,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true,
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "15 Lavarack Ave",
+                                "city": "Eagle Farm",
+                                "zipcode": "4009",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "vaughn@iaarobotics.com.au"
+                                    ],
+                                    "phone_numbers": [
+                                        "0733483505"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": "https://www.instagram.com/industrialautomationaustralia",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "google_id": "0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "place_id": "ChIJHW_h1wNZkWsRxgb1_yzqHBE",
+                                "google_mid": "/g/11gzj8c_9",
+                                "phone_number": "+61736300483",
+                                "name": "Customer Service",
+                                "latitude": -27.4324949,
+                                "longitude": 153.0677431,
+                                "full_address": "Customer Service, 21 Napier St, Brisbane City QLD 4007",
+                                "review_count": 1,
+                                "rating": 1,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open 24 hours",
+                                "working_hours": {
+                                    "Monday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Tuesday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Wednesday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Thursday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Friday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Saturday": [
+                                        "Open 24 hours"
+                                    ],
+                                    "Sunday": [
+                                        "Open 24 hours"
+                                    ]
+                                },
+                                "website": "http://wiseupenergy.com",
+                                "tld": "wiseupenergy.com",
+                                "verified": false,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6",
+                                "cid": "1233117876986382022",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJHW_h1wNZkWsRxgb1_yzqHBE&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "112290065157958972817",
+                                "owner_link": "https://maps.google.com/maps/contrib/112290065157958972817",
+                                "owner_name": "Customer Service",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Computer training school",
+                                "subtypes": [
+                                    "Computer training school"
+                                ],
+                                "subtype_gcids": [
+                                    "computer_training_school"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "ovKHA_SHKIv1laY3PRMhzw",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ovKHA_SHKIv1laY3PRMhzw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=95.73632&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.432468202454398,
+                                        "longitude": 153.0674436592194,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2022-09-02T00:00:00.000Z",
+                                        "photo_timestamp": 1662076800
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 1,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true,
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "21 Napier St, Brisbane City QLD 4007",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "21 Napier St",
+                                "city": "Brisbane City",
+                                "zipcode": "4007",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "info@wiseupenergy.com",
+                                        "sharon@wiseupenergy.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "0428918180"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": null,
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/wise-up-energy-solutions",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                                "google_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                                "place_id": "ChIJUehSH0RakWsRJj1Xk1Smhjk",
+                                "google_mid": "/g/11cm11x97t",
+                                "phone_number": "+611300246368",
+                                "name": "Ai-Menu Systems",
+                                "latitude": -27.558676,
+                                "longitude": 153.0824994,
+                                "full_address": "Ai-Menu Systems, 33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                                "review_count": 28,
+                                "rating": 4.9,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 9\u202fam Tue",
+                                "working_hours": {
+                                    "Monday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Thursday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ]
+                                },
+                                "website": "http://ai-menu.com",
+                                "tld": "ai-menu.com",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26",
+                                "cid": "4145183389220551974",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJUehSH0RakWsRJj1Xk1Smhjk&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "115161147304147906800",
+                                "owner_link": "https://maps.google.com/maps/contrib/115161147304147906800",
+                                "owner_name": "Ai-Menu Systems",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Software company",
+                                "subtypes": [
+                                    "Software company"
+                                ],
+                                "subtype_gcids": [
+                                    "software_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD=w1809-h531-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.5586809,
+                                        "longitude": 153.082204,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2020-11-26T00:00:00.000Z",
+                                        "photo_timestamp": 1606348800
+                                    },
+                                    {
+                                        "photo_id": "grRKgFNkAv2eM2YtDwZedA",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=grRKgFNkAv2eM2YtDwZedA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=91.26477&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.55867011618606,
+                                        "longitude": 153.08219879082114,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-11-14T00:00:00.000Z",
+                                        "photo_timestamp": 1731542400
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 10,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Service options": {
+                                            "Online appointments": true,
+                                            "On-site services": true
+                                        },
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true
+                                        }
+                                    }
+                                },
+                                "address": "33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "33/50 Sanders St",
+                                "city": "Upper Mount Gravatt",
+                                "zipcode": "4122",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "sales@ai-menu.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "0731954257"
+                                    ],
+                                    "facebook": "https://www.facebook.com/aimenusystems",
+                                    "instagram": "https://www.instagram.com/aimenusystems",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": "https://twitter.com/aimenuengine",
+                                    "linkedin": "https://www.linkedin.com/company/ai-menu",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "set_agent": "CoordinatorAgent"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "b176bd54-7208-4814-a607-7f40d3c59231"
         }
     ]
 }

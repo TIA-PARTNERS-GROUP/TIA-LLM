@@ -2,7 +2,6 @@ from typing import Dict, Any
 from google.adk.tools.tool_context import ToolContext
 from ..DynamicChatAssistant import DynamicChatAssistant
 from .utils import recommended_GNN_connection, recommended_WEB_connection, generate_email_templates, extract_business_type
-from TIA_Smart_chat_v3.tia_agent.utils import validate_connection_options
 from .prompts import (
     CONNECT_RULE_PROMPT,
     CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
@@ -33,6 +32,11 @@ def get_or_create_assistant(session_id: str, user_id: int = None):
 def recommended_connection(tool_context: ToolContext):
     try:
         state = tool_context.state
+
+        print(f"DEBUG: tool_context.state type: {state}")
+        print(f"DEBUG: connection_type value: '{state.get("connection_type")}'")
+        print(f"DEBUG: connection_type in state: {'connection_type' in state}")
+
         required_keys = ["user_id", "region", "lat", "lng", "Generated_Profile", "connection_type"]
         missing = [k for k in required_keys if state.get(k) is None]
         if missing:
@@ -45,13 +49,8 @@ def recommended_connection(tool_context: ToolContext):
             "lat": state.get("lat"),
             "lng": state.get("lng"),
             "profile": state.get("Generated_Profile"),
-            "connection_type": state.get("connection_type"),  # Add this
+            "connection_type": state.get("connection_type"),
         }
-        
-        # Optional: Validate profile before proceeding
-        is_valid, msg = validate_connection_options(attributes["connection_type"], attributes["profile"])
-        if not is_valid:
-            return {"status": "error", "message": msg}
         
         GNN_CALL = recommended_GNN_connection(attributes)
         if GNN_CALL is not None:
@@ -106,7 +105,7 @@ def generate_email(tool_context: ToolContext):
             return {"status": "error", "message": "Failed to generate email templates."}
         
         # tool_context.actions.transfer_to_agent = "CoordinatorAgent"
-        state["set_agent"] = "CoordinatorAgent"
+        state["end_session"] = True
         return {"status": "success", "email_templates": email_templates}
     
     except Exception as e:

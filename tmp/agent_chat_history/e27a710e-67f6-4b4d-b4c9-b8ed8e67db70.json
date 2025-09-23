@@ -1,0 +1,110 @@
+{
+    "session_id": "e27a710e-67f6-4b4d-b4c9-b8ed8e67db70",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Great! I'm excited to get started. To kick things off, could you share what your business does?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "907ef54c-24d7-4a6a-a344-0678b993ad8d"
+        },
+        {
+            "message": "Selling AI products",
+            "response": "That sounds innovative! Selling AI products is definitely a growing field with lots of potential. Now, could you tell me more about the specific products or services you offer?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "cbab5df8-eca2-4324-b58c-237d5e3adf00",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "da1f3210-c2ac-417c-8600-c59530c3e28d"
+        },
+        {
+            "message": "We try to help smaller businesses with our AI intergrations tips and guides. We pride our self with cheap costs",
+            "response": "Helping smaller businesses with AI integration tips and guides is a fantastic service! The focus on affordability can certainly attract a lot of clients. Next up, who is your ideal customer or target market? For example, are there specific demographics or types of businesses you\u2019re aiming to reach?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "cbab5df8-eca2-4324-b58c-237d5e3adf00",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "0e88c29e-321d-4c49-98f5-c62f862c1a94"
+        },
+        {
+            "message": "Smaller businesses",
+            "response": "Perfect \u2014 targeting smaller businesses gives us a great range to work with. Now, last question: What makes your business unique or different from your competitors? For example, is it your pricing, speed, customization, support, community engagement, or something else?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "cbab5df8-eca2-4324-b58c-237d5e3adf00",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "a5ab2104-e8f6-4af0-98d0-20026f1f2a6d"
+        }
+    ]
+}

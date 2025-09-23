@@ -1,0 +1,51 @@
+{
+    "session_id": "494fd1d8-dd9e-465c-a976-9bf2fb1f1bde",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Welcome back, Joshua Wlodarczyk! \ud83d\ude0a\n\nYou have an existing profile under the business name *TIA TEST*. Here are the details we have on file:\n\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **User Strength:** Empowering small businesses to thrive\n- **User Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Strength:** Enhancing efficiency and reducing stress for clients\n- **Business Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n- **Business Category:** Technology and services\n\nHow can I assist you today? You can choose from our services: VisionAgent (for building your vision), ConnectAgent (for finding referral partners), or LadderAgent (for guidance through the Ladder to Exit process).",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "16fc96b6-3051-44a3-933c-58d6a2688f13"
+        },
+        {
+            "message": "connect",
+            "response": "Could you please provide me with a brief description of your business and what specific type of referral partners you are looking for? This will help me assist you in finding the right connections.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "9bdf7450-efd9-4c27-a3f7-4e03f762c660"
+        }
+    ]
+}

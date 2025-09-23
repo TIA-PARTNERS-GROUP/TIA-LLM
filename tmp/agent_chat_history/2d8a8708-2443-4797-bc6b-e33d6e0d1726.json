@@ -1,0 +1,40 @@
+{
+    "session_id": "2d8a8708-2443-4797-bc6b-e33d6e0d1726",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "thank you",
+            "response": "You're welcome! If you have any more questions or need further assistance, feel free to ask. Good luck with your partnerships!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "b4915204-f7f2-497a-8fae-52f83acfb729"
+        },
+        {
+            "message": "Hello",
+            "response": "Thank you for sharing! It looks like you might be testing the process. When you're ready, please let me know about what your business actually does, and we can continue from there.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "b990e0ac-5449-4069-85cb-c0d4c5ea0f78"
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "session_id": "a24cb331-9052-4979-92a6-4e83d02711b0",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Great! I'm excited to help you with your business growth. To get started, what does your business do?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "8a897b54-a8fc-4b0c-bcd9-147506fee2a5"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "That's fascinating! AI-powered customer service automation is such a valuable service, especially in today's digital landscape. Next, what products or services do you offer?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "dbdcc8b7-b686-448b-9d60-ec36bcc5662b",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "de8567a7-9a6d-427d-9f7e-06db13cbb484"
+        },
+        {
+            "message": "We offer AI chatbots and automation tools that handle customer questions, streamline support, and improve response times.",
+            "response": "Awesome! Offering AI chatbots and automation tools that enhance customer support can truly revolutionize the customer experience. Now, who is your ideal customer or target market? For instance, are you focusing on specific demographics or certain business types?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "dbdcc8b7-b686-448b-9d60-ec36bcc5662b",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "0b1a87c8-e079-47bd-a525-40984f59658e"
+        },
+        {
+            "message": "Our ideal customers are small to medium-sized businesses that want to improve customer support without hiring large teams. We also focus on online retailers, service providers, and startups who need fast, efficient, and affordable support solutions.",
+            "response": "Perfect \u2014 targeting small to medium-sized businesses, online retailers, service providers, and startups gives us a great range to work with. Now, last question: What makes your business unique or different from your competitors? For example, do you have distinctive pricing, speed, customization, support, or community aspects?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "dbdcc8b7-b686-448b-9d60-ec36bcc5662b",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "e51242b0-15e7-49a6-9287-b508be35ed3f"
+        },
+        {
+            "message": "What makes us unique is that we combine affordable pricing with fast setup and easy customization. Our AI tools are designed to adapt to each business, so you don\u2019t need a big budget or technical team to get started.",
+            "response": "Here are the email templates for your recommended partners:\n\n1. **TCA Estimating**\n   - **Email:** projects@tcaestimating.com.au\n   - **Phone:** +611300033822\n   - **Rating:** 4.9\n   - **Business Type:** Consultant\n   - **Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TCA Estimating\n\n   Hi TCA Estimating Team,\n\n   I hope this email finds you well. My name is Joshua Wlodarczyk, and I represent TIA TEST. I was impressed by your exemplary service and high rating of 4.9 from your clients. As a consultancy specializing in estimating and project management, I believe there are significant synergies that our businesses can explore together.\n\n   \ud83d\udca1 Potential Partnership Benefits:\n\n   \u2705 Enhanced service offerings by integrating our expertise in project execution and estimation  \n   \u2705 Increased customer reach through collaborative marketing efforts  \n   \u2705 Improved efficiency and cost-effective solutions for our clients by sharing resources and best practices  \n\n   I would love the opportunity to discuss how we can collaborate to create these mutually beneficial outcomes. Please let me know a convenient time for us to connect.\n\n   Looking forward to your response!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\n2. **TSA**\n   - **Email:** info@tsapl.com.au\n   - **Phone:** +61733030207\n   - **Rating:** 5\n   - **Business Type:** Civil engineering company\n   - **Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TSA\n\n   Hi TSA Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I\u2019m reaching out to explore potential collaboration opportunities between TSA and my business, TIA TEST. Given TSA\u2019s strong reputation in the civil engineering sector, I believe that a partnership could be mutually beneficial.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Access to Innovative Solutions: TIA TEST specializes in developing state-of-the-art technologies that can enhance project efficiency. \n   \u2705 Joint Marketing Opportunities: Collaborating on marketing efforts can enhance visibility for both businesses in the engineering sector.\n   \u2705 Resource Sharing: By pooling resources, we can tackle larger projects and drive greater success for our clients.\n\n   I would love the opportunity to discuss how we might align our services and expertise to create value for both our companies. If you\u2019re open to it, I\u2019d like to schedule a call or meeting at a time that suits you.\n\n   Looking forward to your response!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST\n   ```\n\n3. **LTT Brisbane**\n   - **Email:** info@ltt.edu.au\n   - **Phone:** +611300588588\n   - **Rating:** 4.8\n   - **Business Type:** Educational institution\n   - **Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with LTT Brisbane\n\n   Hi LTT Brisbane Team,\n\n   I hope this message finds you well! My name is Joshua Wlodarczyk, and I represent TIA TEST. I came across your institution and was impressed by your excellent rating of 4.8 based on 38 reviews. It\u2019s evident that LTT Brisbane is making a significant impact in the education sector.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Enhance student engagement through collaborative learning initiatives  \n   \u2705 Share resources for joint workshops and training sessions  \n   \u2705 Expand community outreach by partnering on educational events  \n\n   I believe that a partnership between TIA TEST and LTT Brisbane could create exciting opportunities for both organizations and provide added value to your students. I would love to discuss ideas and explore how we can work together to achieve our mutual goals.\n\n   Looking forward to your thoughts!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST\n   ```\n\n4. **BMT**\n   - **Email:** antwerp@eu.bmt.org\n   - **Phone:** +61738316744\n   - **Rating:** 4.5\n   - **Business Type:** Engineering consultant\n   - **Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n   Hi BMT Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I am reaching out from TIA TEST. I have been following BMT's impressive work in the engineering consultancy field, and I'm particularly impressed by your high customer rating and commitment to excellence.\n\n   \ud83d\udca1 Potential Partnership Benefits:\n\n   \u2705 Leverage our innovative testing solutions to enhance your engineering projects.  \n   \u2705 Collaborate on tailored projects to provide comprehensive services to our clients.  \n   \u2705 Share industry insights and resources that can drive mutual growth and success.\n\n   I believe a partnership between TIA TEST and BMT could create significant value for both of our businesses. I would love to discuss this further and explore how we can work together effectively.\n\n   Looking forward to your response!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST\n   ```\n\n5. **TCA Partners**\n   - **Email:** careers@tca-partners.com\n   - **Phone:** +61730960594\n   - **Rating:** 5\n   - **Business Type:** Financial consultant\n   - **Template:**\n   ```\n   Subject: \ud83e\udd1d Potential Partnership Opportunity with TIA TEST\n\n   Hi TCA Partners Team,\n\n   My name is Joshua Wlodarczyk, and I represent TIA TEST. I recently came across your firm and was impressed by your outstanding reputation as a financial consultant, notably your strong rating. I believe there are several synergies between our businesses that we could explore for mutual benefit.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Enhanced Service Offerings: By collaborating, we can create a comprehensive service package that combines our strengths, attracting a broader clientele. \n   \u2705 Increased Exposure: Partnering with TIA TEST can enhance your visibility in different markets, leveraging our networks and outreach strategies.\n   \u2705 Shared Knowledge: We can exchange insights and strategies to improve our respective services, ensuring we both stay ahead of industry trends.\n\n   I would love the opportunity to discuss this further and explore how we can work together to create value for our clients. Can we schedule a call or a meeting to discuss this in detail?\n\n   Thank you for considering this opportunity. I look forward to your response.\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST\n   ```\n\nFeel free to customize these templates further if needed!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "ConnectAgent": {
+                    "session_id": "dbdcc8b7-b686-448b-9d60-ec36bcc5662b",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "0d471863-e463-4a50-9276-7d38d9a2899d"
+        }
+    ]
+}
