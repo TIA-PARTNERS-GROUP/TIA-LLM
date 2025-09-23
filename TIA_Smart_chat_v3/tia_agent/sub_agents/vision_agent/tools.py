@@ -77,19 +77,19 @@ def generate_blog(tool_context: ToolContext) -> dict:
         results = []
         try:
             why_statement = generate_content_why_statement(collected_context)
-            results.append("WHY STATEMENT:\n" + "="*50 + "\n" + why_statement + "\n")
+            results.append("---\n\n## WHY STATEMENT\n\n---\n\n" + why_statement + "\n\n")
         except Exception as e:
-            results.append(f"Error generating Why Statement: {e}\n")
+            results.append(f"**Error generating Why Statement:** {e}\n\n")
         try:
             messaging = generate_content_messaging(collected_context)
-            results.append("MESSAGING:\n" + "="*50 + "\n" + messaging + "\n")
+            results.append("---\n\n## MESSAGING\n\n---\n\n" + messaging + "\n\n")
         except Exception as e:
-            results.append(f"Error generating Messaging: {e}\n")
+            results.append(f"**Error generating Messaging:** {e}\n\n")
         try:
             content = generate_content_blog(collected_context)
-            results.append("CONTENT:\n" + "="*50 + "\n" + content + "\n")
+            results.append("---\n\n## CONTENT\n\n---\n\n" + content + "\n\n")
         except Exception as e:
-            results.append(f"Error generating Content: {e}\n")
+            results.append(f"**Error generating Content:** {e}\n\n")
 
         blog_output = "\n".join(results)
         filename = None

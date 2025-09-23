@@ -1,152 +1,8 @@
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 import uuid, json, os
-from dotenv import load_dotenv
-from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService, DatabaseSessionService
-from google.adk.runners import RunConfig
-from google.genai import types
-from .utils import compare_responses
+from .utils import compare_responses, run_chat, delete_session
 
-try:
-    from .tia_agent.agent import coordinatorAgent
-except ImportError:
-    from tia_agent.agent import coordinatorAgent
 
-# Load environment variables
-load_dotenv()
-
-# Initialize session service with MySQL
-db_user = os.getenv("DB_USER", "root")
-db_pass = os.getenv("DB_PASS", "password")
-db_host = os.getenv("DB_HOST", "localhost")
-db_name = os.getenv("DB_NAME", "tiapartners")
-db_port = os.getenv("DB_PORT", "3333")
-db_url = f"mysql+mysqlconnector://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
-session_service = DatabaseSessionService(db_url=db_url)
-
-# Create runner
-runner = Runner(
-    agent=coordinatorAgent,
-    app_name="tia_smart_chat",
-    session_service=session_service
-)
-
-def handle_chat_type(agent: str, session):
-    """
-    Handles agent switching by sending a transfer message to the runner.
-    Maps short agent names to full names and triggers the transfer.
-    """
-    agent_lower = agent.lower()
-    if agent_lower == "default":
-        print("DEBUG: Chat type is 'Default' – skipping agent switching.")
-        return
-    
-    set_agent = session.state.get("set_agent", "CoordinatorAgent")
-    if set_agent != "CoordinatorAgent":
-        print(f"DEBUG: Current agent is '{set_agent}' – not switching from non-Coordinator.")
-        return
-    
-    if agent_lower == "profiler":
-        full_agent = "ProfilerAgent"
-    elif agent_lower == "connect":
-        full_agent = "ConnectAgent"
-    else:
-        raise ValueError("Invalid agent type. Must be 'Profiler', 'Connect', or 'Default'.")
-    
-    new_message = types.Content(
-        role="user",
-        parts=[types.Part(text=f"Transfer to {full_agent} Agent")]
-    )
-    
-    for event in runner.run(
-        user_id=session.user_id,
-        session_id=session.id,
-        new_message=new_message
-    ):
-        print("DEBUG: Transfer event =", event)
-        if event.is_final_response():
-            event.actions.transfer_to_agent
-            session.state["set_agent"] = event.author
-            print(f"DEBUG: Agent switched to {full_agent}")
-
-async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str, connection_type: str, message: str, session_id=None):
-    try:
-        if session_id is None:
-            # No session_id provided: Create a new session
-            session_id = str(uuid.uuid4())
-            state = {
-                "name": name,
-                "user_id": user_id,
-                "connection_type": connection_type,
-                "region": region,
-                "lat": lat,
-                "lng": lng,
-                "user_profile": "check",
-                "set_agent": "CoordinatorAgent"
-            }
-            session = await session_service.create_session(
-                app_name="tia_smart_chat",
-                user_id=user_id,
-                session_id=session_id,
-                state=state
-            )
-            session.state
-        else:
-            # session_id provided: Try to get existing session
-            session = await session_service.get_session(
-                app_name="tia_smart_chat",
-                user_id=user_id,
-                session_id=session_id
-            )
-
-            # session_id provided but doesn't exist: Create a new session
-            if session is None:
-                session_id = str(uuid.uuid4())
-                state = {
-                    "name": name,
-                    "user_id": user_id,
-                    "connection_type": connection_type,
-                    "region": region,
-                    "lat": lat,
-                    "lng": lng,
-                    "user_profile": "check",
-                    "set_agent": "CoordinatorAgent"
-                }
-                session = await session_service.create_session(
-                    app_name="tia_smart_chat",
-                    user_id=user_id,
-                    session_id=session_id,
-                    state=state
-                )
-        
-        handle_chat_type(chat_type, session)
-
-        # Prepare message
-        new_message = types.Content(
-            role="user",
-            parts=[types.Part(text=message)]
-        )
-
-        response_text = None
-        for event in runner.run(
-            user_id=session.user_id,
-            session_id=session.id,
-            new_message=new_message
-        ):
-            print("DEBUG: event =", event)
-            if event.is_final_response() and event.content and event.content.parts:
-                response_text = event.content.parts[0].text
-                author = event.author
-
-        if response_text is None:
-            response_text = "No response generated."
-
-        return session, response_text, author
-    except Exception as e:
-        print("ERROR in run_chat:", e)
-        raise Exception("Error during chat: " + str(e))
 
 # FastAPI app
 app = FastAPI()
@@ -165,11 +21,10 @@ async def chat_endpoint(requests: Request):
         lat = data.get("lat", 0.0)
         lng = data.get("lng", 0.0)
         chat_type = data.get("chat_type", "Default")
-        connection_type = data.get("connection_type")
         session_id = data.get("session_id", None)
         save_conversation = data.get("save_conversation", False)
 
-        session, response, author = await run_chat(user_id, name, region, lat, lng, chat_type, connection_type, message, session_id)
+        session, response, author = await run_chat(user_id, name, region, lat, lng, chat_type, message, session_id)
 
         result = {
             "response": response,
@@ -218,12 +73,8 @@ async def reset_session(requests: Request):
         session_id = data.get("session_id")
         if not user_id or not session_id:
             raise HTTPException(status_code=400, detail="user_id and session_id are required")
+        await delete_session(user_id, session_id)
 
-        await session_service.delete_session(
-            app_name="tia_smart_chat",
-            user_id=user_id,
-            session_id=session_id
-        )
         return {"detail": "Session reset successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

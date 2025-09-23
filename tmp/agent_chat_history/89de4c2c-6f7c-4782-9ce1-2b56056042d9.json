@@ -1,0 +1,49 @@
+{
+    "session_id": "89de4c2c-6f7c-4782-9ce1-2b56056042d9",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "hello",
+            "response": "Hello, Joshua Wlodarczyk! \ud83d\udd90\ufe0f \n\nI see that you have an existing profile with the following information:\n\n- **Business Name:** TIA TEST\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **Job Title:** Founder and CEO\n- **Strengths:** Empowering small businesses to thrive, enhancing efficiency, and reducing stress for clients.\n- **Skills:** Leadership, Strategic planning, AI implementation, Customer service automation, Problem-solving.\n- **Business Category:** Technology and services.\n\nWould you like to explore referral partners through our **ConnectAgent** or would you prefer to build a business vision using our **VisionAgent**?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "Complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "85ff940a-25ad-4799-86a2-7e821d2bac08"
+        },
+        {
+            "message": "I want to Connect",
+            "response": "I've found some potential referral partners for your business, TIA TEST. Here are the details along with personalized email templates for each connection:\n\n1. **Industrial Automation Australia**\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Phone:** +61733483505\n   - **Rating:** 3 (2 reviews)\n   - **Business Type:** Automation company\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n   Hi Vaughn and the Industrial Automation Australia Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. We specialize in innovative solutions within the automation sector, and I'm reaching out to explore potential partnership opportunities that could benefit both of our businesses.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Enhance service offerings by integrating our technologies and expertise.\n   \u2705 Increase market outreach through collaborative marketing initiatives.\n   \u2705 Join forces on innovative projects to stay ahead of the competition.\n\n   I believe a partnership between TIA TEST and Industrial Automation Australia could yield significant benefits for both sides, leveraging our strengths to drive mutual growth. I would love the opportunity to discuss this further and explore how we can collaborate effectively.\n\n   Looking forward to your thoughts!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\n2. **Customer Service**\n   - **Email:** info@wiseupenergy.com\n   - **Phone:** +61736300483\n   - **Rating:** 1 (1 review)\n   - **Business Type:** Computer training school\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n   Hi Customer Service Team,\n\n   I hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I came across your business, Wise Up Energy, and noticed that you provide valuable computer training services. I believe there is a significant opportunity for collaboration between our organizations that could enhance our offerings and drive mutual growth.\n\n   \ud83d\udca1 Partnership Benefits:\n\n   \u2705 Access to our extensive network of technology enthusiasts and professionals who could benefit from your training courses.  \n   \u2705 Opportunities to co-host workshops or seminars that integrate your training with our resources.  \n   \u2705 Potential to create referral programs that drive more traffic to both of our businesses.\n\n   I would love to discuss how we can work together to create a partnership that benefits both TIA TEST and Wise Up Energy. Could we schedule a time for a quick call or meeting in the coming days?\n\n   Looking forward to your thoughts!\n\n   Warm regards,  \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\n3. **Ai-Menu Systems**\n   - **Email:** sales@ai-menu.com\n   - **Phone:** +611300246368\n   - **Rating:** 4.9 (28 reviews)\n   - **Business Type:** Software company\n   - **Email Template:**\n   ```\n   Subject: \ud83e\udd1d Partnership Opportunity with TIA TEST and Ai-Menu Systems\n\n   Hi Ai-Menu Systems Team,\n\n   I hope this message finds you well! My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I've been following your progress, and I'm impressed with Ai-Menu Systems' innovative solutions in the software sector, especially your high rating and positive customer feedback.\n\n   \ud83d\udca1 Exploring Partnership Opportunities:\n\n   \u2705 Collaborate on AI-driven menu management solutions to enhance customer engagement.  \n   \u2705 Leverage TIA TEST's technology to streamline user experiences for your software solutions.  \n   \u2705 Create joint marketing campaigns that highlight the strengths of both our platforms, reaching a broader audience together.  \n\n   I believe that a partnership between TIA TEST and Ai-Menu Systems could lead to incredible synergy and mutual growth. I would love to schedule a time to discuss how we can work together to create value for our businesses.\n\n   Looking forward to the possibility of collaborating!\n\n   Warm regards,   \n   Joshua Wlodarczyk  \n   TIA TEST  \n   ```\n\nPlease let me know if you would like to proceed with sending these emails or if there's anything else you'd like to do!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "9e779a5b-fe4e-4563-9a24-0540d95e5805"
+        }
+    ]
+}

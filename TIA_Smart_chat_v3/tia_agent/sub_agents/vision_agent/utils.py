@@ -35,6 +35,15 @@ def generate_content_blog(collected_context, blog_amount=BLOG_AMOUNT):
             {"role": "system", "content": content_prompt},
             {"role": "user", "content": f"Please generate blog content batch {i+1} with social media captions based on the context."}
         ]
+        
+        # Add generation break at the start
+        blog_content = "<GENERATION_BREAK>\n"
+        
         assistant_response = generate_response(input_messages)
-        all_content.append(f"\n{'='*20} CONTENT BATCH {i+1} {'='*20}\n{assistant_response}")
+        
+        # Add the content with batch header and generation break at the end
+        blog_content += f"---\n\n## CONTENT BATCH {i+1}\n\n---\n\n{assistant_response}\n\n<GENERATION_BREAK>"
+        
+        all_content.append(blog_content)
+    
     return "\n".join(all_content)
