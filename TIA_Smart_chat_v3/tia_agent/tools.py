@@ -26,6 +26,8 @@ def check_for_existing_user(tool_context: ToolContext):
                 return {"status": "error", "message": message}
             result = {"status": "success", "profile": result["profile"], "message": f"User profile loaded and valid for {connection_type} connection."}
 
+        agent_type = state.get("set_agent")
+        tool_context.actions.transfer_to_agent = agent_type
         return result
 
     except Exception as e:

@@ -1,0 +1,23 @@
+{
+    "session_id": "0fc5d8d7-aa91-4a33-bb86-b51a555b3835",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "I have found some ideal referral partners for your business, TIA TEST. Here are the details along with personalized email templates you can use to reach out:\n\n### 1. Industrial Automation Australia\n- **Email:** vaughn@iaarobotics.com.au\n- **Phone:** +61733483505\n- **Rating:** 3 (2 reviews)\n- **Business Type:** Automation company\n- **Email Template:**\n  ```\n  Subject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\n  Hi Vaughn and the Industrial Automation Australia Team,\n\n  I hope this message finds you well. My name is Joshua Wlodarczyk, Founder and CEO of TIA TEST. As a company focused on innovation in the automation sector, I believe there's a significant opportunity for us to collaborate and enhance our service offerings.\n\n  \ud83d\udca1 Potential Partnership Benefits:\n\n  \u2705 Access to advanced automation technologies to enrich our product lineup  \n  \u2705 Combining our resources can accelerate innovation and project delivery  \n  \u2705 Leverage our networks for mutual growth in the Australian market\n\n  I would love to discuss how TIA TEST and Industrial Automation Australia can work together to achieve our goals. Are you available for a brief call next week to explore potential collaboration avenues?\n\n  Looking forward to your thoughts!\n\n  Warm regards,  \n  Joshua Wlodarczyk  \n  TIA TEST\n  ```\n\n### 2. Customer Service\n- **Email:** info@wiseupenergy.com\n- **Phone:** +61736300483\n- **Rating:** 1 (1 review)\n- **Business Type:** Computer training school\n- **Email Template:**\n  ```\n  Subject: \ud83e\udd1d Partnership Opportunity with TIA TEST\n\n  Hi Customer Service Team,\n\n  I hope this message finds you well. My name is Joshua Wlodarczyk, the Founder and CEO of TIA TEST, and I'm reaching out to explore potential collaboration opportunities between our organizations. Given your expertise as a computer training school, I believe there is significant potential for us to work together in enriching your educational offerings.\n\n  \ud83d\udca1 Partnership Benefits:\n\n  \u2705 Access to exclusive AI-driven training tools that can enhance your curriculum  \n  \u2705 Joint workshops that can attract a wider audience and provide added value to your students  \n  \u2705 Opportunities for cross-promotion that can increase visibility and client engagement for both parties  \n\n  I would love the chance to discuss how we can create a mutually beneficial partnership. Perhaps we can schedule a call or a meeting at your convenience to explore this further?\n\n  Looking forward to your response!\n\n  Warm regards,  \n  Joshua Wlodarczyk  \n  TIA TEST\n  ```\n\n### 3. Ai-Menu Systems\n- **Email:** sales@ai-menu.com\n- **Phone:** +611300246368\n- **Rating:** 4.9 (28 reviews)\n- **Business Type:** Software company\n- **Email Template:**\n  ```\n  Subject: \ud83e\udd1d Exploring Partnership Opportunities with Ai-Menu Systems\n\n  Hi Ai-Menu Team,\n\n  I hope this message finds you well! My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. We specialize in creating innovative solutions that enhance user experience in technology. With Ai-Menu Systems\u2019 impressive track record and a solid rating of 4.9 from 28 reviews, I believe there is a fantastic synergy between our companies.\n\n  \ud83d\udca1 Potential Partnership Benefits:\n\n  \u2705 Collaboration on software projects that enhance food service management  \n  \u2705 Joint marketing initiatives to reach a wider audience in the food technology sector  \n  \u2705 Sharing of resources and expertise to innovate and improve user engagement\n\n  I would be thrilled to discuss potential partnership opportunities that could leverage our strengths for mutual growth. Would you be available for a brief call next week to explore this further?\n\n  Looking forward to your response!\n\n  Warm regards,  \n  Joshua Wlodarczyk  \n  TIA TEST\n  ```\n\nWould you like any modifications to these templates or is there anything else you want to explore?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "da5616ea-195a-4194-9879-ac4317aec865"
+        }
+    ]
+}

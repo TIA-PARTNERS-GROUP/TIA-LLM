@@ -1,9 +1,9 @@
 from typing import Dict, Any, List
 from dotenv import load_dotenv
-from litellm import completion
 from urllib.parse import urlencode
 from ...config import CHAT_MODEL, OPENAI_API_KEY, RAPIDAPI_HOST, RAPIDAPI_KEY
 from .prompts import CONNECT_GENERATION_PROMPT
+from ..DynamicChatAssistant import generate_response
 import os, requests, json, http.client
 
 load_dotenv()
@@ -26,11 +26,8 @@ def extract_business_type(conversation_history):
         {"role": "system", "content": "You are an assistant that extracts short business types from conversations."},
         {"role": "user", "content": business_type_prompt}
     ]
-    business_type = completion(
-        model=CHAT_MODEL,
-        messages=input_messages,
-        api_key=OPENAI_API_KEY
-    ).choices[0].message.content.strip()
+    
+    business_type = generate_response(input_messages)
     
     return business_type
     
@@ -91,11 +88,7 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
         {"role": "system", "content": "You are an assistant that generates concise business search queries for local business data APIs."},
         {"role": "user", "content": f"Connection Type: {connection_type}\nSelected Attributes: {json.dumps(selected_attributes)}\nGenerate a 1-5 word search query that best fits this for finding relevant businesses."}
     ]
-    query = completion(
-        model=CHAT_MODEL,
-        messages=message,
-        api_key=OPENAI_API_KEY
-    ).choices[0].message.content.strip()
+    query = generate_response(message)
 
     print(f"DEBUG: Generated query for {connection_type}: {query}")
 
@@ -176,11 +169,7 @@ def generate_email_templates(businesses, user_name, user_job, user_email, busine
                 {"role": "system", "content": "You are an assistant that generates professional email templates for business outreach."},
                 {"role": "user", "content": email_prompt}
             ]
-            email_output = completion(
-                model=CHAT_MODEL,
-                messages=input_messages,
-                api_key=OPENAI_API_KEY
-            ).choices[0].message.content.strip()
+            email_output = generate_response(input_messages)
             
             email_output += "\n<GENERATION_BREAK>"
             

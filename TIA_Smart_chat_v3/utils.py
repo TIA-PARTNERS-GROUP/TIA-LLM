@@ -16,11 +16,11 @@ except ImportError:
 load_dotenv()
 
 # Initialize session service with MySQL
-db_user = os.getenv("DB_USER", "root")
-db_pass = os.getenv("DB_PASS", "password")
-db_host = os.getenv("DB_HOST", "localhost")
-db_name = os.getenv("DB_NAME", "tiapartners")
-db_port = os.getenv("DB_PORT", "3333")
+db_user = os.getenv("DB_USER")
+db_pass = os.getenv("DB_PASS")
+db_host = os.getenv("DB_HOST")
+db_name = os.getenv("DB_NAME")
+db_port = os.getenv("DB_PORT")
 db_url = f"mysql+mysqlconnector://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
 session_service = DatabaseSessionService(db_url=db_url)
 
@@ -31,7 +31,7 @@ runner = Runner(
     session_service=session_service
 )
 
-def _handle_chat_type(type: str, session):
+def _handle_chat_type(type: str):
     """
     Handles agent switching by sending a transfer message to the runner.
     Maps short agent names to full names and triggers the transfer.
@@ -40,7 +40,7 @@ def _handle_chat_type(type: str, session):
     try:
         if type == "default":
             print("DEBUG: Chat type is 'Default' – skipping agent switching.")
-            connection_type = "Complementary"
+            connection_type = "complementary"
             return connection_type
 
         # Parse the input - chat type : connection type E.g. connect:complementary
@@ -66,27 +66,11 @@ def _handle_chat_type(type: str, session):
             else:
                 raise ValueError(f"Invalid or missing connection type for ConnectAgent. Must be one of {valid_connection_types}.")
             
-            session.state["connection_type"] = connection_type
+            print(f"DEBUG: Set connection_type to '{connection_type}' before transfer")
         else:
             raise ValueError(f"Invalid agent type '{agent_type}'. Must be 'profiler', 'connect', or 'default'.")
-
-        # Send transfer message
-        new_message = types.Content(
-            role="user",
-            parts=[types.Part(text=f"Transfer to {full_agent} Agent")]
-        )
         
-        for event in runner.run(
-            user_id=session.user_id,
-            session_id=session.id,
-            new_message=new_message
-        ):
-            print("DEBUG: Transfer event =", event)
-            if event.is_final_response():
-                event.actions.transfer_to_agent
-                print(f"DEBUG: Agent switched to {full_agent}")
-        
-        return connection_type
+        return full_agent, connection_type
     except Exception as e:
         print("ERROR in handle_chat_type:", e)
         raise Exception("Error during agent switching: " + str(e))
@@ -94,14 +78,16 @@ def _handle_chat_type(type: str, session):
 async def _create_new_session(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str):
     try:
         session_id = str(uuid.uuid4())
-        connection_type = "complementary"  # Default connection type for new sessions
+        full_agent, connection_type = _handle_chat_type(chat_type)
         state = {
             "name": name,
             "user_id": user_id,
+            "set_agent": full_agent,
             "connection_type": connection_type,
             "region": region,
             "lat": lat,
             "lng": lng,
+            "end_session": False,
             "user_profile": "check",
         }
         session = await session_service.create_session(
@@ -110,8 +96,6 @@ async def _create_new_session(user_id: str, name: str, region: str, lat: float, 
             session_id=session_id,
             state=state
         )
-        connection_type = _handle_chat_type(chat_type, session)
-        session.state["connection_type"] = connection_type
         return session
     except Exception as e:
         print("ERROR in create_new_session:", e)
@@ -148,14 +132,17 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
             new_message=new_message
         ):
             print(f"DEBUG: Event: {event}")
+            print(f"DEBUG: Session state during chat: {session.state}")
+            print(f"DEBUG: Session ID: {session.id}")
             if event.is_final_response() and event.content and event.content.parts:
                 response_text = event.content.parts[0].text
                 author = event.author
         
-        # Check if we need to create a new session
-        if author == "CoordinatorAgent" and chat_type != "default":
+        end_session = session.state.get("end_session", False)
+        if end_session:
+            await delete_session(user_id, session.id)
             session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
-
+        
         return session, response_text, author
     except Exception as e:
         print("ERROR in run_chat:", e)

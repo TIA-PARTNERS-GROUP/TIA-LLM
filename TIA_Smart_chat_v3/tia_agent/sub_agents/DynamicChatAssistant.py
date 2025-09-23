@@ -9,7 +9,7 @@ def generate_response(message):
         messages=message,
         api_key=OPENAI_API_KEY
     )
-    return response.choices[0].message.content
+    return response.choices[0].message.content.strip()
 
 class DynamicChatAssistant:
     def __init__(self, prompts: list, rule_prompt: str, user_id: int):

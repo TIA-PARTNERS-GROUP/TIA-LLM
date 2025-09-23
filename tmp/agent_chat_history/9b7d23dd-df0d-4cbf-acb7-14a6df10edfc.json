@@ -1,0 +1,23 @@
+{
+    "session_id": "9b7d23dd-df0d-4cbf-acb7-14a6df10edfc",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "thanks",
+            "response": null,
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": null,
+            "timestamp": "04a6b07d-f65b-440c-89c0-6e3090b14ca1"
+        }
+    ]
+}

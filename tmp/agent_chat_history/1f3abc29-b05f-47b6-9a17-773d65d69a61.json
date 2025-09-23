@@ -1,0 +1,110 @@
+{
+    "session_id": "1f3abc29-b05f-47b6-9a17-773d65d69a61",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today? Would you like to explore referral partners or any other information?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "43e9dbf9-1545-40a8-bc42-c70ce32a42a0"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello! I'm excited to help you explore opportunities for your business. To get started, what does your business do?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check",
+                "ConnectAgent": {
+                    "session_id": "ae2e55a5-7c28-4409-91e6-8c7d884f92e2",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "48257676-3a14-4d2c-8d7d-aa9b09dc9200"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello again! I\u2019m here to help you connect your business with potential partners. Let's dive in. To get started, what does your business do?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check",
+                "ConnectAgent": {
+                    "session_id": "ae2e55a5-7c28-4409-91e6-8c7d884f92e2",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "f68b181d-d489-478e-9323-aee5b389224d"
+        },
+        {
+            "message": "connect",
+            "response": "Thank you for that! It sounds like your business is focused on making connections, which can be invaluable in the tech industry. Now, could you tell me what products or services you offer?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check",
+                "ConnectAgent": {
+                    "session_id": "ae2e55a5-7c28-4409-91e6-8c7d884f92e2",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "8c7c5004-5634-4e3f-b342-b1d87d041159"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello! It's great to connect with you. To get started, what does your business do?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check",
+                "ConnectAgent": {
+                    "session_id": "ae2e55a5-7c28-4409-91e6-8c7d884f92e2",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 0
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "df0b382b-576b-4e2a-a03a-94c3223a30d1"
+        }
+    ]
+}

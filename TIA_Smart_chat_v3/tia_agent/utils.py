@@ -167,6 +167,9 @@ def load_user_profile(user_id: int):
             "Contact_Email": business_email,
             "Contact_Phone_No": business_phone
         }
+        
+        #profile_exists = False # DISABLE FOR TESTING
+        
         if profile_exists:
             # Construct and set the profile
             profile.update({
