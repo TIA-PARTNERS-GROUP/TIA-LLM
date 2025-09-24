@@ -1,6 +1,15 @@
 from google.adk.tools import ToolContext
 from .utils import load_user_profile, validate_connection_options
 
+def end_session(tool_context: ToolContext) -> dict:
+    """End the current session."""
+    try:
+        state = tool_context.state
+        state["end_session"] = True
+        return {"status": "success", "message": "Session ended."}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
 def check_for_existing_user(tool_context: ToolContext):
     """Check the database for existing user profile and pull data if available."""
     try:
@@ -27,8 +36,7 @@ def check_for_existing_user(tool_context: ToolContext):
             result = {"status": "success", "profile": result["profile"], "message": f"User profile loaded and valid for {connection_type} connection."}
 
         agent_type = state.get("set_agent")
-        tool_context.actions.transfer_to_agent = agent_type
-        return result
+        return {"status": "success", "transfer_to_agent": agent_type, "result": result}
 
     except Exception as e:
         print(f"DEBUG: Error in check_for_existing_user: {e}")

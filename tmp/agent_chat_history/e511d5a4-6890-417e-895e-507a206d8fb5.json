@@ -1,0 +1,23 @@
+{
+    "session_id": "e511d5a4-6890-417e-895e-507a206d8fb5",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Hello! How can I assist you today?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "EmailAgent",
+            "timestamp": "b5fd5c3f-588b-4139-b334-1794e95f7cd4"
+        }
+    ]
+}

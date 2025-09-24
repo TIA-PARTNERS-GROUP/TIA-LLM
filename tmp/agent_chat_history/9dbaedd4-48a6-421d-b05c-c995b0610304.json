@@ -1,0 +1,23 @@
+{
+    "session_id": "9dbaedd4-48a6-421d-b05c-c995b0610304",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today? If you're looking to build a vision, find connections, or explore your exit strategy, I can help with that too!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "81dadea6-1ee6-427b-9984-78b95f56d02b"
+        }
+    ]
+}

@@ -21,7 +21,7 @@ VisionAgent = Agent(
     **Session management:**
     - If `chat_state` is "exit":
         1. Immediately call `generate_blog` with the user's responses.
-        2. Output the blog result to the user, exactly as returned. Add at the bottom seperated by a line break: Would you like to return to the coordinator agent?
+        2. Output the blog result to the user, exactly as returned.
         3. Then use `transfer_to_agent` to return to the `CoordinatorAgent`, passing the blog output.
         4. Do not transfer until after outputting the blog.
     - If `chat_state` is not "exit", continue using `chat_with_phases`.

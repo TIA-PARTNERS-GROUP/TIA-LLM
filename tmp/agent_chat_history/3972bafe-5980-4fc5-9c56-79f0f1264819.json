@@ -1,0 +1,52 @@
+{
+    "session_id": "3972bafe-5980-4fc5-9c56-79f0f1264819",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Absolutely! I\u2019d love to help you build your vision. Let\u2019s start with the basics. Can you tell me a bit about your business? What\u2019s its name and what inspired you to start it?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "44e3e1b7-a303-4ab8-9329-ef34b946bc9e"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "That sounds fascinating! AI-powered customer service automation is such a relevant service in today\u2019s digital landscape. What a great way to leverage technology to enhance customer experiences! \n\nNow, I\u2019d love to know more about you. What is your role in the company?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "108c5593-6e07-4781-a873-765da1e9a7c0",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "287346f0-4a11-41db-b01c-88e231a889fb"
+        }
+    ]
+}

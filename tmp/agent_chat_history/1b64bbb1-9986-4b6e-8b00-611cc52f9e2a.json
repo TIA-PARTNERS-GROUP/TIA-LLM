@@ -1,0 +1,40 @@
+{
+    "session_id": "1b64bbb1-9986-4b6e-8b00-611cc52f9e2a",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "could you make them more simple",
+            "response": "Here are the simplified email templates for your outreach:\n\n### Email Template for Ai-Menu Systems\n- **Email**: sales@ai-menu.com\n- **Phone**: +611300246368\n- **Rating**: 4.9 (28 reviews)\n\n```\nSubject: \ud83e\udd1d Partnership Opportunity with TIA TEST & Ai-Menu Systems\n\nHi Ai-Menu Team,\n\nI hope you are well! My name is Joshua Wlodarczyk, the Founder and CEO of TIA TEST. I admire your work and high rating in the software industry.\n\n\ud83d\udca1 Partnership Ideas:\n\u2705 Combine our strengths for better software solutions.  \n\u2705 Reach new customers together with joint marketing.  \n\u2705 Create value through collaboration on projects.  \n\nI'd love to discuss how we can work together. Are you available for a brief call next week?\n\nWarm regards,  \nJoshua Wlodarczyk  \nTIA TEST  \n```\n\n### Email Template for Industrial Automation Australia\n- **Email**: vaughn@iaarobotics.com.au\n- **Phone**: +61733483505\n- **Rating**: 3 (2 reviews)\n\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities with Industrial Automation Australia\n\nHi Vaughn and Team,\n\nI hope you are doing well. I'm Joshua Wlodarczyk, the Founder and CEO of TIA TEST. I came across your company and was impressed by your automation work.\n\n\ud83d\udca1 Partnership Benefits:\n\u2705 Enhance our services with integrated solutions.  \n\u2705 Work together on innovative projects.  \n\u2705 Expand our market reach by combining resources.  \n\nI'd love to chat about how we can collaborate. Could we schedule a call next week?\n\nLooking forward to hearing from you!\n\nWarm regards,  \nJoshua Wlodarczyk  \nTIA TEST  \n```\n\nWould you like to make any further adjustments or send these as they are?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "ab9d9db0-3c22-4fd6-b07e-2fd4b0fe66ae"
+        },
+        {
+            "message": "could you make them more simple",
+            "response": "Here are some businesses that could be great referral partners for your AI-powered customer service automation company:\n\n1. **Industrial Automation Australia**\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Phone Number:** +61733483505\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Rating:** 3.0\n   - **Working Hours:** Opens at 7 am\n   - **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)**\n\n2. **Customer Service**\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Phone Number:** +61736300483\n   - **Emails:** info@wiseupenergy.com, sharon@wiseupenergy.com\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **Rating:** 1.0\n   - **Working Hours:** Open 24 hours\n   - **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)**\n\n3. **Ai-Menu Systems**\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Phone Number:** +611300246368\n   - **Email:** sales@ai-menu.com\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **Rating:** 4.9\n   - **Working Hours:** Opens at 9 am\n   - **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)**\n\nPlease let me know which businesses you would like to create email templates for!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "fc117bb9-4ceb-439d-958a-2edf0802ad0a"
+        }
+    ]
+}

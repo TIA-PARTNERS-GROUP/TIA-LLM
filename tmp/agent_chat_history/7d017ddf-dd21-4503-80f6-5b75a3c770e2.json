@@ -1,0 +1,23 @@
+{
+    "session_id": "7d017ddf-dd21-4503-80f6-5b75a3c770e2",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello, Joshua! It looks like you have an existing profile with the following details:\n\n- **Business Name:** TIA TEST\n- **Contact Email:** joshuawlod2003@gmail.com\n- **Contact Phone No:** 0423158014\n- **Business Type:** AI-powered customer service automation\n- **User Job:** Founder and CEO\n- **User Strength:** Empowering small businesses to thrive\n- **User Skills:** Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving\n\nSince you have a profile in place, would you like to connect with someone for assistance, discuss your business vision, or explore the Ladder to Exit process? Here are your options:\n\n1. **ConnectAgent** - Find referral partners.\n2. **VisionAgent** - Build and clarify your business vision.\n3. **LadderAgent** - Get guidance through the Ladder to Exit process.\n\nLet me know which one interests you!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "15704008-786f-4f92-9d6e-14efca2dea48"
+        }
+    ]
+}

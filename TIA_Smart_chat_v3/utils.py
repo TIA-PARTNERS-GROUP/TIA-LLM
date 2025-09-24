@@ -38,10 +38,11 @@ def _handle_chat_type(type: str):
     Supports format: 'default', 'profiler:<sub_type>', or 'connect:<connection_type>'
     """
     try:
-        if type == "default":
-            print("DEBUG: Chat type is 'Default' – skipping agent switching.")
-            connection_type = "complementary"
-            return connection_type
+        connection_type = None
+        # if type == "default":
+        #     print("DEBUG: Chat type is 'Default' – skipping agent switching.")
+        #     connection_type = "complementary"
+        #     return connection_type
 
         # Parse the input - chat type : connection type E.g. connect:complementary
         if ':' in type:

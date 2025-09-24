@@ -66,7 +66,7 @@ def store_user_profile(tool_context: ToolContext):
             raise Exception("Failed to update user profile in database.")
 
         # Return to cooridantor to return to the starting agent
-        tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+        #tool_context.actions.transfer_to_agent = "CoordinatorAgent"
         return {"status": "success", "profile": profile}
     except Exception as e:
         return {"status": "error", "message": str(e)}

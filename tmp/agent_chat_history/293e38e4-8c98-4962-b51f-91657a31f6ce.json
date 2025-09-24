@@ -1,0 +1,584 @@
+{
+    "session_id": "293e38e4-8c98-4962-b51f-91657a31f6ce",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Here are the recommended referral partners for your AI-powered customer service automation business:\n\n1. **Ascend AI**\n   - **Email:** steve@ascendai.net.au\n   - **Phone:** +61730614034\n   - **Website:** [ascendai.net.au](https://www.ascendai.net.au)\n   - **Address:** Level 3/240 Queen St, Brisbane City QLD 4000\n   - **Opening Hours:** Open \u22c5 Closes 11 pm (varied hours)\n   - **Rating:** 5 stars (1 review)\n   - [More Info](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0xa605fb0717fd69fd:0x52af85330e9c3191)\n\n2. **SIG Machine Learning**\n   - **Email:** hello@sigmachinelearning.com\n   - **Website:** [sigmachinelearning.com](https://www.sigmachinelearning.com)\n   - **Address:** 310 Edward St, Brisbane City QLD 4000\n   - **Opening Hours:** Closed \u22c5 Opens 9 am Thu (varied hours)\n   - [More Info](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915b587bdf1bbf:0xd152590684c48aa1)\n\n3. **AIA Group**\n   - **Emails:** health.memberservices@aia.com.au, ovhc.claims@aia.com.au\n   - **Phone:** +61738497966\n   - **Website:** [aia.com.au](http://www.aia.com.au)\n   - **Address:** Level 4/135 Coronation Dr, Milton QLD 4064\n   - **Opening Hours:** Closed \u22c5 Opens 9 am Thu (varied hours)\n   - [More Info](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915b3467ce0281:0x2eb069c477fa42ee)\n\n4. **Automation Strategy Partner**\n   - **Website:** [automationstrategypartners.com](http://automationstrategypartners.com)\n   - **Address:** Level 14/167 Eagle St, Brisbane City QLD 4000\n   - **Phone:** +611300332084\n   - [More Info](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4)\n\n5. **Crowd Connect**\n   - **Website:** [crowdconnect.one](http://crowdconnect.one)\n   - **Address:** Level 18 Suite 15/124 Queen St, Brisbane City QLD 4000\n   - **Phone:** +61730630446\n   - [More Info](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a04c19bffff:0x48bc3f729237e216)\n\nPlease select which businesses you would like to receive email templates for!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "c1be0a14-5b02-4e55-8264-3110b43659dd"
+        },
+        {
+            "message": "SIG Machine Learning and Automation Strategy Partner",
+            "response": "Here are the email templates for the businesses you selected:\n\n### 1. **Industrial Automation Australia**\n- **Email:** vaughn@iaarobotics.com.au\n- **Phone:** +61733483505\n- **Rating:** 3 stars (2 reviews)\n\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities with Industrial Automation Australia\n\nHi Vaughn and the Industrial Automation Australia Team,\n\nI hope this message finds you well! My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. As a fellow professional in the automation sector, I admire the innovative solutions Industrial Automation Australia provides and see a potential for collaboration that could elevate our services and offerings.\n\n\ud83d\udd0c Potential Partnership Benefits:\n\n\u2705 Enhance your product offerings by integrating our cutting-edge testing solutions.  \n\u2705 Access new markets together through combined networking and client outreach.  \n\u2705 Leverage our shared expertise to increase operational efficiency and customer satisfaction.\n\nI would love to discuss how we can align our strengths for mutual growth, whether through joint projects, referrals, or knowledge exchange. Are you available for a brief chat next week? I believe we can explore some exciting opportunities together.\n\nLooking forward to your response!\n\nWarm regards,  \nJoshua Wlodarczyk  \nTIA TEST  \n```\n\n### 2. **Ai-Menu Systems**\n- **Email:** sales@ai-menu.com\n- **Phone:** +611300246368\n- **Rating:** 4.9 stars (28 reviews)\n\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities with Ai-Menu Systems\n\nHi Ai-Menu Team,\n\nI hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I came across Ai-Menu Systems and was impressed by your innovative software solutions and outstanding customer rating of 4.9! Given our shared dedication to enhancing user experiences in the tech space, I believe there are fantastic opportunities for collaboration.\n\n\ud83d\udd0c Benefits of Partnership:\n\n\u2705 Leverage our combined technological expertise to create cutting-edge solutions that enhance customer engagement.  \n\u2705 Expand your reach by integrating our services, potentially attracting a broader client base looking for robust menu systems.  \n\u2705 Collaborate on joint marketing efforts, amplifying visibility for both our brands while providing added value to our customers.\n\nI would love to discuss this potential partnership further and explore how we can work together to drive success for both our companies. Are you available for a brief call next week?\n\nLooking forward to your response!\n\nWarm regards,  \nJoshua Wlodarczyk  \nTIA TEST  \n```\n\nWould you like to make any changes to these email templates?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                },
+                "ConnectAgent": {
+                    "connection_result": {
+                        "status": "OK",
+                        "request_id": "9f769a4b-6fa3-4286-9a30-d76faa218b49",
+                        "parameters": {
+                            "query": "AI customer service automation",
+                            "language": "en",
+                            "region": "au",
+                            "lat": -27.4705,
+                            "lng": 153.026,
+                            "zoom": 10,
+                            "limit": 5,
+                            "extract_emails_and_contacts": true
+                        },
+                        "data": [
+                            {
+                                "business_id": "0xa605fb0717fd69fd:0x52af85330e9c3191",
+                                "google_id": "0xa605fb0717fd69fd:0x52af85330e9c3191",
+                                "place_id": "ChIJ_Wn9Fwf7BaYRkTGcDjOFr1I",
+                                "google_mid": "/g/11xsb92l7k",
+                                "phone_number": "+61730614034",
+                                "name": "Ascend AI",
+                                "latitude": -27.468273099999998,
+                                "longitude": 153.02728199999999,
+                                "full_address": "Ascend AI, Level 3/240 Queen St, Brisbane City QLD 4000",
+                                "review_count": 1,
+                                "rating": 5,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open \u22c5 Closes 11\u202fpm",
+                                "working_hours": {
+                                    "Wednesday": [
+                                        "6 am\u201311 pm"
+                                    ],
+                                    "Thursday": [
+                                        "6 am\u201311 pm"
+                                    ],
+                                    "Friday": [
+                                        "6 am\u201311 pm"
+                                    ],
+                                    "Saturday": [
+                                        "6 am\u20135 pm"
+                                    ],
+                                    "Sunday": [
+                                        "6 am\u20135 pm"
+                                    ],
+                                    "Monday": [
+                                        "6 am\u201311 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "6 am\u201311 pm"
+                                    ]
+                                },
+                                "website": "https://www.ascendai.net.au",
+                                "tld": "ascendai.net.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0xa605fb0717fd69fd:0x52af85330e9c3191",
+                                "cid": "5958127286369399185",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ_Wn9Fwf7BaYRkTGcDjOFr1I&q=AI+customer+service+automation&authuser=0&hl=en&gl=AU",
+                                "owner_id": "116085062265931491780",
+                                "owner_link": "https://maps.google.com/maps/contrib/116085062265931491780",
+                                "owner_name": "Ascend AI",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Computer support and services",
+                                "subtypes": [
+                                    "Computer support and services",
+                                    "Business management consultant",
+                                    "Consultant",
+                                    "Software company"
+                                ],
+                                "subtype_gcids": [
+                                    "computer_support_and_services",
+                                    "business_management_consultant",
+                                    "consultant",
+                                    "software_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipOeuMS6-VQQb1OVw-VOxXyopoQ5eDwr6w4C-hFo",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipOeuMS6-VQQb1OVw-VOxXyopoQ5eDwr6w4C-hFo",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipOeuMS6-VQQb1OVw-VOxXyopoQ5eDwr6w4C-hFo=w1024-h585-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.4681523,
+                                        "longitude": 153.02716709999999,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2025-10-06T00:00:00.000Z",
+                                        "photo_timestamp": 1759708800
+                                    },
+                                    {
+                                        "photo_id": "n7gEoPXf_S_KHHGyNILI0A",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=n7gEoPXf_S_KHHGyNILI0A&cb_client=search.gws-prod.gps&w=80&h=92&yaw=152.42635&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.46812948161796,
+                                        "longitude": 153.02719747321197,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                        "photo_timestamp": 1729641600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 7,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Service options": {
+                                            "Online appointments": true,
+                                            "On-site services": true
+                                        },
+                                        "Accessibility": {
+                                            "Wheelchair-accessible seating": true,
+                                            "Wheelchair-accessible toilet": true
+                                        }
+                                    }
+                                },
+                                "address": "Level 3/240 Queen St, Brisbane City QLD 4000",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Level 3/240 Queen St",
+                                "city": "Brisbane City",
+                                "zipcode": "4000",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "steve@ascendai.net.au"
+                                    ],
+                                    "phone_numbers": [
+                                        "0730614034",
+                                        "61488999321"
+                                    ],
+                                    "facebook": "https://www.facebook.com/ascendaisolutions",
+                                    "instagram": "https://www.instagram.com/ascendaisolutions",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/ascendai-net",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915b587bdf1bbf:0xd152590684c48aa1",
+                                "google_id": "0x6b915b587bdf1bbf:0xd152590684c48aa1",
+                                "place_id": "ChIJvxvfe1hbkWsRoYrEhAZZUtE",
+                                "google_mid": "/g/11vkpd4dtt",
+                                "phone_number": null,
+                                "name": "SIG Machine Learning",
+                                "latitude": -27.4668547,
+                                "longitude": 153.02484809999999,
+                                "full_address": "SIG Machine Learning, 310 Edward St, Brisbane City QLD 4000",
+                                "review_count": 0,
+                                "rating": null,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 9\u202fam Thu",
+                                "working_hours": {
+                                    "Wednesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Thursday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "9 am\u20135 pm"
+                                    ]
+                                },
+                                "website": "https://www.sigmachinelearning.com",
+                                "tld": "sigmachinelearning.com",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915b587bdf1bbf:0xd152590684c48aa1",
+                                "cid": "15083215986549361313",
+                                "reviews_link": null,
+                                "owner_id": "109726938825057175853",
+                                "owner_link": "https://maps.google.com/maps/contrib/109726938825057175853",
+                                "owner_name": "SIG Machine Learning",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Software company",
+                                "subtypes": [
+                                    "Software company"
+                                ],
+                                "subtype_gcids": [
+                                    "software_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "IXQSzftoBUZyT6yVNwS9hg",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IXQSzftoBUZyT6yVNwS9hg&cb_client=search.gws-prod.gps&w=86&h=86&yaw=324.667&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.46711620717607,
+                                        "longitude": 153.02505703548826,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2025-02-09T00:00:00.000Z",
+                                        "photo_timestamp": 1739059200
+                                    },
+                                    {
+                                        "photo_id": "AF1QipMUijH9vYESZKk3RR7LE-DcguhjMtF79ATzKlDV",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipMUijH9vYESZKk3RR7LE-DcguhjMtF79ATzKlDV",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipMUijH9vYESZKk3RR7LE-DcguhjMtF79ATzKlDV=w1200-h628-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.467097199999998,
+                                        "longitude": 153.025082,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2024-09-27T00:00:00.000Z",
+                                        "photo_timestamp": 1727395200
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 7,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "310 Edward St, Brisbane City QLD 4000",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "310 Edward St",
+                                "city": "Brisbane City",
+                                "zipcode": "4000",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "hello@sigmachinelearning.com"
+                                    ],
+                                    "phone_numbers": [],
+                                    "facebook": "https://www.facebook.com/SIGMachineLearning",
+                                    "instagram": null,
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": null,
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915b3467ce0281:0x2eb069c477fa42ee",
+                                "google_id": "0x6b915b3467ce0281:0x2eb069c477fa42ee",
+                                "place_id": "ChIJgQLOZzRbkWsR7kL6d8RpsC4",
+                                "google_mid": "/g/1tpc83_w",
+                                "phone_number": "+61738497966",
+                                "name": "AIA Group",
+                                "latitude": -27.4685505,
+                                "longitude": 153.0104628,
+                                "full_address": "AIA Group, Level 4/135 Coronation Dr, Milton QLD 4064",
+                                "review_count": 37,
+                                "rating": 2.1,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closed \u22c5 Opens 9\u202fam Thu",
+                                "working_hours": {
+                                    "Wednesday": [
+                                        "9 am\u20136 pm"
+                                    ],
+                                    "Thursday": [
+                                        "9 am\u20136 pm"
+                                    ],
+                                    "Friday": [
+                                        "9 am\u20136 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "9 am\u20136 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "9 am\u20136 pm"
+                                    ]
+                                },
+                                "website": "http://www.aia.com.au",
+                                "tld": "aia.com.au",
+                                "verified": false,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915b3467ce0281:0x2eb069c477fa42ee",
+                                "cid": "3364305214193156846",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJgQLOZzRbkWsR7kL6d8RpsC4&q=AI+customer+service+automation&authuser=0&hl=en&gl=AU",
+                                "owner_id": "109450133919068388349",
+                                "owner_link": "https://maps.google.com/maps/contrib/109450133919068388349",
+                                "owner_name": "AIA Group",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Insurance agency",
+                                "subtypes": [
+                                    "Insurance agency"
+                                ],
+                                "subtype_gcids": [
+                                    "insurance_agency"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "XVbNQNaOfp6GE-R_Wgbw8Q",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=XVbNQNaOfp6GE-R_Wgbw8Q&cb_client=search.gws-prod.gps&w=86&h=86&yaw=328.40274&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.46876503026685,
+                                        "longitude": 153.0106115334075,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-10-24T00:00:00.000Z",
+                                        "photo_timestamp": 1729728000
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 1,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "Level 4/135 Coronation Dr, Milton QLD 4064",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Level 4/135 Coronation Dr",
+                                "city": "Milton",
+                                "zipcode": "4064",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "health.memberservices@aia.com.au",
+                                        "ovhc.claims@aia.com.au",
+                                        "au.cservice@aia.com",
+                                        "au.customerservices@aia.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "1800333004",
+                                        "1800161170",
+                                        "1800161218",
+                                        "1800417788",
+                                        "1800434044",
+                                        "1800805686"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": null,
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": null,
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                                "google_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                                "place_id": "ChIJAQAwlB1akWsR9MwfPIQYYYQ",
+                                "google_mid": "/g/11vzgp3xrp",
+                                "phone_number": "+611300332084",
+                                "name": "Automation Strategy Partner",
+                                "latitude": -27.4659968,
+                                "longitude": 153.0306249,
+                                "full_address": "Automation Strategy Partner, Level 14/167 Eagle St, Brisbane City QLD 4000",
+                                "review_count": 0,
+                                "rating": null,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": null,
+                                "working_hours": null,
+                                "website": "http://automationstrategypartners.com",
+                                "tld": "automationstrategypartners.com",
+                                "verified": false,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4",
+                                "cid": "9538932441970887924",
+                                "reviews_link": null,
+                                "owner_id": "104696242064448986926",
+                                "owner_link": "https://maps.google.com/maps/contrib/104696242064448986926",
+                                "owner_name": "Automation Strategy Partner",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Automation company",
+                                "subtypes": [
+                                    "Automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "ZvXu470KN5rt8VGNCdYVJw",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZvXu470KN5rt8VGNCdYVJw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=116.09867&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.46590306679585,
+                                        "longitude": 153.0304092483106,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                        "photo_timestamp": 1729641600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 1,
+                                "about": null,
+                                "address": "Level 14/167 Eagle St, Brisbane City QLD 4000",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Level 14/167 Eagle St",
+                                "city": "Brisbane City",
+                                "zipcode": "4000",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [],
+                                    "phone_numbers": [
+                                        "1300332084"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": "https://www.instagram.com/automationstrategypartners",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": null,
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915a04c19bffff:0x48bc3f729237e216",
+                                "google_id": "0x6b915a04c19bffff:0x48bc3f729237e216",
+                                "place_id": "ChIJ__-bwQRakWsRFuI3knI_vEg",
+                                "google_mid": "/g/11w4g4bs2b",
+                                "phone_number": null,
+                                "name": "Crowd Connect",
+                                "latitude": -27.470783599999997,
+                                "longitude": 153.0252207,
+                                "full_address": "Crowd Connect, Level 18 Suite 15/124 Queen St, Brisbane City QLD 4000",
+                                "review_count": 0,
+                                "rating": null,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": null,
+                                "working_hours": null,
+                                "website": "http://crowdconnect.one",
+                                "tld": "crowdconnect.one",
+                                "verified": false,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a04c19bffff:0x48bc3f729237e216",
+                                "cid": "5241133827664372246",
+                                "reviews_link": null,
+                                "owner_id": "114909694146042070910",
+                                "owner_link": "https://maps.google.com/maps/contrib/114909694146042070910",
+                                "owner_name": "Crowd Connect",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Automation company",
+                                "subtypes": [
+                                    "Automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "xrPom13U_xejnl7-2QyZWQ",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xrPom13U_xejnl7-2QyZWQ&cb_client=search.gws-prod.gps&w=86&h=86&yaw=315.77084&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.47090264667523,
+                                        "longitude": 153.02535131295267,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                        "photo_timestamp": 1729641600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 1,
+                                "about": null,
+                                "address": "Level 18 Suite 15/124 Queen St, Brisbane City QLD 4000",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Level 18 Suite 15/124 Queen St",
+                                "city": "Brisbane City",
+                                "zipcode": "4000",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [],
+                                    "phone_numbers": [
+                                        "61730630446"
+                                    ],
+                                    "facebook": "https://www.facebook.com/crowdconnect",
+                                    "instagram": "https://www.instagram.com/connect_crowd",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": "https://twitter.com/crowdconnect",
+                                    "linkedin": "https://www.linkedin.com/company/crowdconnectwifi",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "b56d3796-a4d9-4b1e-871e-ee805b2afe19"
+        }
+    ]
+}

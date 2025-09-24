@@ -1,0 +1,40 @@
+{
+    "session_id": "29101492-7d2e-4742-b50a-def595f1c430",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "0d369652-8e0a-4dc1-94c0-93735e303d8f"
+        },
+        {
+            "message": "Hello!",
+            "response": "It seems there was an error generating the email templates for the recommended partners. Let's try again to assist you in connecting with potential partners. \n\nHere are the businesses matched for you:\n\n1. **Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd**\n   - Phone: +61418139559\n   - Email: sales@automated.net.au\n   - Website: [www.automated.net.au](http://www.automated.net.au)\n\n2. **Online Automation Pty Ltd**\n   - Phone: +61732671170\n   - Website: [www.onlineautomation.com.au](https://www.onlineautomation.com.au)\n   - LinkedIn: [Online Automation LinkedIn](https://www.linkedin.com/company/online-automation-pty-ltd)\n\n3. **Industrial Automation Australia**\n   - Phone: +61733483505\n   - Email: vaughn@iaarobotics.com.au\n   - Website: [www.iaarobotics.com.au](https://www.iaarobotics.com.au)\n\n4. **Alliance Automation**\n   - Phone: +611300770994\n   - Email: sales@allianceautomation.com.au\n   - Website: [www.allianceautomation.com.au](https://allianceautomation.com.au)\n\n5. **Ai-Menu Systems**\n   - Phone: +611300246368\n   - Email: sales@ai-menu.com\n   - Website: [www.ai-menu.com](http://ai-menu.com)\n\nWould you like to receive email templates for these businesses?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "32ee0300-49b7-46a6-aa4b-fbd261284e29"
+        }
+    ]
+}

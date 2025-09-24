@@ -1,0 +1,58 @@
+{
+    "session_id": "10d5bfe1-5a08-45b2-ab26-5a7f590e7fc4",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "It seems that I have some context about your profile, and I noticed that you've exceeded your monthly quota for business connections on your current plan. Since there's no additional data found for connections, you might want to consider upgrading your plan or checking back later.\n\nIf you'd like assistance with anything else, you can always choose to work with VisionAgent, LadderAgent, or I can help with any other inquiries. Just let me know what you'd like!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "e7f612d7-20a2-4d9f-9e59-64aa471b0e46"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello again! It looks like you've exceeded your monthly quota for business connections on your current plan, which is preventing us from finding any new connections for you. \n\nIf you\u2019d like to upgrade your plan, you can check the options available. \n\nIn the meantime, if you're interested, you can choose to work with VisionAgent or LadderAgent for guidance or assistance with your vision or business exit strategies. Just let me know what you'd like to do!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                },
+                "ConnectAgent": {
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "754fb1db-9f92-44fc-9967-24b3a9db3d44"
+        }
+    ]
+}
