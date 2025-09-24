@@ -1,0 +1,23 @@
+{
+    "session_id": "7e6a6fa6-7958-4888-b051-ba654e0d823e",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Hello Joshua! It looks like your profile is already set up and valid for making connections. How can I assist you today? Would you like to explore partnership opportunities or discuss something else?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "2dba4206-050d-417e-82b7-a9b09ae72b8f"
+        }
+    ]
+}

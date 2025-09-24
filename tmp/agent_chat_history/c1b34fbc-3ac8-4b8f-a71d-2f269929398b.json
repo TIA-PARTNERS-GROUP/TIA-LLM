@@ -1,0 +1,23 @@
+{
+    "session_id": "c1b34fbc-3ac8-4b8f-a71d-2f269929398b",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Hello, Joshua Wlodarczyk! I found your existing profile, which includes your business name \"TIA TEST\" and your role as Founder and CEO. \n\nYour strengths revolve around empowering small businesses, enhancing efficiency, and reducing stress for clients, particularly in AI-powered customer service automation.\n\nSince your profile is valid for complementary connections, would you like to connect with others, explore your business vision, or receive guidance through the Ladder to Exit process? Here are your options: \n\n- **ConnectAgent**: Find referral partners.\n- **VisionAgent**: Build on your business vision.\n- **LadderAgent**: Get guidance through the Ladder to Exit process. \n\nLet me know what you'd like to do!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "5762b906-4029-486c-8cc0-7b2ca9185d49"
+        }
+    ]
+}

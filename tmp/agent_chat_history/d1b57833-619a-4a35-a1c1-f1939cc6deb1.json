@@ -1,0 +1,23 @@
+{
+    "session_id": "d1b57833-619a-4a35-a1c1-f1939cc6deb1",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Would you like to continue to the next phase?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "fbb98254-3fb2-4458-bdc2-ad59b70e21f8"
+        }
+    ]
+}

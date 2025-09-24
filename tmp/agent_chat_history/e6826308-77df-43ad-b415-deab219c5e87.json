@@ -1,0 +1,23 @@
+{
+    "session_id": "e6826308-77df-43ad-b415-deab219c5e87",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello! It seems like we've been working on building your business vision with VisionAgent. Your profile is existing, and the insights gathered are quite powerful. \n\nWould you like to continue with the VisionAgent, explore connection opportunities with ConnectAgent, or discuss the next steps with LadderAgent? Let me know how you\u2019d like to proceed!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "6d190893-745e-42bc-a4b9-be5ff91e83e1"
+        }
+    ]
+}

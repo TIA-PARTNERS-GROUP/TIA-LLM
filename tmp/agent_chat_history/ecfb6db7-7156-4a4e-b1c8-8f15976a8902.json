@@ -1,0 +1,40 @@
+{
+    "session_id": "ecfb6db7-7156-4a4e-b1c8-8f15976a8902",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "I like Industrial Automation Australia only",
+            "response": "Here is the email template for **Industrial Automation Australia**:\n\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities with TIA TEST\n\nHi Industrial Automation Australia Team,\n\nI hope this message finds you well. My name is Joshua Wlodarczyk, and I am the Founder and CEO of TIA TEST. I recently came across your company and was impressed by your work in the automation sector. Considering our mutual interests in automation technology, I believe there may be a great opportunity for us to collaborate.\n\n\ud83d\udca1 Potential Partnership Benefits:\n\n\u2705 Access to TIA TEST's cutting-edge testing solutions to enhance the reliability of your automation products.  \n\u2705 Joint marketing initiatives that leverage both of our brands to attract new customers within the automation industry.  \n\u2705 Sharing of industry insights and expertise that could drive innovation and improve operational efficiencies for both of our businesses.  \n\nI would love to schedule a brief call or meeting to discuss how we might work together to achieve our common goals. Please let me know your availability for next week, and I will be happy to accommodate.\n\nLooking forward to the possibility of working together!\n\nWarm regards,  \nJoshua Wlodarczyk  \nTIA TEST  \n```\n\nWould you like to proceed with sending this email or need any modifications?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "4ae3aeeb-0330-4c48-80d5-f18d745a55b6"
+        },
+        {
+            "message": "thanks",
+            "response": "It looks like you're in the process of exploring some exciting collaboration opportunities with various businesses related to your field of AI-powered customer service automation. If you need any further assistance or would like to chat about your next steps, feel free to let me know! \n\nYou can also choose to connect with any of the following agents:\n- **VisionAgent**: If you're interested in building a business vision.\n- **LadderAgent**: For guidance through the Ladder to Exit process.\n- **ConnectAgent**: If you want to explore more connections.\n\nJust let me know how you'd like to proceed!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "4f1fa5dd-8087-47aa-81de-eea6e4de1f08"
+        }
+    ]
+}

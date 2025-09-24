@@ -1,0 +1,58 @@
+{
+    "session_id": "8e02fad9-2f99-4578-9630-cc25a13c4e7c",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello, Joshua! I see that you have an existing profile with us. Your business, \"TIA TEST,\" focuses on AI-powered customer service automation, and your strengths include empowering small businesses.\n\nSince you are interested in connections, please note that there seems to be a limitation on your current plan regarding recommended connections. Would you like to explore other options, such as building your business vision with the VisionAgent or exploring the Ladder to Exit with LadderAgent?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "a84b0e2b-8df0-4a8c-8e75-7adaf0863cd4"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello again, Joshua! How can I assist you today? If you're interested in connections, business vision, or something else, I'm here to help!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                },
+                "ConnectAgent": {
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "3c1b0ffa-e644-4ae5-9792-61bf1b582b68"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "session_id": "4db7eb9c-87af-472a-9f29-724fd107d721",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Hello Joshua Wlodarczyk! Your profile is existing and valid for complementary connection. How can I assist you today? Would you like help with finding referral partners, or do you need assistance in another area? Here are your options:\n\n1. **ConnectAgent** - For finding referral partners.\n2. **VisionAgent** - For building your business vision.\n3. **LadderAgent** - For guidance through the Ladder to Exit process.\n\nLet me know what you prefer!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "d2766685-6fb1-434d-8c7f-b17bcf3a8fc7"
+        }
+    ]
+}

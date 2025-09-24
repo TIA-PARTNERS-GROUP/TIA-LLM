@@ -1,0 +1,23 @@
+{
+    "session_id": "553c86a6-1eab-4d89-a640-d75de655e05b",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "Here are some potential referral partners for your business, \"TIA TEST,\" which focuses on AI-powered customer service automation:\n\n1. **Industrial Automation Australia**\n   - **Business Type:** Automation company\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Phone:** +61733483505\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Rating:** 3 stars (2 reviews)\n   - **Opening Hours:** 7 am\u20134 pm (Monday to Friday)\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)\n\n2. **Customer Service**\n   - **Business Type:** Computer training school\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Phone:** +61736300483\n   - **Emails:** info@wiseupenergy.com, sharon@wiseupenergy.com\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **Rating:** 1 star (1 review)\n   - **Opening Hours:** Open 24 hours\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)\n\n3. **Ai-Menu Systems**\n   - **Business Type:** Software company\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Phone:** +611300246368\n   - **Email:** sales@ai-menu.com\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **Rating:** 4.9 stars (28 reviews)\n   - **Opening Hours:** 9 am\u20135 pm (Monday to Friday)\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)\n\nWould you like email templates to reach out to any of these businesses? Please specify which ones.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "10fcd583-a258-4d8c-a32d-a404a1a9d1e7"
+        }
+    ]
+}

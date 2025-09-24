@@ -58,7 +58,7 @@ def recommended_connection(tool_context: ToolContext):
             if "ConnectAgent" not in state:
                 state["ConnectAgent"] = {}
             state["ConnectAgent"]["connection_result"] = GNN_CALL
-            return {"status": "success", "connection_result": GNN_CALL}
+            return {"status": "success", "connection_type": "Existing TIA Users", "connection_result": GNN_CALL}
 
         WEB_CALL = recommended_WEB_connection(attributes)
         
@@ -67,7 +67,7 @@ def recommended_connection(tool_context: ToolContext):
             state["ConnectAgent"] = {}
         state["ConnectAgent"]["connection_result"] = WEB_CALL
         
-        return {"status": "success", "connection_result": WEB_CALL}
+        return {"status": "success", "connection_type": "Web Search", "connection_result": WEB_CALL}
     
     except Exception as e:
         print(f"Error in recommended_connection: {e}")
@@ -104,8 +104,6 @@ def generate_email(tool_context: ToolContext):
         if not email_templates:
             return {"status": "error", "message": "Failed to generate email templates."}
         
-        # tool_context.actions.transfer_to_agent = "CoordinatorAgent"
-        state["end_session"] = True
         return {"status": "success", "email_templates": email_templates}
     
     except Exception as e:

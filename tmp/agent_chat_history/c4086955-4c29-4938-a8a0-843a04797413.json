@@ -1,0 +1,81 @@
+{
+    "session_id": "c4086955-4c29-4938-a8a0-843a04797413",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "I\u2019m excited to help you build your vision! Let\u2019s start with the basics. Can you share a bit about your business?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "c2419a2c-e016-4319-91cc-dd06c7181c01"
+        },
+        {
+            "message": "AI-powered customer service automation",
+            "response": "That sounds fascinating! AI-powered customer service automation has such great potential to improve customer experiences. Now, could you tell me what your role is in the company?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "b1fa787b-34e2-40a4-988f-bd722331f43c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "7d2775f6-c46e-43c3-9d03-4e072f586ca4"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hi there! I\u2019m here to help guide you through building your brand vision. We were just talking about your role in the company. Could you share what your position is within your business?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "b1fa787b-34e2-40a4-988f-bd722331f43c",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "68448851-a433-45a8-9cf3-184975dadd5e"
+        }
+    ]
+}
