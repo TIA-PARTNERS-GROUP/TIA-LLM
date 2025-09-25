@@ -1,0 +1,40 @@
+{
+    "session_id": "24b4eb42-b873-4b4c-a0d3-240b07c915c6",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello",
+            "response": "How can I assist you today?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "ff332994-f4e4-42f7-824a-1649e0c6a53c"
+        },
+        {
+            "message": "Looking for contections",
+            "response": "Here are the recommended referral partners for your business in the AI-powered customer service automation sector:\n\n### Connection Type: **Web Search**\n\n1. **Ai-Menu Systems**\n   - **Phone Number:** +611300246368\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Rating:** 4.9 (28 reviews)\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **Email:** sales@ai-menu.com\n   - **LinkedIn:** [Ai-Menu Systems LinkedIn](https://www.linkedin.com/company/ai-menu)\n   - **Google Maps:** [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)\n\n2. **Industrial Automation Australia**\n   - **Phone Number:** +61733483505\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Rating:** 3.0 (2 reviews)\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Email:** vaughn@iaarobotics.com.au\n   - **LinkedIn:** [Industrial Automation Australia LinkedIn](https://www.linkedin.com/company/industrial-automation-australia)\n   - **Google Maps:** [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)\n\n3. **Customer Service**\n   - **Phone Number:** +61736300483\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Rating:** 1.0 (1 review)\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **Emails:** info@wiseupenergy.com, sharon@wiseupenergy.com\n   - **LinkedIn:** [Customer Service LinkedIn](https://www.linkedin.com/company/wise-up-energy-solutions)\n   - **Google Maps:** [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)\n\nPlease let me know which businesses you would like to generate email templates for!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "a016fb02-5ae0-49bb-839d-c495df58b3d7"
+        }
+    ]
+}

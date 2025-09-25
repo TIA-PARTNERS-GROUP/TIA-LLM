@@ -1,0 +1,23 @@
+{
+    "session_id": "cb7f1d5f-29e0-47f2-8748-3f5a17aaa8fe",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the recommended connections based on your business focus on AI-powered customer service automation:\n\n### Recommended Partners (Web Search Connection)\n\n1. **Industrial Automation Australia**\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Phone:** +61733483505\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Rating:** 3.0 (2 reviews)\n   - **[View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)** \n\n2. **Ai-Menu Systems**\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Phone:** +611300246368\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **Rating:** 4.9 (28 reviews)\n   - **[View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)**\n\n3. **Customer Service**\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Phone:** +61736300483\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **Rating:** 1.0 (1 review)\n   - **[View on Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)**\n\n### Next Steps\nPlease select which businesses you would like to create email templates for.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "d55c3b0e-90ce-4f0c-b101-959a899b1eae"
+        }
+    ]
+}

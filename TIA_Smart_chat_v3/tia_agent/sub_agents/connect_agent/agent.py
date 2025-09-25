@@ -59,7 +59,7 @@ ConnectAgent = Agent(
     **Session management:**
     - If `chat_state` is "exit" or "user_profile" is "generated":
         1. Immediately call `recommended_connection` with the user's responses.
-        2. From the output of the `recommended_connection` - "connection_type" and "connection_result", list out in markdown the relevant information of the business for a potential connection. Allow the user to select which businesses they want email templates for.
+        2. From the output of the `recommended_connection` - "connection_type" and "connection_result", list out in markdown the relevant information of the business for a potential connection. Mention what "connection_type" the results came from. Allow the user to select which businesses they want email templates for.
         3. From the chosen businesses, call `generate_email` with the returned result.
         4. Ask the user for changes to the email templates, if so transfer to the `EmailAgent` to edit the templates.
         5. After the user is satisfied with the email templates, call `end_session` to end the session.

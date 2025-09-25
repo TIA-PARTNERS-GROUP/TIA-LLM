@@ -52,20 +52,25 @@ def recommended_connection(tool_context: ToolContext):
             "connection_type": state.get("connection_type"),
         }
         
-        GNN_CALL = recommended_GNN_connection(attributes)
-        if GNN_CALL is not None:
-            # Store the result in state
-            if "ConnectAgent" not in state:
-                state["ConnectAgent"] = {}
-            state["ConnectAgent"]["connection_result"] = GNN_CALL
-            return {"status": "success", "connection_type": "Existing TIA Users", "connection_result": GNN_CALL}
-
-        WEB_CALL = recommended_WEB_connection(attributes)
-        
         # Store the result in state
         if "ConnectAgent" not in state:
             state["ConnectAgent"] = {}
-        state["ConnectAgent"]["connection_result"] = WEB_CALL
+
+        GNN_CALL = recommended_GNN_connection(attributes)
+        if GNN_CALL is not None:
+            result_type = "Existing TIA Users"
+            result = GNN_CALL
+        else:
+            WEB_CALL = recommended_WEB_connection(attributes)
+            if WEB_CALL is not None:
+                result_type = "Web Search"
+                result = WEB_CALL
+
+        if result is None:
+            return {"status": "error", "message": "No connections found from web search."}
+            
+        state["ConnectAgent"]["connection_type"] = result_type
+        state["ConnectAgent"]["connection_result"] = result
         
         return {"status": "success", "connection_type": "Web Search", "connection_result": WEB_CALL}
     
