@@ -80,6 +80,7 @@ async def _create_new_session(user_id: str, name: str, region: str, lat: float, 
     try:
         session_id = str(uuid.uuid4())
         full_agent, connection_type = _handle_chat_type(chat_type)
+        print(f"DEBUG: Creating new session with ID: {session_id}, Agent: {full_agent}, Connection Type: {connection_type}")
         state = {
             "name": name,
             "user_id": user_id,

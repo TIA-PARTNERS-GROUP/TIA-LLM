@@ -22,9 +22,9 @@ coordinatorAgent = LlmAgent(
 
     **Flow:**
     1. Always call `check_for_existing_user` first, regardless of the user message.
-    2. If `profile_exists: True`, call `transfer_to_agent` with 'ConnectAgent' and do not output anything else.
-    3. If `profile_exists: False`: Inform user of missing info; offer VisionAgent, LadderAgent, or ConnectAgent.
-    4. Allow choice between ConnectAgent, LadderAgent, or VisionAgent anytime.
+    2. Perform action based on `check_for_existing_user` result:
+        - If `profile_exists: True`, call `transfer_to_agent` with `set_agent`
+        - If `profile_exists: False`: call `transfer_to_agent` with `set_agent`
 
     **Output Format:**
     - Mention the profile status (existing or missing).
@@ -37,8 +37,11 @@ coordinatorAgent = LlmAgent(
     - Always follow the Output Format below.
 
     **Transfer Rules:**
-    - Transfer to VisionAgent if user requests it or mentions building vision.
-    - Transfer to ConnectAgent if user requests it or mentions finding connections.
+    - `check_for_existing_user` returns `transfer_to_agent` with `set_agent`:
+        - Transfer to VisionAgent if "set_agent" is 'VisionAgent' (for building business vision).
+        - Transfer to ConnectAgent if "set_agent" is 'ConnectAgent' (for finding referral partners).
+        - Transfer to LadderAgent if "set_agent" is 'LadderAgent' (for Ladder to Exit guidance).
+    
 
     Be friendly and conversational if no specific agent/task is requested.
     """,

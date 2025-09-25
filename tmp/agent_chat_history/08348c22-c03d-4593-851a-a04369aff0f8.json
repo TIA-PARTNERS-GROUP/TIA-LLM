@@ -1,0 +1,23 @@
+{
+    "session_id": "08348c22-c03d-4593-851a-a04369aff0f8",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "You've laid a solid foundation for your vision. If you want to continue to the next phase, please let me know!",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "c4047f78-d9cc-4afc-97e5-4fefb6d7ba49"
+        }
+    ]
+}

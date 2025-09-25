@@ -1,0 +1,23 @@
+{
+    "session_id": "8d7975ca-6394-4ebe-81c0-ce949eae0336",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "That sounds great! I\u2019m all ears. What can you share about your business and what it stands for?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "db3dea09-564e-4f10-9a8c-7f3e29a6af7c"
+        }
+    ]
+}

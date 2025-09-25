@@ -1,0 +1,23 @@
+{
+    "session_id": "05b2f6ac-0c14-4ad0-a65d-2f41a5ca5b99",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Would you like to continue to the next phase of developing your brand's vision?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "ac7b29b3-5cd8-454c-8403-c716a70fa795"
+        }
+    ]
+}

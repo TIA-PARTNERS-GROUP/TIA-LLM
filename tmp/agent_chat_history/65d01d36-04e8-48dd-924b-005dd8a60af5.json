@@ -1,0 +1,81 @@
+{
+    "session_id": "65d01d36-04e8-48dd-924b-005dd8a60af5",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Absolutely! I\u2019d love to help you build your vision. Let\u2019s start with the basics. Can you share a bit about your business? What do you do?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "379cc518-a611-4bf4-a4b1-64e781013090"
+        },
+        {
+            "message": "what colour sit he sky",
+            "response": "I'm here to help you build your vision for your business. Could you share a bit more about what you do?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "42503439-e942-4bcf-acf4-51d867f25e1e",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "82a8b56f-563f-40f0-9075-1d2182ab4673"
+        },
+        {
+            "message": "My role is to lead the vision and direction of the company while also staying hands-on with the technology. I see myself as both a builder and a guide \u2014 making sure the solutions we create truly align with our mission, while also rolling up my sleeves to design, test, and improve them. Contributing in this way keeps me closely connected to the purpose that started it all, and it allows me to inspire the team while ensuring we stay innovative and focused.",
+            "response": "That's a great perspective! It sounds like you have a clear vision of your dual role in leading while being hands-on with technology. \n\nNow, let's move into the next step of building your vision. Would you like to discuss your company's mission and values, or is there another aspect you'd like to explore?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "42503439-e942-4bcf-acf4-51d867f25e1e",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "48d38cd0-28e9-40d7-9db8-cfd3764289a2"
+        }
+    ]
+}

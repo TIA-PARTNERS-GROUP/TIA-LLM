@@ -1,0 +1,52 @@
+{
+    "session_id": "a79e856a-52f1-40d5-993b-22053f821879",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "I didn't catch your response, but that's okay! Let's dive deeper together. What is it that your business does? I'm here to listen!",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "e06d876c-d7e2-4ced-adf5-639b789618e0"
+        },
+        {
+            "message": "My business is all about creating innovative technology solutions that make complex tasks easier for people. I\u2019ve always been passionate about problem-solving and using technology to improve how we work, which is what inspired me to start this venture. Over time, I saw opportunities to bring together my skills in software and systems to build tools that are both practical and impactful, and that\u2019s what continues to drive me forward",
+            "response": "It sounds like you have a true passion for innovation and helping people through technology! You\u2019re not just solving problems; you\u2019re making a meaningful impact on how people work. That\u2019s a strong foundation for your business. Now, can you share what your role is in the company?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "9fd733f3-2016-4134-9e94-f30a5f52aa9e",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "5271e6b1-d3a4-4166-b051-8b82821781d9"
+        }
+    ]
+}

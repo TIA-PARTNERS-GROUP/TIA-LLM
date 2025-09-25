@@ -1,0 +1,69 @@
+{
+    "session_id": "3b5c9b82-5e72-46a5-bdbb-cd1bea11830c",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems that we don't have your complete profile information. To proceed, I can help you with building your business vision through the VisionAgent. Would you like to do that?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "47ddfeeb-9893-48bf-bc4c-d4af568fceb8"
+        },
+        {
+            "message": "Hello!",
+            "response": "It looks like we still don't have your profile information fully completed. I can assist you further by connecting you with the VisionAgent to help build your business vision. Would you like to proceed with that?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "683c0bc7-fa3f-4c76-83ea-81f4732af665"
+        },
+        {
+            "message": "Hello!",
+            "response": "It seems we still don't have complete profile information for you. I can help connect you with the VisionAgent to work on building your business vision. Would you like to move forward with that?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                }
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "bb6461d9-c598-4102-bf83-e6ff7e270511"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "session_id": "24e1725a-ce8f-4bc5-8532-baeb0da98f37",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "We've completed the foundation phase, gathering essential information about your business. Would you like to continue to the next phase?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "793858ec-8a46-449c-a660-098d5f37afeb"
+        }
+    ]
+}

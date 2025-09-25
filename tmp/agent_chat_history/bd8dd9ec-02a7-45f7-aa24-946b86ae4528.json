@@ -1,0 +1,23 @@
+{
+    "session_id": "bd8dd9ec-02a7-45f7-aa24-946b86ae4528",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems like your message got cut off. That's okay! When you're ready, I'd love to hear all about your business. What does your business do?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "3ce62350-2f0c-4c14-8dab-cc19d2bd2551"
+        }
+    ]
+}

@@ -30,7 +30,7 @@ ChatConnectAgent = Agent(
     - Use the `chat_with_phases` function for EVERY user message during the conversation
 
     **Session management:**
-    - If `chat_state` is "exit" return to the `ConnectorAgent` using `transfer_to_agent`
+    - If `chat_state` is "exit" return to the `ConnectAgent` using `transfer_to_agent`
     - Only use `start_new_conversation` to start new sessions, never use it to resume or during a conversation.
 
     **Rules:**
@@ -64,7 +64,7 @@ ConnectAgent = Agent(
         4. Ask the user for changes to the email templates, if so transfer to the `EmailAgent` to edit the templates.
         5. After the user is satisfied with the email templates, call `end_session` to end the session.
 
-    **Rules:**: 
+    **Rules:**
     - If `user_profile` is "generated", skip questions (skip using `ChatConnectAgent`) and call `recommended_connection` directly to generate partner matches
     - If `user_profile` is "not_generated", follow the regular flow: transfer to `ChatConnectAgent` for questions
     - Your must never call `end_session` until you have called `generate_email` and the user is satisfied with the email templates
