@@ -1,0 +1,23 @@
+{
+    "session_id": "bf608377-c5bf-486c-b9e1-d8f363020f2b",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Could you tell me a bit about your business? What inspired you to embark on this journey?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "e8260783-7df1-42a7-b57d-af43b33c7c76"
+        }
+    ]
+}

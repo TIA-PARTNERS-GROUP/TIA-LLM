@@ -1,0 +1,52 @@
+{
+    "session_id": "fbbadcc7-50f4-4586-b9f6-bb6f21dee20b",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Could you share a bit about your business? What inspired you to start it?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "66d9f043-0d11-41b3-be92-e875ffbc2121"
+        },
+        {
+            "message": "what colour is the sky",
+            "response": "If you could share a bit about your business\u2014what it\u2019s about and what inspired you to start it\u2014that would be fantastic.",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "8833a28a-4ceb-478d-8db6-e30759b42a87",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "51a0eef2-367a-4218-8697-2005d323aa0b"
+        }
+    ]
+}

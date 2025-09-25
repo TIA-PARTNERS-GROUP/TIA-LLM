@@ -1,0 +1,23 @@
+{
+    "session_id": "ce9794a1-740d-4a29-a713-1c808ac7cfb6",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some potential partners in the AI customer service automation space:\n\n### Recommended Connections - Web Search\n\n1. **Ai-Menu Systems**\n   - **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n   - **Phone:** +611300246368\n   - **Email:** sales@ai-menu.com\n   - **Website:** [ai-menu.com](http://ai-menu.com)\n   - **Rating:** 4.9 (28 reviews)\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)\n   - [View Reviews](https://search.google.com/local/reviews?placeid=ChIJUehSH0RakWsRJj1Xk1Smhjk&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU)\n\n2. **Industrial Automation Australia**\n   - **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Phone:** +61733483505\n   - **Email:** vaughn@iaarobotics.com.au\n   - **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Rating:** 3 (2 reviews)\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)\n   - [View Reviews](https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU)\n\n3. **Customer Service**\n   - **Address:** 21 Napier St, Brisbane City QLD 4007\n   - **Phone:** +61736300483\n   - **Emails:** info@wiseupenergy.com, sharon@wiseupenergy.com\n   - **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n   - **Rating:** 1 (1 review)\n   - [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)\n   - [View Reviews](https://search.google.com/local/reviews?placeid=ChIJHW_h1wNZkWsRxgb1_yzqHBE&q=%22AI+customer+service+automation%22&authuser=0&hl=en&gl=AU)\n\nPlease select which businesses you would like to create email templates for.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "386c579e-9cab-45dd-a024-f768fc7771a3"
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "session_id": "fa0b9c6b-4f9e-4d18-a493-0eecbd291a20",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Can you tell me a bit about your business? What inspired you to start it?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "ba3028cb-c981-4b71-ad60-d26eaa596603"
+        },
+        {
+            "message": "My business is all about creating innovative technology solutions that make complex tasks easier for people. I\u2019ve always been passionate about problem-solving and using technology to improve how we work, which is what inspired me to start this venture. Over time, I saw opportunities to bring together my skills in software and systems to build tools that are both practical and impactful, and that\u2019s what continues to drive me forward.",
+            "response": "What part do you play in your company in making all of this happen?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "e02e48ef-5f33-4fbc-8e5a-0dcd8dfa3fa3",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "4a52b71f-75de-4ea9-944c-6f8c4a7222ef"
+        },
+        {
+            "message": "My role is to lead the vision and direction of the company while also staying hands-on with the technology. I see myself as both a builder and a guide \u2014 making sure the solutions we create truly align with our mission, while also rolling up my sleeves to design, test, and improve them. Contributing in this way keeps me closely connected to the purpose that started it all, and it allows me to inspire the team while ensuring we stay innovative and focused.",
+            "response": "What specific product or service do you offer, and what makes it unique?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "e02e48ef-5f33-4fbc-8e5a-0dcd8dfa3fa3",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "a70f30f5-0bd6-4201-a55b-3de4f82b77c1"
+        },
+        {
+            "message": "We offer smart, technology-driven solutions designed to make everyday processes more efficient. Our products and services focus on automation, intelligent data handling, and user-friendly tools that solve real problems for businesses. For example, we\u2019ve developed systems that streamline procurement and order management, tools that simplify compliance and standards calculations, and AI-powered assistants that help businesses make faster, more informed decisions. Each solution is built with the same goal in mind \u2014 to reduce complexity and give people more time to focus on what really matters.",
+            "response": "Who is your typical customer or client? What kind of businesses or individuals do you serve?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "e02e48ef-5f33-4fbc-8e5a-0dcd8dfa3fa3",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "73cdb950-b97c-49f2-8f37-d0203feecc87"
+        },
+        {
+            "message": "what colour is the sky",
+            "response": "Who is your typical customer or client? What kind of businesses or individuals do you serve?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "e02e48ef-5f33-4fbc-8e5a-0dcd8dfa3fa3",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "7a6eda37-ef0e-46e5-b37f-9e757e1e86ac"
+        },
+        {
+            "message": "4+4",
+            "response": "Who is your typical customer or client? What kind of businesses or individuals do you serve?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Ross Wlodarczyk",
+                    "Business_Name": "Ross Wlodarczyk's Business",
+                    "Contact_Email": null,
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "session_id": "e02e48ef-5f33-4fbc-8e5a-0dcd8dfa3fa3",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "99f4d5dd-befc-46c9-9a6b-e5535643f5b1"
+        }
+    ]
+}

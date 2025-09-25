@@ -5,8 +5,13 @@ def end_session(tool_context: ToolContext) -> dict:
     """End the current session."""
     try:
         state = tool_context.state
-        state["end_session"] = True
-        return {"status": "success", "message": "Session ended."}
+        user_profile = state.get("user_profile", "not_generated")
+        if user_profile == "collected":
+            state["set_agent"] = "ProfileAgent"
+            return {"status": "success", "transfer_to_agent": "ProfileAgent"}
+        else:
+            state["end_session"] = True
+            return {"status": "success", "session": "ending"}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 

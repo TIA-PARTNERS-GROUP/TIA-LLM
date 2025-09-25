@@ -1,0 +1,23 @@
+{
+    "session_id": "02632179-7e73-4fd3-8def-936ece3ac150",
+    "user_id": "301",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It's great to hear your excitement! I look forward to learning about your business and what inspired you to create it. Please feel free to share that with me. Would you like to continue to the next phase after sharing?",
+            "state": {
+                "name": "Ross",
+                "user_id": "301",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "3757323b-2f80-4f13-a75e-9225bd79adc5"
+        }
+    ]
+}

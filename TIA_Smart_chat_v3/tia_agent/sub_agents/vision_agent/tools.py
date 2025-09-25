@@ -61,46 +61,42 @@ def generate_blog(tool_context: ToolContext) -> dict:
         vision_state = state["VisionAgent"]
         session_id = vision_state.get("session_id")
         if session_id is None:
-            return {"status": "error", "output": "No session ID found."}
-        assistant = get_or_create_assistant(session_id)
+            collected_context = state.get("Generated_Profile", None)
+        else:
+            assistant = get_or_create_assistant(session_id)
 
-        collected_context = "\n".join([
-            f"Phase {resp['phase']}: {resp['message']}"
-            for resp in assistant.user_responses
-        ])
+            collected_context = "\n".join([
+                f"Phase {resp['phase']}: {resp['message']}"
+                for resp in assistant.user_responses
+            ])
 
-        if not collected_context.strip():
-            warning = "No user responses found to generate blog content."
-            print("⚠️ WARNING: No context collected from user responses!")
-            return {"status": "error", "output": warning}
+        if collected_context is None:
+            return {"status": "error", "output": "No context collected."}
 
+        # Generate the blog content
         results = []
         try:
             why_statement = generate_content_why_statement(collected_context)
-            results.append("---\n\n## WHY STATEMENT\n\n---\n\n" + why_statement + "\n\n")
+            results.append("\n\n---\n\n## WHY STATEMENT\n\n---\n\n" + why_statement + "\n\n\n\n")
         except Exception as e:
-            results.append(f"**Error generating Why Statement:** {e}\n\n")
+            results.append(f"\n\n**Error generating Why Statement:** {e}\n\n\n\n")
         try:
             messaging = generate_content_messaging(collected_context)
-            results.append("---\n\n## MESSAGING\n\n---\n\n" + messaging + "\n\n")
+            results.append("\n\n---\n\n## MESSAGING\n\n---\n\n" + messaging + "\n\n\n\n")
         except Exception as e:
-            results.append(f"**Error generating Messaging:** {e}\n\n")
+            results.append(f"\n\n**Error generating Messaging:** {e}\n\n\n\n")
         try:
             content = generate_content_blog(collected_context)
-            results.append("---\n\n## CONTENT\n\n---\n\n" + content + "\n\n")
+            results.append("\n\n---\n\n## CONTENT\n\n---\n\n" + content + "\n\n\n\n")
         except Exception as e:
-            results.append(f"**Error generating Content:** {e}\n\n")
+            results.append(f"\n\n**Error generating Content:** {e}\n\n\n\n")
 
-        blog_output = "\n".join(results)
+        blog_output = "\n\n\n".join(results)
+        blog_output = blog_output.replace('\n', '\n\n')
         filename = None
 
         # Clear the session
         _user_sessions[session_id] = None
-
-        # TODO: SAVE BLOG TO "POST /api/users/addpost"
-
-        # tool_context.actions.transfer_to_agent = "ProfilerAgent"
-        state["end_session"] = True
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             blog_filename = f"blog_output_{timestamp}.txt"
@@ -163,7 +159,7 @@ def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
 
 def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, Any]:
-    """Return message from the dynamic TIA assistant chat"""
+    """Chat with the Vision assistant"""
     try:
         state = tool_context.state
         vision_state = state["VisionAgent"]
@@ -190,7 +186,11 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
         state["VisionAgent"] = vision_state
         if "<exit>" in response:
             chat_state = vision_state["chat_state"] = "exit"
-            state["user_profile"] = "collected"
+
+            # Mark the user profile as collected if not already generated
+            if state.get("user_profile") != "generated":
+                state["user_profile"] = "collected"
+
             state["VisionAgent"] = vision_state
             return {"status": "success", 
                     "chat_state": chat_state, 

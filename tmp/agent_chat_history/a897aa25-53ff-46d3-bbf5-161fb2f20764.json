@@ -1,0 +1,53 @@
+{
+    "session_id": "a897aa25-53ff-46d3-bbf5-161fb2f20764",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "I'm currently unable to retrieve the referral partner connections due to a persistent issue with the system. I recommend checking back later or trying again at another time.\n\nIf there's any specific information or support you need in the meantime, please let me know!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "d0c694ef-ff31-4478-8238-3795e788da3e"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello! How can I assist you today?",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "fa31813d-44f0-4293-bd1a-ba515627e7a7"
+        }
+    ]
+}
