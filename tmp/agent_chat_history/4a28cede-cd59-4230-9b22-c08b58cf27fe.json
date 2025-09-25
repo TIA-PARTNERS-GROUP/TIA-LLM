@@ -1,0 +1,636 @@
+{
+    "session_id": "4a28cede-cd59-4230-9b22-c08b58cf27fe",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the potential referral partners identified for your business in the AI-powered customer service automation sector:\n\n### Connection Type: Web Search\n\n1. **Cube Automation and Electrial Group**\n   - **Website**: [cubeautomation.com.au](http://www.cubeautomation.com.au)\n   - **Email**: 101@cubeautomation.com.au\n   - **Phone**: 1300 991 272\n   - **Rating**: 4.9 (39 reviews)\n   - **Social Media**: [Facebook](https://www.facebook.com/cubeautomation), [Instagram](https://www.instagram.com/cubeautomation)\n   - **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91175ef7442fd3:0x8277873af9385ae0)\n\n2. **Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd**\n   - **Website**: [automated.net.au](http://www.automated.net.au)\n   - **Email**: sales@automated.net.au\n   - **Phone**: 1300 608 908\n   - **Address**: Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006\n   - **Social Media**: [Facebook](https://www.facebook.com/automatedelectricalsolutions), [Instagram](https://www.instagram.com/automated_aus)\n   - **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7)\n\n3. **Electrify AV**\n   - **Website**: [electrifyav.com.au](http://www.electrifyav.com.au)\n   - **Phone**: 0427 747 685\n   - **Rating**: 5 (2 reviews)\n   - **Social Media**: [Facebook](https://www.facebook.com/electrifyav), [Instagram](https://www.instagram.com/electrifyav)\n   - **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91575ef81dc03f:0x991bbb05700cf39d)\n\n4. **Industrial Automation Australia**\n   - **Website**: [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Phone**: 07 3348 3505\n   - **Rating**: 3 (2 reviews)\n   - **Social Media**: [Instagram](https://www.instagram.com/industrialautomationaustralia), [LinkedIn](https://www.linkedin.com/company/industrial-automation-australia)\n   - **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)\n\n5. **Online Automation Pty Ltd**\n   - **Website**: [onlineautomation.com.au](https://www.onlineautomation.com.au)\n   - **Phone**: 07 3267 1170\n   - **Rating**: 4.9 (14 reviews)\n   - **Social Media**: [LinkedIn](https://www.linkedin.com/company/online-automation-pty-ltd)\n   - **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b93e20eba9ce0a1:0x847b345a0b0580a3)\n\nPlease select the businesses you would like to create email templates for.",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "d0953bf4-46fc-4bd0-acae-c6340ef44d6b"
+        },
+        {
+            "message": "yes please",
+            "response": "It seems there was an error while generating the email templates. Unfortunately, I'm unable to provide you with the templates at this time.\n\nIf you would like to proceed or have any other questions, please let me know!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "joshua Wlodarczyk",
+                    "Business_Name": "TIA TEST",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "AI-powered customer service automation",
+                    "UserJob": "Founder and CEO",
+                    "User_Strength": "Empowering small businesses to thrive",
+                    "User_skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Strength": "Enhancing efficiency and reducing stress for clients",
+                    "Business_Skills": "Leadership, Strategic planning, AI implementation, AI solutions, Customer service automation, Problem-solving",
+                    "Business_Category": "Technology and services"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "status": "OK",
+                        "request_id": "56f78119-ab8d-4575-9b6e-0891715c6b08",
+                        "parameters": {
+                            "query": "\"AI customer service automation businesses\"",
+                            "language": "en",
+                            "region": "au",
+                            "lat": -27.4705,
+                            "lng": 153.026,
+                            "zoom": 10,
+                            "limit": 5,
+                            "extract_emails_and_contacts": true
+                        },
+                        "data": [
+                            {
+                                "business_id": "0x6b91175ef7442fd3:0x8277873af9385ae0",
+                                "google_id": "0x6b91175ef7442fd3:0x8277873af9385ae0",
+                                "place_id": "ChIJ0y9E914XkWsR4Fo4-TqHd4I",
+                                "google_mid": "/g/11hmp_j4n2",
+                                "name": "Cube Automation and Electrial Group",
+                                "latitude": -27.598581,
+                                "longitude": 153.1103469,
+                                "full_address": null,
+                                "review_count": 39,
+                                "rating": 4.9,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open \u22c5 Closes 5\u202fpm",
+                                "working_hours": {
+                                    "Thursday": [
+                                        "7 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "7 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "7 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7 am\u20135 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7 am\u20135 pm"
+                                    ]
+                                },
+                                "website": "http://www.cubeautomation.com.au",
+                                "tld": "cubeautomation.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91175ef7442fd3:0x8277873af9385ae0",
+                                "cid": "9401131434518272736",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ0y9E914XkWsR4Fo4-TqHd4I&q=%22AI+customer+service+automation+businesses%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "112917151787166223154",
+                                "owner_link": "https://maps.google.com/maps/contrib/112917151787166223154",
+                                "owner_name": "Cube Automation and Electrial Group",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Home automation company",
+                                "subtypes": [
+                                    "Home automation company",
+                                    "Computer networking service",
+                                    "Electrical installation service",
+                                    "Energy equipment and solutions",
+                                    "Service establishment",
+                                    "Security service",
+                                    "Security system installation service",
+                                    "Security system supplier",
+                                    "Solar energy system service"
+                                ],
+                                "subtype_gcids": [
+                                    "home_automation_company",
+                                    "computer_networking_center",
+                                    "electrical_installation_service",
+                                    "energy_equipment_and_solutions",
+                                    "establishment_service",
+                                    "security_service",
+                                    "security_system_installer",
+                                    "security_system_supplier",
+                                    "solar_energy_contractor"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipNjOPQSpIz_kgGBl6K8-XjFJSzRSr5jSkqk0BX_",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNjOPQSpIz_kgGBl6K8-XjFJSzRSr5jSkqk0BX_",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNjOPQSpIz_kgGBl6K8-XjFJSzRSr5jSkqk0BX_=w960-h310-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": null,
+                                        "longitude": null,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2025-05-29T00:00:00.000Z",
+                                        "photo_timestamp": 1748476800
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 10,
+                                "about": null,
+                                "address": null,
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": null,
+                                "city": null,
+                                "zipcode": null,
+                                "state": null,
+                                "country": null,
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "101@cubeautomation.com.au",
+                                        "101@cubeautomation.com"
+                                    ],
+                                    "phone_numbers": [
+                                        "1300991272"
+                                    ],
+                                    "facebook": "https://www.facebook.com/cubeautomation",
+                                    "instagram": "https://www.instagram.com/cubeautomation",
+                                    "yelp": null,
+                                    "tiktok": "https://www.tiktok.com/@cubeautomation",
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/cubeautomation",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                                "google_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                                "place_id": "ChIJteLTX8xZkWsR98eCbQLRsac",
+                                "google_mid": "/g/11rfrnt4jw",
+                                "phone_number": "+61418139559",
+                                "name": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd",
+                                "latitude": -27.4529833,
+                                "longitude": 153.0400872,
+                                "full_address": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd, Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                                "review_count": 0,
+                                "rating": null,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open \u22c5 Closes 5\u202fpm",
+                                "working_hours": {
+                                    "Thursday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "9 am\u20135 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "9 am\u20135 pm"
+                                    ]
+                                },
+                                "website": "http://www.automated.net.au",
+                                "tld": "automated.net.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                                "cid": "12083669083569178615",
+                                "reviews_link": null,
+                                "owner_id": "102924830577436601060",
+                                "owner_link": "https://maps.google.com/maps/contrib/102924830577436601060",
+                                "owner_name": "Automated",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Home automation company",
+                                "subtypes": [
+                                    "Home automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "home_automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs=w1971-h464-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.453138799999998,
+                                        "longitude": 153.0397564,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2021-06-24T00:00:00.000Z",
+                                        "photo_timestamp": 1624492800
+                                    },
+                                    {
+                                        "photo_id": "S6uzff8Li7HHUFqL9_K8Mg",
+                                        "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=S6uzff8Li7HHUFqL9_K8Mg&cb_client=search.gws-prod.gps&w=80&h=92&yaw=58.019093&pitch=0&thumbfov=100",
+                                        "photo_url_large": null,
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.453163602890637,
+                                        "longitude": 153.03976179693592,
+                                        "type": "street_view",
+                                        "photo_datetime_utc": "2022-08-13T00:00:00.000Z",
+                                        "photo_timestamp": 1660348800
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 4,
+                                "about": null,
+                                "address": "Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Workspace 365, Level 1/1024 Ann St",
+                                "city": "Fortitude Valley",
+                                "zipcode": "4006",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [
+                                        "sales@automated.net.au"
+                                    ],
+                                    "phone_numbers": [
+                                        "1300608908",
+                                        "2025010111",
+                                        "2025020111",
+                                        "2025030609"
+                                    ],
+                                    "facebook": "https://www.facebook.com/automatedelectricalsolutions",
+                                    "instagram": "https://www.instagram.com/automated_aus",
+                                    "yelp": "https://www.yelp.com/biz/automated-sydney",
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/automated-aus",
+                                    "github": "https://github.com/atomisticnet",
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b91575ef81dc03f:0x991bbb05700cf39d",
+                                "google_id": "0x6b91575ef81dc03f:0x991bbb05700cf39d",
+                                "place_id": "ChIJP8Ad-F5XkWsRnfMMcAW7G5k",
+                                "google_mid": "/g/11c2l968jv",
+                                "phone_number": "+61427747685",
+                                "name": "Electrify AV",
+                                "latitude": -27.441823499999998,
+                                "longitude": 153.011046,
+                                "full_address": "Electrify AV, Unit 11/81 Bishop St, Kelvin Grove QLD 4059",
+                                "review_count": 2,
+                                "rating": 5,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closes soon \u22c5 4:30\u202fpm \u22c5 Opens 7:30\u202fam Fri",
+                                "working_hours": {
+                                    "Thursday": [
+                                        "7:30 am\u20134:30 pm"
+                                    ],
+                                    "Friday": [
+                                        "7:30 am\u20133:30 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "7:30 am\u20134:30 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7:30 am\u20134:30 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7:30 am\u20134:30 pm"
+                                    ]
+                                },
+                                "website": "http://www.electrifyav.com.au",
+                                "tld": "electrifyav.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91575ef81dc03f:0x991bbb05700cf39d",
+                                "cid": "11032617344203289501",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJP8Ad-F5XkWsRnfMMcAW7G5k&q=%22AI+customer+service+automation+businesses%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "109828333388561825996",
+                                "owner_link": "https://maps.google.com/maps/contrib/109828333388561825996",
+                                "owner_name": "Electrify AV",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Home automation company",
+                                "subtypes": [
+                                    "Home automation company",
+                                    "Audio visual consultant",
+                                    "Automation company",
+                                    "Home theater store",
+                                    "Lighting contractor",
+                                    "Security system installation service",
+                                    "Security system supplier"
+                                ],
+                                "subtype_gcids": [
+                                    "home_automation_company",
+                                    "audio_visual_consultant",
+                                    "automation_company",
+                                    "home_theater_store",
+                                    "lighting_contractor",
+                                    "security_system_installer",
+                                    "security_system_supplier"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipNZ3E-T_TXiNA9AeEXU_mftrYUqVkyfuHYKr82e",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNZ3E-T_TXiNA9AeEXU_mftrYUqVkyfuHYKr82e",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNZ3E-T_TXiNA9AeEXU_mftrYUqVkyfuHYKr82e=w1024-h683-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.441848900000004,
+                                        "longitude": 153.0110741,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2021-07-01T00:00:00.000Z",
+                                        "photo_timestamp": 1625097600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 15,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true
+                                        },
+                                        "Payments": {
+                                            "Credit cards": true,
+                                            "Debit cards": true
+                                        }
+                                    }
+                                },
+                                "address": "Unit 11/81 Bishop St, Kelvin Grove QLD 4059",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "Unit 11/81 Bishop St",
+                                "city": "Kelvin Grove",
+                                "zipcode": "4059",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [],
+                                    "phone_numbers": [
+                                        "0427747685"
+                                    ],
+                                    "facebook": "https://www.facebook.com/electrifyav",
+                                    "instagram": "https://www.instagram.com/electrifyav",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": null,
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                                "google_mid": "/g/11ty3zjq85",
+                                "phone_number": "+61733483505",
+                                "name": "Industrial Automation Australia",
+                                "latitude": -27.4335074,
+                                "longitude": 153.0933689,
+                                "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "review_count": 2,
+                                "rating": 3,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Closes soon \u22c5 4\u202fpm \u22c5 Opens 7\u202fam Fri",
+                                "working_hours": {
+                                    "Thursday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Friday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7 am\u20134 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7 am\u20134 pm"
+                                    ]
+                                },
+                                "website": "https://www.iaarobotics.com.au",
+                                "tld": "iaarobotics.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                                "cid": "15391164233997453660",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22AI+customer+service+automation+businesses%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "110865635980628362194",
+                                "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                                "owner_name": "Industrial Automation Australia",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Automation company",
+                                "subtypes": [
+                                    "Automation company"
+                                ],
+                                "subtype_gcids": [
+                                    "automation_company"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipP80k7xGKdwojFn4EIjs34FeWHwh-5vrnJBRgAw=w1000-h536-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.4330955,
+                                        "longitude": 153.093211,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                        "photo_timestamp": 1712361600
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 20,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true,
+                                            "Wheelchair-accessible entrance": true
+                                        }
+                                    }
+                                },
+                                "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "15 Lavarack Ave",
+                                "city": "Eagle Farm",
+                                "zipcode": "4009",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [],
+                                    "phone_numbers": [
+                                        "0733483505"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": "https://www.instagram.com/industrialautomationaustralia",
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            },
+                            {
+                                "business_id": "0x6b93e20eba9ce0a1:0x847b345a0b0580a3",
+                                "google_id": "0x6b93e20eba9ce0a1:0x847b345a0b0580a3",
+                                "place_id": "ChIJoeCcug7ik2sRo4AFC1o0e4Q",
+                                "google_mid": "/g/1tcwr9jq",
+                                "phone_number": "+61732671170",
+                                "name": "Online Automation Pty Ltd",
+                                "latitude": -27.3849171,
+                                "longitude": 153.0919233,
+                                "full_address": "Online Automation Pty Ltd, 33 Buchanan Rd, Banyo QLD 4014",
+                                "review_count": 14,
+                                "rating": 4.9,
+                                "timezone": "Australia/Brisbane",
+                                "opening_status": "Open \u22c5 Closes 5\u202fpm",
+                                "working_hours": {
+                                    "Thursday": [
+                                        "7:30 am\u20135 pm"
+                                    ],
+                                    "Friday": [
+                                        "7:30 am\u20135 pm"
+                                    ],
+                                    "Saturday": [
+                                        "Closed"
+                                    ],
+                                    "Sunday": [
+                                        "Closed"
+                                    ],
+                                    "Monday": [
+                                        "7:30 am\u20135 pm"
+                                    ],
+                                    "Tuesday": [
+                                        "7:30 am\u20135 pm"
+                                    ],
+                                    "Wednesday": [
+                                        "7:30 am\u20135 pm"
+                                    ]
+                                },
+                                "website": "https://www.onlineautomation.com.au",
+                                "tld": "onlineautomation.com.au",
+                                "verified": true,
+                                "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b93e20eba9ce0a1:0x847b345a0b0580a3",
+                                "cid": "9546281396478509219",
+                                "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJoeCcug7ik2sRo4AFC1o0e4Q&q=%22AI+customer+service+automation+businesses%22&authuser=0&hl=en&gl=AU",
+                                "owner_id": "106322136822195152538",
+                                "owner_link": "https://maps.google.com/maps/contrib/106322136822195152538",
+                                "owner_name": "Online Automation Pty Ltd",
+                                "booking_link": null,
+                                "reservations_link": null,
+                                "business_status": "OPEN",
+                                "type": "Electronics repair shop",
+                                "subtypes": [
+                                    "Electronics repair shop"
+                                ],
+                                "subtype_gcids": [
+                                    "electronics_repair_shop"
+                                ],
+                                "photos_sample": [
+                                    {
+                                        "photo_id": "AF1QipNjLED1spYaqHF4VzjGYZRLKLFL0xMNdGYaNUiM",
+                                        "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNjLED1spYaqHF4VzjGYZRLKLFL0xMNdGYaNUiM",
+                                        "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNjLED1spYaqHF4VzjGYZRLKLFL0xMNdGYaNUiM=w767-h511-k-no",
+                                        "video_thumbnail_url": null,
+                                        "latitude": -27.3846247,
+                                        "longitude": 153.0922622,
+                                        "type": "photo",
+                                        "photo_datetime_utc": "2016-03-23T00:00:00.000Z",
+                                        "photo_timestamp": 1458691200
+                                    }
+                                ],
+                                "reviews_per_rating": null,
+                                "photo_count": 12,
+                                "about": {
+                                    "summary": null,
+                                    "details": {
+                                        "Accessibility": {
+                                            "Wheelchair-accessible car park": true
+                                        }
+                                    }
+                                },
+                                "address": "33 Buchanan Rd, Banyo QLD 4014",
+                                "order_link": null,
+                                "price_level": null,
+                                "district": null,
+                                "street_address": "33 Buchanan Rd",
+                                "city": "Banyo",
+                                "zipcode": "4014",
+                                "state": "Queensland",
+                                "country": "AU",
+                                "emails_and_contacts": {
+                                    "emails": [],
+                                    "phone_numbers": [
+                                        "0418745340",
+                                        "0732671170",
+                                        "93102211156"
+                                    ],
+                                    "facebook": null,
+                                    "instagram": null,
+                                    "yelp": null,
+                                    "tiktok": null,
+                                    "snapchat": null,
+                                    "twitter": null,
+                                    "linkedin": "https://www.linkedin.com/company/online-automation-pty-ltd",
+                                    "github": null,
+                                    "youtube": null,
+                                    "pinterest": null
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "cbc01c95-ecf4-449c-aff0-363eb56119df"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "session_id": "ad1c5ea2-9a30-4ce8-8560-adbf5a069c77",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some potential referral partners matching your interest in AI-powered customer service automation:\n\n### 1. Industrial Automation Australia\n- **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n- **Phone Number:** +61733483505\n- **Email:** vaughn@iaarobotics.com.au\n- **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n- **Rating:** 3.0 (2 reviews)\n- **Opening Status:** Closes soon at 4 PM (Opens 7 AM Fri)\n- **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c)**\n\n---\n\n### 2. Ai-Menu Systems\n- **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n- **Phone Number:** +611300246368\n- **Email:** sales@ai-menu.com\n- **Website:** [ai-menu.com](http://ai-menu.com)\n- **Rating:** 4.9 (28 reviews)\n- **Opening Status:** Open until 5 PM\n- **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26)**\n\n---\n\n### 3. Customer Service\n- **Address:** 21 Napier St, Brisbane City QLD 4007\n- **Phone Number:** +61736300483\n- **Emails:** info@wiseupenergy.com, sharon@wiseupenergy.com\n- **Website:** [wiseupenergy.com](http://wiseupenergy.com)\n- **Rating:** 1.0 (1 review)\n- **Opening Status:** Open 24 hours\n- **[Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915903d7e16f1d:0x111cea2cfff506c6)**\n\n---\n\nPlease let me know which businesses you would like to create email templates for!",
+            "state": {
+                "name": "joshua",
+                "user_id": "6",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "da77b41b-7cf1-48e0-9164-9292dee82866"
+        }
+    ]
+}

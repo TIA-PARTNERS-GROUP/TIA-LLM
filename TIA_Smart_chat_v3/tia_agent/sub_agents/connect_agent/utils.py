@@ -136,16 +136,16 @@ def generate_email_templates(businesses, user_name, user_job, user_email, busine
     email_templates = []
     
     for business in businesses:
-        name = business.get("name", "")
-        email = business.get("emails_and_contacts", {}).get("emails", [""])[0] if business.get("emails_and_contacts", {}).get("emails") else ""
-        address = business.get("full_address", "")
-        website = business.get("website", "")
-        phone = business.get("phone_number", "")
-        rating = business.get("rating", "")
-        review_count = business.get("review_count", "")
-        business_type = business.get("type", "")
-        opening_status = business.get("opening_status", "")
-        about_summary = business.get("about", {}).get("summary", "")
+        name = business.get("name", "Unknown")
+        email = business.get("emails_and_contacts", "Unknown").get("emails", ["Unknown"])[0] if business.get("emails_and_contacts", "Unknown").get("emails") else "Unknown"
+        address = business.get("full_address", "Unknown")
+        website = business.get("website", "Unknown")
+        phone = business.get("phone_number", "Unknown")
+        rating = business.get("rating", "Unknown")
+        review_count = business.get("review_count", "Unknown")
+        business_type = business.get("type", "Unknown")
+        opening_status = business.get("opening_status", "Unknown")
+        about_summary = business.get("about", {}).get("summary", "Unknown")
 
         try:
             email_prompt = CONNECT_GENERATION_PROMPT.format(
