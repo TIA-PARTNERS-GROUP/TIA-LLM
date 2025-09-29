@@ -1,35 +1,28 @@
 from google.adk.tools import ToolContext
 from datetime import datetime
 from .utils import model_update_user_details
+from ...shared_state import get_or_create_assistant, cleanup_session
 import os, json, re
 
 # Search through the temp directory for the users most recent saved conversation history
-# TODO: REPLACE WITH DynaicChatAssistant.get_conversation_history()
 def collect_user_history(tool_context: ToolContext):
-    """Find the user's most recent conversation history from "__DATE-*.json" files under temp"""
+    """Collect user history from VisionAgent session data"""
     try:
-        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # Go up 3 directories
-        temp_dir = os.path.join(base_dir, "temp")
-        user_id = tool_context.state.get("user_id", "UNKNOWN_USER")
-        pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
-        latest_file = None
-        latest_dt = None
+        state = tool_context.state
+        user_id = state.get("user_id")
+        session_id = state.get("session_id")
+        
+        if session_id:
+            # Import the function from vision_agent tools
 
-        for fname in os.listdir(temp_dir):
-            match = re.match(pattern, fname)
-            if match:
-                dt_str = match.group(1)
-                dt = datetime.strptime(dt_str, "%Y%m%d_%H%M%S")
-                if latest_dt is None or dt > latest_dt:
-                    latest_dt = dt
-                    latest_file = fname
-
-        if latest_file is None:
-            return {"status": "error", "message": "No conversation history found."}
-        filename = os.path.join(temp_dir, latest_file)
-        with open(filename, 'r') as f:
-            user_history = json.load(f)
-        return {"status": "success", "user_history": user_history }
+            assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
+            print(assistant)
+            if assistant and assistant.user_responses:
+                print("DEBUG: Found user history:", assistant.user_responses)
+                cleanup_session(session_id)  # Clean up after retrieving history
+                return {"status": "success", "user_history": assistant.user_responses}
+        
+        return {"status": "error", "message": "No conversation history found in session."}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 

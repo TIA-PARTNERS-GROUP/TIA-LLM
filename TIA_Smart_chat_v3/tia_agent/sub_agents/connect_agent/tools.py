@@ -192,7 +192,7 @@ def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, An
                 state["Generated_Profile"] = {}
             
             # Extract conversation history for analysis
-            conversation_history = assistant.collect_user_history()  # Assuming this method exists in DynamicChatAssistant
+            conversation_history = assistant.user_responses   #collect_user_history()  # Assuming this method exists in DynamicChatAssistant
             
             # Extract business_type using the new function
             business_type = extract_business_type(conversation_history)

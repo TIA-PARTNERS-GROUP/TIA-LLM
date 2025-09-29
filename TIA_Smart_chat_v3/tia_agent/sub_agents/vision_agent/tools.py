@@ -1,46 +1,12 @@
 from google.adk.tools.tool_context import ToolContext
-from ..DynamicChatAssistant import DynamicChatAssistant
 from typing import Dict, Any
-import uuid
-from datetime import datetime
 from dotenv import load_dotenv
 from .utils import generate_content_blog, generate_content_messaging, generate_content_why_statement
-
-from .prompts import (
-    DYNAMIC_CHAT_RULE_PROMPT,
-    TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
-    TIA_VISION_CHAT_2_REFLECTION_PROMPT,
-    TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
-    TIA_VISION_CHAT_4_STRATEGY_PROMPT,
-)
+from ...shared_state import get_or_create_assistant
 
 load_dotenv()
 
-CHAT_PROMPTS = [
-    TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
-    TIA_VISION_CHAT_2_REFLECTION_PROMPT, 
-    #TIA_VISION_CHAT_3_ANALYSIS_PROMPT,
-    #TIA_VISION_CHAT_4_STRATEGY_PROMPT
-]
 
-# JOSHUA - TODO: IMPLENENT SESSION ID CONNECTION TO DB
-# JOSHUA - TODO: FIX FORGOT LAST MESSAGE BUG AFTER EXIT
-_user_sessions = {}
-
-def get_or_create_assistant(session_id: str, user_id: int = None):
-    """Get or create an assistant instance for a specific session."""
-    global _user_sessions
-
-    if not session_id:
-        session_id = str(uuid.uuid4())
-
-    # If the session doesn't exist, create a new assistant
-    if session_id not in _user_sessions:
-        assistant = DynamicChatAssistant(CHAT_PROMPTS, DYNAMIC_CHAT_RULE_PROMPT, user_id)
-        assistant.session_id = session_id
-        _user_sessions[session_id] = assistant
-
-    return _user_sessions[session_id]
 
 def generate_blog(tool_context: ToolContext) -> dict:
     """
@@ -58,18 +24,23 @@ def generate_blog(tool_context: ToolContext) -> dict:
         state = tool_context.state
         if "VisionAgent" not in state:
             state["VisionAgent"] = {}
+
         vision_state = state["VisionAgent"]
-        session_id = vision_state.get("session_id")
-        if session_id is None:
+        session_id = state.get("session_id")
+        if vision_state.get("chat_state") != "chat":
+            print("DEBUG: Generating blog with existing profile")
             collected_context = state.get("Generated_Profile", None)
         else:
-            assistant = get_or_create_assistant(session_id)
+            print("DEBUG: Generating blog with session_id:", session_id)
+            user_id = state.get("user_id")
+            assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
 
             collected_context = "\n".join([
                 f"Phase {resp['phase']}: {resp['message']}"
                 for resp in assistant.user_responses
             ])
 
+        vision_state["chat_state"] = "exit"
         if collected_context is None:
             return {"status": "error", "output": "No context collected."}
 
@@ -93,117 +64,40 @@ def generate_blog(tool_context: ToolContext) -> dict:
 
         blog_output = "\n\n\n".join(results)
         blog_output = blog_output.replace('\n', '\n\n')
-        filename = None
 
-        # Clear the session
-        _user_sessions[session_id] = None
-        try:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            blog_filename = f"blog_output_{timestamp}.txt"
-            with open(blog_filename, 'w', encoding='utf-8') as f:
-                f.write(f"Blog Generated: {datetime.now().isoformat()}\n")
-                f.write("="*80 + "\n\n")
-                f.write(blog_output)
-            print(f"Blog output saved to {blog_filename}")
-            filename = blog_filename
-        except Exception as e:
-            print(f"Error saving blog output: {e}")
-            # Still return success, but note file save error
-            return {
-                "status": "success",
-                "output": blog_output,
-                "filename": None,
-                "file_error": str(e)
-            }
-
+        state["user_profile"] = "collected"
+        state["VisionAgent"] = vision_state
         return {
             "status": "success",
-            "output": blog_output,
-            "filename": filename
+            "output": blog_output
         }
     except Exception as e:
         return {
             "status": "error",
             "output": f"Failed to generate blog: {e}"
         }
-
-def start_new_conversation(tool_context: ToolContext) -> Dict[str, Any]:
-    """Start anew chat but if existing session, continue it"""
-    try:
-        state = tool_context.state
-        user_id = state.get("user_id", "UNKNOWN_USER")
-        print(f"USER ID: {user_id}")
-        if "VisionAgent" not in state:
-            state["VisionAgent"] = {}
-        vision_state = state["VisionAgent"]
-        session_id = vision_state.get("session_id", None)
-
-        assistant = get_or_create_assistant(session_id, user_id)
-        print(f"DEBUG: Chat session with ID: {assistant.session_id}")
-        session_id = vision_state["session_id"] = assistant.session_id
-
-        chat_state = vision_state["chat_state"] = "chat"
-        current_phase = vision_state["current_phase"] = assistant.current_phase
-        total_phases = vision_state["total_phases"] = len(assistant.prompts) - 1
-
-        response = assistant.send_message("Help me Build my Vision")
-
-        return {"status": "success", 
-                "session_id": session_id, 
-                "chat_state": chat_state, 
-                "response": response, 
-                "phase": current_phase, 
-                "total_phases": total_phases
-                }
-    except Exception as e:
-        return {"status": "error", "message": str(e), "chat_state": "exit"}
-
-def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, Any]:
-    """Chat with the Vision assistant"""
-    try:
-        state = tool_context.state
-        vision_state = state["VisionAgent"]
-
-        if vision_state is None:
-            raise ValueError("VisionAgent state is not initialized.")
-        session_id = vision_state.get("session_id", None)
-        assistant = get_or_create_assistant(session_id)
-
-        chat_state = vision_state.get("chat_state")
-        current_phase = vision_state.get("current_phase")
-        total_phases = vision_state.get("total_phases")
-        
-        if user_input.lower() in ['quit', 'exit', 'bye', 'end session', 'reset']:
-            chat_state = vision_state["chat_state"] = "exit"
-            assistant.save_responses()
-            return {"status": "success", "chat_state": chat_state}
-        
-        response = assistant.send_message(user_input)
-
-        current_phase = assistant.current_phase
-        vision_state["current_phase"] = current_phase
-
-        state["VisionAgent"] = vision_state
-        if "<exit>" in response:
-            chat_state = vision_state["chat_state"] = "exit"
-
-            # Mark the user profile as collected if not already generated
-            if state.get("user_profile") != "generated":
-                state["user_profile"] = "collected"
-
-            state["VisionAgent"] = vision_state
-            return {"status": "success", 
-                    "chat_state": chat_state, 
-                    "response": response
-                    }
-
-        return {"status": "success", 
-                "session_id": session_id, 
-                "chat_state": chat_state, 
-                "response": response, 
-                "current_phase": current_phase, 
-                "total_phases": total_phases
-                }
     
+def start_dynamic_chat(tool_context: ToolContext) -> Dict[str, Any]:
+    """Start a dynamic chat session with the Vision assistant"""
+    try:
+        state = tool_context.state
+        vision_state = state.get("VisionAgent", {})
+        if vision_state.get("chat_state") == "exit":
+            return {"status": "error", "message": "Chat session has already ended.", "chat_state": "exit"}
+        
+        chat = vision_state["chat_state"] = "chat"
+        state["VisionAgent"] = vision_state
+        return {"status": "success", "chat_state": chat}
     except Exception as e:
-        return {"status": "error", "message": str(e), "chat_state": "exit"}
+        return {"status": "error", "message": str(e), "chat_state": chat}
+
+def reset_phase_flag(tool_context: ToolContext):
+    """Reset the phase changed flag in the session state"""
+    try:
+        session = tool_context.session
+        if session and "change_phase" in session.state:
+            session.state["change_phase"] = "enter_phase"
+            return {"status": "success", "message": "Phase change flag reset."}
+        return {"status": "error", "message": "No session or phase change flag found."}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}

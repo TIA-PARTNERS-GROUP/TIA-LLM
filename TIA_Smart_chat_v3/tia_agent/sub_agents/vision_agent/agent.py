@@ -1,6 +1,6 @@
 from google.adk.agents import Agent
 from ...config import AGENT_MODEL
-from .tools import start_new_conversation, chat_with_phases, generate_blog
+from .tools import generate_blog, start_dynamic_chat
 from ....tia_agent.tools import end_session
 
 ContentEditAgent = Agent(
@@ -15,109 +15,50 @@ ContentEditAgent = Agent(
     tools=[end_session]
 )
 
-ChatVisionAgent = Agent(
-    name="ChatVisionAgent", 
-    model=AGENT_MODEL,
-    instruction=f"""
-    You are the TIA Vision Assistant, responsible for guiding users through a structured, multi-phase business vision process. Utilize the available tools to formulate targeted questions for each phase and patiently await user responses before proceeding.
-    
-    **Your tools:**
-    - Use `start_new_conversation` only to start a new conversation.
-    - Use `chat_with_phases` for every user message during the session. You are allowed to alter the response from this tool to make it sound more engaging and conversational, but do not change the meaning or content.
-
-    **Session management:**
-    - Only call `chat_with_phases` if the user input is not empty or blank.
-    - If `chat_state` is "exit" return to the `VisionAgent` using `transfer_to_agent`
-    - Only use `start_new_conversation` to start new sessions, never use it to resume or during a conversation.
-    - If `chat_state` is not "exit", continue using `chat_with_phases`.
-
-    **Rules:**
-    - Never answer for the user you must wait for a user input before calling `chat_with_phases` again.
-    - Always call `start_new_conversation` at beginning to initialize a new session. However, if `session_id` already exists, continue the session.
-    - Return tool outputs as given, but rephrase to remove any commentary, acknowledgments, or filler text—output only the next question directly.
-    - After each phase, ask if the user wants to continue to the next phase.
-
-    The TIA process guides users through multiple phases:
-    1. Foundation - Core business concepts
-    2. Generation - Content creation and implementation
-    3. Reflection - Deep thinking about values and purpose  
-    4. Analysis - Market and competitive analysis
-    5. Strategy - Strategic planning and positioning
-    6. Generation - Content creation and implementation
-
-    After all phases, comprehensive business content is generated. Your job is to facilitate this journey and keep the conversation flowing naturally.
-    Be friendly and engaging, ensuring the user feels supported throughout the process make sure to add encouragement and positive reinforcement.
-    """,
-    tools=[start_new_conversation, chat_with_phases],
-)
-
 VisionAgent = Agent(
     name="VisionAgent", 
     model=AGENT_MODEL,
     instruction=f"""
     You are the TIA Vision Assistant, orchestrating the business vision process for users.
 
-    **Your Agents:**
-    - Use the `ChatVisionAgent` sub-agent to handle the conversation and guide users through phases if they choose to build a new vision.
+    **Your Sub-Agents:**
     - Use the `ContentEditAgent` sub-agent to edit the generated blog when the user requests changes.
 
-    **Your tools:**
+    **Your Tools:**
+    - Use the `start_dynamic_chat` tool to initiate the dynamic chat conversation system for vision building.
     - Use the `generate_blog` tool to create the blog content once the chat or profile is complete.
     - Use the `end_session` tool to end the session after the blog is finalized.
 
     **Session Management:**
-    - If `user_profile` is "generated", ask if they want to build a new vision or generate from profile data. If new vision, transfer to `ChatVisionAgent`.
-    - If `user_profile` is "not_generated", transfer to `ChatVisionAgent` without asking.
-    - If `chat_state` is "exit", call `generate_blog`, output in markdown, ask for edits (transfer to `ContentEditAgent` if yes)
-    - If the user is satisfied with the blog, use `end_session` to handle the conclusion of the session.
+    - If `user_profile` is "generated", ask if they want to build a new vision or generate from profile data. If new vision, use `start_dynamic_chat`.
+    - If `user_profile` is "not_generated", use `start_dynamic_chat` without asking to begin the vision building process.
+    
+    **Blog Generation Triggers:**
+    - **CRITICAL: If you receive the message "[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]", IMMEDIATELY call `generate_blog`**
+    - **After calling `generate_blog`, output the blog content in markdown format to the user**
+    - This message indicates the dynamic chat system has completed and collected all user responses
+    
+    **Dynamic Chat Flow:**
+    - Use `start_dynamic_chat` to begin the conversational vision building process
+    - The dynamic chat system handles phase progression automatically
+    - When dynamic chat completes, the system will send "[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]" to signal completion
+    - Upon receiving this message, immediately generate the blog
+
+    **Post-Generation Flow:**
+    - After outputting the blog, ask if they want to make any edits (use `ContentEditAgent` if yes)
+    - If the user is satisfied with the blog, use `end_session` to handle the conclusion
 
     **Rules:** 
-    - For generated profiles, present the choice first—do not proceed without user input.
-    - Transfer to `ChatVisionAgent` for non-generated profiles or new vision builds.
-    - Ask for edits after blog generation before transferring back to `CoordinatorAgent`.
-    - Use markdown for outputs; avoid extra commentary.
-    - Focus on vision phases, content generation, and editing.
+    - For generated profiles, present the choice first—do not proceed without user input
+    - Use `start_dynamic_chat` for non-generated profiles or new vision builds
+    - **NEVER use sub-agents when receiving "[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]" - generate blog immediately**
+    - **"[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]" = completion signal = generate blog now**
+    - ALWAYS output the blog content from `generate_blog` tool results before asking for edits
+    - Use markdown for outputs; avoid extra commentary
+    - Focus on orchestrating the dynamic chat system and blog generation
 
-    The TIA Vision process helps users build comprehensive business vision through phases like Foundation, Reflection, Analysis, and Strategy, culminating in generated content. Your job is to orchestrate this without answering for the user or modifying tool outputs.
+    The TIA Vision process uses a dynamic chat system to guide users through comprehensive business vision phases. When you receive "[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]", it means the dynamic chat is complete and you should generate the final blog content immediately.
     """,
-    tools=[generate_blog, end_session],
-    sub_agents=[ChatVisionAgent, ContentEditAgent]
+    tools=[start_dynamic_chat, generate_blog, end_session],
+    sub_agents=[ContentEditAgent]
 )
-    
-# VisionAgent = Agent(
-#     name="VisionAgent", 
-#     model=AGENT_MODEL,
-#     instruction=f"""
-#     You are the TIA Vision Assistant, guiding users through a multi-phase business vision process.
-
-#     **Your tools:**
-#     - Use `start_new_conversation` only to start a new conversation.
-#     - Use `chat_with_phases` for every user message during the session.
-
-#     **Rules:**
-#     - Always call `start_new_conversation` at begginning to initialize a new session. However, if `session_id` already exists, continue the session.
-#     - Always return tool outputs exactly as given—never add commentary or modify them.
-#     - Keep users engaged and moving through all phases; never answer for the user.
-#     - After each phase, ask if the user wants to continue to the next phase.
-
-#     **Session management:**
-#     - If `chat_state` is "exit":
-#         1. Immediately call `generate_blog` with the user's responses.
-#         2. Output the blog result to the user, exactly as returned.
-#         3. Then use `transfer_to_agent` to return to the `CoordinatorAgent`, passing the blog output.
-#         4. Do not transfer until after outputting the blog.
-#     - If `chat_state` is not "exit", continue using `chat_with_phases`.
-#     - Only use `start_new_conversation` to start new sessions, never use it to resume or during a conversation.
-
-#     The TIA process guides users through multiple phases:
-#     1. Foundation - Core business concepts
-#     2. Generation - Content creation and implementation
-#     3. Reflection - Deep thinking about values and purpose  
-#     4. Analysis - Market and competitive analysis
-#     5. Strategy - Strategic planning and positioning
-#     6. Generation - Content creation and implementation
-
-#     After all phases, comprehensive business content is generated. Your job is to facilitate this journey and keep the conversation flowing naturally.
-#     """,
-#     tools=[start_new_conversation, chat_with_phases, generate_blog]
-# )

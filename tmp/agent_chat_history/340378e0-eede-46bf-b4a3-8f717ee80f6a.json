@@ -1,0 +1,46 @@
+{
+    "session_id": "340378e0-eede-46bf-b4a3-8f717ee80f6a",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin building your business vision! We'll follow structured phases to create a comprehensive vision for your business, TIA Test AI Service. \n\nShall we start with the first phase, or do you have specific aspects you'd like to focus on?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "c85bd399-72da-48be-bf39-7d659962a23a"
+        },
+        {
+            "message": "Hi there! Thanks, I really appreciate that. At its core, my business idea is about creating practical technology solutions that make life easier for people and businesses. I\u2019m working on tools that focus on automation, AI-driven insights, and streamlined workflows. The goal is to help reduce complexity, save time, and give users more confidence in their day-to-day operations.",
+            "response": "That's a fantastic core idea! Let's break this down into our phases to refine your vision further. \n\n1. **Foundation**: We'll define your core values, mission, and vision statements. What do you believe should be the foundational principles driving your business?\n\n2. **Reflection**: We'll consider your current position in the market, your strengths, and any challenges you might face.\n\n3. **Analysis**: This phase involves looking at market trends, your target audience, and any competition. What insights do you currently have about these areas?\n\n4. **Strategy**: Finally, we'll develop actionable strategies to achieve your vision, including goals and initiatives.\n\nWhich phase would you like to dive into first?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "77e74eef-97e2-4851-8d65-92d3c1e28ad5"
+        }
+    ]
+}

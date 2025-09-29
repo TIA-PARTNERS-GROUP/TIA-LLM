@@ -1,0 +1,197 @@
+{
+    "session_id": "651a917b-f393-4efa-be5e-a9614adb106d",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello Joshua! I'm here to assist you with your business vision process. Let's embark on this journey together! \n\nSince we're starting fresh, is there anything specific you'd like to talk about in this phase? Just let me know, and we can dive right in!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "ef5fdae1-460d-4115-bed4-b1c6b2623279"
+        },
+        {
+            "message": "next",
+            "response": "It looks like we're ready to get started! To kick things off, could you share a bit about your business? What inspired you to start it? I can't wait to hear your story!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "aee21344-3e8c-4b67-ba18-9f8b88c98c4a"
+        },
+        {
+            "message": "Hi there! Thanks, I really appreciate that. At its core, my business idea is about creating practical technology solutions that make life easier for people and businesses. I\u2019m working on tools that focus on automation, AI-driven insights, and streamlined workflows. The goal is to help reduce complexity, save time, and give users more confidence in their day-to-day operations.",
+            "response": "That sounds fantastic! Creating technology solutions that simplify life for people and businesses is such a valuable mission. It's clear you're passionate about making a positive impact. \n\nNow, I\u2019d love to know more about your role in the company. What do you do to bring your vision to life?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "83748a2f-8676-446a-b8a9-9411e6be3f4b"
+        },
+        {
+            "message": "I see my role as the driving force behind the vision and development of the company. Right now, I\u2019m heavily involved in both the technical and strategic sides\u2014designing solutions, building prototypes, and shaping the overall direction. Since this is still in its early stages, I wear many hats: developer, problem-solver, and decision-maker. Over time, I want to grow into more of a leadership role where I guide the team, oversee product strategy, and ensure we stay aligned with our mission of delivering practical, impactful technology.",
+            "response": "It sounds like you\u2019re truly immersed in bringing your vision to life, from hands-on development to shaping the bigger picture! Wearing so many hats can be challenging, but it also makes the journey exciting as you build something from the ground up. Your focus on leadership and alignment with your mission will undoubtedly help set a strong foundation as you grow.\n\nNext, can you tell me what kind of product or service you offer? What\u2019s the core of what you\u2019re creating?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "43a0b21c-2e5a-42ea-a639-e1f627c35aaf"
+        },
+        {
+            "message": "Right now, the main focus is on building AI-powered and automation-driven software tools that help businesses streamline their operations. The idea is to take processes that are often time-consuming or complex\u2014like data handling, decision support, or workflow management\u2014and create solutions that make them simple, fast, and reliable.\n\nFor example, I\u2019m working on prototypes that use AI insights to guide decision-making, and automation utilities that reduce manual effort for everyday tasks. The long-term vision is to expand this into a suite of tools businesses can rely on to save time, cut costs, and work more efficiently.",
+            "response": "That\u2019s incredibly exciting! Focusing on AI-powered and automation-driven tools to simplify complex processes is such a smart approach. It seems like you\u2019re not just creating software, but empowering businesses to work more efficiently and make better decisions with ease. The potential impact of your solutions is impressive!\n\nNow, let\u2019s talk about your audience. Who is your typical customer or client? What type of businesses or individuals do you envision benefiting from your offerings?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "79c088e6-dab7-4fbc-9dfa-8eb29b5abf68"
+        },
+        {
+            "message": "My typical customers are small to medium-sized businesses and startups that want to improve efficiency but don\u2019t always have the resources for big, complex systems. These are teams that value affordable, easy-to-use, and customizable solutions that can grow with them.\n\nI\u2019m especially focused on helping businesses that deal with a lot of manual processes or repetitive tasks\u2014whether that\u2019s managing data, handling operations, or coordinating projects. By giving them automation and AI-driven insights, I can help them save time, reduce costs, and focus more on their core business goals.",
+            "response": "It sounds like you have a clear vision of your audience, and targeting small to medium-sized businesses and startups is a smart choice! They often face unique challenges, and your commitment to providing them with affordable and customizable solutions is truly commendable. Helping them mitigate manual processes and focus on their core goals can be such a game changer.\n\nThank you for sharing your journey and insights with me! You've laid a wonderful foundation for your brand's heart. If you\u2019d like, we can dive deeper into your \"Why\" or talk about how you'd like to communicate this vision. Just let me know what you\u2019d like to explore next!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "594886a1-e98e-4c86-ba80-26c4e0d48293"
+        },
+        {
+            "message": "Yes, absolutely \u2014 I\u2019d love to continue to the next phase! I think going deeper into refining the vision and mapping out the next steps will really help me clarify the direction I want to take.",
+            "response": "I'm so glad to hear that! Diving deeper into your vision can be such a transformative experience. Let\u2019s start by reflecting on your initial journey. \n\nWhen you first started your business, what did you imagine life would look like?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "session_id": "1e86764c-b77f-4994-90aa-b4b0c4010954",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "9f7086a8-1b75-4fb3-b40f-c0906106096a"
+        }
+    ]
+}

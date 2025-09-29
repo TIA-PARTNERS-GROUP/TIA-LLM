@@ -1,0 +1,23 @@
+{
+    "session_id": "8ded1303-97d9-46ab-8eca-2d28409e870f",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "I apologize for the inconvenience, but it appears there is a technical issue preventing me from checking for an existing user profile at the moment. \n\nHow can I assist you today? If you're looking for help with creating a business vision, connecting with partners, or guidance through the Ladder to Exit process, I'm here to help!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "a2d2f5f7-40c0-4327-bc60-ba4d5f2eb054"
+        }
+    ]
+}

@@ -1,0 +1,400 @@
+{
+    "session_id": "57361ed6-5822-4387-95b7-feacb12a23d2",
+    "user_id": "302",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Creating a business vision is such an exciting journey! Let's start with the basics, so I can better understand your business. Could you share a bit about what your business is all about?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "42a3fb45-2ece-49b6-a912-9f57c8051511"
+        },
+        {
+            "message": "My business is all about using AI automation to make work simpler and smarter. We focus on helping businesses clear away the messy, repetitive tasks \u2014 the \u2018slop\u2019 that slows people down \u2014 and turn them into streamlined processes that save time, reduce stress, and open up space for growth and creativity. At its core, the business is about empowering people to focus on what truly matters, instead of being stuck in the grind of manual work.",
+            "response": "That sounds incredible! You're creating a real impact by helping businesses simplify their processes and focus on what truly matters. It\u2019s refreshing to see technology being used to empower people in such a meaningful way.\n\nNow, I\u2019d love to hear about your role in the company. What part do you play in bringing this vision to life?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "ad5b6e4f-c516-4de0-941a-9b23dc05c688"
+        },
+        {
+            "message": "My role is to bring the vision of Epic AI Company Slop to life by guiding both strategy and execution. I focus on setting the direction, ensuring we stay aligned with our mission, and supporting the team in their work. At the same time, I stay hands-on \u2014 testing solutions, refining tools, and making sure what we create truly solves real problems. I see myself as both a leader and a builder, balancing big-picture goals with the day-to-day details that make our impact possible.",
+            "response": "It sounds like you\u2019re doing an amazing job of balancing leadership with hands-on involvement! Your passion for ensuring that every solution genuinely addresses real problems really shines through. It\u2019s clear you\u2019re not just leading from the front, but also rolling up your sleeves to make things happen.\n\nNow let\u2019s dive a bit deeper into what you offer. Can you tell me more about the specific products or services your company provides?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "e2ce1af5-025c-4d8a-9f9b-2429285e983a"
+        },
+        {
+            "message": "We provide AI-powered automation solutions designed to tackle the messy, repetitive work that holds businesses back. Our services include streamlining data management, automating routine workflows, and creating intelligent assistants that support faster, smarter decision-making. In essence, we turn complexity into clarity \u2014 giving teams the tools they need to save time, reduce errors, and focus their energy on growth, creativity, and what matters most.",
+            "response": "What a powerful suite of services! It\u2019s clear that you\u2019re not just offering tools, but transformative solutions that can really elevate how businesses operate. Turning complexity into clarity is such a valuable promise, and it sounds like your clients are in great hands with your offerings.\n\nLet\u2019s explore who your work impacts the most. Can you describe your typical customer or client? Who do you envision benefiting from your services?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "82c34638-3f18-431a-85da-35cff0a61910"
+        },
+        {
+            "message": "Our typical customers are small to medium-sized businesses and growing teams that feel bogged down by repetitive, manual work. They\u2019re ambitious, resourceful, and eager to grow \u2014 but they don\u2019t always have the time, staff, or technical infrastructure to streamline their operations. These are the people who benefit most from our services, because our automation tools take care of the clutter, reduce stress, and free them to focus on innovation, customer relationships, and scaling their business with confidence.",
+            "response": "It sounds like you\u2019re targeting a vibrant group of entrepreneurs who are ready to grow but just need a little support to clear their path. Helping small to medium-sized businesses reclaim their time and energy so they can pursue innovation and build customer relationships is such a noble mission.\n\nYou\u2019ve shared fantastic insights about your business, role, offerings, and your ideal customers. This foundation is crucial as you work on crafting your vision moving forward!\n\nIf you need assistance with the next steps or any further exploration of your brand, feel free to reach out! You've laid a solid groundwork here. Would you like to continue to the next phase of the process?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "a8cda664-8faa-468b-ae43-c64e4b7cd2d2"
+        },
+        {
+            "message": "yes please",
+            "response": "I\u2019m so glad you\u2019re here! Let\u2019s dive into understanding the heart of your brand. When you first started your business, what did you imagine life would look like?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "03681deb-6794-437c-8509-0578236e4a73"
+        },
+        {
+            "message": "When I first started my business, I imagined a life where I could blend creativity, technology, and independence every day. I pictured myself working on projects that truly inspired me, solving meaningful problems, and creating solutions that would make people\u2019s lives easier. More than just running a business, I saw it as building a way of life \u2014 one filled with purpose, innovation, and the joy of bringing new ideas into the world.",
+            "response": "That sounds incredibly inspiring! It\u2019s lovely to hear how you envisioned a life that fused your passions with purpose, focusing on creativity and problem-solving. It must feel rewarding to think about the positive impact you wanted to have from the start.\n\nHow do you feel about your business now compared to back then?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "3c385c3d-7878-43c8-a0cc-a180ccdb2ef2"
+        },
+        {
+            "message": "Back then, my business felt like a dream \u2014 full of possibility and excitement about what could be. Now, after gaining experience and facing challenges, I feel a much deeper sense of purpose and responsibility. It no longer feels like just an idea I\u2019m chasing, but a living part of who I am. I carry the same passion that inspired me in the beginning, but now it\u2019s paired with resilience, clarity, and the wisdom that comes from the journey. It feels more grounded, more rewarding, and even more meaningful than I first imagined.",
+            "response": "What a beautiful transformation! It's fascinating to see how that initial dream of possibility has evolved into a profound sense of purpose and responsibility for you. Your journey, filled with resilience and clarity, truly complements the passion that ignited your business in the first place.\n\nNow, thinking about the heart of what you offer, what does your product or service do for the end user in human terms?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "bf77c121-a46f-4d94-ad08-3f97656e852b"
+        },
+        {
+            "message": "In human terms, what I offer gives people back their time, reduces their stress, and helps them feel more in control of their work. Instead of being weighed down by repetitive, messy tasks, they get smoother, simpler processes that make their day easier. For the end user, it means fewer frustrations, more focus on what they love, and the confidence that things are running efficiently in the background \u2014 almost like lifting a weight off their shoulders.",
+            "response": "That\u2019s such a powerful impact! It sounds like your service truly empowers your users by alleviating stress and freeing up their time to focus on what they love. The idea of lifting a weight off their shoulders is so relatable and speaks volumes about the value you\u2019re providing.\n\nCan you recall a time your business made a difference to someone?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "f2252bbb-86ac-4651-bac6-313fb9fa2935"
+        },
+        {
+            "message": "One story that stands out is when we worked with a small business owner who was completely overwhelmed by manual processes. They were spending hours every week on repetitive tasks that drained their energy and left little room to focus on customers or growth. After we implemented an automation solution, they told me it felt like they had been given their time back \u2014 suddenly they could concentrate on serving clients and building their business. That shift didn\u2019t just reduce their workload; it reignited their excitement and reminded them why they started their business in the first place.",
+            "response": "That\u2019s such a poignant story! It\u2019s incredible to hear how your solution not only streamlined their processes but also rekindled their passion for their business. Moments like that can truly validate the very essence of why you do what you do.\n\nNow, imagine your ideal client \u2013 what would you love them to say about your service after working with you?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "ae6c7f11-fe4f-4303-a3e6-e8d868cbd7d7"
+        },
+        {
+            "message": "My ideal client would say that working with us completely changed the way they run their business. I\u2019d love for them to say that what once felt overwhelming now feels effortless, and that our solutions gave them back the time, energy, and focus they needed. Most of all, I\u2019d want them to say they see us not just as a service provider, but as a trusted partner who truly understood their challenges and helped them unlock new opportunities for growth and creativity.",
+            "response": "What a lovely vision! It\u2019s heartwarming to think of them viewing you not just as a service provider but as a trusted partner in their journey. That kind of transformation \u2014 taking overwhelming tasks and making them feel effortless \u2014 is a powerful testament to the impact you aim to create together.\n\nNow, let's reflect on the broader picture\u2014what\u2019s the deeper impact of your work for others?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "38ac2e22-7dd7-4f70-b889-90f6dbe28fbb"
+        },
+        {
+            "message": "The deeper impact of my work is about creating freedom and possibility. By taking away the weight of repetitive, messy tasks, I help people regain control of their time and energy \u2014 which often changes more than just their workflow. It gives them space to think bigger, pursue opportunities they once felt too busy for, and reconnect with the passion that drives them. That shift doesn\u2019t just benefit one person or one business; it can ripple out to their teams, customers, and even their communities. In that way, the impact extends far beyond efficiency \u2014 it\u2019s about enabling growth, creativity, and a stronger sense of purpose.",
+            "response": "That\u2019s beautifully articulated! The idea that your work creates a ripple effect of freedom and possibility is truly profound. By empowering individuals to reclaim their time and reignite their passions, you\u2019re not only transforming their lives but also positively influencing their teams and communities. It\u2019s a wonderful reminder of the far-reaching impact one business can have.\n\nLastly, how would you like your team to feel about their work?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "6756d2ef-a52f-4ea8-8362-4f1a8a57382a"
+        },
+        {
+            "message": "I want my team to feel proud, inspired, and connected to something meaningful. More than just completing tasks, I\u2019d love for them to see how their efforts directly improve people\u2019s lives and businesses. I want them to feel empowered to bring their creativity forward, supported when they take risks, and valued for their unique strengths. Most importantly, I want them to share in the sense of purpose that drives us \u2014 knowing that together, we\u2019re building something bigger than ourselves, making work lighter, smarter, and more fulfilling for others.",
+            "response": "That\u2019s such a wonderful vision for your team! Fostering that sense of pride, inspiration, and connection to a meaningful mission can create a truly engaged and motivated group. It\u2019s beautiful that you want them to feel empowered, supported, and valued, all while contributing to a larger purpose. Together, you\u2019re not just improving workflows; you\u2019re enhancing lives.\n\nThank you for sharing your insights so openly. It\u2019s clear that your heart and soul are invested in both your clients and your team. As we wrap up, I\u2019d like to highlight that this journey of reflection lays a wonderful foundation for crafting a personal Why Statement later. You\u2019ve shared some deeply moving thoughts. If you have any questions or need assistance in the future, feel free to reach out!",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "4b84ab6d-9537-487c-b0d2-9d0da48558f8"
+        },
+        {
+            "message": "okay",
+            "response": "If you need further guidance or have any questions, feel free to let me know! I'm here to help you as you explore your business vision.",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "collected",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "f0f1c57d-783e-4a95-a22b-5dc5eebd0c46",
+                    "chat_state": "exit",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "e3c62c99-e9b1-4096-952e-0afb0d4d038c"
+        }
+    ]
+}

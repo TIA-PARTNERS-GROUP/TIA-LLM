@@ -1,0 +1,23 @@
+{
+    "session_id": "23fb629f-711c-4695-a1e7-124bdf4729d3",
+    "user_id": "302",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "That sounds impressive! AI solutions have so much potential across different sectors. Next question: What products or services do you offer? Would you like to continue to the next phase?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "ConnectAgent",
+                "connection_type": "alliance",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatConnectAgent",
+            "timestamp": "2f56738e-7ad3-4950-b6bb-9544dffc7bdc"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "session_id": "60038ded-16d1-4de1-bbf0-edd578d3bb91",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "The dynamic chat session has started! Let's begin building your business vision. \n\n**Phase 1: Foundation**  \nWhat is the core purpose of your business? What drives you to do what you do?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "da8c62d5-2e38-4516-9821-6a196be99303"
+        },
+        {
+            "message": "Hi there! Thanks, I really appreciate that. At its core, my business idea is about creating practical technology solutions that make life easier for people and businesses. I\u2019m working on tools that focus on automation, AI-driven insights, and streamlined workflows. The goal is to help reduce complexity, save time, and give users more confidence in their day-to-day operations.",
+            "response": "Great foundation! Your focus on practical technology solutions and automation is a compelling mission.\n\n**Phase 2: Reflection**  \nWhat experiences or challenges have you faced that have inspired you to pursue this direction in your business?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {}
+            },
+            "author": "VisionAgent",
+            "timestamp": "49daa13d-9b8d-40bf-9a85-b59b41dd7a69"
+        }
+    ]
+}

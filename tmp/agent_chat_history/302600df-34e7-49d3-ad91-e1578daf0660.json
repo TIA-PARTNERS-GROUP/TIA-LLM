@@ -1,0 +1,23 @@
+{
+    "session_id": "302600df-34e7-49d3-ad91-e1578daf0660",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hi there, Joshua! I'm thrilled to connect with you. Let's kick things off\u2014can you share a bit about your business? What's the essence of what you do?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "197441a7-3e84-4f49-bbbb-31a7569f0dcf"
+        }
+    ]
+}
