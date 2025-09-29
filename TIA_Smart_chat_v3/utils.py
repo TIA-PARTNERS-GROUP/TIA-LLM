@@ -4,6 +4,7 @@ from google.adk.runners import Runner
 from google.adk.sessions import DatabaseSessionService
 from google.genai import types
 
+from .tia_agent.shared_state import get_or_create_assistant
 import os, uuid
 
 from .tia_agent.config import OPENAI_API_KEY
@@ -11,6 +12,7 @@ try:
     from .tia_agent.agent import coordinatorAgent
 except ImportError:
     from tia_agent.agent import coordinatorAgent
+
 
 # Load environment variables
 load_dotenv()
@@ -84,6 +86,7 @@ async def _create_new_session(user_id: str, name: str, region: str, lat: float, 
         state = {
             "name": name,
             "user_id": user_id,
+            "session_id": session_id,
             "set_agent": full_agent,
             "connection_type": connection_type,
             "region": region,
@@ -127,24 +130,53 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
             parts=[types.Part(text=message)]
         )
 
-        response_text = None
-        for event in runner.run(
-            user_id=session.user_id,
-            session_id=session.id,
-            new_message=new_message
-        ):
-            print(f"DEBUG: Event: {event}")
-            print(f"DEBUG: Session state during chat: {session.state}")
-            print(f"DEBUG: Session ID: {session.id}")
-            if event.is_final_response() and event.content and event.content.parts:
-                response_text = event.content.parts[0].text
-                author = event.author
+        # Handle agent transfer
+        set_agent = session.state.get("set_agent")
+        user_profile = session.state.get("user_profile")
+        vision_state = session.state.get("VisionAgent", {})
+        chat_state = vision_state.get("chat_state")
+        if set_agent == "ProfileAgent" or user_profile == "collected":
+            print("DEBUG: Transferring to ProfileAgent")
+            new_message.parts.append(
+                types.Part(text="\n\n Use `transfer_to_agent` to switch to ProfileAgent and gather user profile information.")
+            )
         
-        end_session = session.state.get("end_session", False)
-        if end_session:
+        # Determine if DynamicChatAssistant should handle the chat
+        response_text = None
+        if set_agent == "VisionAgent" and chat_state == "chat":
+            chat_assistant = get_or_create_assistant(session.id, session.user_id, chat_type)
+            response_text = chat_assistant.send_message(message)
+            if "<exit>" in response_text:
+                response_text = None
+            author = "DynamicChatAssistant"
+            new_message = types.Content(
+                    role="user",
+                    parts=[types.Part(text="[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]")]
+                )
+
+        if response_text is None:
+            for event in runner.run(
+                user_id=session.user_id,
+                session_id=session.id,
+                new_message=new_message
+            ):
+                print(f"DEBUG: Event: {event}")
+                print(f"DEBUG: Session state during chat: {session.state}")
+                print(f"DEBUG: Session ID: {session.id}")
+                if event.is_final_response() and event.content and event.content.parts:
+                    response_text = event.content.parts[0].text
+                    author = event.author
+            
+            end_session = session.state.get("end_session", False)
+            if end_session:
+                await delete_session(user_id, session.id)
+                session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
+
+        if "<SILENT_AGENT>" in response_text:
+            response_text = "Chat Completed. Restarting session."
             await delete_session(user_id, session.id)
             session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
-        
+
         return session, response_text, author
     except Exception as e:
         print("ERROR in run_chat:", e)

@@ -1,0 +1,23 @@
+{
+    "session_id": "57b5ce4f-4e7d-41f8-8797-180b761f7070",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello again, Joshua! It looks like we\u2019re ready to kick off this exciting journey together. We're in the first phase of our conversation, and I\u2019m eager to assist you. What\u2019s on your mind today?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatPhaseVisionAgent",
+            "timestamp": "42d3e00f-b25c-4b8a-95e2-b5e61a75766b"
+        }
+    ]
+}

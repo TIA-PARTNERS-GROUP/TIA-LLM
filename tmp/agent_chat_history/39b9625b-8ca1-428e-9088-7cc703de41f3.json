@@ -1,0 +1,50 @@
+{
+    "session_id": "39b9625b-8ca1-428e-9088-7cc703de41f3",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's start building your business vision! Please share your thoughts or insights for the first phase, Foundation. What do you envision for your business?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "08cc344a-62f8-4e5d-8ca8-19552e37f36a"
+        },
+        {
+            "message": "teset",
+            "response": "It seems like there might have been a typo there! No worries at all. Let\u2019s get started with your business journey. \n\nCan you share a bit about the basics of your business? What\u2019s it all about?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                },
+                "TESTERS": "YERS"
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "b818ea56-be94-41ae-93df-9537edee868b"
+        }
+    ]
+}

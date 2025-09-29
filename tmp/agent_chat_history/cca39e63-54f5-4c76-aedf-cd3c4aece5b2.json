@@ -1,0 +1,23 @@
+{
+    "session_id": "cca39e63-54f5-4c76-aedf-cd3c4aece5b2",
+    "user_id": "302",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Great! I'm excited to help you uncover the heart of your brand. Let's start with the basics. Can you share a bit about your business?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "84854ffa-99c8-4090-a18c-5652cd57b063"
+        }
+    ]
+}

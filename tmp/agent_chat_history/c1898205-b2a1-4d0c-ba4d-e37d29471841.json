@@ -1,0 +1,23 @@
+{
+    "session_id": "c1898205-b2a1-4d0c-ba4d-e37d29471841",
+    "user_id": "302",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems like your message might have gotten lost! No worries\u2014whenever you're ready, just tell me a bit about your business and what inspired you to start it. I\u2019m here to listen!",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "f1e48437-cb87-4dc8-8cd8-d83063a28056"
+        }
+    ]
+}

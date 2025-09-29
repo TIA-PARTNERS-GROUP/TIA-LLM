@@ -2,7 +2,7 @@
 import pymysql
 import os
 
-def get_user_details(cursor, user_id):
+def _get_user_details(cursor, user_id):
     """Get user details from database."""
     cursor.execute("SELECT first_name, last_name, contact_email, contact_phone_no FROM users WHERE id = %s", (user_id,))
     user_result = cursor.fetchone()
@@ -11,7 +11,7 @@ def get_user_details(cursor, user_id):
     first_name, last_name, contact_email, contact_phone_no = user_result
     return first_name, last_name, contact_email, contact_phone_no
 
-def get_business_details(cursor, user_id):
+def _get_business_details(cursor, user_id):
     """Get business details from database."""
     cursor.execute("SELECT name, contact_email, contact_phone_no FROM businesses WHERE operator_user_id = %s", (user_id,))
     business_result = cursor.fetchone()
@@ -20,7 +20,7 @@ def get_business_details(cursor, user_id):
     business_name, business_email, business_phone = business_result
     return business_name, business_email, business_phone
 
-def get_user_skills(cursor, user_id):
+def _get_user_skills(cursor, user_id):
     """Get user skills as string."""
     cursor.execute("""
         SELECT s.name FROM skills s
@@ -30,7 +30,7 @@ def get_user_skills(cursor, user_id):
     user_skills = [row[0] for row in cursor.fetchall()]
     return ", ".join(user_skills)
 
-def get_user_strengths(cursor, user_id):
+def _get_user_strengths(cursor, user_id):
     """Get user strengths as string."""
     cursor.execute("""
         SELECT s.name FROM strengths s
@@ -40,7 +40,7 @@ def get_user_strengths(cursor, user_id):
     user_strengths = [row[0] for row in cursor.fetchall()]
     return ", ".join(user_strengths)
 
-def get_business_strengths(cursor, user_id):
+def _get_business_strengths(cursor, user_id):
     """Get business strengths as string."""
     cursor.execute("""
         SELECT bs.name FROM business_strengths bs
@@ -50,7 +50,7 @@ def get_business_strengths(cursor, user_id):
     business_strengths = [row[0] for row in cursor.fetchall()]
     return ", ".join(business_strengths)
 
-def get_business_skills(cursor, user_id):
+def _get_business_skills(cursor, user_id):
     """Get business skills as string."""
     cursor.execute("""
         SELECT s.name FROM skills s
@@ -62,7 +62,7 @@ def get_business_skills(cursor, user_id):
     business_skills = [row[0] for row in cursor.fetchall()]
     return ", ".join(business_skills)
 
-def get_business_type(cursor, user_id):
+def _get_business_type(cursor, user_id):
     """Get business type."""
     cursor.execute("""
         SELECT bt.name FROM business_types bt
@@ -72,7 +72,7 @@ def get_business_type(cursor, user_id):
     business_type_result = cursor.fetchone()
     return business_type_result[0] if business_type_result else None
 
-def get_business_category(cursor, user_id):
+def _get_business_category(cursor, user_id):
     """Get business category."""
     cursor.execute("""
         SELECT bc.name FROM business_categories bc
@@ -83,7 +83,7 @@ def get_business_category(cursor, user_id):
     return business_category_result[0] if business_category_result else None
 
 
-def get_user_job(cursor, user_id):
+def _get_user_job(cursor, user_id):
     """Get user job."""
     cursor.execute("""
         SELECT br.name FROM business_roles br
@@ -111,7 +111,7 @@ def load_user_profile(user_id: int):
         print("DEBUG: Connected to DB")
 
         # Get user details
-        user_details = get_user_details(cursor, user_id)
+        user_details = _get_user_details(cursor, user_id)
         print(f"DEBUG: User details retrieved: {user_details}")
         if not user_details:
             cursor.close()
@@ -122,35 +122,35 @@ def load_user_profile(user_id: int):
 
         # Get business details
         # BUG
-        business_name, business_email, business_phone = get_business_details(cursor, user_id)
+        business_name, business_email, business_phone = _get_business_details(cursor, user_id)
         print(f"DEBUG: Business details retrieved: {business_name}, {business_email}, {business_phone}")
 
         # Get user skills
-        user_skills_str = get_user_skills(cursor, user_id)
+        user_skills_str = _get_user_skills(cursor, user_id)
         print(f"DEBUG: User skills retrieved: {user_skills_str}")
 
         # Get business skills
-        business_skills_str = get_business_skills(cursor, user_id)
+        business_skills_str = _get_business_skills(cursor, user_id)
         print(f"DEBUG: Business skills retrieved: {business_skills_str}")
 
         # Get user strengths
-        user_strengths_str = get_user_strengths(cursor, user_id)
+        user_strengths_str = _get_user_strengths(cursor, user_id)
         print(f"DEBUG: User strengths retrieved: {user_strengths_str}")
 
         # Get business strengths
-        business_strengths_str = get_business_strengths(cursor, user_id)
+        business_strengths_str = _get_business_strengths(cursor, user_id)
         print(f"DEBUG: Business strengths retrieved: {business_strengths_str}")
 
         # Get business type
-        business_type = get_business_type(cursor, user_id)
+        business_type = _get_business_type(cursor, user_id)
         print(f"DEBUG: Business type retrieved: {business_type}")
 
         # Get business category
-        business_category = get_business_category(cursor, user_id)
+        business_category = _get_business_category(cursor, user_id)
         print(f"DEBUG: Business category retrieved: {business_category}")
 
         # Get user job
-        user_job = get_user_job(cursor, user_id)
+        user_job = _get_user_job(cursor, user_id)
         print(f"DEBUG: User job retrieved: {user_job}")
 
         cursor.close()

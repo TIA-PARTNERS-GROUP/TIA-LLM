@@ -1,0 +1,23 @@
+{
+    "session_id": "30ddb658-6b09-4f1d-9b9e-e5da117aff23",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin building your business vision! Please share your thoughts on the following topics to get started:\n\n1. **Mission:** What is the primary purpose of your business?  \n2. **Vision:** What future do you envision for your business?  \n3. **Values:** What core values guide your business decisions?  \n4. **Target Audience:** Who are your ideal customers?  \n5. **Unique Selling Proposition (USP):** What makes your business stand out from competitors?  \n\nFeel free to elaborate on any point, and we'll build from there!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "659af489-aedc-4037-a401-db247d62d7ac"
+        }
+    ]
+}

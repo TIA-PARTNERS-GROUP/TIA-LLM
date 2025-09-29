@@ -1,0 +1,168 @@
+{
+    "session_id": "523c1f8c-9f6d-4ab2-8bfe-3dbee6753192",
+    "user_id": "302",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Absolutely, I\u2019d love to help you with that! Let\u2019s start with the basics. Can you tell me a bit about your business? What got you started?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "1234747a-77fd-45f0-a21a-39a16805e5a8"
+        },
+        {
+            "message": "My business is called Epic AI Company Slop, and it\u2019s all about turning messy, repetitive work into smart, streamlined processes with the help of AI automation. What got me started was seeing how much time and energy businesses were losing on routine tasks \u2014 the kind of work that feels like \u2018slop.\u2019 I wanted to create solutions that not only save people time but also give them the freedom to focus on growth, creativity, and the parts of their business they truly care about.",
+            "response": "I love that vision! It sounds like you're really passionate about helping businesses regain their focus and efficiency by tackling those messy tasks. Turning \"slop\" into streamlined processes is such a valuable service! Now, let\u2019s delve a little deeper into your role. What is your role in the company?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "98945f2c-821c-420b-b722-1c36401ff6e4",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "0344503b-1687-4083-a963-a30f629ed8b7"
+        },
+        {
+            "message": "My role is to guide the vision and direction of Epic AI Company Slop while also staying closely involved in the day-to-day work. I see myself as both a leader and a builder \u2014 shaping strategy, supporting the team, and making sure our solutions truly deliver value. On a typical day, that means balancing big-picture planning with hands-on problem-solving, so I stay connected to both our mission and the practical details that bring it to life.",
+            "response": "That\u2019s a fantastic balance you\u2019ve found! Being both a leader and a builder allows you to truly connect with your team and the mission of your company. It sounds like you\u2019re really dedicated to ensuring that every detail aligns with that overarching vision. Now, let\u2019s shift our focus a bit. What kind of product or service do you offer?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "98945f2c-821c-420b-b722-1c36401ff6e4",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "54852975-b0e7-4adb-9089-6abdd10dc295"
+        },
+        {
+            "message": "At Epic AI Company Slop, we offer AI-powered automation services that help businesses clean up the messy, repetitive work that slows them down. Our solutions range from streamlining workflows and managing data more efficiently to creating intelligent assistants that support better decision-making. In short, we take the \u2018slop\u2019 out of daily operations and turn it into seamless systems that save time, reduce errors, and free people up to focus on growth and creativity.",
+            "response": "That\u2019s really impressive! You\u2019re not just offering services; you\u2019re providing businesses with the tools to transform their operations and harness their potential. It\u2019s clear that your offerings are designed to make a real difference in their daily lives. Now, let\u2019s talk about the people you\u2019re helping. Who is your typical customer or client?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "98945f2c-821c-420b-b722-1c36401ff6e4",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "603af223-1631-459d-b89a-960c1b6999f3"
+        },
+        {
+            "message": "Our typical clients are small to medium-sized businesses and growing teams that feel weighed down by repetitive, manual tasks. They don\u2019t always have large technical departments or the budget for big enterprise solutions, but they still want to operate smarter and scale effectively. These businesses often face challenges like messy workflows, time-consuming data entry, or compliance tasks that eat into their focus. That\u2019s where we come in \u2014 we automate the clutter, simplify processes, and give them back the time and clarity they need to grow and innovate.",
+            "response": "It sounds like you're truly focused on empowering those smaller businesses who want to grow but are hindered by the chaos of daily operations. Your commitment to helping them streamline their processes is commendable, and it definitely makes a meaningful impact.\n\nThank you for sharing all of this with me! You've laid a solid foundation that reflects your passion and purpose. If you need help with any further steps, just let me know!",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "98945f2c-821c-420b-b722-1c36401ff6e4",
+                    "chat_state": "chat",
+                    "current_phase": 0,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "76130692-63b2-4ed8-b9ab-e1778fe9e68d"
+        },
+        {
+            "message": "next phase?",
+            "response": "It looks like we\u2019re ready to dive deeper into the heart of your brand! Let\u2019s start by reflecting on your journey. When you first started your business, what did you imagine life would look like?",
+            "state": {
+                "name": "Fakee",
+                "user_id": "302",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Fakee Pearson",
+                    "Business_Name": "Epic AI Company Slop Name",
+                    "Contact_Email": "pearson@fakemail.com",
+                    "Contact_Phone_No": "0423138011"
+                },
+                "VisionAgent": {
+                    "session_id": "98945f2c-821c-420b-b722-1c36401ff6e4",
+                    "chat_state": "chat",
+                    "current_phase": 1,
+                    "total_phases": 1
+                }
+            },
+            "author": "ChatVisionAgent",
+            "timestamp": "01d81ec2-ebff-47ae-bd90-9963d703c3fd"
+        }
+    ]
+}

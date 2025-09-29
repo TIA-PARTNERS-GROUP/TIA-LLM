@@ -1,0 +1,374 @@
+{
+    "session_id": "bcd73463-dd08-4fcc-a66a-51ee16c9b6b7",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin the vision building process! Please share your thoughts on the following questions:\n\n1. **What is your ultimate goal for your business?** \n2. **Who is your target audience or ideal customer?**\n3. **What products or services do you plan to offer?**\n4. **What makes your business unique or sets it apart from competitors?**\n\nFeel free to elaborate as much as you\u2019d like!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "a5d92096-9b5c-4bee-9ae3-9a148d3250b4"
+        },
+        {
+            "message": "Hi there! Thanks, I really appreciate that. At its core, my business idea is about creating practical technology solutions that make life easier for people and businesses. I\u2019m working on tools that focus on automation, AI-driven insights, and streamlined workflows. The goal is to help reduce complexity, save time, and give users more confidence in their day-to-day operations.",
+            "response": "That sounds fantastic! It\u2019s clear you\u2019re passionate about simplifying lives and enhancing efficiency through technology. Creating practical solutions that really make a difference can have a huge impact. I\u2019m excited to learn more about your venture! \n\nWhat role do you play in the company?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "1e7d6167-a529-44d0-81d5-c75a27111fbd"
+        },
+        {
+            "message": "I see my role as the driving force behind the vision and development of the company. Right now, I\u2019m heavily involved in both the technical and strategic sides\u2014designing solutions, building prototypes, and shaping the overall direction. Since this is still in its early stages, I wear many hats: developer, problem-solver, and decision-maker. Over time, I want to grow into more of a leadership role where I guide the team, oversee product strategy, and ensure we stay aligned with our mission of delivering practical, impactful technology.",
+            "response": "It sounds like you're really at the heart of your business, juggling many important roles while laying a solid foundation for future growth. Your hands-on approach and dedication to your mission will definitely set the stage for building a great team and impactful products down the line. \n\nNow, let\u2019s dive a bit deeper into what you offer. What kind of product or service do you provide?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "0a048289-8426-4235-a225-6912b54aa052"
+        },
+        {
+            "message": "Right now, the main focus is on building AI-powered and automation-driven software tools that help businesses streamline their operations. The idea is to take processes that are often time-consuming or complex\u2014like data handling, decision support, or workflow management\u2014and create solutions that make them simple, fast, and reliable.\n\nFor example, I\u2019m working on prototypes that use AI insights to guide decision-making, and automation utilities that reduce manual effort for everyday tasks. The long-term vision is to expand this into a suite of tools businesses can rely on to save time, cut costs, and work more efficiently.",
+            "response": "That\u2019s a powerful focus! Your intention to simplify those complex processes with AI and automation can truly transform the way businesses operate, making life so much easier for them. It\u2019s exciting to hear about your prototypes and your vision to develop a suite of tools that can have a lasting impact. \n\nLet's talk about who you aim to serve. Who is your typical customer or client?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "a1da5523-50ac-4377-a663-29304899cd81"
+        },
+        {
+            "message": "My typical customers are small to medium-sized businesses and startups that want to improve efficiency but don\u2019t always have the resources for big, complex systems. These are teams that value affordable, easy-to-use, and customizable solutions that can grow with them.\n\nI\u2019m especially focused on helping businesses that deal with a lot of manual processes or repetitive tasks\u2014whether that\u2019s managing data, handling operations, or coordinating projects. By giving them automation and AI-driven insights, I can help them save time, reduce costs, and focus more on their core business goals.",
+            "response": "It sounds like you have a clear vision of your target audience! Small to medium-sized businesses and startups often have unique challenges, and by providing them with affordable and user-friendly solutions, you're setting them up for success. Your focus on alleviating manual processes will certainly resonate with those teams, freeing them to concentrate on what truly matters in their operations.\n\nWe're now wrapping up this initial exploration. Your insights paint a vivid picture of not only what you\u2019re creating but also who you\u2019re helping along the way. I\u2019m excited to see how this foundation will support the growth of your brand!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "3e26d968-535d-4bee-a1b8-9f7ab7751004"
+        },
+        {
+            "message": "Yes, absolutely \u2014 I\u2019d love to continue to the next phase! I think going deeper into refining the vision and mapping out the next steps will really help me clarify the direction I want to take.",
+            "response": "That sounds great! I'm here to help you explore those deeper layers. Let\u2019s start by thinking about your journey. When you first started your business, what did you imagine life would look like?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "d2c00cbe-e4d0-45b1-af33-6e1df9346c5b"
+        },
+        {
+            "message": "When I first started, I imagined life feeling a lot more flexible and purposeful. I pictured myself spending more time building things that truly matter\u2014solving problems with technology that makes a difference\u2014while also having the freedom to choose the projects I take on.\n\nI also envisioned being able to balance technical creativity with leadership, not just coding solutions but shaping ideas into something bigger that can grow into a sustainable business. At the heart of it, I wanted my work to feel meaningful, impactful, and aligned with my passions.",
+            "response": "That\u2019s such a beautiful vision! It\u2019s clear you started with a strong desire to make meaningful contributions while maintaining the flexibility to choose your path. Your commitment to blending creativity, technology, and leadership highlights how much you value purpose in your work. \n\nNow, how do you feel about your business now compared to back then?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "f5ab9602-a329-4500-a7fd-19b4f4a7d8a1"
+        },
+        {
+            "message": "Compared to when I first started, I feel like my vision has become more grounded and clearer. In the beginning, it was all about the excitement of possibilities and ideas. Now, after diving deeper into the work, I\u2019ve developed a stronger sense of what\u2019s realistic, what creates value, and where I can make the biggest impact.\n\nI still hold onto the passion and drive that motivated me at the start, but now it\u2019s paired with a more practical understanding of how to bring those ideas to life. It feels less like a dream and more like a tangible path forward, which is exciting in its own way.",
+            "response": "It sounds like you\u2019ve experienced a wonderful evolution! Your initial excitement has transformed into a more grounded and practical approach, allowing you to channel your passion into real-world results. That balance between vision and realism is so crucial for sustainable growth. \n\nLet's delve into the heart of your work. What does your product or service do for the end user in human terms?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "251f0583-b64e-47e6-8c12-c7ee5447747d"
+        },
+        {
+            "message": "At the end of the day, my product is designed to make people\u2019s lives easier and less stressful. For the end user, it means spending less time on repetitive tasks and more time focusing on what they truly care about\u2014whether that\u2019s growing their business, connecting with customers, or simply having more peace of mind.\n\nIn human terms, it\u2019s about giving people back time and confidence. Instead of feeling bogged down by complexity or inefficiency, they feel empowered, supported, and able to move forward with clarity.",
+            "response": "That\u2019s a strong and impactful perspective! It\u2019s wonderful to hear that your product not only eases stress but also empowers users to focus on what truly matters to them. Providing clarity and support makes a meaningful difference in people\u2019s lives, and it\u2019s clear you\u2019re passionate about creating that positive impact. \n\nCan you recall a time your business made a difference to someone?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "c3c73dc5-37a0-4f5b-ab68-767c15fe2187"
+        },
+        {
+            "message": "Yes, one moment that stands out is when I shared an early version of my tool with someone who was constantly juggling manual tasks. They told me that using it gave them back hours of their week and took away a lot of the stress they usually felt trying to keep everything organized.\n\nFor me, it was really powerful to see how even a small prototype could make such a tangible difference in someone\u2019s daily life. It reinforced that I\u2019m on the right track\u2014building solutions that don\u2019t just look good on paper, but actually improve how people work and feel day to day.",
+            "response": "What a fantastic experience! It's so heartwarming to see the direct impact your tool had on someone\u2019s life, taking away their stress and freeing up precious time. Moments like that truly validate the work you\u2019re doing and remind you of the real-world significance behind your efforts. \n\nNow, let\u2019s think a bit more about your ideal clients. Imagine your ideal client \u2014 what would you love them to say about your service after working with you?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "53661408-862d-4bd3-a477-be9e32e1532d"
+        },
+        {
+            "message": "Ideally, I\u2019d love a client to say something like: \u201cWorking with this service has completely changed how we operate. Tasks that used to take hours now take minutes, and we finally feel in control instead of overwhelmed. The tools are simple to use, but powerful enough to grow with us. It feels like we have a partner who truly understands our needs and cares about our success.\u201d\n\nHearing that kind of feedback\u2014where the client feels empowered, supported, and more confident in their future\u2014would be the ultimate confirmation that I\u2019m delivering real value.",
+            "response": "That\u2019s a wonderful vision of client feedback! It captures not just the efficiency and effectiveness of your service, but also the partnership and understanding you aim to cultivate. Hearing such words would undoubtedly reaffirm the meaningful impact you're striving to make. \n\nLet\u2019s consider the broader implications of your work. What\u2019s the deeper impact of your work for others?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "add31d5e-8529-46ff-8507-cfd0b45fdee9"
+        },
+        {
+            "message": "Beyond just efficiency, the deeper impact of my work is about creating freedom and possibility for others. By removing the stress and time drain of repetitive tasks, I\u2019m helping people reclaim their energy for the things that matter most\u2014whether that\u2019s growing their business, innovating, or even just having more time for themselves and their families.\n\nIn a bigger sense, I want my work to contribute to a culture where technology feels like an empowering partner, not a burden. If I can help people feel more capable, confident, and focused on their true goals, then the impact extends far beyond the software itself.",
+            "response": "That is such a profound and inspiring mission! You\u2019re focused on enabling freedom and fostering a culture of empowerment through technology, which can significantly enhance lives on both personal and professional levels. It\u2019s clear that your work resonates deeply with the value of human connection and the importance of reclaiming time for what truly matters.\n\nNow, lastly, how would you like your team to feel about their work?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "43874d14-73d6-44ef-8908-8918e1e5bbb8"
+        },
+        {
+            "message": "I want my team to feel motivated, valued, and connected to a larger purpose. I\u2019d love for them to see their work not just as tasks to complete, but as contributions to something meaningful\u2014tools that genuinely improve people\u2019s lives.\n\nIdeally, they\u2019d feel a balance of creative freedom and shared responsibility: the excitement of experimenting and problem-solving, while also knowing they\u2019re supported and part of a collaborative, caring environment. At the end of the day, I want them to feel proud of what we build together and energized by the difference it makes.",
+            "response": "Here is the blog content generated from your vision building process:\n\n---\n\n## WHY STATEMENT\n\nPlease provide the responses from your brand discovery journey, including insights about your personal mission, values, desired impact, emotional connection to your work, and how you uniquely serve your customers. This information will help me craft your Why Statement effectively.\n\n---\n\n## MESSAGING\n\nSure! To create impactful brand messaging elements, I would need your specific \"Why Statement\" and some information about your brand, such as your target audience, mission, or any unique aspects. Please share that information so I can craft messaging that reflects your brand essence!\n\n---\n\n## CONTENT BATCH 1\n\n### Blog Post Headline:\n\n\"Finding Fulfillment: The Power of Purpose in Everyday Life\"\n\n### Blog Post:\n\nIn a world that often prioritizes productivity over passion, it's easy to get lost in the daily grind. As the founder of TIA Vision, I've felt that struggle personally. There was a time when I chased conventional success, only to realize that true fulfillment comes from aligning our work with our core values.\n\nOur \u201cWhy\u201d at TIA Vision is simple yet profound: we believe that authentic living stems from understanding what matters most to us as individuals. When we prioritize purpose, our daily tasks transform from mundane obligations into meaningful contributions to our communities and ourselves.\n\nFor instance, take a moment today. Reflect on what drives your spirit. Is it creativity, service, or connection? Once you identify your core values, allow them to guide your decisions. It\u2019s not about achieving perfection; it\u2019s about fostering a life you\u2019re proud of, one that inspires others to do the same.\n\nIn this journey of authenticity, remember: every small step towards living your purpose counts. You have the power to inspire change, both within and beyond yourself.\n\n### Social Media Caption:\n\n\ud83d\udcab Life is more than just a checklist\u2014it's about purpose! What drives you every day? Share your thoughts below and let's inspire one another. \u2728 #LiveWithPurpose #TIAInsights\n\n---\n\nWould you like to make any edits to this blog?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "42ec88a9-2e0b-418d-8b44-f82370c60af1"
+        },
+        {
+            "message": "perfect  thanks",
+            "response": "<SILENT_AGENT>",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "collected",
+                "session_id": "0811d537-25f3-486d-bfa0-3273f95e2c15",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test AI Service",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "exit"
+                }
+            },
+            "author": "ProfileStorer",
+            "timestamp": "87597caf-0281-4d15-ac4d-f3a41c1e045b"
+        }
+    ]
+}
