@@ -1,0 +1,78 @@
+{
+    "session_id": "c81ffba7-6b8b-4d55-936f-75891da9cbc3",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's start building your business vision! Please share your thoughts on the following:\n\n1. What is the primary goal of your business?\n2. Who is your target audience?\n3. What products or services do you plan to offer?\n\nFeel free to elaborate on any other aspects that are important to your vision!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "c81ffba7-6b8b-4d55-936f-75891da9cbc3",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "6028c13c-2869-4aaf-884b-bae6f00c7553"
+        },
+        {
+            "message": "I want to build my busines to inspire people",
+            "response": "That sounds wonderful! Inspiring people is such a meaningful mission. Let's start with the basics\u2014can you share a bit about your business? What\u2019s it all about?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "c81ffba7-6b8b-4d55-936f-75891da9cbc3",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "fdd7bacf-a91c-48f5-9046-b49a11703e8a"
+        },
+        {
+            "message": "Inspiring new business owners",
+            "response": "Inspiring new business owners is such a vital and rewarding focus! It gives you the opportunity to empower others on their journeys. Now, what is your role in the company? What do you do to help achieve that inspiration?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "c81ffba7-6b8b-4d55-936f-75891da9cbc3",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "fef1aeba-ef89-4b95-b1ca-a72d201a8004"
+        }
+    ]
+}

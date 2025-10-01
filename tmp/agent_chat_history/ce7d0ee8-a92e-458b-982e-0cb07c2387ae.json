@@ -1,0 +1,24 @@
+{
+    "session_id": "ce7d0ee8-a92e-458b-982e-0cb07c2387ae",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "That's fantastic! Software development services have a strong demand in today's tech landscape. Next question: What products or services do you offer? Would you like to continue to the next phase?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "ce7d0ee8-a92e-458b-982e-0cb07c2387ae",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ChatConnectAgent",
+            "timestamp": "a1d8a330-d730-4ad5-b3af-08a2a961034f"
+        }
+    ]
+}

@@ -65,6 +65,7 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     Fallback: Generates a query based on connection_type-specific attributes, then searches RapidAPI.
     """
     connection_type = attributes.get("connection_type", "complementary")
+    connect_agent = attributes.get("ConnectAgent", {})
     profile = attributes.get("profile", {})
     region = attributes.get("region", "au")
     lat = attributes.get("lat", 0.0)
@@ -73,15 +74,20 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     zoom = 10
 
     # Select attributes based on connection_type (using required fields from validate_connection_options)
-    attribute_mappings = {
-        "complementary": ["Business_Type", "Business_Category", "Business_Name"],
-        "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
-        "mastermind": ["User_Strength"],
-        "intelligent": ["User_skills", "Business_Type", "Business_Name"],
-    }
+    chat_attributes = connect_agent.get("connection_type")
+    if chat_attributes:
+        selected_attributes = chat_attributes
+
+    else:
+        attribute_mappings = {
+            "complementary": ["Business_Type", "Business_Category", "Business_Name"],
+            "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
+            "mastermind": ["User_Strength"],
+            "intelligent": ["User_skills", "Business_Type", "Business_Name"],
+        }
     
-    required_fields = attribute_mappings.get(connection_type, ["Business_Type"])
-    selected_attributes = {k: v for k, v in profile.items() if k in required_fields}
+        required_fields = attribute_mappings.get(connection_type, ["Business_Type"])
+        selected_attributes = {k: v for k, v in profile.items() if k in required_fields}
     
     # Compose a prompt for the LLM to generate a business query string
     message = [

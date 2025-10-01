@@ -3,6 +3,7 @@ from typing import Dict, Any
 from dotenv import load_dotenv
 from .utils import generate_content_blog, generate_content_messaging, generate_content_why_statement
 from ...shared_state import get_or_create_assistant
+import json
 
 load_dotenv()
 
@@ -25,11 +26,16 @@ def generate_blog(tool_context: ToolContext) -> dict:
         if "VisionAgent" not in state:
             state["VisionAgent"] = {}
 
+
+        # TODO: INCLUDE THE LIMITED USER PROFILE ALWAYS
         vision_state = state["VisionAgent"]
         session_id = state.get("session_id")
+        profile = state.get("Generated_Profile", None)
+        
         if vision_state.get("chat_state") != "chat":
             print("DEBUG: Generating blog with existing profile")
             collected_context = state.get("Generated_Profile", None)
+            collected_context.join("\n\n" + (f"User Profile Information:\n{json.dumps(profile, indent=2)}" if profile else "No user profile information available."))
         else:
             print("DEBUG: Generating blog with session_id:", session_id)
             user_id = state.get("user_id")
@@ -39,6 +45,7 @@ def generate_blog(tool_context: ToolContext) -> dict:
                 f"Phase {resp['phase']}: {resp['message']}"
                 for resp in assistant.user_responses
             ])
+            collected_context.join("\n\n" + (f"User Profile Information:\n{json.dumps(profile, indent=2)}" if profile else "No user profile information available."))
 
         vision_state["chat_state"] = "exit"
         if collected_context is None:
@@ -90,14 +97,3 @@ def start_dynamic_chat(tool_context: ToolContext) -> Dict[str, Any]:
         return {"status": "success", "chat_state": chat}
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": chat}
-
-def reset_phase_flag(tool_context: ToolContext):
-    """Reset the phase changed flag in the session state"""
-    try:
-        session = tool_context.session
-        if session and "change_phase" in session.state:
-            session.state["change_phase"] = "enter_phase"
-            return {"status": "success", "message": "Phase change flag reset."}
-        return {"status": "error", "message": "No session or phase change flag found."}
-    except Exception as e:
-        return {"status": "error", "message": str(e)}

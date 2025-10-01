@@ -1,37 +1,11 @@
 from typing import Dict, Any
 from google.adk.tools.tool_context import ToolContext
-from ..DynamicChatAssistant import DynamicChatAssistant
 from .utils import recommended_GNN_connection, recommended_WEB_connection, generate_email_templates, extract_business_type
-from .prompts import (
-    CONNECT_RULE_PROMPT,
-    CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
-)
-import uuid
-
-CONNECT_PROMPTS = [
-    CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
-]
-
-_user_sessions = {}
-
-def get_or_create_assistant(session_id: str, user_id: int = None):
-    """Get or create an assistant instance for a specific session."""
-    global _user_sessions
-
-    if not session_id:
-        session_id = str(uuid.uuid4())
-
-    # If the session doesn't exist, create a new assistant
-    if session_id not in _user_sessions:
-        assistant = DynamicChatAssistant(CONNECT_PROMPTS, CONNECT_RULE_PROMPT, user_id)
-        assistant.session_id = session_id
-        _user_sessions[session_id] = assistant
-
-    return _user_sessions[session_id]
 
 def recommended_connection(tool_context: ToolContext):
     try:
         state = tool_context.state
+        connect_agent_state = state.get("ConnectAgent", {})
 
         print(f"DEBUG: tool_context.state type: {state}")
         print(f"DEBUG: connection_type value: '{state.get("connection_type")}'")
@@ -50,6 +24,7 @@ def recommended_connection(tool_context: ToolContext):
             "lng": state.get("lng"),
             "profile": state.get("Generated_Profile"),
             "connection_type": state.get("connection_type"),
+            "ConnectAgent": state.get("ConnectAgent", {})
         }
         
         # Store the result in state
@@ -69,8 +44,9 @@ def recommended_connection(tool_context: ToolContext):
         if result is None:
             return {"status": "error", "message": "No connections found from web search."}
             
-        state["ConnectAgent"]["connection_type"] = result_type
-        state["ConnectAgent"]["connection_result"] = result
+        connect_agent_state["connection_type"] = result_type
+        connect_agent_state["connection_result"] = result
+        state["ConnectAgent"] = connect_agent_state
         
         return {"status": "success", "connection_type": "Web Search", "connection_result": WEB_CALL}
     
@@ -114,102 +90,18 @@ def generate_email(tool_context: ToolContext):
     except Exception as e:
         return {"status": "error", "message": str(e), "chat_state": "exit"}
 
-def start_new_conversation(tool_context: ToolContext):
-    """Start a new SmartConnect session"""
+def store_connect_chat(tool_context: ToolContext):
+    """Store the generated connection chat state"""
     try:
         state = tool_context.state
-
-        # Check for profile generation
-        if state.get("user_profile") == "generated":
-            print("DEBUG: Profile already generated, calling recommended_connection directly")
-            connection_result = recommended_connection(tool_context)
-            if connection_result.get("status") == "success":
-                email_result = generate_email(tool_context)
-                return email_result
-            else:
-                return connection_result
-
-        user_id = state.get("user_id", "UNKNOWN_USER")
-        if "ConnectAAgent" not in state:
-            state["ConnectAgent"] = {}
-        connect_state = state["ConnectAgent"]
-        session_id = connect_state.get("session_id", None)
-        print(f"DEBUG: start_session_phases called with session_id={session_id}")
-
-        assistant = get_or_create_assistant(session_id, user_id)
-        print(f"DEBUG: Chat session with ID: {assistant.session_id}")
-        session_id = connect_state["session_id"] = assistant.session_id
-
-        chat_state = connect_state["chat_state"] = "chat"
-        current_phase = connect_state["current_phase"] = assistant.current_phase
-        total_phases = connect_state["total_phases"] = len(assistant.prompts) - 1
-
-        response = assistant.send_message("Lets Begin!")
-
-        return {"status": "success", 
-                "session_id": session_id, 
-                "chat_state": chat_state, 
-                "response": response, 
-                "phase": current_phase,
-                "total_phases": total_phases
-                }
-    except Exception as e:
-        return {"status": "error", "message": str(e), "chat_state": "exit"}
-
-def chat_with_phases(user_input: str, tool_context: ToolContext) -> Dict[str, Any]:
-    """Chat with the SmartConnect assistant"""
-    try:
-        state = tool_context.state
-        connect_state = state["ConnectAgent"]
-
-        if connect_state is None:
-            raise ValueError("VisionAgent state is not initialized.")
-        session_id = connect_state.get("session_id", None)
-        assistant = get_or_create_assistant(session_id)
-
-        chat_state = connect_state["chat_state"] = "chat"
-        current_phase = connect_state.get("current_phase")
-        total_phases = connect_state.get("total_phases")
+        connect_agent_state = state.get("ConnectAgent", {})
         
-        if user_input.lower() in ['quit', 'exit', 'bye', 'end session', 'reset']:
-            chat_state = connect_state["chat_state"] = "exit"
-            assistant.save_responses()
-            return {"status": "success", "chat_state": chat_state}
+        # Extract business type from the profile
+        profile = state.get("Generated_Profile", {})
+        business_type = extract_business_type(profile)
+        connect_agent_state["business_type"] = business_type
+        state["ConnectAgent"] = connect_agent_state
         
-        response = assistant.send_message(user_input)
-
-        current_phase = assistant.current_phase
-        connect_state["current_phase"] = current_phase
-
-        state["ConnectAgent"] = connect_state
-        if "<exit>" in response:
-            chat_state = connect_state["chat_state"] = "exit"
-            state["user_profile"] = "generated"
-            state["ConnectAgent"] = connect_state
-
-            # Initialize Generated_Profile if not present
-            if "Generated_Profile" not in state:
-                state["Generated_Profile"] = {}
-            
-            # Extract conversation history for analysis
-            conversation_history = assistant.user_responses   #collect_user_history()  # Assuming this method exists in DynamicChatAssistant
-            
-            # Extract business_type using the new function
-            business_type = extract_business_type(conversation_history)
-            state["Generated_Profile"]["business_type"] = business_type
-
-            return {"status": "success", 
-                    "chat_state": chat_state, 
-                    "response": response
-                    }
-
-        return {"status": "success", 
-                "session_id": session_id,
-                "chat_state": chat_state, 
-                "response": response, 
-                "phase": current_phase, 
-                "total_phases": total_phases
-                }
-    
+        return {"status": "success", "ConnectAgent": connect_agent_state}
     except Exception as e:
-        return {"status": "error", "message": str(e), "chat_state": "exit"}
+        return {"status": "error", "message": str(e)}

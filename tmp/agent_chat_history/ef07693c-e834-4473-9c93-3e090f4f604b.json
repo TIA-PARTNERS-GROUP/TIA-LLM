@@ -1,0 +1,24 @@
+{
+    "session_id": "ef07693c-e834-4473-9c93-3e090f4f604b",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems there's an issue with checking for an existing user profile at the moment. But don\u2019t worry, I can help you with your inquiry! \n\nIs there something specific you\u2019d like to discuss or explore today? We have several options:\n- **VisionAgent**: To help build your business vision.\n- **ConnectAgent**: To find referral partners for your business.\n- **LadderAgent**: For guidance on the Ladder to Exit process.\n\nLet me know where you'd like to go!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "ef07693c-e834-4473-9c93-3e090f4f604b",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "CoordinatorAgent",
+            "timestamp": "fb53ede5-c2d1-4ebb-80f8-1c5fde422963"
+        }
+    ]
+}
