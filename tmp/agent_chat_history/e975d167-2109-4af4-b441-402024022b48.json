@@ -1,0 +1,24 @@
+{
+    "session_id": "e975d167-2109-4af4-b441-402024022b48",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin building your business vision! Please share your thoughts and ideas regarding your business goals, challenges, and aspirations so we can create a comprehensive vision for TIA Test Company.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e975d167-2109-4af4-b441-402024022b48",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "VisionAgent",
+            "timestamp": "891d87a7-af76-4ecf-8e53-dbd59927666d"
+        }
+    ]
+}

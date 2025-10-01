@@ -2,7 +2,6 @@
 from typing import Dict, Any
 from .sub_agents.DynamicChatAssistant import DynamicChatAssistant
 from .sub_agents.vision_agent.prompts import VISION_RULE_PROMPT, TIA_VISION_CHAT_1_FOUNDATION_PROMPT, TIA_VISION_CHAT_2_REFLECTION_PROMPT, TIA_VISION_CHAT_3_ANALYSIS_PROMPT, TIA_VISION_CHAT_4_STRATEGY_PROMPT
-from .sub_agents.connect_agent.prompts import CONNECT_RULE_PROMPT, CONNECT_CHAT_1_BUSINESS_INFO_PROMPT
 
 VISION_PROMPTS = [
     TIA_VISION_CHAT_1_FOUNDATION_PROMPT,
@@ -20,8 +19,6 @@ def get_or_create_assistant(session_id: str, user_id: int, chat_type: str) -> Dy
         if session_id not in user_sessions:
             if chat_type == "profiler:VisionAgent":
                 assistant = DynamicChatAssistant(VISION_PROMPTS, VISION_RULE_PROMPT, user_id)
-            elif "connect" in chat_type:
-                assistant = DynamicChatAssistant(CONNECT_CHAT_1_BUSINESS_INFO_PROMPT, CONNECT_RULE_PROMPT, user_id)
             assistant.session_id = session_id
             user_sessions[session_id] = assistant
 

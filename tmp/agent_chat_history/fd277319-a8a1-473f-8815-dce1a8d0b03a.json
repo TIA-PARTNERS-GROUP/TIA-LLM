@@ -1,0 +1,24 @@
+{
+    "session_id": "fd277319-a8a1-473f-8815-dce1a8d0b03a",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some ideal referral partners based on your business profile (TIA Test Company) and your specific services:\n\n### Recommended Connections (Web Search)\n\n1. **MTA Queensland & MTA Institute**\n   - **Type:** Association / Organization\n   - **Address:** Freeway Office Park, Building 8/2728 Logan Rd, Eight Mile Plains QLD 4113\n   - **Phone:** +61732378777\n   - **Rating:** 4.4 (69 reviews)\n   - **Opening Hours:** Closes soon \u22c5 4:30 pm \u22c5 Opens 8 am Thu\n   - **Place Link:** [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91449f944b891b:0xaf6e3b550b10438)\n   - **Reviews Link:** [See Reviews](https://search.google.com/local/reviews?placeid=ChIJG4lLlJ9EkWsROASxULXj9go&q=%22Complementary+TIA+Test+Company%22&authuser=0&hl=en&gl=AU)\n\n2. **TIACS**\n   - **Type:** Foundation / Service Establishment\n   - **Email Contacts:** admin@tiacs.org, partnerships@tiacs.org\n   - **Phone:** 0488846988\n   - **Rating:** 4.2 (5 reviews)\n   - **Opening Hours:** Open \u22c5 Closes 10 pm\n   - **Website:** [tiacs.org](http://tiacs.org)\n   - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/company/tiacs)\n   - **YouTube:** [YouTube Channel](https://www.youtube.com/channel/UCtrR25pOi6dSLkX8E8143MA)\n   - **Place Link:** [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915914850b9551:0xf2d5f504771a7a8b)\n   - **Reviews Link:** [See Reviews](https://search.google.com/local/reviews?placeid=ChIJUZULhRRZkWsRi3oadwT11fI&q=%22Complementary+TIA+Test+Company%22&authuser=0&hl=en&gl=AU)\n\n### Next Steps\nPlease select the businesses you would like to receive email templates for, and I'll generate those templates for you.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "fd277319-a8a1-473f-8815-dce1a8d0b03a",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "c3230556-f0a8-4c1e-9baa-58b64b7c9aff"
+        }
+    ]
+}

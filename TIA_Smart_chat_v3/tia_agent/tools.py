@@ -7,8 +7,8 @@ def end_session(tool_context: ToolContext) -> dict:
         state = tool_context.state
         user_profile = state.get("user_profile", "not_generated")
         if user_profile == "collected":
-            state["set_agent"] = "ProfileAgent"
-            return {"status": "success", "transfer_to_agent": "ProfileAgent"}
+            state["set_agent"] = "ProfilerAgent"
+            return {"status": "success", "transfer_to_agent": "ProfilerAgent"}
         else:
             state["end_session"] = True
             return {"status": "success", "session": "ending"}
@@ -25,6 +25,7 @@ def check_for_existing_user(tool_context: ToolContext):
         
         # Load user profile from the database
         result = load_user_profile(user_id)
+        print(f"DEBUG: load_user_profile result: {result}")
         if result.get("profile_exists"):
             state["Generated_Profile"] = result["profile"]
             state["user_profile"] = "generated"

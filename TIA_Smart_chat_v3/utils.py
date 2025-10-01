@@ -106,6 +106,18 @@ async def _create_new_session(user_id: str, name: str, region: str, lat: float, 
         print("ERROR in create_new_session:", e)
         raise Exception("Error creating new session: " + str(e))
 
+async def _get_existing_session(user_id: str, session_id: str):
+    try:
+        session = await session_service.get_session(
+            app_name="tia_smart_chat",
+            user_id=user_id,
+            session_id=session_id
+        )
+        return session
+    except Exception as e:
+        print("ERROR in get_existing_session:", e)
+        raise Exception("Error retrieving existing session: " + str(e))
+
 async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str, message: str, session_id=None):
     try:
         author = None
@@ -114,11 +126,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
             session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
         else:
             # session_id provided: Try to get existing session
-            session = await session_service.get_session(
-                app_name="tia_smart_chat",
-                user_id=user_id,
-                session_id=session_id
-            )
+            session = await _get_existing_session(user_id, session_id)
 
             # session_id provided but doesn't exist: Create a new session
             if session is None:
@@ -132,13 +140,14 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
 
         # Handle agent transfer
         set_agent = session.state.get("set_agent")
-        user_profile = session.state.get("user_profile")
         vision_state = session.state.get("VisionAgent", {})
         chat_state = vision_state.get("chat_state")
-        if set_agent == "ProfileAgent" or user_profile == "collected":
-            print("DEBUG: Transferring to ProfileAgent")
+
+        # TODO: ADD AUTO TRANSFER WITHOUT USER MESSAGE
+        if set_agent == "ProfilerAgent":
+            print("DEBUG: Transferring to ProfilerAgent")
             new_message.parts.append(
-                types.Part(text="\n\n Use `transfer_to_agent` to switch to ProfileAgent and gather user profile information.")
+                types.Part(text="\n\n Use `transfer_to_agent` to switch to ProfilerAgent and gather user profile information.")
             )
         
         # Determine if DynamicChatAssistant should handle the chat
@@ -167,8 +176,11 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                     response_text = event.content.parts[0].text
                     author = event.author
             
+            # Get updated session state
+            session = await _get_existing_session(user_id, session.id)
+            
             end_session = session.state.get("end_session", False)
-            if end_session:
+            if end_session and set_agent:
                 await delete_session(user_id, session.id)
                 session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
 

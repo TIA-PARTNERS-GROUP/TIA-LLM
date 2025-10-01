@@ -1,0 +1,24 @@
+{
+    "session_id": "44467e96-29d9-48e0-bd44-5f27bdfe6a9e",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "cool",
+            "response": "Chat Completed. Restarting session.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "44467e96-29d9-48e0-bd44-5f27bdfe6a9e",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ProfileStorer",
+            "timestamp": "3fa50bbf-35c5-4b0b-89d3-f19671241062"
+        }
+    ]
+}

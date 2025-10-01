@@ -1,0 +1,32 @@
+[
+  {
+    "phase": 0,
+    "question": "",
+    "message": "Lets Begin!",
+    "timestamp": "2025-10-01T16:29:05.103844"
+  },
+  {
+    "phase": 0,
+    "question": "Great! I\u2019m excited to get started. To kick things off, could you tell me what your business does?",
+    "message": "Our business provides IT support and consulting services.",
+    "timestamp": "2025-10-01T16:29:07.257992"
+  },
+  {
+    "phase": 0,
+    "question": "Thank you for sharing that! IT support and consulting services are essential for many businesses. Now, could you please tell me what products or services you offer specifically?",
+    "message": "We offer a range of services including network setup, troubleshooting, software installation, and cybersecurity consulting.",
+    "timestamp": "2025-10-01T16:29:09.288675"
+  },
+  {
+    "phase": 0,
+    "question": "That sounds fantastic! Offering a range of services like that positions you well in the market, especially with the growing need for cybersecurity. Next question: Who is your ideal customer or target market? For example, are you targeting specific demographics or business types?",
+    "message": "Our target market includes small to medium-sized businesses, particularly those in the retail and healthcare sectors.",
+    "timestamp": "2025-10-01T16:29:11.726459"
+  },
+  {
+    "phase": 0,
+    "question": "Perfect! Targeting small to medium-sized businesses in the retail and healthcare sectors gives us a great range to work with. Now, for the last question: What makes your business unique or different from your competitors? This could include aspects like pricing, speed, customization, support, or community.",
+    "message": "Our unique selling point is our personalized approach. We provide tailored solutions based on each client's specific needs, and we pride ourselves on offering exceptional customer support.",
+    "timestamp": "2025-10-01T16:29:14.445733"
+  }
+]

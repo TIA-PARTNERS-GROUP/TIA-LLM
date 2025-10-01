@@ -1,0 +1,72 @@
+{
+    "session_id": "bc6d7919-20e1-41e5-a7da-bcedac821030",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hi Joshua! I'm here to guide you through the Ladder to Exit process. Let's start with a quick excitement pulse check.\n\nOn a scale of 1\u201310, how excited do you feel about your business right now? \n(1 = drained and stuck, 10 = jumping out of your skin with excitement).",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "bc6d7919-20e1-41e5-a7da-bcedac821030",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "LadderAgent",
+            "timestamp": "e214f06d-f84a-458a-a4ac-68a3805a8dca"
+        },
+        {
+            "message": "I\u2019d put it at around a 9 or 10 \u2014 I feel really energized about the direction my business is heading. There\u2019s a strong sense of possibility, and I\u2019m excited about building solutions that can genuinely make a difference.",
+            "response": "That\u2019s fantastic! It sounds like you have a lot of energy and enthusiasm for your business right now. What\u2019s been fuelling that excitement for you lately?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "bc6d7919-20e1-41e5-a7da-bcedac821030",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "e57762c5-ef72-4e0d-bb21-1757fdad9b8a"
+        },
+        {
+            "message": "Even though your overall excitement score was a 5, your inspiration and support scores are sky-high. That means there is fuel in your tank \u2014 something about your business is lighting you up.",
+            "response": "Thank you for sharing openly. Your scores give us a clear snapshot of how you feel about your business right now.\n\nOur goal is to take you from where you are today to being truly passionate and excited about your own business again \u2014 so that energy becomes contagious for your team and your customers. \n\nIf you're ready to delve deeper into any areas or reflect on strategies to maintain that excitement, feel free to share!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "bc6d7919-20e1-41e5-a7da-bcedac821030",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "05a84c91-9550-4c76-833b-c0d15c3db374"
+        }
+    ]
+}

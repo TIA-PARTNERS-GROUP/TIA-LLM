@@ -1,11 +1,8 @@
 from google.adk.agents import Agent
 from ...config import AGENT_MODEL
-from .tools import start_new_conversation, chat_with_phases, recommended_connection, generate_email
+from .tools import recommended_connection, generate_email, store_connect_chat
+from .prompts import CONNECT_CHAT_BUSINESS_INFO_PROMPT
 from ....tia_agent.tools import end_session
-
-from google.adk.agents import Agent
-from ...config import AGENT_MODEL
-from .tools import start_new_conversation, chat_with_phases, recommended_connection, generate_email
 
 EmailAgent = Agent(
     name="EmailAgent",
@@ -23,23 +20,23 @@ ChatConnectAgent = Agent(
     name="ChatConnectAgent", 
     model=AGENT_MODEL,
     instruction=f"""
-    You are the TIA SmartConnect Assistant, specialized in helping small tech businesses find ideal referral
+    You are the TIA SmartConnect Assistant, specialized in helping small tech businesses find ideal referral partners.
 
     **Your tools:**
-    - Use the `start_new_conversation` tool to start a new SmartConnect session only.
-    - Use the `chat_with_phases` function for EVERY user message during the conversation
+    - Use the `store_connect_chat` tool when the user has answered all questions from the prompt below
 
     **Session management:**
-    - If `chat_state` is "exit" return to the `ConnectAgent` using `transfer_to_agent`
-    - Only use `start_new_conversation` to start new sessions, never use it to resume or during a conversation.
+    - After storing the conversation with `store_connect_chat`, return to the `ConnectAgent` using `transfer_to_agent`
 
     **Rules:**
-    - Always call `start_new_conversation` at begginning to initialize a new session. However, if `session_id` already exists, continue the session.
-    - Always return tool outputs exactly as given—never add commentary or modify them.
-    - Keep users engaged and moving through all phases; never answer for the user.
-    - After each phase, ask if the user wants to continue to the next phase.
+    - Follow the conversation flow in the prompt below
+    - Always return tool outputs exactly as given—never add commentary or modify them
+    - Keep users engaged and moving through all phases; never answer for the user
+    - When all questions are answered and the conversation is complete, call `store_connect_chat` to save the conversation
+
+    {CONNECT_CHAT_BUSINESS_INFO_PROMPT}
     """,
-    tools=[start_new_conversation, chat_with_phases],
+    tools=[store_connect_chat],
 )
 
 ConnectAgent = Agent(
@@ -59,13 +56,16 @@ ConnectAgent = Agent(
     **Session management:**
     - If `chat_state` is "exit" or "user_profile" is "generated":
         1. Immediately call `recommended_connection` with the user's responses.
-        2. From the output of the `recommended_connection` - "connection_type" and "connection_result", list out in markdown the relevant information of the business for a potential connection. Mention what "connection_type" the results came from. Allow the user to select which businesses they want email templates for.
-        3. From the chosen businesses, call `generate_email` with the returned result.
-        4. Ask the user for changes to the email templates, if so transfer to the `EmailAgent` to edit the templates.
-        5. After the user is satisfied with the email templates, call `end_session` to end the session.
+        2. From the output of the `recommended_connection`, display ALL businesses in markdown format with their relevant information (name, type, rating, contact details, website, etc.). Mention what "connection_type" the results came from.
+        3. Ask the user which businesses they want email templates for (by name or number).
+        4. From the chosen businesses, call `generate_email` with the returned result.
+        5. Ask the user for changes to the email templates, if so transfer to the `EmailAgent` to edit the templates.
+        6. After the user is satisfied with the email templates, call `end_session` to end the session.
 
     **Rules:**
     - If `user_profile` is "generated", skip questions (skip using `ChatConnectAgent`) and call `recommended_connection` directly to generate partner matches
+    - **ALWAYS display ALL businesses from the recommended_connection results**
+    - **NEVER call `generate_email` automatically - always wait for user selection first**
     - If `user_profile` is "not_generated", follow the regular flow: transfer to `ChatConnectAgent` for questions
     - Your must never call `end_session` until you have called `generate_email` and the user is satisfied with the email templates
     - Handle outputs with appropriate markdown formatting for clarity and make sure text is easy to read

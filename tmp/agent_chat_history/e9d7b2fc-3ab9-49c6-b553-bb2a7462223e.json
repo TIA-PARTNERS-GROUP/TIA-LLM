@@ -1,0 +1,236 @@
+{
+    "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+    "user_id": "6",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Hello, Joshua! I'm glad you're here. Let's take a moment to check the excitement pulse for your business, TIA Test Company. \n\nFirst, on a scale of 1\u201310, how excited do you feel about your business right now? (1 = drained and stuck, 10 = jumping out of your skin with excitement).",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "LadderAgent",
+            "timestamp": "c659ba44-1017-4269-b592-38702e704918"
+        },
+        {
+            "message": "I\u2019d say I\u2019m at about a 9 right now \u2014 really energized and optimistic about where TIA Test Company is heading. The vision feels clearer than ever, and seeing the ideas start to turn into tangible solutions has been fuelling that excitement.",
+            "response": "That's fantastic to hear! A score of 9 reflects a strong level of excitement. \n\nNow, how clear are you about where your business is heading? Please give me a score from 1 to 10.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "5d9e30ec-eea6-44e1-90b1-df6f2f2ad78c"
+        },
+        {
+            "message": "I\u2019d put that at about an 8 \u2014 I feel I have a solid direction and a strong sense of purpose, though there are still a few details and strategies I\u2019m working to refine. The big picture feels clear, but I know there\u2019s room to sharpen the roadmap further.",
+            "response": "Great insight! An 8 shows that you have a solid understanding of your direction, which is excellent.\n\nNext, how manageable does your workload feel right now? Please rate it from 1 to 10.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "adc66faa-d212-40bc-ac86-fa54e6be4462"
+        },
+        {
+            "message": "I\u2019d give that about a 7 \u2014 the workload feels mostly manageable, but there are definitely moments where it can get a bit overwhelming. I\u2019ve been balancing the hands-on building with the strategic planning, and while it\u2019s a lot, it still feels under control with the right focus.",
+            "response": "Thank you for sharing that! A score of 7 indicates you're handling your workload well, even amidst the challenges.\n\nNow, how confident do you feel about your cashflow and finances? Please provide a score from 1 to 10.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "4bd0f724-95c0-47a8-8511-b228e4b1f8e5"
+        },
+        {
+            "message": "I\u2019d put that at about a 4 \u2014 I feel there\u2019s still a lot of work to do in terms of building stability and predictability with cashflow. Right now, it feels a bit uncertain, and while I\u2019m optimistic about the long-term potential, the short-term financial side definitely needs more focus and structure.",
+            "response": "Thank you for your honesty, Joshua. A score of 4 reflects the need for more attention on cashflow and finances, which is an important aspect to address.\n\nNext, how supported do you feel by your team or partners? Please rate that from 1 to 10.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "2a5f4b24-5304-4ce3-8330-8a092e31299d"
+        },
+        {
+            "message": "I\u2019d rate that about a 9 \u2014 I feel really supported by the people around me. Even though we\u2019re still a small operation, the encouragement, feedback, and collaboration I\u2019m getting from my partners and network makes a huge difference. It feels like I\u2019m not doing this alone, which keeps me motivated and focused.",
+            "response": "That's wonderful to hear! A score of 9 indicates you have strong support, which is invaluable in building a successful business.\n\nFinally, how much does your business still challenge and inspire you? Please provide a score from 1 to 10.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "b6739bd6-a25a-4b82-a02a-d7cd8792ae7f"
+        },
+        {
+            "message": "I\u2019d say that\u2019s a solid 10 \u2014 my business challenges me every day to grow, think differently, and push beyond my comfort zone, but that\u2019s exactly what makes it so inspiring. The blend of solving technical problems while shaping the bigger vision keeps me fully engaged and excited about the journey ahead.",
+            "response": "Your scores have been successfully recorded, and here's a quick reflection based on your excitement pulse check:\n\n- **Excitement (9)**: You\u2019re filled with energy and optimism, which is a great foundation for growth.\n- **Clarity (8)**: Your direction is strong, yet there are opportunities to further refine your strategies.\n- **Workload (7)**: While manageable, balancing hands-on tasks with strategic planning can sometimes feel overwhelming. Look for ways to lighten this as needed.\n- **Cashflow (4)**: This area requires more attention. Building stability and predictability in your financials will be crucial for your confidence going forward.\n- **Support (9)**: A strong support network enhances your journey and contributes to your motivation. Leverage this further!\n- **Inspiration (10)**: It\u2019s inspiring to see how much the challenges fuel your growth and engagement with your business.\n\nOverall, you have a solid mix of excitement, support, and inspiration, but be mindful of your financial aspect and workload management. \n\nThank you for sharing this journey with me, Joshua! If you need further guidance or insights, feel free to ask.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "2bcfe09b-992a-4663-aa4f-7389b302c481"
+        },
+        {
+            "message": "perfect thanks",
+            "response": "You're welcome, Joshua! I'm glad you found it helpful. If you have any more questions or need assistance in the future, don't hesitate to reach out. Best of luck with TIA Test Company, and keep embracing that excitement!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "LadderAgent": {
+                    "store_results": {
+                        "clarity": 8,
+                        "workload": 7,
+                        "cashflow": 4,
+                        "support": 9,
+                        "inspiration": 10
+                    },
+                    "conversation_complete": true
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "f88ab3e5-85f8-4590-8dca-958a504dfae7"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello again, Joshua! How can I assist you today?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "6",
+                "session_id": "e9d7b2fc-3ab9-49c6-b553-bb2a7462223e",
+                "set_agent": "LadderAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "TIA Test Company",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "LadderAgent": {
+                    "store_results": {
+                        "clarity": 8,
+                        "workload": 7,
+                        "cashflow": 4,
+                        "support": 9,
+                        "inspiration": 10
+                    },
+                    "conversation_complete": true
+                }
+            },
+            "author": "LadderAgent",
+            "timestamp": "fdec335f-efab-4c5e-87aa-7a30abba7f8a"
+        }
+    ]
+}
