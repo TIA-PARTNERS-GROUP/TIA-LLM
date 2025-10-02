@@ -112,22 +112,6 @@ def insert_user_strengths(cursor, user_id: int, user_strengths: list, strength_c
         raise e
     return strength_ids
 
-def insert_business_skills(cursor, user_id: int, business_skills: list, skill_category_id: int):
-    """Insert business skills. Returns list of skill_ids."""
-    skill_ids = []
-    try:
-        print("DEBUG: Inserting business skills:", business_skills)
-        for b_skill in business_skills:
-            cursor.execute("INSERT INTO skills (name, category_id) VALUES (%s, %s) ON DUPLICATE KEY UPDATE name=name", (b_skill, skill_category_id))
-            cursor.execute("SELECT id FROM skills WHERE name=%s", (b_skill,))
-            skill_id = cursor.fetchone()[0]
-            cursor.execute("INSERT IGNORE INTO user_skills (user_id, skill_id) VALUES (%s, %s)", (user_id, skill_id))
-            skill_ids.append(skill_id)
-    except Exception as e:
-        print("ERROR in insert_business_skills:", e)
-        raise e
-    return skill_ids
-
 def insert_business_strengths(cursor, user_id: int, business_strengths: list, business_role_id: int, business_phase_id: int):
     """Insert business strengths. Returns list of business_strength_ids."""
     business_strength_ids = []
@@ -202,9 +186,6 @@ def model_update_user_details(user_id: int,
         
         # Insert user strengths
         insert_user_strengths(cursor, user_id, user_strengths, strength_category_id)
-
-        # Insert business skills
-        insert_business_skills(cursor, user_id, business_skills, skill_category_id)
         
         # Insert business strengths
         insert_business_strengths(cursor, user_id, business_strengths, business_role_id, business_phase_id)

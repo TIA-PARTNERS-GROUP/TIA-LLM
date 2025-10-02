@@ -48,7 +48,7 @@ def recommended_connection(tool_context: ToolContext):
         connect_agent_state["connection_result"] = result
         state["ConnectAgent"] = connect_agent_state
         
-        return {"status": "success", "connection_type": "Web Search", "connection_result": WEB_CALL}
+        return {"status": "success", "connection_type": result_type, "connection_result": result}
     
     except Exception as e:
         print(f"Error in recommended_connection: {e}")

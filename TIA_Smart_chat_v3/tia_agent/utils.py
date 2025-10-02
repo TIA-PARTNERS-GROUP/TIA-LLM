@@ -50,18 +50,6 @@ def _get_business_strengths(cursor, user_id):
     business_strengths = [row[0] for row in cursor.fetchall()]
     return ", ".join(business_strengths)
 
-def _get_business_skills(cursor, user_id):
-    """Get business skills as string."""
-    cursor.execute("""
-        SELECT s.name FROM skills s
-        JOIN user_skills us ON s.id = us.skill_id
-        WHERE us.user_id = %s AND s.category_id IN (
-            SELECT id FROM skill_categories WHERE name LIKE 'Business%%'
-        )
-    """, (user_id,))
-    business_skills = [row[0] for row in cursor.fetchall()]
-    return ", ".join(business_skills)
-
 def _get_business_type(cursor, user_id):
     """Get business type."""
     cursor.execute("""
@@ -129,10 +117,6 @@ def load_user_profile(user_id: int):
         user_skills_str = _get_user_skills(cursor, user_id)
         print(f"DEBUG: User skills retrieved: {user_skills_str}")
 
-        # Get business skills
-        business_skills_str = _get_business_skills(cursor, user_id)
-        print(f"DEBUG: Business skills retrieved: {business_skills_str}")
-
         # Get user strengths
         user_strengths_str = _get_user_strengths(cursor, user_id)
         print(f"DEBUG: User strengths retrieved: {user_strengths_str}")
@@ -158,7 +142,7 @@ def load_user_profile(user_id: int):
         print("DEBUG: DB connection closed")
 
         # Check if essential profile data exists
-        profile_exists = bool(business_name and user_job and user_strengths_str and user_skills_str and business_strengths_str and business_type and business_skills_str)
+        profile_exists = bool(business_name and user_job and user_strengths_str and user_skills_str and business_strengths_str and business_type)
         print(f"DEBUG: Profile exists: {profile_exists}")
 
         profile = {
@@ -178,7 +162,6 @@ def load_user_profile(user_id: int):
                 "User_Strength": user_strengths_str,
                 "User_skills": user_skills_str,
                 "Business_Strength": business_strengths_str,
-                "Business_Skills": business_skills_str,
                 "Business_Category": business_category,
             })
             print(f"DEBUG: Profile data: {profile}")

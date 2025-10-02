@@ -43,6 +43,7 @@ def store_user_profile(tool_context: ToolContext):
         skill_category = profile.get("Skill_Category")
         strength_category = profile.get("Strength_Category")
 
+        
         print("DEBUG: RUNNING model_update_user_details")
         if not model_update_user_details(
             user_id,
@@ -58,8 +59,7 @@ def store_user_profile(tool_context: ToolContext):
         ):
             raise Exception("Failed to update user profile in database.")
 
-        # Return to cooridantor to return to the starting agent
-        #tool_context.actions.transfer_to_agent = "CoordinatorAgent"
+        state["end_session"] = True
         return {"status": "success", "profile": profile}
     except Exception as e:
         return {"status": "error", "message": str(e)}
