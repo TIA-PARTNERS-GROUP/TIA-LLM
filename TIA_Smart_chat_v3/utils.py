@@ -142,13 +142,6 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
         set_agent = session.state.get("set_agent")
         vision_state = session.state.get("VisionAgent", {})
         chat_state = vision_state.get("chat_state")
-
-        # TODO: ADD AUTO TRANSFER WITHOUT USER MESSAGE
-        if set_agent == "ProfilerAgent":
-            print("DEBUG: Transferring to ProfilerAgent")
-            new_message.parts.append(
-                types.Part(text="\n\n Use `transfer_to_agent` to switch to ProfilerAgent and gather user profile information.")
-            )
         
         # Determine if DynamicChatAssistant should handle the chat
         response_text = None
@@ -176,18 +169,35 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                     response_text = event.content.parts[0].text
                     author = event.author
             
-            # Get updated session state
-            session = await _get_existing_session(user_id, session.id)
-            
-            end_session = session.state.get("end_session", False)
-            if end_session and set_agent:
-                await delete_session(user_id, session.id)
-                session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
+        # Get updated session state
+        session = await _get_existing_session(user_id, session.id)
+        set_agent = session.state.get("set_agent")
+        # print(f"DEBUG: Final session state after chat: {session.state}")
+        # print(f"DEBUG: Set Agent after chat: {set_agent}")
 
-        if "<SILENT_AGENT>" in response_text:
-            response_text = "Chat Completed. Restarting session."
+        if set_agent == "ProfilerAgent":
+            auto_transfer_message = types.Content(
+                    role="user",
+                    parts=[types.Part(text="Use `transfer_to_agent` to switch to ProfilerAgent and gather user profile information.")]
+                )
+            for event in runner.run(
+                user_id=session.user_id,
+                session_id=session.id,
+                new_message=auto_transfer_message
+            ):
+                print(f"DEBUG: Transfer Event: {event}")
+        
+        # Check if session should end
+        session = await _get_existing_session(user_id, session.id)
+        end_session = session.state.get("end_session", False)
+        if end_session and set_agent:
             await delete_session(user_id, session.id)
             session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
+
+        # if "<SILENT_AGENT>" in response_text:
+        #     response_text = "Chat Completed. Restarting session."
+        #     await delete_session(user_id, session.id)
+        #     session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
 
         return session, response_text, author
     except Exception as e:
