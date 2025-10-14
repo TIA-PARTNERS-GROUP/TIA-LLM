@@ -2,8 +2,6 @@ from fastapi import FastAPI, Request, HTTPException
 import uuid, json, os
 from .utils import compare_responses, run_chat, delete_session
 
-
-
 # FastAPI app
 app = FastAPI()
 CONVERSATIONS_DIR = os.path.join(os.getcwd(), "tmp", "agent_chat_history")

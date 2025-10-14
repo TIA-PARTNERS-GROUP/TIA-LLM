@@ -8,7 +8,7 @@ def recommended_connection(tool_context: ToolContext):
         connect_agent_state = state.get("ConnectAgent", {})
 
         print(f"DEBUG: tool_context.state type: {state}")
-        print(f"DEBUG: connection_type value: '{state.get("connection_type")}'")
+        print(f"DEBUG: connection_type value: '{state.get('connection_type')}'")
         print(f"DEBUG: connection_type in state: {'connection_type' in state}")
 
         required_keys = ["user_id", "region", "lat", "lng", "Generated_Profile", "connection_type"]

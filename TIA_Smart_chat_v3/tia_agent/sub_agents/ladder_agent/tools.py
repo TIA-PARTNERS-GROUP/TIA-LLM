@@ -7,14 +7,14 @@ def generate_ladder_results(tool_context: ToolContext, ladder_scores: Dict[str, 
     
     Args:
         ladder_scores: Dictionary containing scores for each category (1-10)
-                      e.g., {"clarity": 7, "workload": 5, "cashflow": 8, "support": 6, "inspiration": 9}
+                      e.g., {"excitement": 5, "clarity": 7, "workload": 5, "cashflow": 8, "support": 6, "inspiration": 9}
     """
     try:
         state = tool_context.state
         ladder_state = state.get("LadderAgent", {})
         
         # Validate that we have the expected keys
-        expected_keys = ["clarity", "workload", "cashflow", "support", "inspiration"]
+        expected_keys = ["excitement", "clarity", "workload", "cashflow", "support", "inspiration"]
         
         results = {}
         for key in expected_keys:

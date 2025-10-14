@@ -1,0 +1,7 @@
+testing_and_old/*
+Dockerfile*
+conversation_connect_chat_history.log*
+tmp/
+**/tmp/
+__pycache__/
+**/__pycache__/

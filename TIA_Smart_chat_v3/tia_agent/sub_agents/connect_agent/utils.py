@@ -123,7 +123,7 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
     endpoints = {
         "complementary": f"{api_base_url}/user/{user_id}/complementary_partners",
         "alliance": f"{api_base_url}/user/{user_id}/alliance_partners",
-        "mastermind": f"{api_base_url}/user/{user_id}/mastermind_partners",
+        "mastermind": "/api",#f"{api_base_url}/user/{user_id}/mastermind_partners",
         "intelligent": f"{api_base_url}/user/{user_id}/intelligent_partners",
     }
     
