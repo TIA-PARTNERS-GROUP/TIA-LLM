@@ -1,5 +1,8 @@
 from google.adk.tools.tool_context import ToolContext
 from typing import Dict
+import logging
+
+logger = logging.getLogger(__name__)
 
 def generate_ladder_results(tool_context: ToolContext, ladder_scores: Dict[str, int]) -> dict:
     """
@@ -10,6 +13,7 @@ def generate_ladder_results(tool_context: ToolContext, ladder_scores: Dict[str, 
                       e.g., {"excitement": 5, "clarity": 7, "workload": 5, "cashflow": 8, "support": 6, "inspiration": 9}
     """
     try:
+        logger.debug("Storing ladder results: %s", ladder_scores)
         state = tool_context.state
         ladder_state = state.get("LadderAgent", {})
         
@@ -30,4 +34,5 @@ def generate_ladder_results(tool_context: ToolContext, ladder_scores: Dict[str, 
         }
         
     except Exception as e:
+        logger.error(f"Error in generate_ladder_results: {e}")
         return {"status": "error", "message": str(e)}

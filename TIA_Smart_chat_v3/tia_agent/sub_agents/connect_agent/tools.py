@@ -1,15 +1,21 @@
-from typing import Dict, Any
 from google.adk.tools.tool_context import ToolContext
 from .utils import recommended_GNN_connection, recommended_WEB_connection, generate_email_templates, extract_business_type
+import logging
+
+logger = logging.getLogger(__name__)
 
 def recommended_connection(tool_context: ToolContext):
+    """
+    Recommend connections based on user profile and location.
+    """
     try:
         state = tool_context.state
         connect_agent_state = state.get("ConnectAgent", {})
 
-        print(f"DEBUG: tool_context.state type: {state}")
-        print(f"DEBUG: connection_type value: '{state.get('connection_type')}'")
-        print(f"DEBUG: connection_type in state: {'connection_type' in state}")
+        logger.debug(f"Tool_context.state type: {state}")
+        logger.debug(f"Tool_context.state: {state}")
+        logger.debug(f"connection_type value: '{state.get('connection_type')}'")
+        logger.debug(f"connection_type in state: {'connection_type' in state}")
 
         required_keys = ["user_id", "region", "lat", "lng", "Generated_Profile", "connection_type"]
         missing = [k for k in required_keys if state.get(k) is None]
@@ -51,7 +57,7 @@ def recommended_connection(tool_context: ToolContext):
         return {"status": "success", "connection_type": result_type, "connection_result": result}
     
     except Exception as e:
-        print(f"Error in recommended_connection: {e}")
+        logger.error(f"Error in recommended_connection: {e}")
         return {"status": "error", "message": str(e)}
 
 def generate_email(tool_context: ToolContext):
@@ -76,11 +82,12 @@ def generate_email(tool_context: ToolContext):
         user_job = generated_profile.get("UserJob")
         user_email = generated_profile.get("Contact_Email")
         business_name = generated_profile.get("Business_Name")
+
         # Generate email templates using the new function
-        print(f"DEBUG: User details - Name: {user_name}, Job: {user_job}, Email: {user_email}, Business: {business_name}")
-        print(f"DEBUG: Number of businesses to generate emails for: {len(businesses)}")
-        print(f"DEBUG: Connection results: {connection_result}")
-        print("DEBUG: Generating email templates...")
+        logger.debug(f"User details - Name: {user_name}, Job: {user_job}, Email: {user_email}, Business: {business_name}")
+        logger.debug(f"Number of businesses to generate emails for: {len(businesses)}")
+        logger.debug(f"Connection results: {connection_result}")
+        logger.debug("Generating email templates...")
         email_templates = generate_email_templates(businesses, user_name, user_job, user_email, business_name)
         if not email_templates:
             return {"status": "error", "message": "Failed to generate email templates."}
@@ -88,11 +95,13 @@ def generate_email(tool_context: ToolContext):
         return {"status": "success", "email_templates": email_templates}
     
     except Exception as e:
+        logger.error(f"Error in generate_email: {e}")
         return {"status": "error", "message": str(e), "chat_state": "exit"}
 
 def store_connect_chat(tool_context: ToolContext):
     """Store the generated connection chat state"""
     try:
+        logger.debug("Storing ConnectAgent chat state")
         state = tool_context.state
         connect_agent_state = state.get("ConnectAgent", {})
         
@@ -104,4 +113,5 @@ def store_connect_chat(tool_context: ToolContext):
         
         return {"status": "success", "ConnectAgent": connect_agent_state}
     except Exception as e:
+        logger.error(f"Error in store_connect_chat: {e}")
         return {"status": "error", "message": str(e)}

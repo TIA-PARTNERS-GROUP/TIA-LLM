@@ -1,12 +1,13 @@
-import pymysql
-import os
+import pymysql, os, logging
+
+logger = logging.getLogger(__name__)
 
 business_phase_name = "TIA Agent Chatting"
 
 def ensure_business_type_and_categories(cursor, business_type: str, business_category: str, skill_category: str, strength_category: str):
     """Ensure business type, skill category, and strength category exist. Returns IDs or raises exception."""
     try:
-        print("DEBUG: Ensuring business type and categories for:", business_type)
+        logger.debug("Ensuring business type and categories for: %s", business_type)
         
         # Ensure business type exists
         cursor.execute("SELECT id FROM business_types WHERE name=%s", (business_type,))
@@ -49,13 +50,13 @@ def ensure_business_type_and_categories(cursor, business_type: str, business_cat
         
         return business_category_id, business_type_id, skill_category_id, strength_category_id
     except Exception as e:
-        print("ERROR in ensure_business_type_and_categories:", e)
+        logger.error("ERROR in ensure_business_type_and_categories: %s", e)
         raise e
 
 def ensure_business_phase_and_role(cursor, user_role: str):
     """Ensure business phase and role exist. Returns IDs or raises exception."""
     try:
-        print("DEBUG: Ensuring business phase and role")
+        logger.debug("Ensuring business phase and role")
         
         # Ensure business phase exists
         cursor.execute("SELECT id FROM business_phases WHERE name=%s", ("TIA Agent Chatting",))
@@ -77,14 +78,14 @@ def ensure_business_phase_and_role(cursor, user_role: str):
         
         return business_phase_id, business_role_id
     except Exception as e:
-        print("ERROR in ensure_business_phase_and_role:", e)
+        logger.error("ERROR in ensure_business_phase_and_role: %s", e)
         raise e
 
 def insert_user_skills(cursor, user_id: int, user_skills: list, skill_category_id: int):
     """Insert user skills. Returns list of skill_ids."""
     skill_ids = []
     try:
-        print("DEBUG: Inserting user skills:", user_skills)
+        logger.debug("Inserting user skills: %s", user_skills)
         for skill in user_skills:
             cursor.execute("INSERT IGNORE INTO skills (name, category_id) VALUES (%s, %s)", (skill, skill_category_id))
             cursor.execute("SELECT id FROM skills WHERE name=%s", (skill,))
@@ -92,7 +93,7 @@ def insert_user_skills(cursor, user_id: int, user_skills: list, skill_category_i
             cursor.execute("INSERT IGNORE INTO user_skills (user_id, skill_id) VALUES (%s, %s)", (user_id, skill_id))
             skill_ids.append(skill_id)
     except Exception as e:
-        print("ERROR in insert_user_skills:", e)
+        logger.error("ERROR in insert_user_skills: %s", e)
         raise e
     return skill_ids
 
@@ -100,7 +101,7 @@ def insert_user_strengths(cursor, user_id: int, user_strengths: list, strength_c
     """Insert user strengths. Returns list of strength_ids."""
     strength_ids = []
     try:
-        print("DEBUG: Inserting user strengths:", user_strengths)
+        logger.debug("Inserting user strengths:", user_strengths)
         for strength in user_strengths:
             cursor.execute("INSERT INTO strengths (name, category_id) VALUES (%s, %s) ON DUPLICATE KEY UPDATE name=name", (strength, strength_category_id))
             cursor.execute("SELECT id FROM strengths WHERE name=%s", (strength,))
@@ -108,7 +109,7 @@ def insert_user_strengths(cursor, user_id: int, user_strengths: list, strength_c
             cursor.execute("INSERT IGNORE INTO user_strengths (user_id, strength_id) VALUES (%s, %s)", (user_id, strength_id))
             strength_ids.append(strength_id)
     except Exception as e:
-        print("ERROR in insert_user_strengths:", e)
+        logger.debug("ERROR in insert_user_strengths:", e)
         raise e
     return strength_ids
 
@@ -116,7 +117,7 @@ def insert_business_strengths(cursor, user_id: int, business_strengths: list, bu
     """Insert business strengths. Returns list of business_strength_ids."""
     business_strength_ids = []
     try:
-        print("DEBUG: Inserting business strengths:", business_strengths)
+        logger.debug("Inserting business strengths: %s", business_strengths)
         for b_strength in business_strengths:
             cursor.execute("SELECT id FROM business_strengths WHERE name=%s", (b_strength,))
             result = cursor.fetchone()
@@ -131,26 +132,25 @@ def insert_business_strengths(cursor, user_id: int, business_strengths: list, bu
             cursor.execute("INSERT IGNORE INTO user_business_strengths (user_id, business_strength_id) VALUES (%s, %s)", (user_id, business_strength_id))
             business_strength_ids.append(business_strength_id)
     except Exception as e:
-        print("ERROR in insert_business_strengths:", e)
+        logger.debug("ERROR in insert_business_strengths: %s", e)
         raise e
     return business_strength_ids
     
-#TODO: Update business table
 def update_business_info(cursor, user_id: int, business_type_id: int, business_category_id: int, business_phase_id: int):
     """Update the existing businesses table row with correct IDs, phase, and name for the user."""
     try:
-        print("DEBUG: Updating business info for user_id:", user_id)
-        
+        logger.debug("Updating business info for user_id: %s", user_id)
+
         cursor.execute("""
             UPDATE businesses 
             SET business_type_id = %s, business_category_id = %s, business_phase_id = %s
             WHERE operator_user_id = %s
         """, (business_type_id, business_category_id, business_phase_id, user_id))
-        
-        print("DEBUG: Business info updated successfully")
+
+        logger.debug("Business info updated successfully")
         return True
     except Exception as e:
-        print("ERROR in update_business_info:", e)
+        logger.error("ERROR in update_business_info: %s", e)
         return False
 
 def model_update_user_details(user_id: int, 
@@ -172,7 +172,7 @@ def model_update_user_details(user_id: int,
             database=os.environ["DB_NAME"],
             port=int(os.environ.get("DB_PORT"))
         )
-        print("DEBUG: Connected to DB")
+        logger.debug(f"Connected {user_id} to Database for updating user details")
         cursor = conn.cursor()
 
         # Ensure business type and categories
@@ -195,11 +195,11 @@ def model_update_user_details(user_id: int,
             raise Exception("Failed to update business info")
 
         conn.commit()
-        print("DEBUG: DB commit successful")
+        logger.debug("DB commit successful")
         cursor.close()
         conn.close()
 
         return True
     except Exception as e:
-        print("DB ERROR in model_update_user_details:", e)
+        logger.error("DB ERROR in model_update_user_details: %s", e)
         return False

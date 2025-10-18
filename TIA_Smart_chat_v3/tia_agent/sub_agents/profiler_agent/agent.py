@@ -1,5 +1,4 @@
-from google.adk.agents import BaseAgent, LlmAgent, LoopAgent, SequentialAgent, Agent
-from google.adk.agents.invocation_context import InvocationContext
+from google.adk.agents import LlmAgent, SequentialAgent, Agent
 from .schemas import ProfileOutputSchema
 from .tools import collect_user_history, store_user_profile
 from ...config import AGENT_MODEL
@@ -68,7 +67,7 @@ ProfileStorer = Agent(
     tools=[store_user_profile]
 )
 
-
+# Assemble the ProfilerAgent as a SequentialAgent
 ProfilerAgent = SequentialAgent(
     name="ProfilerAgent",
     sub_agents=[

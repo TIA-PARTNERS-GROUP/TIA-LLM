@@ -1,17 +1,34 @@
 from fastapi import FastAPI, Request, HTTPException
-import uuid, json, os
 from .utils import compare_responses, run_chat, delete_session
+from dotenv import load_dotenv
+import uuid, json, os, logging
+
+load_dotenv()
+
+# Logging setup
+log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
+logging.basicConfig(
+    # Default to INFO
+    level=getattr(logging, log_level, logging.INFO),
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler('TIA-LLM.log')
+    ]
+)
+logger = logging.getLogger(__name__)
 
 # FastAPI app
+# To run: uvicorn TIA_Smart_chat_v3.main:app --reload --port 8080
 app = FastAPI()
 CONVERSATIONS_DIR = os.path.join(os.getcwd(), "tmp", "agent_chat_history")
 
-# To run: uvicorn TIA_Smart_chat_v3.main:app --reload --port 8080
+# Main Chat endpoint
 @app.post("/chat/tia-chat")
 async def chat_endpoint(requests: Request):
     data = await requests.json()
     try:
-        print("DEBUG: Received data =", data)
+        logger.info("Received data: %s", data)
         user_id = str((data.get("user_id")))
         name = data.get("name")
         message = data.get("message")
@@ -58,11 +75,12 @@ async def chat_endpoint(requests: Request):
                 json.dump(data, f, indent=4)
             result["saved_to"] = file_path
 
-        print("DEBUG: Session state after chat:", session.state)
+        logger.debug("Session state after chat: %s", session.state)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+
+# Endpoint to reset a session
 @app.post("/chat/reset-session")
 async def reset_session(requests: Request):
     data = await requests.json()
@@ -77,10 +95,10 @@ async def reset_session(requests: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+# Endpoint to test evaluation of conversations
 @app.post("/chat/test-eval")
 async def test_eval(requests: Request):
     data = await requests.json()
-    
     try:
         expected = data.get("expected")
         if not expected:
@@ -97,13 +115,14 @@ async def test_eval(requests: Request):
         else:
             raise HTTPException(status_code=400, detail="expected must be a valid file path")
         
+        # Run through conversations and compare responses
         scores = []
         total_score = 0
-        session_id = None  # Start with no session for the first run
-        
+        session_id = None
         for i, conv in enumerate(conversations):
             message = conv.get("message")
             expected_response = conv.get("response")
+
             # Use the first conversation's details for name, region, etc., or load from state
             name = expected_data.get("name", "Unknown")
             region = expected_data.get("region", "au")
@@ -125,8 +144,8 @@ async def test_eval(requests: Request):
             total_score += score
         
         overall_score = total_score / len(scores) if scores else 0
-        
-        print("DEBUG: Test evaluation completed for", len(scores), "conversations")
+
+        logger.debug("Test evaluation completed for %d conversations", len(scores))
         return {
             "overall_score": overall_score,
             "session_id": session_id,

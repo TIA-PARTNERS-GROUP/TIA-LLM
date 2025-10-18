@@ -1,35 +1,14 @@
-from typing import Dict, Any, List
+from typing import Dict, Any
 from dotenv import load_dotenv
 from urllib.parse import urlencode
-from ...config import CHAT_MODEL, OPENAI_API_KEY, RAPIDAPI_HOST, RAPIDAPI_KEY
+from ...config import RAPIDAPI_HOST, RAPIDAPI_KEY
 from .prompts import CONNECT_GENERATION_PROMPT
 from ..DynamicChatAssistant import generate_response
-import os, requests, json, http.client
+import os, requests, json, http.client, logging
 
 load_dotenv()
 
-def extract_business_type(conversation_history):
-    """Extract business_type from conversation history using LLM."""
-    print(f"DEBUG: Conversation history for business_type extraction: {conversation_history}")
-    
-    business_type_prompt = f"""
-    Analyze the following conversation history and determine the most appropriate business_type for the user.
-    Business_type should be a short phrase of 2-3 words max (e.g., "AI Consulting", "Tech Automation").
-    Keep it under 50 characters.
-
-    Conversation:
-    {conversation_history}
-
-    Output only the business_type as a string.
-    """
-    input_messages = [
-        {"role": "system", "content": "You are an assistant that extracts short business types from conversations."},
-        {"role": "user", "content": business_type_prompt}
-    ]
-    
-    business_type = generate_response(input_messages)
-    
-    return business_type
+logger = logging.getLogger(__name__)
     
 def search_businesses_in_area(business_type: str, limit: int, region: str, zoom: int, lat: float, lng: float, language: str = "en",) -> dict:
     params = {
@@ -73,7 +52,7 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     limit = 5
     zoom = 10
 
-    # Select attributes based on connection_type (using required fields from validate_connection_options)
+    # Select attributes based on connection_type
     chat_attributes = connect_agent.get("connection_type")
     if chat_attributes:
         selected_attributes = chat_attributes
@@ -96,13 +75,13 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
     ]
     query = generate_response(message)
 
-    print(f"DEBUG: Generated query for {connection_type}: {query}")
+    logger.debug(f"Generated query for {connection_type}: {query}")
 
     try:
         results = search_businesses_in_area(query, limit, region, zoom, lat, lng)
         return results
     except Exception as e:
-        print(f"Error in recommended_WEB_connection for {connection_type}: {e}")
+        logger.error(f"Error in recommended_WEB_connection for {connection_type}: {e}")
         return {"error": str(e)}
 
 def recommended_GNN_connection(attributes: Dict[str, Any]):
@@ -113,7 +92,7 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
     user_id = attributes.get("user_id")
     connection_type = attributes.get("connection_type", "complementary")
     if not user_id:
-        print("Error: user_id not found in attributes")
+        logger.error("Error: user_id not found in attributes")
         return None
 
     # API base URL
@@ -123,7 +102,7 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
     endpoints = {
         "complementary": f"{api_base_url}/user/{user_id}/complementary_partners",
         "alliance": f"{api_base_url}/user/{user_id}/alliance_partners",
-        "mastermind": "/api",#f"{api_base_url}/user/{user_id}/mastermind_partners",
+        "mastermind": f"{api_base_url}/user/{user_id}/mastermind_partners",
         "intelligent": f"{api_base_url}/user/{user_id}/intelligent_partners",
     }
     
@@ -134,112 +113,8 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
         response.raise_for_status()
         return response.json()
     except Exception as e:
-        print(f"Error connecting to {connection_type} partners API: {e}")
+        logger.error(f"Error connecting to {connection_type} partners API: {e}")
         return None
-    
-# def recommended_GNN_connection(attributes: Dict[str, Any]) -> dict:
-#     """
-#     Connects to different APIs based on connection_type to retrieve recommended businesses.
-#     Formats the response to match the expected structure for the agent.
-#     """
-#     user_id = attributes.get("user_id")
-#     connection_type = attributes.get("connection_type", "complementary")
-    
-#     if not user_id:
-#         print("Error: user_id not found in attributes")
-#         return {"status": "error", "message": "user_id not found in attributes"}
-
-#     # API base URL
-#     api_base_url = os.getenv("GNN_API_BASE_URL")
-#     endpoints = {
-#         "complementary": f"{api_base_url}/user/{user_id}/complementary_partners",
-#         "alliance": f"{api_base_url}/user/{user_id}/alliance_partners",
-#         "mastermind": f"{api_base_url}/user/{user_id}/mastermind_partners",
-#         "intelligent": f"{api_base_url}/user/{user_id}/intelligent_partners",
-#     }
-    
-#     url = endpoints.get(connection_type)
-    
-#     if not url:
-#         return {
-#             "status": "error",
-#             "message": f"Invalid connection_type: {connection_type}"
-#         }
-    
-#     try:
-#         response = requests.get(url, timeout=10)
-#         response.raise_for_status()
-#         api_results = response.json()
-        
-#         # Format the response to match the WEB connection structure
-#         formatted_data = []
-        
-#         for item in api_results:
-#             recommendation = item.get("recommendation", {})
-#             reason = item.get("reason", "")
-#             similarity_score = item.get("similarity_score")
-            
-#             # Extract user and business information
-#             user = recommendation.get("user", {})
-#             business = recommendation.get("business", {})
-#             operator = recommendation.get("operator", {})
-#             primary_name = business.get("name") or operator.get("name") or user.get("name", "Unknown")
-#             primary_email = operator.get("email") or user.get("email") or business.get("email")
-            
-#             # Build formatted entry
-#             formatted_entry = {
-#                 "name": primary_name,
-#                 "type": connection_type.title(),
-#                 "reason": reason,
-#                 "phone_number": operator.get("phone") or user.get("phone") or "Not available",
-#                 "rating": "N/A",
-#                 "review_count": 0,
-#                 "about": {
-#                     "summary": reason
-#                 }
-#             }
-            
-#             # Add emails and contacts for email generation
-#             if primary_email:
-#                 formatted_entry["emails_and_contacts"] = {
-#                     "emails": [primary_email]
-#                 }
-#             else:
-#                 formatted_entry["emails_and_contacts"] = {
-#                     "emails": ["Unknown"]
-#                 }
-            
-#             # Add similarity score if available (for intelligent partners)
-#             if similarity_score is not None:
-#                 formatted_entry["similarity_score"] = similarity_score
-            
-#             # Add user details
-#             formatted_entry["user"] = {
-#                 "id": user.get("id") or operator.get("id"),
-#                 "name": user.get("name") or operator.get("name"),
-#                 "email": user.get("email") or operator.get("email"),
-#             }
-            
-#             # Add business details if available
-#             if business:
-#                 formatted_entry["business"] = {
-#                     "id": business.get("id"),
-#                     "name": business.get("name"),
-#                     "type": business.get("business_type_id"),
-#                     "category": business.get("business_category_id"),
-#                 }
-            
-#             formatted_data.append(formatted_entry)
-        
-#         return {
-#             "data": formatted_data,
-#             "connection_type": connection_type,
-#             "count": len(formatted_data)
-#         }
-        
-#     except Exception as e:
-#         print(f"Error connecting to {connection_type} partners API: {e}")
-#         return None
     
 def generate_email_templates(businesses, user_name, user_job, user_email, business_name):
     """Generate email templates for a list of businesses."""
@@ -293,7 +168,7 @@ def generate_email_templates(businesses, user_name, user_job, user_email, busine
                 "template": email_output
             })
         except Exception as e:
-            print(f"Error generating email for {name}: {e}")
+            logger.error(f"Error generating email for {name}: {e}")
             email_templates.append({
                 "business_name": name,
                 "email": email,

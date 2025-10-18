@@ -1,13 +1,15 @@
 from google.adk.tools import ToolContext
-from datetime import datetime
 from .utils import model_update_user_details
 from ...shared_state import get_or_create_assistant, cleanup_session
-import os, json, re
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Search through the temp directory for the users most recent saved conversation history
 def collect_user_history(tool_context: ToolContext):
     """Collect user history from VisionAgent session data"""
     try:
+        logger.debug("Collecting user history")
         state = tool_context.state
         user_id = state.get("user_id")
         session_id = state.get("session_id")
@@ -16,19 +18,21 @@ def collect_user_history(tool_context: ToolContext):
             # Import the function from vision_agent tools
 
             assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
-            print(assistant)
+            logger.debug("Found assistant: %s", assistant)
             if assistant and assistant.user_responses:
-                print("DEBUG: Found user history:", assistant.user_responses)
+                logger.debug("Found user history: %s", assistant.user_responses)
                 cleanup_session(session_id)  # Clean up after retrieving history
                 return {"status": "success", "user_history": assistant.user_responses}
         
         return {"status": "error", "message": "No conversation history found in session."}
     except Exception as e:
+        logger.error(f"Error in collect_user_history: {e}")
         return {"status": "error", "message": str(e)}
 
 def store_user_profile(tool_context: ToolContext):
     """Store the generated user profile"""
     try:
+        logger.debug("Storing user profile for user_id: %s", user_id)
         state = tool_context.state
         user_id = state.get("user_id")
         profile = state.get("Generated_Profile", {})
@@ -43,8 +47,8 @@ def store_user_profile(tool_context: ToolContext):
         skill_category = profile.get("Skill_Category")
         strength_category = profile.get("Strength_Category")
 
-        
-        print("DEBUG: RUNNING model_update_user_details")
+
+        logger.debug("RUNNING model_update_user_details")
         if not model_update_user_details(
             user_id,
             user_role,
@@ -62,4 +66,5 @@ def store_user_profile(tool_context: ToolContext):
         state["end_session"] = True
         return {"status": "success", "profile": profile}
     except Exception as e:
+        logger.error(f"Error in store_user_profile: {e}")
         return {"status": "error", "message": str(e)}

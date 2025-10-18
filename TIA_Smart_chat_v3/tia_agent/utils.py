@@ -1,6 +1,6 @@
 
-import pymysql
-import os
+import pymysql, logging, os
+logger = logging.getLogger(__name__)
 
 def _get_user_details(cursor, user_id):
     """Get user details from database."""
@@ -85,7 +85,7 @@ def _get_user_job(cursor, user_id):
 def load_user_profile(user_id: int):
     """Load user profile from database. Returns dict with status, profile_exists, and profile if available."""
     try:
-        print(f"DEBUG: Loading profile for user ID: {user_id}")
+        logger.debug(f"Loading profile for user ID: {user_id}")
 
         # Connect to DB
         conn = pymysql.connect(
@@ -96,11 +96,11 @@ def load_user_profile(user_id: int):
             port=int(os.environ.get("DB_PORT", 3306))
         )
         cursor = conn.cursor()
-        print("DEBUG: Connected to DB")
+        logger.info(f"Connected {user_id} to Database")
 
         # Get user details
         user_details = _get_user_details(cursor, user_id)
-        print(f"DEBUG: User details retrieved: {user_details}")
+        logger.debug(f"User details retrieved: {user_details}")
         if not user_details:
             cursor.close()
             conn.close()
@@ -111,39 +111,39 @@ def load_user_profile(user_id: int):
         # Get business details
         # BUG
         business_name, business_email, business_phone = _get_business_details(cursor, user_id)
-        print(f"DEBUG: Business details retrieved: {business_name}, {business_email}, {business_phone}")
+        logger.debug(f"Business details retrieved: {business_name}, {business_email}, {business_phone}")
 
         # Get user skills
         user_skills_str = _get_user_skills(cursor, user_id)
-        print(f"DEBUG: User skills retrieved: {user_skills_str}")
+        logger.debug(f"User skills retrieved: {user_skills_str}")
 
         # Get user strengths
         user_strengths_str = _get_user_strengths(cursor, user_id)
-        print(f"DEBUG: User strengths retrieved: {user_strengths_str}")
+        logger.debug(f"User strengths retrieved: {user_strengths_str}")
 
         # Get business strengths
         business_strengths_str = _get_business_strengths(cursor, user_id)
-        print(f"DEBUG: Business strengths retrieved: {business_strengths_str}")
+        logger.debug(f"Business strengths retrieved: {business_strengths_str}")
 
         # Get business type
         business_type = _get_business_type(cursor, user_id)
-        print(f"DEBUG: Business type retrieved: {business_type}")
+        logger.debug(f"Business type retrieved: {business_type}")
 
         # Get business category
         business_category = _get_business_category(cursor, user_id)
-        print(f"DEBUG: Business category retrieved: {business_category}")
+        logger.debug(f"Business category retrieved: {business_category}")
 
         # Get user job
         user_job = _get_user_job(cursor, user_id)
-        print(f"DEBUG: User job retrieved: {user_job}")
+        logger.debug(f"User job retrieved: {user_job}")
 
         cursor.close()
         conn.close()
-        print("DEBUG: DB connection closed")
+        logger.debug("DB connection closed")
 
         # Check if essential profile data exists
         profile_exists = bool(business_name and user_job and user_strengths_str and user_skills_str and business_strengths_str and business_type)
-        print(f"DEBUG: Profile exists: {profile_exists}")
+        logger.debug(f"Profile exists: {profile_exists}")
 
         profile = {
             "UserName": f"{first_name} {last_name}",
@@ -152,10 +152,8 @@ def load_user_profile(user_id: int):
             "Contact_Phone_No": business_phone
         }
         
-        #profile_exists = False # DISABLE FOR TESTING
-        
+        # Construct and set the profile
         if profile_exists:
-            # Construct and set the profile
             profile.update({
                 "Business_Type": business_type,
                 "UserJob": user_job,
@@ -164,41 +162,46 @@ def load_user_profile(user_id: int):
                 "Business_Strength": business_strengths_str,
                 "Business_Category": business_category,
             })
-            print(f"DEBUG: Profile data: {profile}")
+            logger.debug(f"Profile data: {profile}")
             return {"status": "success", "profile_exists": True, "profile": profile}
         else:
             return {"status": "success", "profile_exists": False, "profile": profile}
 
     except Exception as e:
-        print(f"DEBUG: Error in load_user_profile: {e}")
+        logger.error(f"Error in load_user_profile: {e}")
         return {"status": "error", "message": str(e)}
     
 def validate_connection_options(connection_type: str, profile: dict = None):
     """Validate connection options and check if the loaded profile data is valid for the connection type."""
-    valid_types = {"complementary", "alliance", "mastermind", "intelligent"}
-    if connection_type not in valid_types:
-        return False, f"Invalid connection type '{connection_type}'. Must be one of {valid_types}."
-    
-    if not profile:
-        return False, "Profile data is required for validation."
-    
-    # Define required fields for each connection type based on data requirements
-    requirements = {
-        "intelligent": ["User_skills", "Business_Type", "Business_Name"],
-        "complementary": ["Business_Type", "Business_Category", "Business_Name"],
-        "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
-        "mastermind": ["User_Strength"],
-    }
-    
-    required_fields = requirements.get(connection_type, [])
-    missing_fields = []
-    
-    for field in required_fields:
-        value = profile.get(field)
-        if not value or (isinstance(value, str) and value.strip() == ""):
-            missing_fields.append(field)
-    
-    if missing_fields:
-        return False, f"Profile is invalid for '{connection_type}' connection. Missing or empty fields: {', '.join(missing_fields)}."
-    
-    return True, f"Profile is valid for '{connection_type}' connection."
+    try:
+        logger.debug(f"Validating connection options for type: {connection_type}")
+        valid_types = {"complementary", "alliance", "mastermind", "intelligent"}
+        if connection_type not in valid_types:
+            return False, f"Invalid connection type '{connection_type}'. Must be one of {valid_types}."
+        
+        if not profile:
+            return False, "Profile data is required for validation."
+        
+        # Define required fields for each connection type based on data requirements
+        requirements = {
+            "intelligent": ["User_skills", "Business_Type", "Business_Name"],
+            "complementary": ["Business_Type", "Business_Category", "Business_Name"],
+            "alliance": ["Project_Required_Skills", "User_skills", "Business_Skills"],
+            "mastermind": ["User_Strength"],
+        }
+        
+        required_fields = requirements.get(connection_type, [])
+        missing_fields = []
+        
+        for field in required_fields:
+            value = profile.get(field)
+            if not value or (isinstance(value, str) and value.strip() == ""):
+                missing_fields.append(field)
+        
+        if missing_fields:
+            return False, f"Profile is invalid for '{connection_type}' connection. Missing or empty fields: {', '.join(missing_fields)}."
+        
+        return True, f"Profile is valid for '{connection_type}' connection."
+    except Exception as e:
+        logger.error(f"Error in validate_connection_options: {e}")
+        return False, str(e)

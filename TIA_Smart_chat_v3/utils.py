@@ -5,7 +5,7 @@ from google.adk.sessions import DatabaseSessionService
 from google.genai import types
 
 from .tia_agent.shared_state import get_or_create_assistant
-import os, uuid
+import os, uuid, logging
 
 from .tia_agent.config import OPENAI_API_KEY
 try:
@@ -14,8 +14,11 @@ except ImportError:
     from tia_agent.agent import coordinatorAgent
 
 
-# Load environment variables
+# Load environment variables and setup logging
 load_dotenv()
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Initialize session service with MySQL
 db_user = os.getenv("DB_USER")
@@ -41,10 +44,6 @@ def _handle_chat_type(type: str):
     """
     try:
         connection_type = None
-        # if type == "default":
-        #     print("DEBUG: Chat type is 'Default' – skipping agent switching.")
-        #     connection_type = "complementary"
-        #     return connection_type
 
         # Parse the input - chat type : connection type E.g. connect:complementary
         if ':' in type:
@@ -61,6 +60,7 @@ def _handle_chat_type(type: str):
                 raise ValueError(f"Invalid or missing profiler type. Must be one of {valid_profiler_types}.")
         elif agent_type == "connect":
             full_agent = "ConnectAgent"
+
             # Determine connection type for ConnectAgent
             valid_connection_types = ["complementary", "alliance", "mastermind", "intelligent"]
             
@@ -68,21 +68,24 @@ def _handle_chat_type(type: str):
                 connection_type = sub_type
             else:
                 raise ValueError(f"Invalid or missing connection type for ConnectAgent. Must be one of {valid_connection_types}.")
-            
-            print(f"DEBUG: Set connection_type to '{connection_type}' before transfer")
+
+            logger.debug(f"Set connection_type to '{connection_type}' before transfer")
         else:
             raise ValueError(f"Invalid agent type '{agent_type}'. Must be 'profiler', 'connect', or 'default'.")
         
         return full_agent, connection_type
     except Exception as e:
-        print("ERROR in handle_chat_type:", e)
+        logger.error("ERROR in handle_chat_type:", e)
         raise Exception("Error during agent switching: " + str(e))
 
 async def _create_new_session(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str):
+    """
+    Creates a new session with initial state.
+    """
     try:
         session_id = str(uuid.uuid4())
         full_agent, connection_type = _handle_chat_type(chat_type)
-        print(f"DEBUG: Creating new session with ID: {session_id}, Agent: {full_agent}, Connection Type: {connection_type}")
+        logger.info(f"Creating new session with ID: {session_id}, Agent: {full_agent}, Connection Type: {connection_type}")
         state = {
             "name": name,
             "user_id": user_id,
@@ -103,10 +106,13 @@ async def _create_new_session(user_id: str, name: str, region: str, lat: float, 
         )
         return session
     except Exception as e:
-        print("ERROR in create_new_session:", e)
+        logger.error("ERROR in create_new_session:", e)
         raise Exception("Error creating new session: " + str(e))
 
 async def _get_existing_session(user_id: str, session_id: str):
+    """
+    Retrieves an existing session by user_id and session_id.
+    """
     try:
         session = await session_service.get_session(
             app_name="tia_smart_chat",
@@ -115,10 +121,15 @@ async def _get_existing_session(user_id: str, session_id: str):
         )
         return session
     except Exception as e:
-        print("ERROR in get_existing_session:", e)
+        logger.error("ERROR in get_existing_session:", e)
         raise Exception("Error retrieving existing session: " + str(e))
 
 async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float, chat_type: str, message: str, session_id=None):
+    """
+    Runs a chat session, creating a new session if necessary.
+    Handles agent transfers and session state updates.
+    Returns the session, response text, and author.
+    """
     try:
         author = None
         response_text = None
@@ -148,6 +159,8 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
         if set_agent == "VisionAgent" and chat_state == "chat":
             chat_assistant = get_or_create_assistant(session.id, session.user_id, chat_type)
             response_text = chat_assistant.send_message(message)
+
+            # Enforce exit condition
             if "<exit>" in response_text:
                 response_text = None
             author = "DynamicChatAssistant"
@@ -156,15 +169,19 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                     parts=[types.Part(text="[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]")]
                 )
 
+        # Return a google ADK runner response if DynamicChatAssistant did not handle it
         if response_text is None:
             for event in runner.run(
                 user_id=session.user_id,
                 session_id=session.id,
                 new_message=new_message
             ):
-                print(f"DEBUG: Event: {event}")
-                print(f"DEBUG: Session state during chat: {session.state}")
-                print(f"DEBUG: Session ID: {session.id}")
+                logger.debug(f"""
+                             Event: {event}\n
+                             Session state during chat: {session.state}\n
+                             Session ID: {session.id}
+                             """)
+                
                 if event.is_final_response() and event.content and event.content.parts:
                     response_text = event.content.parts[0].text
                     author = event.author
@@ -172,8 +189,8 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
         # Get updated session state
         session = await _get_existing_session(user_id, session.id)
         set_agent = session.state.get("set_agent")
-        # print(f"DEBUG: Final session state after chat: {session.state}")
-        # print(f"DEBUG: Set Agent after chat: {set_agent}")
+        logger.debug(f"Final session state after chat: {session.state}")
+        logger.debug(f"Set Agent after chat: {set_agent}")
 
         if set_agent == "ProfilerAgent":
             auto_transfer_message = types.Content(
@@ -185,7 +202,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                 session_id=session.id,
                 new_message=auto_transfer_message
             ):
-                print(f"DEBUG: Transfer Event: {event}")
+                logger.debug(f"Transfer Event: {event}")
         
         # Check if session should end
         session = await _get_existing_session(user_id, session.id)
@@ -201,19 +218,22 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
 
         return session, response_text, author
     except Exception as e:
-        print("ERROR in run_chat:", e)
+        logger.error("ERROR in run_chat:", e)
         raise Exception("Error during chat: " + str(e))
 
 async def delete_session(user_id: str, session_id: str):
+    """
+    Deletes a session by user_id and session_id.
+    """
     try:
         await session_service.delete_session(
             app_name="tia_smart_chat",
             user_id=user_id,
             session_id=session_id
         )
-        print(f"DEBUG: Session {session_id} for user {user_id} deleted.")
+        logger.debug(f"Session {session_id} for user {user_id} deleted.")
     except Exception as e:
-        print("ERROR in delete_session:", e)
+        logger.error("ERROR in delete_session:", e)
         raise Exception("Error deleting session: " + str(e))
 
 def compare_responses(actual: str, expected: str) -> float:
@@ -235,5 +255,5 @@ def compare_responses(actual: str, expected: str) -> float:
         score = float(score_text)
         return max(0.0, min(10.0, score))
     except Exception as e:
-        print(f"Error in comparison: {e}")
+        logger.error(f"Error in comparison: {e}")
         return 0.0

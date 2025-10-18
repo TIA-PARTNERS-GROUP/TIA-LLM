@@ -3,7 +3,9 @@ from litellm import completion
 from ..config import CHAT_MODEL, OPENAI_API_KEY
 import re, logging, json, os
 
-#
+main_logger = logging.getLogger(__name__)
+
+# Function to generate response using LiteLLM
 def generate_response(message):
     response = completion(
         model=CHAT_MODEL,
@@ -13,7 +15,25 @@ def generate_response(message):
     return response.choices[0].message.content.strip()
 
 class DynamicChatAssistant:
+    """
+    Manages multi-phase conversations using predefined prompts and rules.
+    Guides users through phases, collects responses, and resets history per phase.
+    Transitions based on user input and rules.
+
+    Attributes:
+        user_id (int): ID of the user.
+        current_phase (int): Current phase index.
+        prompts (list): List of chat prompts for each phase.
+        rule_prompt (str): Template for wrapping chat prompts with rules.
+        conversation_history (list): History of messages in the current phase.
+        user_responses (list): Collected user responses across phases.
+        system_prompt (str): Current system prompt based on phase.
+        assistant_response (str): Latest response from the assistant.
+        business_info (dict): Information about the user's business.
+        end_chat_session (bool): Flag indicating if the chat session has ended.
+    """
     def __init__(self, prompts: list, rule_prompt: str, user_id: int):
+        main_logger.debug(f"Initializing DynamicChatAssistant for user_id: {user_id}")
         # Phase tracking, user history and responses
         self.user_id = user_id
         self.current_phase = 0
@@ -49,12 +69,11 @@ class DynamicChatAssistant:
             self.current_phase += 1
             self.system_prompt = self._get_wrapped_prompt(self.current_phase)
             self.conversation_history.clear()
-            print()
-            print(f"[Moved to Phase {self.current_phase} / {max_phase}] - Conversation history cleared")
+            main_logger.debug(f"DynamicChat for user_id: {self.user_id} - [Moved to Phase {self.current_phase} / {max_phase}] - Conversation history cleared")
             return None
         if self.current_phase == max_phase:
             self.conversation_history.clear()
-            self.save_responses()
+            #self.save_responses()
             self.end_chat_session = True
             return "<exit>"
 
@@ -114,7 +133,7 @@ class DynamicChatAssistant:
 
         with open(filename, 'w') as f:
             json.dump(self.user_responses, f, indent=2)
-        print(f"Responses saved to {filename}")
+        main_logger.debug(f"Responses saved to {filename}")
         return filename
     
     def collect_user_history(self):
@@ -147,7 +166,8 @@ class DynamicChatAssistant:
         except Exception as e:
             self.logger.error(f"Error collecting user history: {e}")
             return None
-        
+
+# TESTING CODE FOR STANDALONE RUNNING
 if __name__ == "__main__":
     DYNAMIC_CHAT_RULE_PROMPT = """
     You are TIA Vision — a warm, conversational assistant helping entrepreneurs uncover the heart of their brand.

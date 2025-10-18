@@ -3,21 +3,15 @@ from typing import Dict, Any
 from dotenv import load_dotenv
 from .utils import generate_content_blog, generate_content_messaging, generate_content_why_statement
 from ...shared_state import get_or_create_assistant
-import json
+import logging
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
 def generate_blog(tool_context: ToolContext) -> dict:
     """
     Generate all blog content using the three separate prompts.
-    Arguments:
-        user_responses: List of dicts with user responses (phase, message, etc.)
-    Returns:
-        dict: {
-            "status": "success" or "error",
-            "output": blog_output or error message,
-            "filename": saved filename (if success)
-        }
     """
     try:
         state = tool_context.state
@@ -32,10 +26,10 @@ def generate_blog(tool_context: ToolContext) -> dict:
         business_name = profile.get("Business_Name")
         
         if vision_state.get("chat_state") != "chat":
-            print("DEBUG: Generating blog with existing profile")
+            logger.debug("Generating blog with existing profile")
             collected_context = state.get("Generated_Profile", None)
         else:
-            print("DEBUG: Generating blog with session_id:", session_id)
+            logger.debug("Generating blog with session_id: %s", session_id)
             user_id = state.get("user_id")
             assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
 
@@ -86,6 +80,7 @@ def generate_blog(tool_context: ToolContext) -> dict:
 def start_dynamic_chat(tool_context: ToolContext) -> Dict[str, Any]:
     """Start a dynamic chat session with the Vision assistant"""
     try:
+        logger.debug("Starting dynamic chat session (Tool call)")
         state = tool_context.state
         vision_state = state.get("VisionAgent", {})
         if vision_state.get("chat_state") == "exit":
