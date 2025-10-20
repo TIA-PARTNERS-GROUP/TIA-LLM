@@ -177,7 +177,7 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
                 "reason": "COMPLEMENTARY PARTNER: Strong alignment for bundled services. Combine your offerings with their content creation to provide complete solutions. Refer clients to each other for comprehensive service packages.",
             }
         ]
-        return response.json()
+        return response#.json()
     except Exception as e:
         logger.error(f"Error connecting to {connection_type} partners API: {e}")
         return None
