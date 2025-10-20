@@ -132,8 +132,51 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
     url = endpoints.get(connection_type)
     
     try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
+        #response = requests.get(url, timeout=10)
+        #response.raise_for_status()
+
+        # TESTING MOCK RESPONSE
+        response = [
+            {
+                "recommendation": {
+                    "user": {
+                        "id": 101,
+                        "name": "Sarah Chen",
+                        "business": "Digital Marketing Pro",
+                        "type": "Marketing Agency",
+                        "category": "Digital Marketing",
+                        "description": "Specializes in social media and online advertising campaigns"
+                    }
+                },
+                "reason": "COMPLEMENTARY PARTNER: Perfect for mutual client referrals. You can recommend their digital marketing services to your clients while they refer web development projects to you. Everyone wins—your clients save time, your partner gains business, and you earn referral margins.",
+            },
+            {
+                "recommendation": {
+                    "user": {
+                        "id": 102,
+                        "name": "Mike Rodriguez",
+                        "business": "WebFlow Masters",
+                        "type": "Web Development",
+                        "category": "Website Development",
+                        "description": "Creates high-converting landing pages and business websites"
+                    }
+                },
+                "reason": "COMPLEMENTARY PARTNER: Ideal for cross-promotion. Their web development expertise complements your services. Share clients who need both your offerings—increasing client satisfaction and creating new revenue streams for both businesses.",
+            },
+            {
+                "recommendation": {
+                    "user": {
+                        "id": 103,
+                        "name": "Jessica Wong",
+                        "business": "Content Creators Co",
+                        "type": "Content Creation",
+                        "category": "Content Marketing",
+                        "description": "Produces engaging blog content and video marketing materials"
+                    }
+                },
+                "reason": "COMPLEMENTARY PARTNER: Strong alignment for bundled services. Combine your offerings with their content creation to provide complete solutions. Refer clients to each other for comprehensive service packages.",
+            }
+        ]
         return response.json()
     except Exception as e:
         logger.error(f"Error connecting to {connection_type} partners API: {e}")

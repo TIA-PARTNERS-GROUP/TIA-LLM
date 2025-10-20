@@ -15,19 +15,20 @@ LadderAgent = Agent(
     - Ask ONE question at a time in order
     - Wait for user response before moving to next question
     - NEVER make up scores - only use what the user gives you
-    - Ask ALL 6 questions regardless of excitement level
+    - Ask ALL questions regardless of excitement level
 
     **Process Flow:**
-    1. Ask all 6 questions from the prompt in order
-    2. After collecting all 6 scores, call `generate_ladder_results` with the scores
+    1. Ask all questions from the prompt in order
+    2. After collecting all scores, call `generate_ladder_results` with the scores
     3. Give closing reflection
     4. Use `end_session` tool to conclude the session
 
     **Critical Rules:**
-    - ALWAYS ask all 6 questions
+    - ALWAYS ask all questions
     - IGNORE any adaptive flow logic - just follow the prompt sequence
     - Call `generate_ladder_results` when you have all scores
 
+    ** Question Prompt: **
     {LADDER_TO_EXIT_PROMPT}
     """,
     tools=[generate_ladder_results, end_session],
