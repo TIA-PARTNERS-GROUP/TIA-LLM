@@ -41,6 +41,8 @@ def recommended_connection(tool_context: ToolContext):
         if GNN_CALL is not None:
             result_type = "Existing TIA Users"
             result = GNN_CALL
+            user_ids = [rec["recommendation"]["user"]["id"] for rec in GNN_CALL]
+            connect_agent_state["existing_users"] = user_ids
         else:
             WEB_CALL = recommended_WEB_connection(attributes)
             if WEB_CALL is not None:
@@ -49,10 +51,6 @@ def recommended_connection(tool_context: ToolContext):
 
         if result is None:
             return {"status": "error", "message": "No connections found from web search."}
-            
-        if result_type == "Existing TIA Users":
-            user_ids = [rec["recommendation"]["user"]["id"] for rec in GNN_CALL]
-            connect_agent_state["existing_users"] = user_ids
 
         connect_agent_state["connection_type"] = result_type
         connect_agent_state["connection_result"] = result
