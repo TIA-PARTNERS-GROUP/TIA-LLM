@@ -36,5 +36,5 @@ coordinatorAgent = LlmAgent(
 )
 
 # NOTE: ONLY FOR RUNNING AS: adk web
-# RUN FROM ROOT DIR WITH "adk web" FOR IMPROVED DEBUGGING
+# RUN FROM ROOT DIR WITH "adk web" FOR VISUALISED DEBUGGING
 root_agent = coordinatorAgent

@@ -9,6 +9,29 @@ import os, requests, json, http.client, logging
 load_dotenv()
 
 logger = logging.getLogger(__name__)
+
+def extract_business_type(conversation_history):
+    """Extract business_type from conversation history using LLM."""
+    logger.debug(f"Conversation history for business_type extraction: {conversation_history}")
+    
+    business_type_prompt = f"""
+    Analyze the following conversation history and determine the most appropriate business_type for the user.
+    Business_type should be a short phrase of 2-3 words max (e.g., "AI Consulting", "Tech Automation").
+    Keep it under 50 characters.
+
+    Conversation:
+    {conversation_history}
+
+    Output only the business_type as a string.
+    """
+    input_messages = [
+        {"role": "system", "content": "You are an assistant that extracts short business types from conversations."},
+        {"role": "user", "content": business_type_prompt}
+    ]
+    
+    business_type = generate_response(input_messages)
+    
+    return business_type
     
 def search_businesses_in_area(business_type: str, limit: int, region: str, zoom: int, lat: float, lng: float, language: str = "en",) -> dict:
     params = {
