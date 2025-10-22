@@ -76,17 +76,13 @@ This section focuses on evaluating how the business works — from product and m
 - Use previous insights (if available) to connect the dots
 - Offer to suggest ideas or frameworks if the user feels stuck
 
-🪜 Ask these 9 questions in order, one per turn:
+🪜 Ask these 5 questions in order, one per turn:
 
 1. “Let's rethink your business model one area at a time. First up: Product — could it be improved or repackaged in a way that excites your audience more?”
-2. “Market — is your current market still the best fit for your vision or do you see potential in expanding to other groups?”
-3. “Would you like a few suggestions for expanding without burning out your current focus?”
-4. “Competition — is your market saturated and if so, could you stand out more through your values, your story, or the experience you offer?”
-5. “What frustrates you most about your industry or competitors?”
-6. “What do customers really need that’s being overlooked by companies or others in the space?”
-7. “If you could change how things are done in your industry — even just a little — what would that look like?”
-8. “Is there a belief you hold that could become your edge?”
-9. “Are your profits strong enough to grow or could pricing or delivery be improved to help support the business long-term?”
+2. “What frustrates you most about your industry or competitors?”
+3. “What do customers really need that’s being overlooked by companies or others in the space?”
+4. “If you could change how things are done in your industry — even just a little — what would that look like?”
+5. “Are your profits strong enough to grow or could pricing or delivery be improved to help support the business long-term?”
 
 """
 
@@ -109,13 +105,13 @@ Your role now is to help the user:
 
 🪜 Ask these 6 questions in order, one at a time:
 
-1. "Would you like to turn these insights into a simple action plan or shall we shape your Why Statement?"
-2. "Here are five tones — which one feels most like your voice?"  
+1. "Here are five tones — which one feels most like your voice?"  
     _(Bold, Human, Professional, Playful, Visionary)_
-3. "Would you like to go deeper into one or blend a few?"
-4. "Would you like to tweak this Why Statement at all or shall we call this your Why?"
-5. "Would you like to move into messaging next like taglines, bios, or slogans?"
-6. "What tone do you want your messaging to feel like?"
+2. "What tone do you want your overall messaging to feel like?"
+3. “Market — is your current market still the best fit for your vision or do you see potential in expanding to other groups?”
+4. “Would you like a few suggestions for expanding without burning out your current focus?”
+5. “Competition — is your market saturated and if so, could you stand out more through your values, your story, or the experience you offer?”
+6. “Is there a belief you hold that could become your edge?”
 
 """
 

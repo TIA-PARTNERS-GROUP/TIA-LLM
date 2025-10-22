@@ -19,32 +19,28 @@ def generate_blog(tool_context: ToolContext) -> dict:
             state["VisionAgent"] = {}
         vision_state = state["VisionAgent"]
         session_id = state.get("session_id")
-        profile = state.get("Generated_Profile", None)
+        profile = state.get("Generated_Profile", {})
 
-        # Get user and business names from profile
-        name = profile.get("UserName")
-        business_name = profile.get("Business_Name")
-        
-        if vision_state.get("chat_state") != "chat":
-            logger.debug("Generating blog with existing profile")
-            collected_context = state.get("Generated_Profile", None)
-        else:
+        # Collect all Generated_Profile data into context string
+        collected_context = "\n".join([f"{key.replace('_', ' ').title()}: {value}" for key, value in profile.items() if value is not None])
+        if vision_state.get("chat_state") == "chat": # If Generated_Profile is not fully populated, pull from VisionAgent session
             logger.debug("Generating blog with session_id: %s", session_id)
             user_id = state.get("user_id")
             assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
 
-            collected_context = "\n".join([
+            collected_context += "\n\nUser Chat Details:\n" + "\n".join([
                 f"Phase {resp['phase']}: {resp['message']}"
                 for resp in assistant.user_responses
             ])
-
-        collected_context = "\n\n".join([f"User Name: {name}\nBusiness Name: {business_name}\n\n"])
-
+        else:
+            logger.debug("Generating blog with existing profile")
+            
         vision_state["chat_state"] = "exit"
-        if collected_context is None:
+        if not collected_context:
             return {"status": "error", "output": "No context collected."}
 
         # Generate the blog content
+        logger.debug("Collected context for blog generation:\n %s", collected_context)
         results = []
         try:
             why_statement = generate_content_why_statement(collected_context)

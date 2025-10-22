@@ -1,0 +1,114 @@
+{
+    "session_id": "d0b4bac3-675c-4d09-b054-bccb27cd52e9",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin the vision-building process! Please share your thoughts on the following questions:\n\n1. What are your main goals for your business, AI COMPANY?\n2. Who is your target audience or ideal customer?\n3. What unique services or products will you offer?\n4. What challenges do you anticipate in achieving your vision?\n\nFeel free to answer one or more questions at a time!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "d0b4bac3-675c-4d09-b054-bccb27cd52e9",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "d948460c-6fea-4d2f-ad5d-cc1ffa4f2ba2"
+        },
+        {
+            "message": "Main Goals:\nMy main goal for my business, AI COMPANY, is to develop intelligent automation and data-driven solutions that simplify complex systems for businesses. I want to create tools that combine machine learning, embedded intelligence, and efficient system design to help organizations work smarter, faster, and with greater confidence in their operations.\n\nTarget Audience:\nMy ideal clients are small to mid-sized businesses, startups, and technology-driven organizations that want to integrate AI or automation into their workflows but lack the internal expertise or infrastructure to do so. I also aim to support industrial and IoT-based companies that need scalable, high-performance systems.\n\nUnique Services or Products:\nAI COMPANY will specialize in intelligent automation tools, data analytics platforms, and custom AI-driven software that adapt to each client\u2019s unique needs. The focus will be on making automation feel human \u2014 technology that enhances decision-making, not replaces it. Each solution will be designed to improve efficiency, scalability, and long-term adaptability.\n\nChallenges Anticipated:\nThe main challenges I foresee are balancing innovation with accessibility \u2014 ensuring that advanced AI systems remain understandable and usable for non-technical users \u2014 and maintaining reliability as solutions scale. Another key challenge will be building trust in automation, showing clients that these tools empower their teams rather than replace them.",
+            "response": "It sounds like you have a clear vision for AI COMPANY and a strong grasp of your goals and target audience! Your commitment to creating intelligent automation tools that simplify complexity while ensuring accessibility is commendable. \n\nLet's delve a bit deeper. Can you share with me what your role is in the company?",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "d0b4bac3-675c-4d09-b054-bccb27cd52e9",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "32b2d6ed-4fe9-406a-85e8-b75b3d5b8617"
+        },
+        {
+            "message": "My vision is to create a company focused on building intelligent, efficient, and automated systems that simplify complex tasks. The goal is to blend machine learning, data-driven design, and system-level engineering to create scalable, high-performance solutions that feel light, intuitive, and impactful. Core values: innovation, reliability, and continuous learning.",
+            "response": "Your vision for AI COMPANY is incredibly inspiring! The focus on blending machine learning with practical design values really emphasizes your commitment to creating impactful solutions. It's great to see your core values of innovation, reliability, and continuous learning\u2014those will serve as a solid foundation as you move forward.\n\nNow, let's explore more about what you offer. What kind of product or service do you provide?",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "d0b4bac3-675c-4d09-b054-bccb27cd52e9",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "33dac24e-9f78-4bee-b736-820cc0679631"
+        },
+        {
+            "message": "what colour is the sky",
+            "response": "I'm glad you're curious! Typically, the sky appears blue during the day due to the scattering of sunlight by the atmosphere. But it can also change colors, displaying beautiful shades of orange, pink, or purple at sunrise and sunset, don't you think? \n\nNow, let\u2019s circle back to our exploration of your business. Can you share which kind of product or service you offer?",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "d0b4bac3-675c-4d09-b054-bccb27cd52e9",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "53676dfb-ae6d-4031-88ea-7ad5478902b9"
+        }
+    ]
+}

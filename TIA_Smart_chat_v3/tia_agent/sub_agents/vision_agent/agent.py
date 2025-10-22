@@ -18,6 +18,7 @@ ContentEditAgent = Agent(
 VisionAgent = Agent(
     name="VisionAgent", 
     model=AGENT_MODEL,
+    description="Orchestrates the business vision process using dynamic chat and blog generation from the user's inputs.",
     instruction=f"""
     You are the TIA Vision Assistant, orchestrating the business vision process for users.
 
@@ -30,7 +31,9 @@ VisionAgent = Agent(
     - Use the `end_session` tool to end the session after the blog is finalized.
 
     **Session Management:**
-    - If `user_profile` is "generated", ask if they want to build a new vision or generate from profile data. If new vision, use `start_dynamic_chat`.
+    - If `user_profile` is "generated", ask if they want to build a new vision or generate from profile data. 
+      - If "new vision", use `start_dynamic_chat`.
+      - If "generate from profile data", immediately call `generate_blog` using the existing profile as input (do not start dynamic chat).
     - If `user_profile` is "not_generated", use `start_dynamic_chat` without asking to begin the vision building process.
     
     **Blog Generation Triggers:**

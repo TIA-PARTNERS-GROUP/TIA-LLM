@@ -1,0 +1,87 @@
+{
+    "session_id": "4d5198a2-d9b1-41d0-b2dc-f435a56af74c",
+    "user_id": "21",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's start building your vision! Please share your main goals or areas of focus for your business.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "4d5198a2-d9b1-41d0-b2dc-f435a56af74c",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "7a161795-f8c7-40a7-bea6-a60d47e474fe"
+        },
+        {
+            "message": "My vision is to create a company focused on building intelligent, efficient, and automated systems that simplify complex tasks. The goal is to blend machine learning, data-driven design, and system-level engineering to create scalable, high-performance solutions that feel light, intuitive, and impactful. Core values: innovation, reliability, and continuous learning.",
+            "response": "That sounds like a fantastic vision! Building intelligent systems that simplify complex tasks can truly have a significant impact. It seems like you have really thought about how innovation, reliability, and continuous learning play into your approach. \n\nLet\u2019s explore this a bit more. What is your role in the company?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "4d5198a2-d9b1-41d0-b2dc-f435a56af74c",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "24703072-f419-45ff-ba5f-fcbeaffb6470"
+        },
+        {
+            "message": "I see myself as the founder and lead engineer \u2014 responsible for driving the technical vision, developing core systems, and ensuring that the company\u2019s solutions are both scalable and practical. I\u2019d also guide R&D efforts, mentor other developers, and shape the overall engineering culture around innovation and efficiency.",
+            "response": "I love that! As the founder and lead engineer, you're not just shaping the technical direction but also fostering a culture of innovation and efficiency within your team. It sounds like you have a strong commitment to your vision and to guiding others in the process. \n\nNow, let's dive a little deeper into what you offer. What kind of product or service do you provide?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "4d5198a2-d9b1-41d0-b2dc-f435a56af74c",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "7a0b76d7-6f31-4331-905c-0a01ff46537a"
+        }
+    ]
+}

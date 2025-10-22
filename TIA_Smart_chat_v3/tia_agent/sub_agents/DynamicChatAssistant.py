@@ -3,7 +3,7 @@ from litellm import completion
 from ..config import CHAT_MODEL, OPENAI_API_KEY
 import re, logging, json, os
 
-main_logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 
 # Function to generate response using LiteLLM
 def generate_response(message):
@@ -33,8 +33,7 @@ class DynamicChatAssistant:
         end_chat_session (bool): Flag indicating if the chat session has ended.
     """
     def __init__(self, prompts: list, rule_prompt: str, user_id: int):
-        main_logger.debug(f"Initializing DynamicChatAssistant for user_id: {user_id}")
-        # Phase tracking, user history and responses
+        logger.info(f"Initializing DynamicChatAssistant for user_id: {user_id}")
         self.user_id = user_id
         self.current_phase = 0
         self.prompts = prompts
@@ -42,20 +41,9 @@ class DynamicChatAssistant:
         self.conversation_history = []
         self.user_responses = []
         self.system_prompt = self._get_wrapped_prompt(0)
-        self.assistant_response = "" # Set first reply to empty string
+        self.assistant_response = ""
         self.business_info = {}
         self.end_chat_session = False
-
-        # Log file setup
-        log_file = f"conversation_connect_chat_history.log"
-
-        self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
-
-        handler = logging.FileHandler(log_file, encoding='utf-8')
-        formatter = logging.Formatter('%(asctime)s - %(message)s')
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
         
     def _get_wrapped_prompt(self, phase_index):
         """Wrap the chat prompt with the connect rule prompts"""
@@ -69,17 +57,17 @@ class DynamicChatAssistant:
             self.current_phase += 1
             self.system_prompt = self._get_wrapped_prompt(self.current_phase)
             self.conversation_history.clear()
-            main_logger.debug(f"DynamicChat for user_id: {self.user_id} - [Moved to Phase {self.current_phase} / {max_phase}] - Conversation history cleared")
+            logger.info(f"DynamicChat for user_id: {self.user_id} - [Moved to Phase {self.current_phase} / {max_phase}] - Conversation history cleared")
             return None
         if self.current_phase == max_phase:
             self.conversation_history.clear()
-            #self.save_responses()
+            #self.save_responses() # Save responses for infile testing
             self.end_chat_session = True
             return "<exit>"
 
     def send_message(self, message):
         """Send message using litellm with chosen API and record user response"""
-        # Record user response
+        logger.debug(f"DynamicChatAssistant user_id: {self.user_id} - [On Phase {self.current_phase} / {len(self.prompts) - 1}] - Sending message")
         self.user_responses.append({
             'phase': self.current_phase,
             'question': self.assistant_response,
@@ -97,9 +85,9 @@ class DynamicChatAssistant:
             *self.conversation_history
         ]
 
-        self.logger.info("=" * 20)
-        self.logger.info(f"*self.conversation_history: {self.conversation_history}")
-        self.logger.info("=" * 20)
+        # logger.debug("=" * 20)
+        # logger.debug(f"*self.conversation_history: {self.conversation_history}")
+        # logger.debug("=" * 20)
 
         self.assistant_response = generate_response(input_messages)
 
@@ -116,9 +104,20 @@ class DynamicChatAssistant:
             next_phase_result = self._next_phase()
             if next_phase_result:
                 return self.assistant_response + "\n\n" + next_phase_result
+            else:
+                # Automatically generate the first assistant message for the new phase
+                fresh_phase_message = f"**Start with a very short message indicating we will continue to the next phase. Keep it brief and conversational.** \n\n{self.system_prompt}"
+                first_input_messages = [{"role": "system", "content": fresh_phase_message}]
+                self.assistant_response = generate_response(first_input_messages)
+                self.conversation_history.append({
+                    "role": "assistant", 
+                    "content": self.assistant_response
+                })
+                return self.assistant_response
         
         return self.assistant_response
 
+    # NOTE: Only used for infile testing currently
     def save_responses(self):
         """Save responses to JSON file"""
         if self.user_id is None:
@@ -133,39 +132,40 @@ class DynamicChatAssistant:
 
         with open(filename, 'w') as f:
             json.dump(self.user_responses, f, indent=2)
-        main_logger.debug(f"Responses saved to {filename}")
+        logger.debug(f"Responses saved to {filename}")
         return filename
     
-    def collect_user_history(self):
-        """Find the user's most recent conversation history from tia_responses_{user_id}__DATE-*.json files under temp"""
-        try:
-            # Use the same temp_dir path as in the class
-            parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            temp_dir = os.path.join(parent_dir, "tmp", "sub_agent_chat_history")
-            user_id = self.user_id or "UNKNOWN_USER"
-            pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
-            latest_file = None
-            latest_dt = None
+    # def collect_user_history(self):
+    #     """Find the user's most recent conversation history from tia_responses_{user_id}__DATE-*.json files under temp"""
+    #     try:
+    #         # Use the same temp_dir path as in the class
+    #         parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    #         temp_dir = os.path.join(parent_dir, "tmp", "sub_agent_chat_history")
+    #         user_id = self.user_id or "UNKNOWN_USER"
+    #         pattern = rf"tia_responses_{user_id}__DATE-(\d{{8}}_\d{{6}})\.json"
+    #         latest_file = None
+    #         latest_dt = None
 
-            for fname in os.listdir(temp_dir):
-                match = re.match(pattern, fname)
-                if match:
-                    dt_str = match.group(1)
-                    dt = datetime.strptime(dt_str, "%Y%m%d_%H%M%S")
-                    if latest_dt is None or dt > latest_dt:
-                        latest_dt = dt
-                        latest_file = fname
+    #         for fname in os.listdir(temp_dir):
+    #             match = re.match(pattern, fname)
+    #             if match:
+    #                 dt_str = match.group(1)
+    #                 dt = datetime.strptime(dt_str, "%Y%m%d_%H%M%S")
+    #                 if latest_dt is None or dt > latest_dt:
+    #                     latest_dt = dt
+    #                     latest_file = fname
 
-            if latest_file is None:
-                self.logger.info("No conversation history found.")
-                return None
-            filename = os.path.join(temp_dir, latest_file)
-            with open(filename, 'r') as f:
-                user_history = json.load(f)
-            return user_history
-        except Exception as e:
-            self.logger.error(f"Error collecting user history: {e}")
-            return None
+    #         # NOTE: THIS WAS FOR POTENTIAL HISTORY LOADING, CURRENTLY NOT IN USE AS SAVE RESPONCES IS DISABLED
+    #         if latest_file is None:
+    #             logger.debug("No conversation history found.")
+    #             return None
+    #         filename = os.path.join(temp_dir, latest_file)
+    #         with open(filename, 'r') as f:
+    #             user_history = json.load(f)
+    #         return user_history
+    #     except Exception as e:
+    #         logger.debug(f"Error collecting user history: {e}")
+    #         return None
 
 # TESTING CODE FOR STANDALONE RUNNING
 if __name__ == "__main__":
@@ -245,10 +245,10 @@ if __name__ == "__main__":
     )
 
     print("=== TIA Vision Chat Assistant ===")
-    print("🚀 Welcome! I'm TIA Vision, here to help you uncover the heart of your brand.")
-    print("📊 We'll go through 2 phases:")
-    print("   Phase 1: Foundation - Understanding your business basics")
-    print("   Phase 2: Reflection - Exploring your deeper motivations")
+    print("Welcome! I'm TIA Vision, here to help you uncover the heart of your brand.")
+    print("We'll go through 2 phases:")
+    print("Phase 1: Foundation - Understanding your business basics")
+    print("Phase 2: Reflection - Exploring your deeper motivations")
     print("\nType 'quit', 'exit', or 'q' to end anytime")
     print("Type 'status' to see your progress")
     print("Type 'history' to see your responses")
@@ -262,9 +262,9 @@ if __name__ == "__main__":
         try:
             if assistant.end_chat_session:
                 print("\n" + "=" * 50)
-                print("🎉 Congratulations! You've completed both phases!")
-                print("📝 Your responses have been saved for blog generation.")
-                print("💡 This data can now be used to create your Why Statement and messaging!")
+                print("Congratulations! You've completed both phases!")
+                print("Your responses have been saved for blog generation.")
+                print("This data can now be used to create your Why Statement and messaging!")
                 print("=" * 50)
                 break
             
@@ -272,24 +272,24 @@ if __name__ == "__main__":
             
             # Handle commands
             if user_input.lower() in ['quit', 'exit', 'q']:
-                print("\n👋 Thanks for using TIA Vision!")
+                print("\nThanks for using TIA Vision!")
                 if assistant.user_responses:
                     save_choice = input("Save your progress? (y/n): ").strip().lower()
                     if save_choice == 'y':
                         filename = assistant.save_responses()
-                        print(f"✅ Saved to: {filename}")
+                        print(f"Saved to: {filename}")
                 break
                 
             elif user_input.lower() == 'status':
                 phase_names = ["Foundation", "Reflection"]
                 current_name = phase_names[assistant.current_phase]
-                print(f"\n📊 Status:")
+                print(f"\nStatus:")
                 print(f"   Phase: {assistant.current_phase + 1}/2 ({current_name})")
                 print(f"   Questions answered: {len(assistant.user_responses)}")
                 continue
                 
             elif user_input.lower() == 'history':
-                print(f"\n📋 Your responses:")
+                print(f"\nYour responses:")
                 if not assistant.user_responses:
                     print("   No responses yet.")
                 else:
@@ -303,19 +303,19 @@ if __name__ == "__main__":
                 continue
             
             # Send message
-            print("\n🤔 TIA Vision is thinking...")
+            print("\nTIA Vision is thinking...")
             response = assistant.send_message(user_input)
             print(f"\nTIA Vision: {response}")
             
             # Check for phase transition
             if "Phase 2" in response or "Reflection" in response:
-                print(f"\n🎯 Phase {assistant.current_phase + 1}/2: Reflection")
+                print(f"\nPhase {assistant.current_phase + 1}/2: Reflection")
             
             print("-" * 40)
             
         except KeyboardInterrupt:
-            print("\n\n👋 Goodbye!")
+            print("\n\nGoodbye!")
             break
         except Exception as e:
-            print(f"\n❌ Error: {e}")
+            print(f"\nError: {e}")
             print("Please try again or type 'quit' to exit.")

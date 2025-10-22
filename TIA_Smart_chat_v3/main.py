@@ -8,7 +8,6 @@ load_dotenv()
 # Logging setup
 log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
 logging.basicConfig(
-    # Default to INFO
     level=getattr(logging, log_level, logging.INFO),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
@@ -18,10 +17,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
 # FastAPI app
 # To run: uvicorn TIA_Smart_chat_v3.main:app --reload --port 8080
 app = FastAPI()
-CONVERSATIONS_DIR = os.path.join(os.getcwd(), "tmp", "agent_chat_history")
+CONVERSATIONS_DIR = os.path.join(os.getcwd(), "tmp")
+logger.info("Starting TIA Smart Chat v3 FastAPI application")
 
 # Main Chat endpoint
 @app.post("/chat/tia-chat")

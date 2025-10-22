@@ -1,0 +1,33 @@
+{
+    "session_id": "9ca19093-08a0-4947-a5ee-d5f15061ae70",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "The dynamic chat is underway! Please share your thoughts on the following questions to shape your business vision:\n\n1. What is your primary goal or mission for AI COMPANY?\n2. Who is your target audience or market?\n3. What unique value or solution does your business provide?\n4. How do you envision the future of your company in the next 5 years?\n\nFeel free to answer these questions one at a time or all at once!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "9ca19093-08a0-4947-a5ee-d5f15061ae70",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "150de55c-15ac-469e-a298-6a8c1e410ff9"
+        }
+    ]
+}

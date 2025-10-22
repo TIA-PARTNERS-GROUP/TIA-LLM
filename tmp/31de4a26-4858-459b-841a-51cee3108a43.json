@@ -1,0 +1,168 @@
+{
+    "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+    "user_id": "21",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's start building your business vision! Please answer the following questions to guide the process:\n\n1. What is your business idea or concept?\n2. Who is your target audience or customer base?\n3. What are the main products or services you intend to offer?\n4. What are your short-term goals for the business?\n5. What long-term vision do you have for your business?\n\nFeel free to share your thoughts, and we'll build from there!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "e1170e78-08e9-46f0-ba0e-7be764522de8"
+        },
+        {
+            "message": "ChatGPT said:\n\nMy vision is to create a company focused on building intelligent, efficient, and automated systems that simplify complex tasks. The goal is to blend machine learning, data-driven design, and system-level engineering to create scalable, high-performance solutions that feel light, intuitive, and impactful. Core values: innovation, reliability, and continuous learning.",
+            "response": "That sounds like an incredible vision! It's clear you have a strong focus on innovation and creating impactful solutions. Now, let\u2019s talk a bit about the business itself. Could you share with me a bit about your company? What inspired you to start this journey?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "9d2df32a-e5fe-425b-911a-d57b5f3e48a3"
+        },
+        {
+            "message": "Provide services to young engineers",
+            "response": "That's great! Providing services to young engineers shows you're committed to uplifting the next generation in the field. It sounds like you're focusing on guidance and support, which can really make a difference. Now, can you tell me about your role within the company? What do you do to help bring this vision to life?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "87614ddc-d0d8-4e1a-9427-4de39e4bdf48"
+        },
+        {
+            "message": "I see myself as the founder and lead engineer \u2014 responsible for driving the technical vision, developing core systems, and ensuring that the company\u2019s solutions are both scalable and practical. I\u2019d also guide R&D efforts, mentor other developers, and shape the overall engineering culture around innovation and efficiency.",
+            "response": "It sounds like you wear multiple hats in your role as the founder and lead engineer! Your commitment to driving the technical vision and mentoring other developers speaks volumes about your passion for innovation and efficiency. Now, let's delve into the specifics of what you offer. What kind of product or service do you provide to these young engineers?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "9c281011-33bc-4b4f-9aca-ca24b0de9aa5"
+        },
+        {
+            "message": "I provide intelligent automation and data-driven software solutions. These include AI-powered tools, backend systems, and embedded integrations that optimize workflows, reduce manual effort, and make processes more adaptive and efficient across industries.",
+            "response": "That\u2019s impressive! Offering intelligent automation and data-driven solutions can truly transform the way young engineers work and help them streamline their processes. It's clear you're focused on enhancing efficiency and adaptability, which is so essential in today\u2019s fast-paced environment. Finally, let\u2019s talk about your audience a bit more. Who is your typical customer or client? What do they look like?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "8056b5da-6473-4d8e-b0e5-0241f99fd721"
+        },
+        {
+            "message": "My typical clients are small to mid-sized businesses and tech-focused startups that want to integrate automation, machine learning, or data systems into their operations but don\u2019t have the in-house expertise. I also aim to support industrial and IoT-focused companies looking to modernize legacy systems with smarter, connected solutions.",
+            "response": "You're about to embark on a meaningful journey of discovery! Together, we\u2019ll delve into the heart of your business and uncover the motivations and stories that drive you. Remember, your experiences and thoughts are an essential part of what makes your brand unique. Let\u2019s get started!\n\nWhen you first started your business, what did you imagine life would look like?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31de4a26-4858-459b-841a-51cee3108a43",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "85d32701-da20-4132-b164-fc3309277598"
+        }
+    ]
+}

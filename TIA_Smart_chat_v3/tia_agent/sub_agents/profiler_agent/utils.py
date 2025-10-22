@@ -56,7 +56,7 @@ def ensure_business_type_and_categories(cursor, business_type: str, business_cat
 def ensure_business_phase_and_role(cursor, user_role: str):
     """Ensure business phase and role exist. Returns IDs or raises exception."""
     try:
-        logger.debug("Ensuring business phase and role")
+        logger.debug("Ensuring business phase and role for user: %s", user_role)
         
         # Ensure business phase exists
         cursor.execute("SELECT id FROM business_phases WHERE name=%s", ("TIA Agent Chatting",))
@@ -158,7 +158,6 @@ def model_update_user_details(user_id: int,
                               user_strengths: list, 
                               user_skills: list,
                               business_strengths: list, 
-                              business_skills: list, 
                               business_type: str, 
                               business_category: str, 
                               skill_category: str, 

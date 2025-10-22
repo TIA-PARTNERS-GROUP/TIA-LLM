@@ -23,6 +23,7 @@ HistoryCollectorAgent = LlmAgent(
 ProfileGenerator = LlmAgent(
     name="ProfileGenerator",
     model=AGENT_MODEL,
+    description="Generates a user profile from conversation history, save to Database.",
     instruction="""
     You are given a list of conversation (User_History) turns between the user and the assistant, where each turn contains a question and the user's answer.
     Your job is to analyze the conversation and extract the following information to fill out the user profile schema:

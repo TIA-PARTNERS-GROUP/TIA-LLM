@@ -14,9 +14,8 @@ def collect_user_history(tool_context: ToolContext):
         user_id = state.get("user_id")
         session_id = state.get("session_id")
         
+        # Retrieve the DynamicChatAssistant instance's history
         if session_id:
-            # Import the function from vision_agent tools
-
             assistant = get_or_create_assistant(session_id, user_id, "profiler:VisionAgent")
             logger.debug("Found assistant: %s", assistant)
             if assistant and assistant.user_responses:
@@ -32,16 +31,15 @@ def collect_user_history(tool_context: ToolContext):
 def store_user_profile(tool_context: ToolContext):
     """Store the generated user profile"""
     try:
-        logger.debug("Storing user profile for user_id: %s", user_id)
         state = tool_context.state
         user_id = state.get("user_id")
         profile = state.get("Generated_Profile", {})
+        logger.debug("Storing user profile for user_id: %s", user_id)
 
         user_role = profile.get("UserJob")
         user_strengths = [s.strip() for s in profile.get("User_Strength", "").split(",") if s.strip()]
         user_skills = [s.strip() for s in profile.get("User_skills", "").split(",") if s.strip()]
         business_strengths = [s.strip() for s in profile.get("Business_Strength", "").split(",") if s.strip()]
-        business_skills = [s.strip() for s in profile.get("Business_Skills", "").split(",") if s.strip()]
         business_type = profile.get("Business_Type")
         business_category = profile.get("Business_Category")
         skill_category = profile.get("Skill_Category")
@@ -55,7 +53,6 @@ def store_user_profile(tool_context: ToolContext):
             user_strengths,
             user_skills,
             business_strengths,
-            business_skills,
             business_type,
             business_category,
             skill_category,

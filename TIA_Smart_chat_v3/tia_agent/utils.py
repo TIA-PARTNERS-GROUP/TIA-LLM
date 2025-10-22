@@ -141,10 +141,11 @@ def load_user_profile(user_id: int):
         conn.close()
         logger.debug("DB connection closed")
 
-        # Check if essential profile data exists
+        # Check if profile data exists
         profile_exists = bool(business_name and user_job and user_strengths_str and user_skills_str and business_strengths_str and business_type)
         logger.debug(f"Profile exists: {profile_exists}")
 
+        # Build essential user profile (From Website not generated data)
         profile = {
             "UserName": f"{first_name} {last_name}",
             "Business_Name": business_name,
@@ -152,7 +153,7 @@ def load_user_profile(user_id: int):
             "Contact_Phone_No": business_phone
         }
         
-        # Construct and set the profile
+        # Update profile with additional data (Agent generated data) if exists
         if profile_exists:
             profile.update({
                 "Business_Type": business_type,

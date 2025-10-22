@@ -1,0 +1,36 @@
+{
+    "session_id": "495569a5-3da6-4ef1-93bc-423cd4a6a984",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": null,
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "495569a5-3da6-4ef1-93bc-423cd4a6a984",
+                "set_agent": "ConnectAgent",
+                "connection_type": "alliance",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                }
+            },
+            "author": null,
+            "timestamp": "96f8ec5d-fb05-47d2-82d5-f57948b9f2ed"
+        }
+    ]
+}

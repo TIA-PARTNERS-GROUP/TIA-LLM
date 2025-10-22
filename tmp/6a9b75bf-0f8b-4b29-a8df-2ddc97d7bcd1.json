@@ -1,0 +1,135 @@
+{
+    "session_id": "6a9b75bf-0f8b-4b29-a8df-2ddc97d7bcd1",
+    "user_id": "21",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Since you already have a generated profile, would you like to build a new vision or generate it using your existing profile data?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "6a9b75bf-0f8b-4b29-a8df-2ddc97d7bcd1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Intelligent automation and data-driven software solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Empowering clients through innovative tech solutions",
+                    "User_skills": "System engineering, Machine learning, Automation",
+                    "Business_Strength": "Creating scalable high-performance systems",
+                    "Business_Category": "Technology"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "b0e11129-a39f-4466-a8f3-d403e63dc23c"
+        },
+        {
+            "message": "build a blog using this exsiting data",
+            "response": "Let's begin building your vision through a dynamic chat. Please share what you'd like to focus on in your blog, using the information from your profile.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "6a9b75bf-0f8b-4b29-a8df-2ddc97d7bcd1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Intelligent automation and data-driven software solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Empowering clients through innovative tech solutions",
+                    "User_skills": "System engineering, Machine learning, Automation",
+                    "Business_Strength": "Creating scalable high-performance systems",
+                    "Business_Category": "Technology"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "bb882414-039b-4fe3-a342-47ee84766940"
+        },
+        {
+            "message": "ALL of it",
+            "response": "Let's start with the basics! Can you share a bit about your business? What inspired you to create it?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "6a9b75bf-0f8b-4b29-a8df-2ddc97d7bcd1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Intelligent automation and data-driven software solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Empowering clients through innovative tech solutions",
+                    "User_skills": "System engineering, Machine learning, Automation",
+                    "Business_Strength": "Creating scalable high-performance systems",
+                    "Business_Category": "Technology"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "c088cc57-25c7-49c3-b1a5-aeb9940ab638"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello there! It's great to have you here. I\u2019m excited to learn more about your business. Can you share a bit about it and what inspired you to start this journey?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "6a9b75bf-0f8b-4b29-a8df-2ddc97d7bcd1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Intelligent automation and data-driven software solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Empowering clients through innovative tech solutions",
+                    "User_skills": "System engineering, Machine learning, Automation",
+                    "Business_Strength": "Creating scalable high-performance systems",
+                    "Business_Category": "Technology"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "cfcde109-47ab-4d96-9abd-a89be00d1565"
+        }
+    ]
+}

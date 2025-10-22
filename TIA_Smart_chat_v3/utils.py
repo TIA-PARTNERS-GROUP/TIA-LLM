@@ -5,7 +5,7 @@ from google.adk.sessions import DatabaseSessionService
 from google.genai import types
 
 from .tia_agent.shared_state import get_or_create_assistant
-import os, uuid, logging
+import os, uuid, logging, json
 
 from .tia_agent.config import OPENAI_API_KEY
 try:
@@ -17,7 +17,6 @@ except ImportError:
 # Load environment variables and setup logging
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Initialize session service with MySQL
@@ -176,11 +175,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
                 session_id=session.id,
                 new_message=new_message
             ):
-                logger.debug(f"""
-                             Event: {event}\n
-                             Session state during chat: {session.state}\n
-                             Session ID: {session.id}
-                             """)
+                logger.debug(f"[CHAT EVENT]\nEvent: {event}\nSession ID: {session.id}\nState: {json.dumps(session.state, indent=2)}")
                 
                 if event.is_final_response() and event.content and event.content.parts:
                     response_text = event.content.parts[0].text

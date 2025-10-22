@@ -1,0 +1,36 @@
+{
+    "session_id": "31ea4d4e-0416-4c37-8d09-4ec16ba0c8d9",
+    "user_id": "21",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Since you already have a user profile generated, would you like to build a new vision or generate from your profile data?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "21",
+                "session_id": "31ea4d4e-0416-4c37-8d09-4ec16ba0c8d9",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "test",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Intelligent automation and data-driven software solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Empowering clients through innovative tech solutions",
+                    "User_skills": "System engineering, Machine learning, Automation",
+                    "Business_Strength": "Creating scalable high-performance systems",
+                    "Business_Category": "Technology"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "cc12039c-38cf-49ed-9747-81a4616c2ee0"
+        }
+    ]
+}
