@@ -3,6 +3,7 @@ from .sub_agents import VisionAgent, ConnectAgent, ProfilerAgent, LadderAgent
 from .config import AGENT_MODEL
 from .tools import check_for_existing_user
 
+# NOTE: Keep Agents that use generated_profile as a sub agent of this CoordinatorAgent. Agents that dont use profile data like LadderAgent can be independent.
 coordinatorAgent = LlmAgent(
     name="CoordinatorAgent",
     model=AGENT_MODEL,

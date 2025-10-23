@@ -165,7 +165,7 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
             author = "DynamicChatAssistant"
             new_message = types.Content(
                     role="user",
-                    parts=[types.Part(text="[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]")]
+                    parts=[types.Part(text="[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]")] # Force the Agent to generate blog (NOTE: Workaround for LLM hallucinations)
                 )
 
         # Return a google ADK runner response if DynamicChatAssistant did not handle it

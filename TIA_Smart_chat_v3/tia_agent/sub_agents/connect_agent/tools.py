@@ -41,6 +41,8 @@ def recommended_connection(tool_context: ToolContext):
         if GNN_CALL is not None:
             result_type = "Existing TIA Users"
             result = GNN_CALL
+
+            # Extract user IDs
             user_ids = [rec["recommendation"]["user"]["id"] for rec in GNN_CALL]
             connect_agent_state["existing_users"] = user_ids
         else:
@@ -74,7 +76,13 @@ def generate_email(tool_context: ToolContext):
         
         # Retrieve the stored result
         connection_result = state["ConnectAgent"]["connection_result"]
-        businesses = connection_result.get("data", [])
+        connection_type = state["ConnectAgent"].get("connection_type")
+
+        if connection_type == "Existing TIA Users":
+            businesses = connection_result
+        elif connection_type == "Web Search":
+            businesses = connection_result.get("data", [])
+
         if not businesses:
             return {"status": "error", "message": "No business data found in connection_result."}
         
