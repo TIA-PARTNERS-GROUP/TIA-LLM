@@ -6,3 +6,4 @@
 TIA-LLM.log
 .tmp/
 tmp/
+*tmp/
