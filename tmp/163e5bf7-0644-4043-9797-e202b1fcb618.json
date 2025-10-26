@@ -1,0 +1,138 @@
+{
+    "session_id": "163e5bf7-0644-4043-9797-e202b1fcb618",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Based on our web search, we've found a recommended connection for your business:\n\n### 1. Ai Automation Agency\n- **Type:** Automation company\n- **Rating:** Not available\n- **Opening Status:** Closed \u22c5 Opens 9 am Fri\n- **Working Hours:** \n  - Monday to Friday: 9 am\u20135 pm\n  - Saturday and Sunday: Closed\n- **Website:** [aiautomationagency.com.au](https://aiautomationagency.com.au)\n- **Facebook:** [facebook.com/aiautomationagency](https://www.facebook.com/aiautomationagency)\n- **LinkedIn:** [linkedin.com/company/aiautomationagency](https://www.linkedin.com/company/aiautomationagency)\n- **Contact Information:** Not available\n- **Location:** [Google Maps Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x32a0c99cdecef2f:0x8bc8d32cf055031d)\n\nThe connection type for this result was \"Web Search.\"\n\nPlease let me know which businesses you would like email templates for (by name or number)!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "163e5bf7-0644-4043-9797-e202b1fcb618",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x32a0c99cdecef2f:0x8bc8d32cf055031d",
+                            "google_id": "0x32a0c99cdecef2f:0x8bc8d32cf055031d",
+                            "place_id": "ChIJL-_szZkMKgMRHQNV8CzTyIs",
+                            "google_mid": "/g/11vxtcv09k",
+                            "name": "Ai Automation Agency",
+                            "latitude": -27.27997,
+                            "longitude": 152.706387,
+                            "full_address": null,
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 9\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "9 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://aiautomationagency.com.au",
+                            "tld": "aiautomationagency.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x32a0c99cdecef2f:0x8bc8d32cf055031d",
+                            "cid": "10072532756578239261",
+                            "reviews_link": null,
+                            "owner_id": "114394594888502374597",
+                            "owner_link": "https://maps.google.com/maps/contrib/114394594888502374597",
+                            "owner_name": "Ai Automation Agency",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Service establishment"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "establishment_service"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipNcL1fK4ZSgrZmOMCjO_q1c0QjLe__nMWqbH59J",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNcL1fK4ZSgrZmOMCjO_q1c0QjLe__nMWqbH59J",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNcL1fK4ZSgrZmOMCjO_q1c0QjLe__nMWqbH59J=w1080-h1080-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2023-11-13T00:00:00.000Z",
+                                    "photo_timestamp": 1699833600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": null,
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": null,
+                            "city": null,
+                            "zipcode": null,
+                            "state": null,
+                            "country": null,
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [],
+                                "facebook": "https://www.facebook.com/aiautomationagency",
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/aiautomationagency",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "92ad9a18-241f-44aa-a3df-2f13c1d64aa8"
+        }
+    ]
+}

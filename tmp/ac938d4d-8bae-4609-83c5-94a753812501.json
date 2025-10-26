@@ -1,0 +1,42 @@
+{
+    "session_id": "ac938d4d-8bae-4609-83c5-94a753812501",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Unfortunately, we've hit the monthly quota for searching businesses on our current plan, which limits our ability to fetch recommended connections for you at the moment. You may consider upgrading the plan for unlimited access.\n\nWould you like assistance with anything else? Feel free to let me know!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "ac938d4d-8bae-4609-83c5-94a753812501",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "794bbf80-7aba-489d-9011-31a14dd752d8"
+        }
+    ]
+}

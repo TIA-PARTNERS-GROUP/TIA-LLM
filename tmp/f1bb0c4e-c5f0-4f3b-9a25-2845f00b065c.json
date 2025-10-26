@@ -1,0 +1,37 @@
+{
+    "session_id": "f1bb0c4e-c5f0-4f3b-9a25-2845f00b065c",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "I'm encountering a technical issue while trying to generate the recommended connections for you. I will need to work on resolving this problem. Please allow me a moment before attempting again.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "f1bb0c4e-c5f0-4f3b-9a25-2845f00b065c",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {}
+            },
+            "author": "ConnectAgent",
+            "timestamp": "5e1a2747-7220-4c43-acc4-0f9ef615cd98"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "session_id": "c5b79f8f-bae9-46c2-a64e-bab109d97ee4",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some recommended connections for you from existing TIA Users:\n\n1. **Business Name:** Park Engineering Solutions\n   - **Contact Person:** Lisa Park\n   - **Description:** Licensed engineer for complex architectural projects\n\n2. **Business Name:** Johnson Electrical Systems\n   - **Contact Person:** Robert Johnson\n   - **Description:** Commercial electrical contractor for large-scale projects\n\nThese results came from the \"Existing TIA Users.\" Which of these businesses would you like email templates for? Please specify by name or number.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "c5b79f8f-bae9-46c2-a64e-bab109d97ee4",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "existing_users": [
+                        202,
+                        203
+                    ],
+                    "connection_type": "Existing TIA Users",
+                    "connection_result": [
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 202,
+                                    "name": "Lisa Park",
+                                    "business": "Park Engineering Solutions",
+                                    "type": null,
+                                    "category": null,
+                                    "description": "Licensed engineer for complex architectural projects"
+                                }
+                            },
+                            "reason": ""
+                        },
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 203,
+                                    "name": "Robert Johnson",
+                                    "business": "Johnson Electrical Systems",
+                                    "type": null,
+                                    "category": null,
+                                    "description": "Commercial electrical contractor for large-scale projects"
+                                }
+                            },
+                            "reason": ""
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "35344d79-7087-4e50-8ab4-5355f4797c89"
+        }
+    ]
+}

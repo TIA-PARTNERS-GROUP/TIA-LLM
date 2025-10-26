@@ -1,0 +1,1016 @@
+{
+    "session_id": "eae041d3-a68f-47f0-a4e8-c37a7e5b720f",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the recommended businesses based on your profile:\n\n### Web Search Connections:\n\n1. **EEHA Automation Pty Ltd**\n   - **Type:** Automation company\n   - **Rating:** 4.3 (6 reviews)\n   - **Contact:** +61 1800 433 422 | [sales@eehaa.com.au](mailto:sales@eehaa.com.au)\n   - **Website:** [eehaa.com.au](http://www.eehaa.com.au)\n   - **Address:** Level 4/451 St Pauls Ter, Fortitude Valley QLD 4006\n   - [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915907bdf89027:0xdf7672be93ec67c2)\n\n2. **Automate212**\n   - **Type:** Automation company\n   - **Rating:** Not available\n   - **Contact:** +61 1300 332 084 | [info@automate212.com](mailto:info@automate212.com)\n   - **Website:** [automate212.com](http://automate212.com)\n   - **Address:** Level 54/111 Eagle St, Brisbane City QLD 4000\n   - [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1c4d229965:0x73937a19142a559d)\n\n3. **Automation Strategy Partner**\n   - **Type:** Automation company\n   - **Rating:** Not available\n   - **Contact:** +61 1300 332 084\n   - **Website:** [automationstrategypartners.com](http://automationstrategypartners.com)\n   - **Address:** Level 14/167 Eagle St, Brisbane City QLD 4000\n   - [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4)\n\n4. **Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd**\n   - **Type:** Home automation company\n   - **Rating:** Not available\n   - **Contact:** +61 418 139 559 | [sales@automated.net.au](mailto:sales@automated.net.au)\n   - **Website:** [automated.net.au](http://www.automated.net.au)\n   - **Address:** Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006\n   - [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7)\n\n5. **Australian Automation Partners**\n   - **Type:** Software company\n   - **Rating:** Not available\n   - **Contact:** +61 7 3041 1127 | [contact@australianautomationpartners.com](mailto:contact@australianautomationpartners.com)\n   - **Website:** [australianautomationpartners.com](http://australianautomationpartners.com)\n   - **Address:** Level 19/1 Eagle St, Brisbane City QLD 4000\n   - [Google Maps](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1b88480e93:0xf80255da9c96dd45)\n\nPlease let me know which businesses you would like email templates for (by name or number).",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "eae041d3-a68f-47f0-a4e8-c37a7e5b720f",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "google_id": "0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "place_id": "ChIJJ5D4vQdZkWsRwmfsk75ydt8",
+                            "google_mid": "/g/11cmq__h1r",
+                            "phone_number": "+611800433422",
+                            "name": "EEHA Automation Pty Ltd",
+                            "latitude": -27.4542686,
+                            "longitude": 153.0336375,
+                            "full_address": "EEHA Automation Pty Ltd, Level 4/451 St Pauls Ter, Fortitude Valley QLD 4006",
+                            "review_count": 6,
+                            "rating": 4.3,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 7:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Friday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Tuesday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Wednesday": [
+                                    "7:30 am\u20136:30 pm"
+                                ]
+                            },
+                            "website": "http://www.eehaa.com.au",
+                            "tld": "eehaa.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "cid": "16102183680560883650",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ5D4vQdZkWsRwmfsk75ydt8&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "102392828230934284402",
+                            "owner_link": "https://maps.google.com/maps/contrib/102392828230934284402",
+                            "owner_name": "EEHA Automation Pty Ltd",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Computer support and services",
+                                "Electrical engineer",
+                                "Electrician",
+                                "Engineering consultant",
+                                "Industrial design company",
+                                "Industrial engineer",
+                                "Mining consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "computer_support_and_services",
+                                "electrical_engineer",
+                                "electrician",
+                                "engineering_consultant",
+                                "industrial_design_company",
+                                "industrial_engineer",
+                                "mining_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b=w1015-h620-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.454148099999998,
+                                    "longitude": 153.0334828,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2025-01-30T00:00:00.000Z",
+                                    "photo_timestamp": 1738195200
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 9,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": true
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true
+                                    }
+                                }
+                            },
+                            "address": "Level 4/451 St Pauls Ter, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 4/451 St Pauls Ter",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@eehaa.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "1800433422",
+                                    "87600292760"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/eeha-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1c4d229965:0x73937a19142a559d",
+                            "google_id": "0x6b915a1c4d229965:0x73937a19142a559d",
+                            "place_id": "ChIJZZkiTRxakWsRnVUqFBl6k3M",
+                            "google_mid": "/g/11y3stvndl",
+                            "phone_number": "+611300332084",
+                            "name": "Automate212",
+                            "latitude": -27.467592,
+                            "longitude": 153.03035599999998,
+                            "full_address": "Automate212, Level 54/111 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://automate212.com",
+                            "tld": "automate212.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1c4d229965:0x73937a19142a559d",
+                            "cid": "8328134384069268893",
+                            "reviews_link": null,
+                            "owner_id": "105577484433746929176",
+                            "owner_link": "https://maps.google.com/maps/contrib/105577484433746929176",
+                            "owner_name": "Automate212",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "IQwaityn7e0_rhWatnIpQQ",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IQwaityn7e0_rhWatnIpQQ&cb_client=search.gws-prod.gps&w=86&h=86&yaw=69.09696&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.46776168419279,
+                                    "longitude": 153.02985526438613,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 54/111 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 54/111 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "084info@automate212.com",
+                                    "084info@automate212.com1300",
+                                    "info@automate212.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300332084"
+                                ],
+                                "facebook": null,
+                                "instagram": "https://www.instagram.com/automationstrategypartners",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "google_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "place_id": "ChIJAQAwlB1akWsR9MwfPIQYYYQ",
+                            "google_mid": "/g/11vzgp3xrp",
+                            "phone_number": "+611300332084",
+                            "name": "Automation Strategy Partner",
+                            "latitude": -27.4659968,
+                            "longitude": 153.0306249,
+                            "full_address": "Automation Strategy Partner, Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://automationstrategypartners.com",
+                            "tld": "automationstrategypartners.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4",
+                            "cid": "9538932441970887924",
+                            "reviews_link": null,
+                            "owner_id": "104696242064448986926",
+                            "owner_link": "https://maps.google.com/maps/contrib/104696242064448986926",
+                            "owner_name": "Automation Strategy Partner",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "ZvXu470KN5rt8VGNCdYVJw",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZvXu470KN5rt8VGNCdYVJw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=116.00889&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.46590336050692,
+                                    "longitude": 153.03040906864965,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 14/167 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [
+                                    "1300332084"
+                                ],
+                                "facebook": null,
+                                "instagram": "https://www.instagram.com/automationstrategypartners",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "google_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "place_id": "ChIJteLTX8xZkWsR98eCbQLRsac",
+                            "google_mid": "/g/11rfrnt4jw",
+                            "phone_number": "+61418139559",
+                            "name": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd",
+                            "latitude": -27.4529833,
+                            "longitude": 153.0400872,
+                            "full_address": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd, Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 9\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "9 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.automated.net.au",
+                            "tld": "automated.net.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "cid": "12083669083569178615",
+                            "reviews_link": null,
+                            "owner_id": "102924830577436601060",
+                            "owner_link": "https://maps.google.com/maps/contrib/102924830577436601060",
+                            "owner_name": "Automated",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Home automation company",
+                            "subtypes": [
+                                "Home automation company"
+                            ],
+                            "subtype_gcids": [
+                                "home_automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs=w1971-h464-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453138799999998,
+                                    "longitude": 153.0397564,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-06-24T00:00:00.000Z",
+                                    "photo_timestamp": 1624492800
+                                },
+                                {
+                                    "photo_id": "S6uzff8Li7HHUFqL9_K8Mg",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=S6uzff8Li7HHUFqL9_K8Mg&cb_client=search.gws-prod.gps&w=80&h=92&yaw=57.97387&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453163869956057,
+                                    "longitude": 153.0397618867704,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2022-08-13T00:00:00.000Z",
+                                    "photo_timestamp": 1660348800
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 4,
+                            "about": null,
+                            "address": "Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Workspace 365, Level 1/1024 Ann St",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@automated.net.au"
+                                ],
+                                "phone_numbers": [
+                                    "1300608908"
+                                ],
+                                "facebook": "https://www.facebook.com/automatedelectricalsolutions",
+                                "instagram": "https://www.instagram.com/automated_aus",
+                                "yelp": "https://www.yelp.com/biz/automated-sydney",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/automated-aus",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "google_id": "0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "place_id": "ChIJkw5IiBtakWsRRd2WnNpVAvg",
+                            "google_mid": "/g/11jvnp9xl1",
+                            "phone_number": "+61730411127",
+                            "name": "Australian Automation Partners",
+                            "latitude": -27.4703089,
+                            "longitude": 153.0303509,
+                            "full_address": "Australian Automation Partners, Level 19/1 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://australianautomationpartners.com",
+                            "tld": "australianautomationpartners.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "cid": "17870940668777913669",
+                            "reviews_link": null,
+                            "owner_id": "101603136462227276895",
+                            "owner_link": "https://maps.google.com/maps/contrib/101603136462227276895",
+                            "owner_name": "Australian Automation Partners",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Software company",
+                            "subtypes": [
+                                "Software company"
+                            ],
+                            "subtype_gcids": [
+                                "software_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "KG8LBcDbkoCdEFGU0cQgVA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KG8LBcDbkoCdEFGU0cQgVA&cb_client=search.gws-prod.gps&w=86&h=86&yaw=46.56856&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.470499001702976,
+                                    "longitude": 153.0301245756704,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 19/1 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 19/1 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "contact@australianautomationpartners.com"
+                                ],
+                                "phone_numbers": [
+                                    "61730411127"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "b8890ee8-58d4-4879-be8d-d75f17940801"
+        },
+        {
+            "message": "I like 2",
+            "response": "It looks like we are experiencing a technical issue with generating the email template for **Automate212**. I recommend trying this process again shortly. \n\nIf you have any specific requests for the email template, or if there's anything else I can assist you with, please let me know!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "eae041d3-a68f-47f0-a4e8-c37a7e5b720f",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "google_id": "0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "place_id": "ChIJJ5D4vQdZkWsRwmfsk75ydt8",
+                            "google_mid": "/g/11cmq__h1r",
+                            "phone_number": "+611800433422",
+                            "name": "EEHA Automation Pty Ltd",
+                            "latitude": -27.4542686,
+                            "longitude": 153.0336375,
+                            "full_address": "EEHA Automation Pty Ltd, Level 4/451 St Pauls Ter, Fortitude Valley QLD 4006",
+                            "review_count": 6,
+                            "rating": 4.3,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 7:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Friday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Tuesday": [
+                                    "7:30 am\u20136:30 pm"
+                                ],
+                                "Wednesday": [
+                                    "7:30 am\u20136:30 pm"
+                                ]
+                            },
+                            "website": "http://www.eehaa.com.au",
+                            "tld": "eehaa.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915907bdf89027:0xdf7672be93ec67c2",
+                            "cid": "16102183680560883650",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ5D4vQdZkWsRwmfsk75ydt8&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "102392828230934284402",
+                            "owner_link": "https://maps.google.com/maps/contrib/102392828230934284402",
+                            "owner_name": "EEHA Automation Pty Ltd",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Computer support and services",
+                                "Electrical engineer",
+                                "Electrician",
+                                "Engineering consultant",
+                                "Industrial design company",
+                                "Industrial engineer",
+                                "Mining consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "computer_support_and_services",
+                                "electrical_engineer",
+                                "electrician",
+                                "engineering_consultant",
+                                "industrial_design_company",
+                                "industrial_engineer",
+                                "mining_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipN4Wi1xQeInvdo9l4TytsF9yqm0W46jH-lzti-b=w1015-h620-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.454148099999998,
+                                    "longitude": 153.0334828,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2025-01-30T00:00:00.000Z",
+                                    "photo_timestamp": 1738195200
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 9,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": true
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true
+                                    }
+                                }
+                            },
+                            "address": "Level 4/451 St Pauls Ter, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 4/451 St Pauls Ter",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@eehaa.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "1800433422",
+                                    "87600292760"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/eeha-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1c4d229965:0x73937a19142a559d",
+                            "google_id": "0x6b915a1c4d229965:0x73937a19142a559d",
+                            "place_id": "ChIJZZkiTRxakWsRnVUqFBl6k3M",
+                            "google_mid": "/g/11y3stvndl",
+                            "phone_number": "+611300332084",
+                            "name": "Automate212",
+                            "latitude": -27.467592,
+                            "longitude": 153.03035599999998,
+                            "full_address": "Automate212, Level 54/111 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://automate212.com",
+                            "tld": "automate212.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1c4d229965:0x73937a19142a559d",
+                            "cid": "8328134384069268893",
+                            "reviews_link": null,
+                            "owner_id": "105577484433746929176",
+                            "owner_link": "https://maps.google.com/maps/contrib/105577484433746929176",
+                            "owner_name": "Automate212",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "IQwaityn7e0_rhWatnIpQQ",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IQwaityn7e0_rhWatnIpQQ&cb_client=search.gws-prod.gps&w=86&h=86&yaw=69.09696&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.46776168419279,
+                                    "longitude": 153.02985526438613,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 54/111 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 54/111 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "084info@automate212.com",
+                                    "084info@automate212.com1300",
+                                    "info@automate212.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300332084"
+                                ],
+                                "facebook": null,
+                                "instagram": "https://www.instagram.com/automationstrategypartners",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "google_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "place_id": "ChIJAQAwlB1akWsR9MwfPIQYYYQ",
+                            "google_mid": "/g/11vzgp3xrp",
+                            "phone_number": "+611300332084",
+                            "name": "Automation Strategy Partner",
+                            "latitude": -27.4659968,
+                            "longitude": 153.0306249,
+                            "full_address": "Automation Strategy Partner, Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://automationstrategypartners.com",
+                            "tld": "automationstrategypartners.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4",
+                            "cid": "9538932441970887924",
+                            "reviews_link": null,
+                            "owner_id": "104696242064448986926",
+                            "owner_link": "https://maps.google.com/maps/contrib/104696242064448986926",
+                            "owner_name": "Automation Strategy Partner",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "ZvXu470KN5rt8VGNCdYVJw",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZvXu470KN5rt8VGNCdYVJw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=116.00889&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.46590336050692,
+                                    "longitude": 153.03040906864965,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 14/167 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [
+                                    "1300332084"
+                                ],
+                                "facebook": null,
+                                "instagram": "https://www.instagram.com/automationstrategypartners",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "google_id": "0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "place_id": "ChIJteLTX8xZkWsR98eCbQLRsac",
+                            "google_mid": "/g/11rfrnt4jw",
+                            "phone_number": "+61418139559",
+                            "name": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd",
+                            "latitude": -27.4529833,
+                            "longitude": 153.0400872,
+                            "full_address": "Automated (Brisbane) - Automated Electrical Solutions Holdings Pty Ltd, Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 9\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "9 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.automated.net.au",
+                            "tld": "automated.net.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159cc5fd3e2b5:0xa7b1d1026d82c7f7",
+                            "cid": "12083669083569178615",
+                            "reviews_link": null,
+                            "owner_id": "102924830577436601060",
+                            "owner_link": "https://maps.google.com/maps/contrib/102924830577436601060",
+                            "owner_name": "Automated",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Home automation company",
+                            "subtypes": [
+                                "Home automation company"
+                            ],
+                            "subtype_gcids": [
+                                "home_automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM5Fo15ILVbQjl6DuozPvETOMCltyIwqJ9KZvGs=w1971-h464-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453138799999998,
+                                    "longitude": 153.0397564,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-06-24T00:00:00.000Z",
+                                    "photo_timestamp": 1624492800
+                                },
+                                {
+                                    "photo_id": "S6uzff8Li7HHUFqL9_K8Mg",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=S6uzff8Li7HHUFqL9_K8Mg&cb_client=search.gws-prod.gps&w=80&h=92&yaw=57.97387&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453163869956057,
+                                    "longitude": 153.0397618867704,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2022-08-13T00:00:00.000Z",
+                                    "photo_timestamp": 1660348800
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 4,
+                            "about": null,
+                            "address": "Workspace 365, Level 1/1024 Ann St, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Workspace 365, Level 1/1024 Ann St",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@automated.net.au"
+                                ],
+                                "phone_numbers": [
+                                    "1300608908"
+                                ],
+                                "facebook": "https://www.facebook.com/automatedelectricalsolutions",
+                                "instagram": "https://www.instagram.com/automated_aus",
+                                "yelp": "https://www.yelp.com/biz/automated-sydney",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/automated-aus",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "google_id": "0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "place_id": "ChIJkw5IiBtakWsRRd2WnNpVAvg",
+                            "google_mid": "/g/11jvnp9xl1",
+                            "phone_number": "+61730411127",
+                            "name": "Australian Automation Partners",
+                            "latitude": -27.4703089,
+                            "longitude": 153.0303509,
+                            "full_address": "Australian Automation Partners, Level 19/1 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://australianautomationpartners.com",
+                            "tld": "australianautomationpartners.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1b88480e93:0xf80255da9c96dd45",
+                            "cid": "17870940668777913669",
+                            "reviews_link": null,
+                            "owner_id": "101603136462227276895",
+                            "owner_link": "https://maps.google.com/maps/contrib/101603136462227276895",
+                            "owner_name": "Australian Automation Partners",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Software company",
+                            "subtypes": [
+                                "Software company"
+                            ],
+                            "subtype_gcids": [
+                                "software_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "KG8LBcDbkoCdEFGU0cQgVA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KG8LBcDbkoCdEFGU0cQgVA&cb_client=search.gws-prod.gps&w=86&h=86&yaw=46.56856&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.470499001702976,
+                                    "longitude": 153.0301245756704,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 19/1 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 19/1 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "contact@australianautomationpartners.com"
+                                ],
+                                "phone_numbers": [
+                                    "61730411127"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "49877223-9a78-4d86-803a-2e5cb2e2b245"
+        }
+    ]
+}

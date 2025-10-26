@@ -4,3 +4,4 @@
 *.env
 *__pycache__/
 TIA-LLM.log
+.tmp/

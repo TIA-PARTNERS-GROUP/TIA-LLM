@@ -1,0 +1,33 @@
+{
+    "session_id": "4b557556-17ce-4e66-9cc0-79363ae53047",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "The vision building process has begun. I'll guide you through the necessary phases to help shape your business vision. Feel free to answer the questions as they come, and we'll move forward step by step.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "4b557556-17ce-4e66-9cc0-79363ae53047",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "Joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "71118cae-4054-49fe-8853-320af185ae1d"
+        }
+    ]
+}

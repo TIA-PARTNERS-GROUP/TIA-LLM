@@ -1,0 +1,258 @@
+{
+    "session_id": "d0ff2281-ef7b-4125-9690-0fc73953df02",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the recommended connection results based on a web search:\n\n### 1. Cxtech Consulting\n- **Type**: Consultant\n- **Rating**: 5/5 (1 Review)\n- **Working Hours**:\n  - Thursday: Open 24 hours\n  - Friday: Open 24 hours\n  - Saturday: Closed\n  - Sunday: Closed\n  - Monday: Open 24 hours\n  - Tuesday: Open 24 hours\n  - Wednesday: Open 24 hours\n- **Website**: [www.cxtechconsulting.com](http://www.cxtechconsulting.com)\n- **Google Maps**: [Link](https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x442d751824845599:0x86874ce367f16320)\n- **Reviews**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJmVWEJBh1LUQRIGPxZ-NMh4Y&q=%22Tech+Visionary+Consulting%22&authuser=0&hl=en&gl=AU)\n\nPlease let me know which businesses you'd like email templates for by providing the number or name of the business.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "d0ff2281-ef7b-4125-9690-0fc73953df02",
+                "set_agent": "ConnectAgent",
+                "connection_type": "mastermind",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x442d751824845599:0x86874ce367f16320",
+                            "google_id": "0x442d751824845599:0x86874ce367f16320",
+                            "place_id": "ChIJmVWEJBh1LUQRIGPxZ-NMh4Y",
+                            "google_mid": "/g/11v03zdsbs",
+                            "name": "Cxtech Consulting",
+                            "latitude": -25.381959499999997,
+                            "longitude": 134.50095919999998,
+                            "full_address": null,
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Melbourne",
+                            "opening_status": "Open \u22c5 Closes 12\u202fam Sat",
+                            "working_hours": {
+                                "Thursday": [
+                                    "Open 24 hours"
+                                ],
+                                "Friday": [
+                                    "Open 24 hours"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "Open 24 hours"
+                                ],
+                                "Tuesday": [
+                                    "Open 24 hours"
+                                ],
+                                "Wednesday": [
+                                    "Open 24 hours"
+                                ]
+                            },
+                            "website": "http://www.cxtechconsulting.com",
+                            "tld": "cxtechconsulting.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x442d751824845599:0x86874ce367f16320",
+                            "cid": "9693801262523441952",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJmVWEJBh1LUQRIGPxZ-NMh4Y&q=%22Tech+Visionary+Consulting%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "106170929551782715262",
+                            "owner_link": "https://maps.google.com/maps/contrib/106170929551782715262",
+                            "owner_name": "Cxtech Consulting",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Consultant",
+                            "subtypes": [
+                                "Consultant",
+                                "Service establishment"
+                            ],
+                            "subtype_gcids": [
+                                "consultant",
+                                "establishment_service"
+                            ],
+                            "photos_sample": null,
+                            "reviews_per_rating": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0,
+                                "5": 1
+                            },
+                            "photo_count": 0,
+                            "about": null,
+                            "address": null,
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": null,
+                            "city": null,
+                            "zipcode": null,
+                            "state": null,
+                            "country": null,
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "a8532566-459b-4e2d-81e2-edd455b3ab76"
+        },
+        {
+            "message": "Yes thats perfect thank you",
+            "response": "Here is the email template for reaching out to Cxtech Consulting:\n\n### Email Template\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities with Cxtech Consulting\n\nHi Cxtech Consulting Team,\n\nI hope this message finds you well! My name is Joshua Wlodarczyk, and I am the Founder and Lead Engineer at AI SERVICE COMPANY. I recently came across your consulting services and was impressed by your 5-star rating, reflecting your commitment to excellence. I believe there is a significant opportunity for us to collaborate that could benefit both of our businesses.\n\n\ud83d\udca1 Potential Partnership Benefits:\n\n\u2705 Enhance Service Offerings: By combining our expertise in AI solutions with your consulting services, we can deliver a more comprehensive suite of offerings to our clients.  \n\u2705 Access to New Markets: Collaborating could open doors to new clientele and markets, expanding both our reach and growth potential.  \n\u2705 Shared Resources: We can leverage each other's strengths and resources, leading to innovative solutions and improved service delivery.\n\nI would love the chance to discuss how we can work together to create a mutually beneficial partnership. Are you available for a brief chat next week? \n\nLooking forward to your response!\n\nWarm regards,  \nJoshua Wlodarczyk  \nAI SERVICE COMPANY  \n```\n\nWould you like any changes to the email template? If yes, let me know, and I can assist further. Otherwise, I'll conclude our session.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "d0ff2281-ef7b-4125-9690-0fc73953df02",
+                "set_agent": "ConnectAgent",
+                "connection_type": "mastermind",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x442d751824845599:0x86874ce367f16320",
+                            "google_id": "0x442d751824845599:0x86874ce367f16320",
+                            "place_id": "ChIJmVWEJBh1LUQRIGPxZ-NMh4Y",
+                            "google_mid": "/g/11v03zdsbs",
+                            "name": "Cxtech Consulting",
+                            "latitude": -25.381959499999997,
+                            "longitude": 134.50095919999998,
+                            "full_address": null,
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Melbourne",
+                            "opening_status": "Open \u22c5 Closes 12\u202fam Sat",
+                            "working_hours": {
+                                "Thursday": [
+                                    "Open 24 hours"
+                                ],
+                                "Friday": [
+                                    "Open 24 hours"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "Open 24 hours"
+                                ],
+                                "Tuesday": [
+                                    "Open 24 hours"
+                                ],
+                                "Wednesday": [
+                                    "Open 24 hours"
+                                ]
+                            },
+                            "website": "http://www.cxtechconsulting.com",
+                            "tld": "cxtechconsulting.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x442d751824845599:0x86874ce367f16320",
+                            "cid": "9693801262523441952",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJmVWEJBh1LUQRIGPxZ-NMh4Y&q=%22Tech+Visionary+Consulting%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "106170929551782715262",
+                            "owner_link": "https://maps.google.com/maps/contrib/106170929551782715262",
+                            "owner_name": "Cxtech Consulting",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Consultant",
+                            "subtypes": [
+                                "Consultant",
+                                "Service establishment"
+                            ],
+                            "subtype_gcids": [
+                                "consultant",
+                                "establishment_service"
+                            ],
+                            "photos_sample": null,
+                            "reviews_per_rating": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0,
+                                "5": 1
+                            },
+                            "photo_count": 0,
+                            "about": null,
+                            "address": null,
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": null,
+                            "city": null,
+                            "zipcode": null,
+                            "state": null,
+                            "country": null,
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "39e64e0e-9a6c-4961-8c00-dc9c57c54f85"
+        }
+    ]
+}

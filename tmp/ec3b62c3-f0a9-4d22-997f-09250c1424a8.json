@@ -1,0 +1,43 @@
+{
+    "session_id": "ec3b62c3-f0a9-4d22-997f-09250c1424a8",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It appears there was an error in retrieving recommended connections due to a limitation on our current plan. I apologize for the inconvenience.\n\nWould you like to explore any other options or maybe upgrade the plan to proceed with partner recommendations?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "auth_header": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImVtYWlsIjoiam9zaHVhd2xvZDIwMDNAZ21haWwuY29tIiwiaWF0IjoxNzYxMjI4OTA5LCJleHAiOjE3NjEyMjkyMDl9.UAxHFqZ_hwJ5rWoOYf6_renaF7gTiVr0RiY5rmFSK6k",
+                "session_id": "ec3b62c3-f0a9-4d22-997f-09250c1424a8",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "0acc2cac-cf5b-4337-9f8d-e073dfe2c51a"
+        }
+    ]
+}

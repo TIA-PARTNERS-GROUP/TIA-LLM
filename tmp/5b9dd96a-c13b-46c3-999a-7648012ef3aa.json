@@ -1,0 +1,80 @@
+{
+    "session_id": "5b9dd96a-c13b-46c3-999a-7648012ef3aa",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems there was an issue generating partner connections due to exceeding the monthly quota for businesses on the current plan. To proceed, you might consider upgrading your plan to access more potential matches.\n\nIf there's anything else I can assist you with or if you have other questions, please let me know!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "auth_header": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImVtYWlsIjoiam9zaHVhd2xvZDIwMDNAZ21haWwuY29tIiwiaWF0IjoxNzYxMjI3OTc2LCJleHAiOjE3NjEyMjgyNzZ9.9QapeSs3ihPdN27nV3LaC8vl1GaVT7efjkk3phkPpuw",
+                "session_id": "5b9dd96a-c13b-46c3-999a-7648012ef3aa",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "7e25945f-f6fb-4fc4-8905-c4a11ead1863"
+        },
+        {
+            "message": "s",
+            "response": "It looks like you might have entered a single character. If you have any specific questions or need assistance, feel free to let me know!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "auth_header": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImVtYWlsIjoiam9zaHVhd2xvZDIwMDNAZ21haWwuY29tIiwiaWF0IjoxNzYxMjI3OTc2LCJleHAiOjE3NjEyMjgyNzZ9.9QapeSs3ihPdN27nV3LaC8vl1GaVT7efjkk3phkPpuw",
+                "session_id": "5b9dd96a-c13b-46c3-999a-7648012ef3aa",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "736853ea-500b-4416-b08f-5b4d89da622c"
+        }
+    ]
+}

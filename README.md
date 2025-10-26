@@ -1,6 +1,6 @@
 # TIA-LLM
 
-TIA-LLM is an AI-powered chatbot system built with FastAPI and Google ADK for managing conversations, agent switching, and session handling.
+TIA-LLM is an AI-powered chatbot system built with FastAPI and Google ADK for managing conversations, agent switching, and session handling. It utilizes Google ADK for general agentic actions and includes a dynamic chat object implemented under `DynamicChatAssistant` for handling conversational chains, such as those involving long questions.
 
 ## Setup
 
@@ -30,18 +30,6 @@ TIA-LLM is an AI-powered chatbot system built with FastAPI and Google ADK for ma
    pip install -r requirements.txt
    ```
 
-5. **Set up environment variables**:
-   - Create a `.env` file in the root directory with necessary variables (e.g., database credentials, API keys).
-   - Example:
-     ```
-     DB_USER=your_db_user
-     DB_PASS=your_db_password
-     DB_HOST=localhost
-     DB_NAME=tiapartners
-     DB_PORT=3333
-     OPENAI_API_KEY=your_openai_key
-     ```
-
 ## How to Launch
 
 To run the application, use the following command (as noted in `main.py`):
@@ -65,3 +53,6 @@ The API will be available at `http://localhost:8080`.
 
 - Ensure your database is set up and running (MySQL in this case).
 - The app uses Google ADK for agent management and session persistence.
+- Google ADK Web is excellent for Google visual web debugging, providing a graphical interface to inspect and debug agent interactions.
+- Logs are saved to `TIA-LLM.log` in addition to being output to the terminal.
+- The `tmp` directory is used for recording test cases when activated through the JS backend.

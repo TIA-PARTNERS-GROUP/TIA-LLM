@@ -38,14 +38,6 @@ def check_for_existing_user(tool_context: ToolContext):
             state["Generated_Profile"] = result["profile"]
             state["user_profile"] = "not_generated"
 
-        # Check for valid connection options
-        connection_type = state.get("connection_type")
-        if connection_type and result.get("profile_exists"):
-            is_valid, message = validate_connection_options(connection_type, result["profile"])
-            if not is_valid:
-                return {"status": "error", "message": message}
-            result = {"status": "success", "profile": result["profile"], "message": f"User profile loaded and valid for {connection_type} connection."}
-
         agent_type = state.get("set_agent")
         return {"status": "success", "transfer_to_agent": agent_type, "result": result}
 

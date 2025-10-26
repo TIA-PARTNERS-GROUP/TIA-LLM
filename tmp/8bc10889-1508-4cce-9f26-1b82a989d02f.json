@@ -1,0 +1,33 @@
+{
+    "session_id": "8bc10889-1508-4cce-9f26-1b82a989d02f",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's begin the vision building process! Please share your thoughts, ideas, or any specific areas you'd like to focus on for your business vision, and we'll guide you through the process.",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "8bc10889-1508-4cce-9f26-1b82a989d02f",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "311b0ff1-511a-42bb-9cc5-c91bb787e82a"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "session_id": "e40a7d28-f805-410b-8ea9-a3cca1f5737f",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Let's start building your business vision! Please follow the prompts in the dynamic chat to provide your inputs.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "e40a7d28-f805-410b-8ea9-a3cca1f5737f",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "Joshua Wlodarczyk's Business",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": null
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "c44b0d27-15d5-4a57-8fca-b89507d04f47"
+        }
+    ]
+}

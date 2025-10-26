@@ -1,0 +1,43 @@
+{
+    "session_id": "62d27ec9-c619-4dad-beee-5608b60cee36",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "It seems there was an error retrieving the recommended connections. The service responsible for providing business recommendations has hit its quota limit for the current plan.\n\nTo proceed and explore other available solutions or request any further assistance, please let me know what you would like to do next!",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "auth_header": null,
+                "session_id": "62d27ec9-c619-4dad-beee-5608b60cee36",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": {
+                        "error": "HTTP 429: {\"message\":\"You have exceeded the MONTHLY quota for Businesses on your current plan, BASIC. Upgrade your plan at https:\\/\\/rapidapi.com\\/letscrape-6bRBa3QguO5\\/api\\/local-business-data\"}"
+                    }
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "4710fc04-1033-4f66-bd96-650b100db2ef"
+        }
+    ]
+}

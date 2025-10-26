@@ -1,0 +1,571 @@
+{
+    "session_id": "2c6dd4a4-d7d1-4294-99f2-c89ff84e9364",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the recommended partner businesses for your automated systems development company:\n\n### Recommended Partner Businesses\n\n#### 1. ENTIAL | Automated AI Business Solutions Brisbane\n- **Type:** Marketing agency\n- **Rating:** 5 (8 reviews)\n- **Contact Email:** [support@ential.com](mailto:support@ential.com)\n- **Phone Number:** Not provided\n- **Website:** [ential.com](https://www.ential.com)\n- **Address:** *Open 24 hours*\n- **Social Media:** \n  - [Facebook](https://www.facebook.com/entialdotcom)\n  - [Instagram](https://www.instagram.com/entialdotcom)\n  - [Twitter](https://twitter.com/entialdotcom)\n  - [LinkedIn](https://www.linkedin.com/company/ential)\n  - [YouTube](https://www.youtube.com/essentialcraftsman)\n\n#### 2. Industrial Automation Australia\n- **Type:** Automation company\n- **Rating:** 3 (2 reviews)\n- **Contact Email:** [vaughn@iaarobotics.com.au](mailto:vaughn@iaarobotics.com.au)\n- **Phone Number:** +61733483505\n- **Website:** [iaarobotics.com.au](https://www.iaarobotics.com.au)\n- **Address:** 15 Lavarack Ave, Eagle Farm QLD 4009\n- **Working Hours:** 7 am\u20134 pm (Mon, Tue, Wed, Thu, Fri)\n- **Social Media:** [LinkedIn](https://www.linkedin.com/company/industrial-automation-australia)\n\n#### 3. Ai-Menu Systems\n- **Type:** Software company\n- **Rating:** 4.9 (28 reviews)\n- **Contact Email:** [sales@ai-menu.com](mailto:sales@ai-menu.com)\n- **Phone Number:** +611300246368\n- **Website:** [ai-menu.com](http://ai-menu.com)\n- **Address:** 33/50 Sanders St, Upper Mount Gravatt QLD 4122\n- **Working Hours:** 9 am\u20135 pm (Mon, Tue, Wed, Thu, Fri)\n- **Social Media:** \n  - [Facebook](https://www.facebook.com/aimenusystems)\n  - [Instagram](https://www.instagram.com/aimenusystems)\n  - [Twitter](https://twitter.com/aimenuengine)\n  - [LinkedIn](https://www.linkedin.com/company/ai-menu)\n\n#### 4. Aim Lab Automation Technologies Pty Ltd\n- **Type:** Corporate campus\n- **Rating:** Not available (0 reviews)\n- **Phone Number:** +61738971600\n- **Website:** [aimlab.com](http://www.aimlab.com)\n- **Address:** 15 Lisgar St, Virginia QLD 4014\n- **Working Hours:** 8:30 am\u20135:30 pm (Mon, Tue, Wed, Thu, Fri)\n- **Social Media:** [GitHub](https://github.com/aim-lab)\n\n#### 5. Automation Strategy Partner\n- **Type:** Automation company\n- **Rating:** Not available (0 reviews)\n- **Phone Number:** +611300332084\n- **Website:** [automationstrategypartners.com](http://automationstrategypartners.com)\n- **Address:** Level 14/167 Eagle St, Brisbane City QLD 4000\n\n### Next Steps\nWhich businesses do you want to create email templates for? Please specify by name or number.",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "2c6dd4a4-d7d1-4294-99f2-c89ff84e9364",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0xa79c0bc97b5acd6b:0xdf12ed5b7d19b9ca",
+                            "google_id": "0xa79c0bc97b5acd6b:0xdf12ed5b7d19b9ca",
+                            "place_id": "ChIJa81ae8kLnKcRyrkZfVvtEt8",
+                            "google_mid": "/g/11w3m_g2f5",
+                            "name": "ENTIAL | Automated AI Business Solutions Brisbane",
+                            "latitude": -27.382142899999998,
+                            "longitude": 152.9931964,
+                            "full_address": null,
+                            "review_count": 8,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Open 24 hours",
+                            "working_hours": {
+                                "Thursday": [
+                                    "Open 24 hours"
+                                ],
+                                "Friday": [
+                                    "Open 24 hours"
+                                ],
+                                "Saturday": [
+                                    "Open 24 hours"
+                                ],
+                                "Sunday": [
+                                    "Open 24 hours"
+                                ],
+                                "Monday": [
+                                    "Open 24 hours"
+                                ],
+                                "Tuesday": [
+                                    "Open 24 hours"
+                                ],
+                                "Wednesday": [
+                                    "Open 24 hours"
+                                ]
+                            },
+                            "website": "https://www.ential.com",
+                            "tld": "ential.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0xa79c0bc97b5acd6b:0xdf12ed5b7d19b9ca",
+                            "cid": "16074170997235366346",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJa81ae8kLnKcRyrkZfVvtEt8&q=%22AI+automated+systems+technology%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "117456523945158502580",
+                            "owner_link": "https://maps.google.com/maps/contrib/117456523945158502580",
+                            "owner_name": "ENTIAL | Automated AI Business Solutions Brisbane",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Marketing agency",
+                            "subtypes": [
+                                "Marketing agency",
+                                "Business development service",
+                                "Service establishment",
+                                "Consultant"
+                            ],
+                            "subtype_gcids": [
+                                "marketing_agency",
+                                "business_development_service",
+                                "establishment_service",
+                                "consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "CIHM0ogKEICAgMDA38_32wE",
+                                    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy20ILiEuUwbgoJzJG2W6ija76vC4XCdHSbplVdEHYSv55CrIyZxYcTMvC5fD4aPFSMwAP9Jhc_aoOcbs-7jXd5fVlZCVVHkpRKyVqlEfuKChWjHAbwgJs2naMrWhW77By63Wfr",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy20ILiEuUwbgoJzJG2W6ija76vC4XCdHSbplVdEHYSv55CrIyZxYcTMvC5fD4aPFSMwAP9Jhc_aoOcbs-7jXd5fVlZCVVHkpRKyVqlEfuKChWjHAbwgJs2naMrWhW77By63Wfr=w1080-h1920-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2025-03-13T00:00:00.000Z",
+                                    "photo_timestamp": 1741824000
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 2,
+                            "about": null,
+                            "address": null,
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": null,
+                            "city": null,
+                            "zipcode": null,
+                            "state": null,
+                            "country": null,
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "support@ential.com"
+                                ],
+                                "phone_numbers": [],
+                                "facebook": "https://www.facebook.com/entialdotcom",
+                                "instagram": "https://www.instagram.com/entialdotcom",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/entialdotcom",
+                                "linkedin": "https://www.linkedin.com/company/ential",
+                                "github": null,
+                                "youtube": "https://www.youtube.com/essentialcraftsman",
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                            "google_mid": "/g/11ty3zjq85",
+                            "phone_number": "+61733483505",
+                            "name": "Industrial Automation Australia",
+                            "latitude": -27.4335074,
+                            "longitude": 153.0933689,
+                            "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "review_count": 2,
+                            "rating": 3,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 7\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Friday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Tuesday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Wednesday": [
+                                    "7 am\u20134 pm"
+                                ]
+                            },
+                            "website": "https://www.iaarobotics.com.au",
+                            "tld": "iaarobotics.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "cid": "15391164233997453660",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22AI+automated+systems+technology%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "110865635980628362194",
+                            "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                            "owner_name": "Industrial Automation Australia",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv=w1000-h563-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4330955,
+                                    "longitude": 153.093211,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                    "photo_timestamp": 1712361600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 20,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "15 Lavarack Ave",
+                            "city": "Eagle Farm",
+                            "zipcode": "4009",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "vaughn@iaarobotics.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "0733483505"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                            "google_id": "0x6b915a441f52e851:0x3986a65493573d26",
+                            "place_id": "ChIJUehSH0RakWsRJj1Xk1Smhjk",
+                            "google_mid": "/g/11cm11x97t",
+                            "phone_number": "+611300246368",
+                            "name": "Ai-Menu Systems",
+                            "latitude": -27.558676,
+                            "longitude": 153.0824994,
+                            "full_address": "Ai-Menu Systems, 33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                            "review_count": 28,
+                            "rating": 4.9,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 9\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "9 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "9 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://ai-menu.com",
+                            "tld": "ai-menu.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a441f52e851:0x3986a65493573d26",
+                            "cid": "4145183389220551974",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJUehSH0RakWsRJj1Xk1Smhjk&q=%22AI+automated+systems+technology%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "115161147304147906800",
+                            "owner_link": "https://maps.google.com/maps/contrib/115161147304147906800",
+                            "owner_name": "Ai-Menu Systems",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Software company",
+                            "subtypes": [
+                                "Software company"
+                            ],
+                            "subtype_gcids": [
+                                "software_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipNNz31pOi8vR-F8oiFuefZfbbw-3P1jLn01hFyD=w1809-h531-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.5586809,
+                                    "longitude": 153.082204,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-11-26T00:00:00.000Z",
+                                    "photo_timestamp": 1606348800
+                                },
+                                {
+                                    "photo_id": "grRKgFNkAv2eM2YtDwZedA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=grRKgFNkAv2eM2YtDwZedA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=91.10771&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.558670853203864,
+                                    "longitude": 153.08219915023048,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-11-14T00:00:00.000Z",
+                                    "photo_timestamp": 1731542400
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 10,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "Online appointments": true,
+                                        "On-site services": true
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true
+                                    }
+                                }
+                            },
+                            "address": "33/50 Sanders St, Upper Mount Gravatt QLD 4122",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "33/50 Sanders St",
+                            "city": "Upper Mount Gravatt",
+                            "zipcode": "4122",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@ai-menu.com"
+                                ],
+                                "phone_numbers": [
+                                    "0731954257"
+                                ],
+                                "facebook": "https://www.facebook.com/aimenusystems",
+                                "instagram": "https://www.instagram.com/aimenusystems",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/aimenuengine",
+                                "linkedin": "https://www.linkedin.com/company/ai-menu",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b93e44b73896a09:0x48ae11ee3e4f498e",
+                            "google_id": "0x6b93e44b73896a09:0x48ae11ee3e4f498e",
+                            "place_id": "ChIJCWqJc0vkk2sRjklPPu4Rrkg",
+                            "google_mid": "/g/1pwfy2t19",
+                            "phone_number": "+61738971600",
+                            "name": "Aim Lab Automation Technologies Pty Ltd",
+                            "latitude": -27.370568,
+                            "longitude": 153.056888,
+                            "full_address": "Aim Lab Automation Technologies Pty Ltd, 15 Lisgar St, Virginia QLD 4014",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135:30 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135:30 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135:30 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135:30 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135:30 pm"
+                                ]
+                            },
+                            "website": "http://www.aimlab.com",
+                            "tld": "aimlab.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b93e44b73896a09:0x48ae11ee3e4f498e",
+                            "cid": "5237143131623737742",
+                            "reviews_link": null,
+                            "owner_id": "111149858727275597701",
+                            "owner_link": "https://maps.google.com/maps/contrib/111149858727275597701",
+                            "owner_name": "Aim Lab Automation Technologies Pty Ltd",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Corporate campus",
+                            "subtypes": [
+                                "Corporate campus"
+                            ],
+                            "subtype_gcids": [
+                                "corporate_campus"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "KJrPNtXpscMRQGw1LIsufA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KJrPNtXpscMRQGw1LIsufA&cb_client=search.gws-prod.gps&w=86&h=86&yaw=313.95862&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.37076671333785,
+                                    "longitude": 153.0571200491043,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2023-01-08T00:00:00.000Z",
+                                    "photo_timestamp": 1673136000
+                                },
+                                {
+                                    "photo_id": "AF1QipOUpJFABKc7e3ERLQ7Vdd5heYU5Ghfb7jxdTxXI",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipOUpJFABKc7e3ERLQ7Vdd5heYU5Ghfb7jxdTxXI",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipOUpJFABKc7e3ERLQ7Vdd5heYU5Ghfb7jxdTxXI=w300-h300-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.370759,
+                                    "longitude": 153.0571214,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-12-11T00:00:00.000Z",
+                                    "photo_timestamp": 1607644800
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 2,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    },
+                                    "Amenities": {
+                                        "Toilet": true
+                                    }
+                                }
+                            },
+                            "address": "15 Lisgar St, Virginia QLD 4014",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "15 Lisgar St",
+                            "city": "Virginia",
+                            "zipcode": "4014",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [
+                                    "9782622400",
+                                    "61738971600"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": "https://github.com/aim-lab",
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "google_id": "0x6b915a1d94300001:0x846118843c1fccf4",
+                            "place_id": "ChIJAQAwlB1akWsR9MwfPIQYYYQ",
+                            "google_mid": "/g/11vzgp3xrp",
+                            "phone_number": "+611300332084",
+                            "name": "Automation Strategy Partner",
+                            "latitude": -27.4659968,
+                            "longitude": 153.0306249,
+                            "full_address": "Automation Strategy Partner, Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "review_count": 0,
+                            "rating": null,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": null,
+                            "working_hours": null,
+                            "website": "http://automationstrategypartners.com",
+                            "tld": "automationstrategypartners.com",
+                            "verified": false,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a1d94300001:0x846118843c1fccf4",
+                            "cid": "9538932441970887924",
+                            "reviews_link": null,
+                            "owner_id": "104696242064448986926",
+                            "owner_link": "https://maps.google.com/maps/contrib/104696242064448986926",
+                            "owner_name": "Automation Strategy Partner",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "ZvXu470KN5rt8VGNCdYVJw",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZvXu470KN5rt8VGNCdYVJw&cb_client=search.gws-prod.gps&w=86&h=86&yaw=116.00889&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.46590336050692,
+                                    "longitude": 153.03040906864965,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-23T00:00:00.000Z",
+                                    "photo_timestamp": 1729641600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 1,
+                            "about": null,
+                            "address": "Level 14/167 Eagle St, Brisbane City QLD 4000",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 14/167 Eagle St",
+                            "city": "Brisbane City",
+                            "zipcode": "4000",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [
+                                    "1300332084"
+                                ],
+                                "facebook": null,
+                                "instagram": "https://www.instagram.com/automationstrategypartners",
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "f57909ea-dd69-41c0-99b2-a02d643fac8d"
+        }
+    ]
+}

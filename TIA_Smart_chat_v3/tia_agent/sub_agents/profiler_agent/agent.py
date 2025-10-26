@@ -46,7 +46,6 @@ ProfileGenerator = LlmAgent(
     - Output the result as a JSON object matching the ProfileOutputSchema.
 
     **Important**: 
-    - If you have received nothing about the user, return an empty profile with all fields blank and a summary stating "No profile information available." Do not make up information or use the example input and output as your response.
     - At the end of your response add the tag <SILENT_AGENT>
     """,
     output_schema=ProfileOutputSchema,

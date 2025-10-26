@@ -1,0 +1,164 @@
+{
+    "session_id": "558c506a-4c6a-4a42-9917-e1e1d2ee0d3e",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some recommended connections for you from existing TIA Users. These potential partners can complement your services:\n\n1. **Sarah Chen**\n   - **Business:** Digital Marketing Pro\n   - **Type:** Marketing Agency\n   - **Category:** Digital Marketing\n   - **Description:** Specializes in social media and online advertising campaigns.\n   - **Recommendation Reason:** Sarah is a complementary partner perfect for mutual client referrals. You can recommend her digital marketing services to your clients while she refers web development projects to you.\n\n2. **Mike Rodriguez**\n   - **Business:** WebFlow Masters\n   - **Type:** Web Development\n   - **Category:** Website Development\n   - **Description:** Creates high-converting landing pages and business websites.\n   - **Recommendation Reason:** Mike is an ideal partner for cross-promotion. His web development expertise complements your services, allowing for shared clients and increased revenue streams.\n\n3. **Jessica Wong**\n   - **Business:** Content Creators Co\n   - **Type:** Content Creation\n   - **Category:** Content Marketing\n   - **Description:** Produces engaging blog content and video marketing materials.\n   - **Recommendation Reason:** Jessica is a strong partner for bundled services. You can combine your offerings with her content creation services to provide complete solutions to your clients.\n\nPlease let me know which businesses you would like email templates for, and I'll prepare them for you!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "558c506a-4c6a-4a42-9917-e1e1d2ee0d3e",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "existing_users": [
+                        101,
+                        102,
+                        103
+                    ],
+                    "connection_type": "Existing TIA Users",
+                    "connection_result": [
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 101,
+                                    "name": "Sarah Chen",
+                                    "business": "Digital Marketing Pro",
+                                    "type": "Marketing Agency",
+                                    "category": "Digital Marketing",
+                                    "description": "Specializes in social media and online advertising campaigns"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Perfect for mutual client referrals. You can recommend their digital marketing services to your clients while they refer web development projects to you. Everyone wins\u2014your clients save time, your partner gains business, and you earn referral margins."
+                        },
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 102,
+                                    "name": "Mike Rodriguez",
+                                    "business": "WebFlow Masters",
+                                    "type": "Web Development",
+                                    "category": "Website Development",
+                                    "description": "Creates high-converting landing pages and business websites"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Ideal for cross-promotion. Their web development expertise complements your services. Share clients who need both your offerings\u2014increasing client satisfaction and creating new revenue streams for both businesses."
+                        },
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 103,
+                                    "name": "Jessica Wong",
+                                    "business": "Content Creators Co",
+                                    "type": "Content Creation",
+                                    "category": "Content Marketing",
+                                    "description": "Produces engaging blog content and video marketing materials"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Strong alignment for bundled services. Combine your offerings with their content creation to provide complete solutions. Refer clients to each other for comprehensive service packages."
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "06909643-2a42-4c9e-beba-17864a5f6fa1"
+        },
+        {
+            "message": "I like 1 and 3",
+            "response": "Here are the email templates generated for connecting with Sarah Chen from Digital Marketing Pro and Jessica Wong from Content Creators Co. Please make sure to fill in any placeholders like partner names before sending them out.\n\n### Email Template for Sarah Chen\n\n```\nSubject: \ud83e\udd1d Exploring Partnership Opportunities\n\nHi [Sarah Chen or Team],\n\nI hope this message finds you well! My name is Kathryn Innes, and I\u2019m the Founder and Lead Engineer at AI COMPANY. We specialize in leveraging advanced AI technologies to streamline business operations and enhance efficiency. I recently came across your digital marketing services and believe there are significant synergies we could explore together.\n\n\ud83d\udca1 Partnership Benefits:\n\n\u2705 Enhance your product offerings with cutting-edge AI solutions  \n\u2705 Improve operational efficiency and reduce costs through automation  \n\u2705 Expand your market reach by collaborating on innovative projects  \n\nI would love to discuss how a partnership between AI COMPANY and your team could be mutually beneficial. Are you available for a brief call next week to explore this opportunity further?\n\nLooking forward to your thoughts!\n\nWarm regards,  \nKathryn Innes  \nAI COMPANY\n```\n\n### Email Template for Jessica Wong\n\n```\nSubject: \ud83e\udd1d Exploring Synergistic Partnership Opportunities\n\nHi [Jessica Wong or Team],\n\nI hope this message finds you well. My name is Kathryn Innes, and I am the Founder and Lead Engineer at AI COMPANY. We specialize in leveraging artificial intelligence to innovate solutions that enhance efficiency and drive business growth. I am reaching out to explore potential collaboration opportunities that could benefit both our organizations.\n\n\ud83d\udca1 Partnership Benefits:\n\n\u2705 Access to cutting-edge AI technology tailored to your needs  \n\u2705 Collaboration on projects that could improve operational efficiency  \n\u2705 Shared resources and insights to foster innovation in our fields  \n\nI would love the opportunity to discuss how our respective strengths could lead to a productive partnership. Please let me know your availability for a brief call or meeting in the coming days.\n\nLooking forward to hearing from you!\n\nWarm regards,  \nKathryn Innes  \nAI COMPANY  \n```\n\nWould you like to make any changes to these templates? If so, I can assist you with that.",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "558c506a-4c6a-4a42-9917-e1e1d2ee0d3e",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "existing_users": [
+                        101,
+                        102,
+                        103
+                    ],
+                    "connection_type": "Existing TIA Users",
+                    "connection_result": [
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 101,
+                                    "name": "Sarah Chen",
+                                    "business": "Digital Marketing Pro",
+                                    "type": "Marketing Agency",
+                                    "category": "Digital Marketing",
+                                    "description": "Specializes in social media and online advertising campaigns"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Perfect for mutual client referrals. You can recommend their digital marketing services to your clients while they refer web development projects to you. Everyone wins\u2014your clients save time, your partner gains business, and you earn referral margins."
+                        },
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 102,
+                                    "name": "Mike Rodriguez",
+                                    "business": "WebFlow Masters",
+                                    "type": "Web Development",
+                                    "category": "Website Development",
+                                    "description": "Creates high-converting landing pages and business websites"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Ideal for cross-promotion. Their web development expertise complements your services. Share clients who need both your offerings\u2014increasing client satisfaction and creating new revenue streams for both businesses."
+                        },
+                        {
+                            "recommendation": {
+                                "user": {
+                                    "id": 103,
+                                    "name": "Jessica Wong",
+                                    "business": "Content Creators Co",
+                                    "type": "Content Creation",
+                                    "category": "Content Marketing",
+                                    "description": "Produces engaging blog content and video marketing materials"
+                                }
+                            },
+                            "reason": "COMPLEMENTARY PARTNER: Strong alignment for bundled services. Combine your offerings with their content creation to provide complete solutions. Refer clients to each other for comprehensive service packages."
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "74dc6e02-5cf7-459c-a7da-c3516568ffef"
+        }
+    ]
+}

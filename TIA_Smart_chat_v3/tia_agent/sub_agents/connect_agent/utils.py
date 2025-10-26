@@ -102,7 +102,7 @@ def recommended_WEB_connection(attributes: Dict[str, Any]) -> dict:
 
     try:
         results = search_businesses_in_area(query, limit, region, zoom, lat, lng)
-        return results
+        return results["data"]
     except Exception as e:
         logger.error(f"Error in recommended_WEB_connection for {connection_type}: {e}")
         return {"error": str(e)}
@@ -123,10 +123,10 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
     
     # Different endpoints for each connection type
     endpoints = {
-        "complementary": f"{api_base_url}/user/{user_id}/complementary_partners",
-        "alliance": f"{api_base_url}/user/{user_id}/alliance_partners",
-        "mastermind": f"{api_base_url}/user/{user_id}/mastermind_partners",
-        "intelligent": f"{api_base_url}/user/{user_id}/intelligent_partners",
+        "complementary": f"{api_base_url}/user/{user_id}/complementary-partners",
+        "alliance": f"{api_base_url}/user/{user_id}/alliance-partners",
+        "mastermind": f"{api_base_url}/user/{user_id}/mastermind-partners",
+        "intelligent": f"{api_base_url}/user/{user_id}/intelligent-partners",
     }
     
     url = endpoints.get(connection_type)
@@ -177,26 +177,49 @@ def recommended_GNN_connection(attributes: Dict[str, Any]):
         #         "reason": "COMPLEMENTARY PARTNER: Strong alignment for bundled services. Combine your offerings with their content creation to provide complete solutions. Refer clients to each other for comprehensive service packages.",
         #     }
         # ]
-        return response.json()
+        response_data = response.json()
+        logger.debug(f"GNN partners response: {response_data}")
+        if response_data["partners"] == []:
+            return None
+        return response_data["partners"] 
     except Exception as e:
-        logger.error(f"Error connecting to {connection_type} partners API: {e}")
+        logger.error(f"Error connecting to GNN partners API: {e}")
         return None
     
-def generate_email_templates(businesses, user_name, user_job, user_email, business_name):
+def generate_email_templates(result_type, businesses, user_name, user_job, user_email, business_name):
     """Generate email templates for a list of businesses."""
     email_templates = []
-    
+
+    logger.debug(f"Creating email templates for: {businesses}")
     for business in businesses:
-        name = business.get("name", "Unknown")
-        email = business.get("emails_and_contacts", "Unknown").get("emails", ["Unknown"])[0] if business.get("emails_and_contacts", "Unknown").get("emails") else "Unknown"
-        address = business.get("full_address", "Unknown")
-        website = business.get("website", "Unknown")
-        phone = business.get("phone_number", "Unknown")
-        rating = business.get("rating", "Unknown")
-        review_count = business.get("review_count", "Unknown")
-        business_type = business.get("type", "Unknown")
-        opening_status = business.get("opening_status", "Unknown")
-        about_summary = business.get("about", {}).get("summary", "Unknown")
+        if result_type == "Existing TIA Users":
+            user_data = business.get("recommendation", {}).get("user", {})
+            name = user_data.get("business", "Unknown")
+            about_summary = user_data.get("description", "Unknown")
+            email = "Unknown"
+            address = "Unknown"
+            website = "Unknown"
+            phone = "Unknown"
+            rating = "Unknown"
+            review_count = "Unknown"
+            business_type = user_data.get("type", "Unknown")
+            opening_status = "Unknown"
+        elif result_type == "Web Search":
+            name = business.get("name", "Unknown")
+            about_summary = business.get("about", "Unknown")
+            email = business.get("emails_and_contacts", "Unknown")
+            address = business.get("full_address", "Unknown")
+            website = business.get("website", "Unknown")
+            phone = business.get("phone_number", "Unknown")
+            rating = business.get("rating", "Unknown")
+            review_count = business.get("review_count", "Unknown")
+            business_type = business.get("type", "Unknown")
+            opening_status = business.get("opening_status", "Unknown")
+        else:
+            logger.error(f"Unknown result type during generate_email_templates: {result_type}")
+            return email_templates
+
+        logger.debug(f"Extracted for {name}: email={email}, address={address}, website={website}, phone={phone}, rating={rating}, review_count={review_count}, business_type={business_type}, opening_status={opening_status}, about_summary={about_summary}")
 
         try:
             email_prompt = CONNECT_GENERATION_PROMPT.format(

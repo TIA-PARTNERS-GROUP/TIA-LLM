@@ -64,10 +64,10 @@ def recommended_connection(tool_context: ToolContext):
         logger.error(f"Error in recommended_connection: {e}")
         return {"status": "error", "message": str(e)}
 
-def generate_email(tool_context: ToolContext):
+def generate_email(business_numbers: list[int], tool_context: ToolContext):
     """
-    Generate email templates for the recommended businesses.
-    Pulls the connection_result from the state.
+    Generate email templates for the specified businesses by number.
+    Pulls the connection_result from the state and filters to the provided business_numbers.
     """
     try:
         state = tool_context.state
@@ -75,30 +75,41 @@ def generate_email(tool_context: ToolContext):
             return {"status": "error", "message": "No connection_result found in state. Call recommended_connection first."}
         
         # Retrieve the stored result
-        connection_result = state["ConnectAgent"]["connection_result"]
-        connection_type = state["ConnectAgent"].get("connection_type")
-
-        if connection_type == "Existing TIA Users":
-            businesses = connection_result
-        elif connection_type == "Web Search":
-            businesses = connection_result.get("data", [])
-
-        if not businesses:
-            return {"status": "error", "message": "No business data found in connection_result."}
+        connect_agent_state = state.get("ConnectAgent", {})
+        connection_result = connect_agent_state.get("connection_result")
+        result_type = connect_agent_state.get("connection_type")
+        logger.debug(f"Connection result for email generation: {connection_result}")
         
+        # Filter to the specified business numbers
+        filtered_businesses = []
+        for num in business_numbers:
+            index = num - 1
+            if 0 <= index < len(connection_result):
+                filtered_businesses.append(connection_result[index])
+            else:
+                logger.warning(f"Business number {num} is out of range (1-{len(connection_result)}). Skipping.")
+        
+        if not filtered_businesses:
+            return {"status": "error", "message": "No valid businesses found for the provided numbers."}
+        
+        logger.debug(f"Filtered businesses for email generation: {filtered_businesses}")
         # Get user details for email personalization
-        generated_profile = state.get("Generated_Profile", {})
-        user_name = generated_profile.get("UserName")
-        user_job = generated_profile.get("UserJob")
-        user_email = generated_profile.get("Contact_Email")
-        business_name = generated_profile.get("Business_Name")
+        try:
+            generated_profile = state.get("Generated_Profile", {})
+            user_name = generated_profile.get("UserName")
+            user_job = generated_profile.get("UserJob")
+            user_email = generated_profile.get("Contact_Email")
+            business_name = generated_profile.get("Business_Name")
+        except Exception as e:
+            logger.error(f"Error extracting user details from profile: {e}")
+            raise e
 
         # Generate email templates using the new function
         logger.debug(f"User details - Name: {user_name}, Job: {user_job}, Email: {user_email}, Business: {business_name}")
-        logger.debug(f"Number of businesses to generate emails for: {len(businesses)}")
-        logger.debug(f"Connection results: {connection_result}")
+        logger.debug(f"Number of businesses to generate emails for: {len(filtered_businesses)}")
+        logger.debug(f"Filtered businesses: {filtered_businesses}")
         logger.debug("Generating email templates...")
-        email_templates = generate_email_templates(businesses, user_name, user_job, user_email, business_name)
+        email_templates = generate_email_templates(result_type, filtered_businesses, user_name, user_job, user_email, business_name)
         if not email_templates:
             return {"status": "error", "message": "Failed to generate email templates."}
         

@@ -51,7 +51,7 @@ ConnectAgent = Agent(
 
     **Your tools:**
     - Use the `recommended_connection` tool to generate partner connections once the chat is complete
-    - Use the `generate_email` with the selected businesses results to create email templates for the recommended partners for user has chosen
+    - Use the `generate_email` tool, passing the selected business numbers (e.g., [4, 5]), to generate email templates for the user's chosen recommended partners.
 
     **Session management:**
     - If `chat_state` is "exit" or "user_profile" is "generated":

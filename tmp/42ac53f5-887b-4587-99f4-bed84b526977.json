@@ -1,0 +1,24 @@
+{
+    "session_id": "42ac53f5-887b-4587-99f4-bed84b526977",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "I like 4 and 5",
+            "response": "It seems there has been a technical issue with generating email templates at the moment. \n\nAs a workaround, I recommend reaching out to the selected businesses directly with the following information:\n\n### 1. **Innovation Artificial Intelligence**\n- **Email:** Not available\n- **Phone:** +61738709609\n- **Website:** [innovativeai.tech](http://innovativeai.tech)\n\n### 2. **Inductive Automation Australia**\n- **Email:** [au-info@inductiveautomation.com](mailto:au-info@inductiveautomation.com)\n- **Phone:** +611300108088\n- **Website:** [inductiveautomation.com.au](http://inductiveautomation.com.au)\n\nYou can use this information to create your own email or contact them directly. If you need assistance with crafting an email or if you wish to try again later, feel free to return any time.\n\nThank you for your understanding, and have a great day!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "42ac53f5-887b-4587-99f4-bed84b526977",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.401647,
+                "lng": 153.0354017,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ConnectAgent",
+            "timestamp": "1ef63e61-7eca-4601-abde-975e1b5aed0c"
+        }
+    ]
+}

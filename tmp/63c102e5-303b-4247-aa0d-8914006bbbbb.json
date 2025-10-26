@@ -1,0 +1,60 @@
+{
+    "session_id": "63c102e5-303b-4247-aa0d-8914006bbbbb",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "The vision-building process is now underway. I'll guide you through each phase, so you can craft a comprehensive vision for AI COMPANY. Let's get started!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "63c102e5-303b-4247-aa0d-8914006bbbbb",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "940e5878-6ca1-444d-b89c-9b3141efa834"
+        },
+        {
+            "message": "Hello!",
+            "response": "Hello there! It\u2019s wonderful to connect with you. To start uncovering the heart of your brand, let\u2019s dive into your business. Can you share a bit about it?",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "63c102e5-303b-4247-aa0d-8914006bbbbb",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "DynamicChatAssistant",
+            "timestamp": "62f4cf91-baad-4271-a855-12f8a5cb4c19"
+        }
+    ]
+}

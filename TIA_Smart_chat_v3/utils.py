@@ -206,11 +206,6 @@ async def run_chat(user_id: str, name: str, region: str, lat: float, lng: float,
             await delete_session(user_id, session.id)
             session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
 
-        # if "<SILENT_AGENT>" in response_text:
-        #     response_text = "Chat Completed. Restarting session."
-        #     await delete_session(user_id, session.id)
-        #     session = await _create_new_session(user_id, name, region, lat, lng, chat_type)
-
         return session, response_text, author
     except Exception as e:
         logger.error("ERROR in run_chat:", e)

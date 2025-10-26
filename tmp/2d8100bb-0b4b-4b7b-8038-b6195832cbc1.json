@@ -1,0 +1,51 @@
+{
+    "session_id": "2d8100bb-0b4b-4b7b-8038-b6195832cbc1",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "I'm finished now thanks",
+            "response": "You're welcome! If you need any more assistance in the future, feel free to reach out. Have a great day!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "2d8100bb-0b4b-4b7b-8038-b6195832cbc1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "check"
+            },
+            "author": "ContentEditAgent",
+            "timestamp": "aad2a8d7-3ed6-4004-b57e-8dcd5e28901f"
+        },
+        {
+            "message": "Hello!",
+            "response": "We are starting the dynamic chat process to build your business vision. Please follow the upcoming prompts to share information and insights about your business vision for \"AI COMPANY\". Once all phases are complete, I'll generate a detailed blog post for you. Let me know if you need any assistance as we progress!",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "2d8100bb-0b4b-4b7b-8038-b6195832cbc1",
+                "set_agent": "VisionAgent",
+                "connection_type": null,
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "not_generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014"
+                },
+                "VisionAgent": {
+                    "chat_state": "chat"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "9c1df16a-14d6-48af-b4fe-48f0367096f7"
+        }
+    ]
+}

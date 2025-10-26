@@ -1,0 +1,612 @@
+{
+    "session_id": "23f4fe3c-8894-471c-9f34-64ef274526d8",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are some potential referral partners for your business sourced through a web search:\n\n### 1. Compliant Learning Resources\n- **Type:** Education Center\n- **Rating:** 4.8 (78 reviews)\n- **Contact Phone:** +611300885484\n- **Email Contacts:** \n  - contact@compliantlearningresources.com.au\n  - enquiries@compliantlearningresources.com.au\n- **Address:** Level 13/269 Wickham St, Fortitude Valley QLD 4006, Australia\n- **Website:** [compliantlearningresources.com.au](https://compliantlearningresources.com.au)\n- **LinkedIn:** [Compliant Learning Resources LinkedIn](https://www.linkedin.com/company/compliant-learning-resources)\n\n### 2. Alliance Automation\n- **Type:** Automation Company\n- **Rating:** 5.0 (6 reviews)\n- **Contact Phone:** +611300770994\n- **Email Contacts:**\n  - sales@allianceautomation.com.au\n  - mattg@allianceautomation.com.au\n- **Address:** 74 Dunhill Cres, Morningside QLD 4170, Australia\n- **Website:** [allianceautomation.com.au](https://allianceautomation.com.au)\n- **LinkedIn:** [Alliance Automation LinkedIn](https://www.linkedin.com/company/alliance-automation)\n- **Facebook:** [Alliance Automation Facebook](https://www.facebook.com/AllianceAutomation.com.au)\n\nThese suggestions are based on a web search to find businesses that align with your area of interest in Automation and AI solutions.\n\nPlease let me know which businesses you want email templates for.",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "23f4fe3c-8894-471c-9f34-64ef274526d8",
+                "set_agent": "ConnectAgent",
+                "connection_type": "alliance",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "google_id": "0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "place_id": "ChIJe7SlOwNakWsRzttfJ05eyxY",
+                            "google_mid": "/g/11g6_5n0f2",
+                            "phone_number": "+611300885484",
+                            "name": "Compliant Learning Resources",
+                            "latitude": -27.456574,
+                            "longitude": 153.0350403,
+                            "full_address": "Compliant Learning Resources, Level 13/269 Wickham St, Fortitude Valley QLD 4006",
+                            "review_count": 78,
+                            "rating": 4.8,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://compliantlearningresources.com.au",
+                            "tld": "compliantlearningresources.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "cid": "1642510178867731406",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJe7SlOwNakWsRzttfJ05eyxY&q=%22Machine+Learning+Alliances%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "108530249827002439386",
+                            "owner_link": "https://maps.google.com/maps/contrib/108530249827002439386",
+                            "owner_name": "Compliant Learning Resources",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Education center",
+                            "subtypes": [
+                                "Education center",
+                                "Education",
+                                "Educational supply store",
+                                "Educational consultant"
+                            ],
+                            "subtype_gcids": [
+                                "education_center",
+                                "education",
+                                "educational_supply_store",
+                                "educational_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "wrkzftZjCprTSkNF7PTt1w",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wrkzftZjCprTSkNF7PTt1w&cb_client=search.gws-prod.gps&w=86&h=86&yaw=232.24718&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.456444228331662,
+                                    "longitude": 153.03522915817732,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2023-05-29T00:00:00.000Z",
+                                    "photo_timestamp": 1685318400
+                                },
+                                {
+                                    "photo_id": "AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo=w1920-h1080-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.456418199999998,
+                                    "longitude": 153.0351962,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-10-22T00:00:00.000Z",
+                                    "photo_timestamp": 1634860800
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 7,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "Delivery": true
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible entrance": true
+                                    },
+                                    "Payments": {
+                                        "Debit cards": true,
+                                        "Credit cards": true
+                                    }
+                                }
+                            },
+                            "address": "Level 13/269 Wickham St, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 13/269 Wickham St",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "contact@compliantlearningresources.com.au",
+                                    "enquiries@compliantlearningresources.com.au",
+                                    "abuse@compliantlearningresources.com.au",
+                                    "support@compliantlearningresources.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "1300885484"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/compliant-learning-resources",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "google_id": "0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "place_id": "ChIJAUoWQjVZkWsRD7F6f7oSY_8",
+                            "google_mid": "/g/1trxdwd_",
+                            "phone_number": "+611300770994",
+                            "name": "Alliance Automation",
+                            "latitude": -27.4541492,
+                            "longitude": 153.0862731,
+                            "full_address": "Alliance Automation, 74 Dunhill Cres, Morningside QLD 4170",
+                            "review_count": 6,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://allianceautomation.com.au",
+                            "tld": "allianceautomation.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "cid": "18402573094577942799",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJAUoWQjVZkWsRD7F6f7oSY_8&q=%22Machine+Learning+Alliances%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "109146803545188595227",
+                            "owner_link": "https://maps.google.com/maps/contrib/109146803545188595227",
+                            "owner_name": "Alliance Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Drafting service",
+                                "Electrical engineer",
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "drafting_service",
+                                "electrical_engineer",
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH=w4032-h3024-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453975699999997,
+                                    "longitude": 153.0862628,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-07-04T00:00:00.000Z",
+                                    "photo_timestamp": 1625356800
+                                },
+                                {
+                                    "photo_id": "3rZ7pUXqa9DrNgRMR5jKnA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3rZ7pUXqa9DrNgRMR5jKnA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=187.94981&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4535868311535,
+                                    "longitude": 153.08636160022817,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-25T00:00:00.000Z",
+                                    "photo_timestamp": 1729814400
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 4,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": true,
+                                        "Online appointments": false
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true,
+                                        "Wheelchair-accessible seating": true,
+                                        "Wheelchair-accessible toilet": true
+                                    }
+                                }
+                            },
+                            "address": "74 Dunhill Cres, Morningside QLD 4170",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "74 Dunhill Cres",
+                            "city": "Morningside",
+                            "zipcode": "4170",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@allianceautomation.com.au",
+                                    "mattg@allianceautomation.com.au",
+                                    "privacy@allianceautomation.com.au",
+                                    "sales@allianceautomation.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300770994"
+                                ],
+                                "facebook": "https://www.facebook.com/AllianceAutomation.com.au",
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/alliance-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "96cdd18d-503d-4f36-b07b-1bd677f57d8d"
+        },
+        {
+            "message": "I like Alliance Automation",
+            "response": "Here's an email template for reaching out to **Alliance Automation**:\n\n---\n\n```\nSubject: \ud83e\udd1d Partnership Opportunity with AI Service Company\n\nHi Alliance Automation Team,\n\nI hope this email finds you well! My name is Joshua Wlodarczyk, and I am the Founder and Lead Engineer at AI Service Company. I\u2019ve been following the exceptional work that Alliance Automation has been doing in the field of automation, and I believe there is a unique opportunity for our businesses to collaborate.\n\n\ud83d\udca1 Mutual Benefits of Collaboration:\n\n\u2705 Enhance Automation Solutions: Together, we can combine our AI-driven expertise with your automation technologies to develop even more advanced solutions for our clients.  \n\u2705 Expand Market Reach: By partnering, we can leverage each other's networks, gaining access to new customers who are seeking top-notch automation services.  \n\u2705 Boost Customer Satisfaction: Our collaboration could lead to improved service offerings, ensuring we meet our clients' needs more effectively and efficiently.\n\nI would love to schedule a time to discuss how we can work together to leverage our strengths. Please let me know if you are available for a call or meeting next week.\n\nLooking forward to the possibility of collaborating!\n\nWarm regards,  \nJoshua Wlodarczyk  \nAI Service Company\n```\n\n---\n\nWould you like to make any changes to this email template?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "23f4fe3c-8894-471c-9f34-64ef274526d8",
+                "set_agent": "ConnectAgent",
+                "connection_type": "alliance",
+                "region": "au",
+                "lat": -27.4705,
+                "lng": 153.026,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "google_id": "0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "place_id": "ChIJe7SlOwNakWsRzttfJ05eyxY",
+                            "google_mid": "/g/11g6_5n0f2",
+                            "phone_number": "+611300885484",
+                            "name": "Compliant Learning Resources",
+                            "latitude": -27.456574,
+                            "longitude": 153.0350403,
+                            "full_address": "Compliant Learning Resources, Level 13/269 Wickham St, Fortitude Valley QLD 4006",
+                            "review_count": 78,
+                            "rating": 4.8,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://compliantlearningresources.com.au",
+                            "tld": "compliantlearningresources.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915a033ba5b47b:0x16cb5e4e275fdbce",
+                            "cid": "1642510178867731406",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJe7SlOwNakWsRzttfJ05eyxY&q=%22Machine+Learning+Alliances%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "108530249827002439386",
+                            "owner_link": "https://maps.google.com/maps/contrib/108530249827002439386",
+                            "owner_name": "Compliant Learning Resources",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Education center",
+                            "subtypes": [
+                                "Education center",
+                                "Education",
+                                "Educational supply store",
+                                "Educational consultant"
+                            ],
+                            "subtype_gcids": [
+                                "education_center",
+                                "education",
+                                "educational_supply_store",
+                                "educational_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "wrkzftZjCprTSkNF7PTt1w",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wrkzftZjCprTSkNF7PTt1w&cb_client=search.gws-prod.gps&w=86&h=86&yaw=232.24718&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.456444228331662,
+                                    "longitude": 153.03522915817732,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2023-05-29T00:00:00.000Z",
+                                    "photo_timestamp": 1685318400
+                                },
+                                {
+                                    "photo_id": "AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipOetzBk30V392p1GII-bXUMI9zw1qJ5LVQNjUo=w1920-h1080-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.456418199999998,
+                                    "longitude": 153.0351962,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-10-22T00:00:00.000Z",
+                                    "photo_timestamp": 1634860800
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 7,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "Delivery": true
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible entrance": true
+                                    },
+                                    "Payments": {
+                                        "Debit cards": true,
+                                        "Credit cards": true
+                                    }
+                                }
+                            },
+                            "address": "Level 13/269 Wickham St, Fortitude Valley QLD 4006",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Level 13/269 Wickham St",
+                            "city": "Fortitude Valley",
+                            "zipcode": "4006",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "contact@compliantlearningresources.com.au",
+                                    "enquiries@compliantlearningresources.com.au",
+                                    "abuse@compliantlearningresources.com.au",
+                                    "support@compliantlearningresources.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "1300885484"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/compliant-learning-resources",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "google_id": "0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "place_id": "ChIJAUoWQjVZkWsRD7F6f7oSY_8",
+                            "google_mid": "/g/1trxdwd_",
+                            "phone_number": "+611300770994",
+                            "name": "Alliance Automation",
+                            "latitude": -27.4541492,
+                            "longitude": 153.0862731,
+                            "full_address": "Alliance Automation, 74 Dunhill Cres, Morningside QLD 4170",
+                            "review_count": 6,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://allianceautomation.com.au",
+                            "tld": "allianceautomation.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91593542164a01:0xff6312ba7f7ab10f",
+                            "cid": "18402573094577942799",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJAUoWQjVZkWsRD7F6f7oSY_8&q=%22Machine+Learning+Alliances%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "109146803545188595227",
+                            "owner_link": "https://maps.google.com/maps/contrib/109146803545188595227",
+                            "owner_name": "Alliance Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Drafting service",
+                                "Electrical engineer",
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "drafting_service",
+                                "electrical_engineer",
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipMuRGx-QxZgVemcKAwUj6Vx3jtnHcctqlkAOoPH=w4032-h3024-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.453975699999997,
+                                    "longitude": 153.0862628,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2021-07-04T00:00:00.000Z",
+                                    "photo_timestamp": 1625356800
+                                },
+                                {
+                                    "photo_id": "3rZ7pUXqa9DrNgRMR5jKnA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3rZ7pUXqa9DrNgRMR5jKnA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=187.94981&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4535868311535,
+                                    "longitude": 153.08636160022817,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-25T00:00:00.000Z",
+                                    "photo_timestamp": 1729814400
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 4,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": true,
+                                        "Online appointments": false
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true,
+                                        "Wheelchair-accessible seating": true,
+                                        "Wheelchair-accessible toilet": true
+                                    }
+                                }
+                            },
+                            "address": "74 Dunhill Cres, Morningside QLD 4170",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "74 Dunhill Cres",
+                            "city": "Morningside",
+                            "zipcode": "4170",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@allianceautomation.com.au",
+                                    "mattg@allianceautomation.com.au",
+                                    "privacy@allianceautomation.com.au",
+                                    "sales@allianceautomation.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300770994"
+                                ],
+                                "facebook": "https://www.facebook.com/AllianceAutomation.com.au",
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/alliance-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "f04df22d-25a5-4f3b-a855-0ab1cb3b9909"
+        }
+    ]
+}

@@ -1,0 +1,1220 @@
+{
+    "session_id": "371f5066-8406-46e2-a814-ea656c580b36",
+    "user_id": "182",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Here are the recommended partner connections for your business, AI COMPANY, based on your profile in the automation and engineering sector. This list is generated from a web search.\n\n### Recommended Partner Connections\n\n1. **Saunders Automation (formerly Automation IT)**\n   - **Type**: Engineering consultant\n   - **Rating**: 5\n   - **Phone**: +61732993844\n   - **Email**: [sales@automationit.com](mailto:sales@automationit.com)\n   - **Address**: Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway, Springwood QLD 4127\n   - **Website**: [automationit.com](http://www.automationit.com)\n   - **Reviews Link**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJ124pKZxDkWsRbe_fVQjcGhg)\n   - **Business Status**: OPEN\n   - **Working Hours**: Opens at 8:30 am on Friday\n\n2. **Scott Automation & Robotics**\n   - **Type**: Engineering consultant\n   - **Rating**: 5\n   - **Phone**: +61733489110\n   - **Email**: [mike.christman@scottautomation.com](mailto:mike.christman@scottaautomation.com)\n   - **Address**: Unit 3/210 Queensport Rd N, Murarrie QLD 4172\n   - **Website**: [scottautomation.com](https://www.scottautomation.com)\n   - **Reviews Link**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJg1UdDDNZkWsReuHgwDyi1vk)\n   - **Business Status**: OPEN\n   - **Working Hours**: Opens at 8 am on Friday\n\n3. **Industrial Automation Australia**\n   - **Type**: Automation company\n   - **Rating**: 3\n   - **Phone**: +61733483505\n   - **Email**: [vaughn@iaarobotics.com.au](mailto:vaughn@iaarobotics.com.au)\n   - **Address**: 15 Lavarack Ave, Eagle Farm QLD 4009\n   - **Website**: [iaarobotics.com.au](https://www.iaarobotics.com.au)\n   - **Reviews Link**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU)\n   - **Business Status**: OPEN\n   - **Working Hours**: Opens at 7 am on Friday\n   \n4. **Hart Automation**\n   - **Type**: Computer support and services\n   - **Rating**: 5\n   - **Phone**: +61477723617\n   - **Address**: Unit 8/10 Depot St, Banyo QLD 4014\n   - **Website**: [hartautomation.com.au](http://www.hartautomation.com.au)\n   - **Reviews Link**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJqRe9qY7ik2sRHnXT0y2xeCQ)\n   - **Business Status**: OPEN\n   - **Working Hours**: Opens at 8:30 am on Friday\n\n5. **OMRON Automation and Robotics Brisbane**\n   - **Type**: Automation company\n   - **Rating**: 5\n   - **Phone**: +611300766766\n   - **Email**: [sales-au@omron.com](mailto:sales-au@omron.com)\n   - **Address**: 1/8 Ives St, Murarrie QLD 4172\n   - **Website**: [omron.com.au](https://store.omron.com.au)\n   - **Reviews Link**: [View Reviews](https://search.google.com/local/reviews?placeid=ChIJn8K3jUhZkWsRlNoQWgTtrWY)\n   - **Business Status**: OPEN\n   - **Working Hours**: Opens at 8:30 am on Friday \n\nPlease let me know which businesses you want email templates for (by name or number).",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "371f5066-8406-46e2-a814-ea656c580b36",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.401647,
+                "lng": 153.0354017,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "google_id": "0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "place_id": "ChIJ124pKZxDkWsRbe_fVQjcGhg",
+                            "google_mid": "/g/1tklqqlj",
+                            "phone_number": "+61732993844",
+                            "name": "Saunders Automation (formerly Automation IT)",
+                            "latitude": -27.6181913,
+                            "longitude": 153.1263028,
+                            "full_address": "Saunders Automation (formerly Automation IT), Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway, Springwood QLD 4127",
+                            "review_count": 5,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20133 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.automationit.com",
+                            "tld": "automationit.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "cid": "1736942534663335789",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ124pKZxDkWsRbe_fVQjcGhg&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "110765221638763369519",
+                            "owner_link": "https://maps.google.com/maps/contrib/110765221638763369519",
+                            "owner_name": "Saunders Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Engineering consultant",
+                            "subtypes": [
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7=w2048-h1536-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.6180672,
+                                    "longitude": 153.126266,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-11-23T00:00:00.000Z",
+                                    "photo_timestamp": 1606089600
+                                },
+                                {
+                                    "photo_id": "t4UoECT3TRqj9MsWlTC5FA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=t4UoECT3TRqj9MsWlTC5FA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=148.74657&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.618079581472777,
+                                    "longitude": 153.12622627938302,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-17T00:00:00.000Z",
+                                    "photo_timestamp": 1729123200
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 5,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway, Springwood QLD 4127",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway",
+                            "city": "Springwood",
+                            "zipcode": "4127",
+                            "state": "QLD",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@automationit.com",
+                                    "info@automationit.com",
+                                    "geoffb@automationit.com"
+                                ],
+                                "phone_numbers": [
+                                    "0732993844"
+                                ],
+                                "facebook": "https://www.facebook.com/AppliedAutomationIT",
+                                "instagram": null,
+                                "yelp": "https://www.yelp.com/biz/automation-it-springwood",
+                                "tiktok": "https://www.tiktok.com/@adminautomationit",
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "google_id": "0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "place_id": "ChIJg1UdDDNZkWsReuHgwDyi1vk",
+                            "google_mid": "/g/1vpfjqb6",
+                            "phone_number": "+61733489110",
+                            "name": "Scott Automation & Robotics",
+                            "latitude": -27.4522698,
+                            "longitude": 153.1065743,
+                            "full_address": "Scott Automation & Robotics, Unit 3/210 Queensport Rd N, Murarrie QLD 4172",
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Friday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Tuesday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Wednesday": [
+                                    "8 am\u20134 pm"
+                                ]
+                            },
+                            "website": "https://www.scottautomation.com",
+                            "tld": "scottautomation.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "cid": "18002754942277837178",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJg1UdDDNZkWsReuHgwDyi1vk&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "115124092559717057617",
+                            "owner_link": "https://maps.google.com/maps/contrib/115124092559717057617",
+                            "owner_name": "Scott Automation & Robotics",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Engineering consultant",
+                            "subtypes": [
+                                "Engineering consultant",
+                                "Automation company",
+                                "Food manufacturing supply",
+                                "Industrial consultant",
+                                "Industrial engineer"
+                            ],
+                            "subtype_gcids": [
+                                "engineering_consultant",
+                                "automation_company",
+                                "food_manufacturing_supply",
+                                "industrial_consultant",
+                                "industrial_engineer"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4=w3927-h2208-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4523309,
+                                    "longitude": 153.1070066,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2019-06-19T00:00:00.000Z",
+                                    "photo_timestamp": 1560902400
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 32,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 3/210 Queensport Rd N, Murarrie QLD 4172",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 3/210 Queensport Rd N",
+                            "city": "Murarrie",
+                            "zipcode": "4172",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "mike.christman@scottautomation.com",
+                                    "dpo@scottautomation.be"
+                                ],
+                                "phone_numbers": [
+                                    "0800552280",
+                                    "320553357",
+                                    "6433088887",
+                                    "320552173",
+                                    "37127335568"
+                                ],
+                                "facebook": "https://www.facebook.com/scottautomation",
+                                "instagram": null,
+                                "yelp": "https://www.yelp.com/biz/scott-automation-auckland",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/scottautomation",
+                                "linkedin": "https://www.linkedin.com/company/scottautomation",
+                                "github": null,
+                                "youtube": "https://www.youtube.com/c/ScottAutomationRobotics",
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                            "google_mid": "/g/11ty3zjq85",
+                            "phone_number": "+61733483505",
+                            "name": "Industrial Automation Australia",
+                            "latitude": -27.4335074,
+                            "longitude": 153.0933689,
+                            "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "review_count": 2,
+                            "rating": 3,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 7\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Friday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Tuesday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Wednesday": [
+                                    "7 am\u20134 pm"
+                                ]
+                            },
+                            "website": "https://www.iaarobotics.com.au",
+                            "tld": "iaarobotics.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "cid": "15391164233997453660",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "110865635980628362194",
+                            "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                            "owner_name": "Industrial Automation Australia",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv=w1000-h563-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4330955,
+                                    "longitude": 153.093211,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                    "photo_timestamp": 1712361600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 20,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "15 Lavarack Ave",
+                            "city": "Eagle Farm",
+                            "zipcode": "4009",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "vaughn@iaarobotics.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "0733483505"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "google_id": "0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "place_id": "ChIJqRe9qY7ik2sRHnXT0y2xeCQ",
+                            "google_mid": "/g/11dxqn3t79",
+                            "phone_number": "+61477723617",
+                            "name": "Hart Automation",
+                            "latitude": -27.382133099999997,
+                            "longitude": 153.0781725,
+                            "full_address": "Hart Automation, Unit 8/10 Depot St, Banyo QLD 4014",
+                            "review_count": 3,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.hartautomation.com.au",
+                            "tld": "hartautomation.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "cid": "2628045192956179742",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJqRe9qY7ik2sRHnXT0y2xeCQ&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "104578227249146866128",
+                            "owner_link": "https://maps.google.com/maps/contrib/104578227249146866128",
+                            "owner_name": "Hart Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Computer support and services",
+                            "subtypes": [
+                                "Computer support and services",
+                                "Audio visual consultant",
+                                "Telecommunications contractor"
+                            ],
+                            "subtype_gcids": [
+                                "computer_support_and_services",
+                                "audio_visual_consultant",
+                                "telecommunications_contractor"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d=w5184-h3456-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.382326499999998,
+                                    "longitude": 153.0778097,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-05-22T00:00:00.000Z",
+                                    "photo_timestamp": 1590105600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 49,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": false
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 8/10 Depot St, Banyo QLD 4014",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 8/10 Depot St",
+                            "city": "Banyo",
+                            "zipcode": "4014",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [],
+                                "facebook": "https://www.facebook.com/hartautomation",
+                                "instagram": "https://www.instagram.com/hartautomation",
+                                "yelp": "https://www.yelp.com/biz/john-hart-automation-castle-hill",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/hart-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159488db7c29f:0x66aded045a10da94",
+                            "google_id": "0x6b9159488db7c29f:0x66aded045a10da94",
+                            "place_id": "ChIJn8K3jUhZkWsRlNoQWgTtrWY",
+                            "google_mid": "/g/11cmp2d1b_",
+                            "phone_number": "+611300766766",
+                            "name": "OMRON Automation and Robotics Brisbane",
+                            "latitude": -27.460488899999998,
+                            "longitude": 153.0982028,
+                            "full_address": "OMRON Automation and Robotics Brisbane, 1/8 Ives St, Murarrie QLD 4172",
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://store.omron.com.au",
+                            "tld": "omron.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159488db7c29f:0x66aded045a10da94",
+                            "cid": "7398830365786299028",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJn8K3jUhZkWsRlNoQWgTtrWY&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "100054682095491578082",
+                            "owner_link": "https://maps.google.com/maps/contrib/100054682095491578082",
+                            "owner_name": "OMRON Automation and Robotics Brisbane",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Electronics manufacturer",
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "electronics_manufacturer",
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ=w1080-h608-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.460579,
+                                    "longitude": 153.0982043,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2022-08-21T00:00:00.000Z",
+                                    "photo_timestamp": 1661040000
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 8,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "1/8 Ives St, Murarrie QLD 4172",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "1/8 Ives St",
+                            "city": "Murarrie",
+                            "zipcode": "4172",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales-au@omron.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300766766"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/omronautomation",
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "8d3de096-493a-4248-a9b1-cb1620e23c57"
+        },
+        {
+            "message": "I like 4 and 5",
+            "response": "Here are the email templates for the businesses you selected:\n\n### 1. Scott Automation & Robotics\n**Email**: [mike.christman@scottautomation.com](mailto:mike.christman@scottautomation.com)  \n**Phone**: +61733489110  \n**Rating**: 5  \n**Business Type**: Engineering consultant  \n\n**Template**:\n```\nSubject: \ud83e\udd1d Exploring a Partnership Opportunity with AI COMPANY\n\nHi Mike and the Scott Automation & Robotics Team,\n\nI hope this message finds you well. My name is Kathryn Innes, and I am the Founder and Lead Engineer at AI COMPANY. I came across your impressive work in the engineering consulting field, especially your focus on automation and robotics, and I believe there is a significant opportunity for collaboration between our companies.\n\n\ud83d\udca1 Potential Partnership Benefits:\n\n\u2705 Enhance efficiency in engineering solutions through AI integration  \n\u2705 Leverage advanced robotics to streamline processes in our projects  \n\u2705 Expand market reach and customer satisfaction by combining our expertise  \n\nI would love to discuss how we can work together to create innovative solutions that benefit both our organizations and our clients. Are you available for a brief meeting next week to explore this further?\n\nLooking forward to the possibility of collaborating!\n\nWarm regards,  \nKathryn Innes  \nAI COMPANY  \n```\n\n---\n\n### 2. Hart Automation\n**Email**: Unknown  \n**Phone**: +61477723617  \n**Rating**: 5  \n**Business Type**: Computer support and services  \n\n**Template**:\n```\nSubject: \ud83e\udd1d Exploring a Strategic Partnership with Hart Automation\n\nHi Hart Automation Team,\n\nI hope this message finds you well! My name is Kathryn Innes, and I am the Founder and Lead Engineer at AI COMPANY. We specialize in leveraging artificial intelligence to enhance computer support and services, and I believe there is an exciting opportunity for our businesses to collaborate.\n\n\ud83d\udca1 Partnership Opportunities:\n\n\u2705 Enhance your service offerings with AI-driven solutions tailored for your clients' needs.  \n\u2705 Access to innovative technology that can streamline your operations and increase efficiency.  \n\u2705 Joint marketing initiatives that showcase our combined expertise, reaching a broader audience together.  \n\nI would love the opportunity to discuss how we can align our efforts and create value for both of our companies. Please let me know a convenient time for you to connect or feel free to reach me directly at +61477723617.\n\nLooking forward to the possibility of working together!\n\nWarm regards,  \nKathryn Innes  \nAI COMPANY\n```\n\n---\n\nDo you need any changes or additions to these email templates?",
+            "state": {
+                "name": "Kathryn",
+                "user_id": "182",
+                "session_id": "371f5066-8406-46e2-a814-ea656c580b36",
+                "set_agent": "ConnectAgent",
+                "connection_type": "complementary",
+                "region": "au",
+                "lat": -27.401647,
+                "lng": 153.0354017,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Kathryn Innes",
+                    "Business_Name": "AI COMPANY",
+                    "Contact_Email": "rosswlod2@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automated systems development",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Driving technical vision and mentoring",
+                    "User_skills": "Machine learning, Software engineering, Data-driven design",
+                    "Business_Strength": "Empowering clients with efficient solutions",
+                    "Business_Category": "Technology"
+                },
+                "ConnectAgent": {
+                    "connection_type": "Web Search",
+                    "connection_result": [
+                        {
+                            "business_id": "0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "google_id": "0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "place_id": "ChIJ124pKZxDkWsRbe_fVQjcGhg",
+                            "google_mid": "/g/1tklqqlj",
+                            "phone_number": "+61732993844",
+                            "name": "Saunders Automation (formerly Automation IT)",
+                            "latitude": -27.6181913,
+                            "longitude": 153.1263028,
+                            "full_address": "Saunders Automation (formerly Automation IT), Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway, Springwood QLD 4127",
+                            "review_count": 5,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20133 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.automationit.com",
+                            "tld": "automationit.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b91439c29296ed7:0x181adc0855dfef6d",
+                            "cid": "1736942534663335789",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ124pKZxDkWsRbe_fVQjcGhg&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "110765221638763369519",
+                            "owner_link": "https://maps.google.com/maps/contrib/110765221638763369519",
+                            "owner_name": "Saunders Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Engineering consultant",
+                            "subtypes": [
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPO5YWTFK0DZMSXWLrpJaj5UurlphZEEhctBfS7=w2048-h1536-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.6180672,
+                                    "longitude": 153.126266,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-11-23T00:00:00.000Z",
+                                    "photo_timestamp": 1606089600
+                                },
+                                {
+                                    "photo_id": "t4UoECT3TRqj9MsWlTC5FA",
+                                    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=t4UoECT3TRqj9MsWlTC5FA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=148.74657&pitch=0&thumbfov=100",
+                                    "photo_url_large": null,
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.618079581472777,
+                                    "longitude": 153.12622627938302,
+                                    "type": "street_view",
+                                    "photo_datetime_utc": "2024-10-17T00:00:00.000Z",
+                                    "photo_timestamp": 1729123200
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 5,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway, Springwood QLD 4127",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 7, Springwood Business Centre, Cnr. Murrajong Rd &, Pacific Highway",
+                            "city": "Springwood",
+                            "zipcode": "4127",
+                            "state": "QLD",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales@automationit.com",
+                                    "info@automationit.com",
+                                    "geoffb@automationit.com"
+                                ],
+                                "phone_numbers": [
+                                    "0732993844"
+                                ],
+                                "facebook": "https://www.facebook.com/AppliedAutomationIT",
+                                "instagram": null,
+                                "yelp": "https://www.yelp.com/biz/automation-it-springwood",
+                                "tiktok": "https://www.tiktok.com/@adminautomationit",
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "google_id": "0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "place_id": "ChIJg1UdDDNZkWsReuHgwDyi1vk",
+                            "google_mid": "/g/1vpfjqb6",
+                            "phone_number": "+61733489110",
+                            "name": "Scott Automation & Robotics",
+                            "latitude": -27.4522698,
+                            "longitude": 153.1065743,
+                            "full_address": "Scott Automation & Robotics, Unit 3/210 Queensport Rd N, Murarrie QLD 4172",
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Friday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Tuesday": [
+                                    "8 am\u20134 pm"
+                                ],
+                                "Wednesday": [
+                                    "8 am\u20134 pm"
+                                ]
+                            },
+                            "website": "https://www.scottautomation.com",
+                            "tld": "scottautomation.com",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159330c1d5583:0xf9d6a23cc0e0e17a",
+                            "cid": "18002754942277837178",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJg1UdDDNZkWsReuHgwDyi1vk&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "115124092559717057617",
+                            "owner_link": "https://maps.google.com/maps/contrib/115124092559717057617",
+                            "owner_name": "Scott Automation & Robotics",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Engineering consultant",
+                            "subtypes": [
+                                "Engineering consultant",
+                                "Automation company",
+                                "Food manufacturing supply",
+                                "Industrial consultant",
+                                "Industrial engineer"
+                            ],
+                            "subtype_gcids": [
+                                "engineering_consultant",
+                                "automation_company",
+                                "food_manufacturing_supply",
+                                "industrial_consultant",
+                                "industrial_engineer"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM_EomP5e02Xf50M1zMLuRlS-A2vbB87voFcpb4=w3927-h2208-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4523309,
+                                    "longitude": 153.1070066,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2019-06-19T00:00:00.000Z",
+                                    "photo_timestamp": 1560902400
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 32,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 3/210 Queensport Rd N, Murarrie QLD 4172",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 3/210 Queensport Rd N",
+                            "city": "Murarrie",
+                            "zipcode": "4172",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "mike.christman@scottautomation.com",
+                                    "dpo@scottautomation.be"
+                                ],
+                                "phone_numbers": [
+                                    "0800552280",
+                                    "320553357",
+                                    "6433088887",
+                                    "320552173",
+                                    "37127335568"
+                                ],
+                                "facebook": "https://www.facebook.com/scottautomation",
+                                "instagram": null,
+                                "yelp": "https://www.yelp.com/biz/scott-automation-auckland",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/scottautomation",
+                                "linkedin": "https://www.linkedin.com/company/scottautomation",
+                                "github": null,
+                                "youtube": "https://www.youtube.com/c/ScottAutomationRobotics",
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "google_id": "0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "place_id": "ChIJOaob7phZkWsRXIkdL1NmmNU",
+                            "google_mid": "/g/11ty3zjq85",
+                            "phone_number": "+61733483505",
+                            "name": "Industrial Automation Australia",
+                            "latitude": -27.4335074,
+                            "longitude": 153.0933689,
+                            "full_address": "Industrial Automation Australia, 15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "review_count": 2,
+                            "rating": 3,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 7\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Friday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Tuesday": [
+                                    "7 am\u20134 pm"
+                                ],
+                                "Wednesday": [
+                                    "7 am\u20134 pm"
+                                ]
+                            },
+                            "website": "https://www.iaarobotics.com.au",
+                            "tld": "iaarobotics.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b915998ee1baa39:0xd59866532f1d895c",
+                            "cid": "15391164233997453660",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJOaob7phZkWsRXIkdL1NmmNU&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "110865635980628362194",
+                            "owner_link": "https://maps.google.com/maps/contrib/110865635980628362194",
+                            "owner_name": "Industrial Automation Australia",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPIt6GZJS7jlmF2WtHPrqE4d9AznCN0eNwjjsRv=w1000-h563-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.4330955,
+                                    "longitude": 153.093211,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2024-04-06T00:00:00.000Z",
+                                    "photo_timestamp": 1712361600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 20,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "15 Lavarack Ave, Eagle Farm QLD 4009",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "15 Lavarack Ave",
+                            "city": "Eagle Farm",
+                            "zipcode": "4009",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "vaughn@iaarobotics.com.au"
+                                ],
+                                "phone_numbers": [
+                                    "0733483505"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/industrial-automation-australia",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "google_id": "0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "place_id": "ChIJqRe9qY7ik2sRHnXT0y2xeCQ",
+                            "google_mid": "/g/11dxqn3t79",
+                            "phone_number": "+61477723617",
+                            "name": "Hart Automation",
+                            "latitude": -27.382133099999997,
+                            "longitude": 153.0781725,
+                            "full_address": "Hart Automation, Unit 8/10 Depot St, Banyo QLD 4014",
+                            "review_count": 3,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "http://www.hartautomation.com.au",
+                            "tld": "hartautomation.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b93e28ea9bd17a9:0x2478b12dd3d3751e",
+                            "cid": "2628045192956179742",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJqRe9qY7ik2sRHnXT0y2xeCQ&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "104578227249146866128",
+                            "owner_link": "https://maps.google.com/maps/contrib/104578227249146866128",
+                            "owner_name": "Hart Automation",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Computer support and services",
+                            "subtypes": [
+                                "Computer support and services",
+                                "Audio visual consultant",
+                                "Telecommunications contractor"
+                            ],
+                            "subtype_gcids": [
+                                "computer_support_and_services",
+                                "audio_visual_consultant",
+                                "telecommunications_contractor"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipPkUyXcmMDmTkvFIKivkJKkmMuOAIlBXqLP_Z-d=w5184-h3456-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.382326499999998,
+                                    "longitude": 153.0778097,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2020-05-22T00:00:00.000Z",
+                                    "photo_timestamp": 1590105600
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 49,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Service options": {
+                                        "On-site services": false
+                                    },
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true
+                                    }
+                                }
+                            },
+                            "address": "Unit 8/10 Depot St, Banyo QLD 4014",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "Unit 8/10 Depot St",
+                            "city": "Banyo",
+                            "zipcode": "4014",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [],
+                                "phone_numbers": [],
+                                "facebook": "https://www.facebook.com/hartautomation",
+                                "instagram": "https://www.instagram.com/hartautomation",
+                                "yelp": "https://www.yelp.com/biz/john-hart-automation-castle-hill",
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": null,
+                                "linkedin": "https://www.linkedin.com/company/hart-automation",
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        },
+                        {
+                            "business_id": "0x6b9159488db7c29f:0x66aded045a10da94",
+                            "google_id": "0x6b9159488db7c29f:0x66aded045a10da94",
+                            "place_id": "ChIJn8K3jUhZkWsRlNoQWgTtrWY",
+                            "google_mid": "/g/11cmp2d1b_",
+                            "phone_number": "+611300766766",
+                            "name": "OMRON Automation and Robotics Brisbane",
+                            "latitude": -27.460488899999998,
+                            "longitude": 153.0982028,
+                            "full_address": "OMRON Automation and Robotics Brisbane, 1/8 Ives St, Murarrie QLD 4172",
+                            "review_count": 1,
+                            "rating": 5,
+                            "timezone": "Australia/Brisbane",
+                            "opening_status": "Closed \u22c5 Opens 8:30\u202fam Fri",
+                            "working_hours": {
+                                "Thursday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Friday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Saturday": [
+                                    "Closed"
+                                ],
+                                "Sunday": [
+                                    "Closed"
+                                ],
+                                "Monday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Tuesday": [
+                                    "8:30 am\u20135 pm"
+                                ],
+                                "Wednesday": [
+                                    "8:30 am\u20135 pm"
+                                ]
+                            },
+                            "website": "https://store.omron.com.au",
+                            "tld": "omron.com.au",
+                            "verified": true,
+                            "place_link": "https://www.google.com/maps/place/data=!3m1!4b1!4m2!3m1!1s0x6b9159488db7c29f:0x66aded045a10da94",
+                            "cid": "7398830365786299028",
+                            "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJn8K3jUhZkWsRlNoQWgTtrWY&q=%22Automated+systems+technology+companies%22&authuser=0&hl=en&gl=AU",
+                            "owner_id": "100054682095491578082",
+                            "owner_link": "https://maps.google.com/maps/contrib/100054682095491578082",
+                            "owner_name": "OMRON Automation and Robotics Brisbane",
+                            "booking_link": null,
+                            "reservations_link": null,
+                            "business_status": "OPEN",
+                            "type": "Automation company",
+                            "subtypes": [
+                                "Automation company",
+                                "Electronics manufacturer",
+                                "Engineering consultant"
+                            ],
+                            "subtype_gcids": [
+                                "automation_company",
+                                "electronics_manufacturer",
+                                "engineering_consultant"
+                            ],
+                            "photos_sample": [
+                                {
+                                    "photo_id": "AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ",
+                                    "photo_url": "https://lh3.googleusercontent.com/p/AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ",
+                                    "photo_url_large": "https://lh3.googleusercontent.com/p/AF1QipM9TwdkTMfPXxhGjZEeb_dW0ow6Km5avkR4zuLQ=w1080-h608-k-no",
+                                    "video_thumbnail_url": null,
+                                    "latitude": -27.460579,
+                                    "longitude": 153.0982043,
+                                    "type": "photo",
+                                    "photo_datetime_utc": "2022-08-21T00:00:00.000Z",
+                                    "photo_timestamp": 1661040000
+                                }
+                            ],
+                            "reviews_per_rating": null,
+                            "photo_count": 8,
+                            "about": {
+                                "summary": null,
+                                "details": {
+                                    "Accessibility": {
+                                        "Wheelchair-accessible car park": true,
+                                        "Wheelchair-accessible entrance": true
+                                    }
+                                }
+                            },
+                            "address": "1/8 Ives St, Murarrie QLD 4172",
+                            "order_link": null,
+                            "price_level": null,
+                            "district": null,
+                            "street_address": "1/8 Ives St",
+                            "city": "Murarrie",
+                            "zipcode": "4172",
+                            "state": "Queensland",
+                            "country": "AU",
+                            "emails_and_contacts": {
+                                "emails": [
+                                    "sales-au@omron.com"
+                                ],
+                                "phone_numbers": [
+                                    "1300766766"
+                                ],
+                                "facebook": null,
+                                "instagram": null,
+                                "yelp": null,
+                                "tiktok": null,
+                                "snapchat": null,
+                                "twitter": "https://twitter.com/omronautomation",
+                                "linkedin": null,
+                                "github": null,
+                                "youtube": null,
+                                "pinterest": null
+                            }
+                        }
+                    ]
+                }
+            },
+            "author": "ConnectAgent",
+            "timestamp": "2c4500eb-aff3-43f2-8ac7-080f1d71a484"
+        }
+    ]
+}

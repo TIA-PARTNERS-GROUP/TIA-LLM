@@ -1,0 +1,36 @@
+{
+    "session_id": "e5b2fa88-0e70-45d4-a3ed-b0e1b840e78a",
+    "user_id": "15",
+    "conversations": [
+        {
+            "message": "Hello!",
+            "response": "Welcome! It seems like we're missing some critical information in your profile for creating a business vision blog. Let's start a new vision building process. Could you please tell me about your business?",
+            "state": {
+                "name": "Joshua",
+                "user_id": "15",
+                "session_id": "e5b2fa88-0e70-45d4-a3ed-b0e1b840e78a",
+                "set_agent": "ConnectAgent",
+                "connection_type": "alliance",
+                "region": "au",
+                "lat": -27.4071552,
+                "lng": 153.02656,
+                "end_session": false,
+                "user_profile": "generated",
+                "Generated_Profile": {
+                    "UserName": "Joshua Wlodarczyk",
+                    "Business_Name": "AI SERVICE COMPANY",
+                    "Contact_Email": "joshuawlod2003@gmail.com",
+                    "Contact_Phone_No": "0423158014",
+                    "Business_Type": "Automation and AI solutions",
+                    "UserJob": "Founder and Lead Engineer",
+                    "User_Strength": "Combines technical expertise with visionary thinking",
+                    "User_skills": "Machine learning, System-level engineering, Data-driven design",
+                    "Business_Strength": "Creating intuitive, high-performance automation tools",
+                    "Business_Category": "Technology"
+                }
+            },
+            "author": "VisionAgent",
+            "timestamp": "ba427270-797d-4be3-9909-d77a015f8a0d"
+        }
+    ]
+}

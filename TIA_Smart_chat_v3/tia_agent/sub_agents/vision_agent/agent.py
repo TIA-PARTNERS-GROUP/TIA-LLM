@@ -34,8 +34,8 @@ VisionAgent = Agent(
     - If `user_profile` is "generated", ask if they want to build a new vision or generate from profile data. 
       - If "new vision", use `start_dynamic_chat`.
       - If "generate from profile data", immediately call `generate_blog` using the existing profile as input (do not start dynamic chat).
-    - If `user_profile` is "not_generated", use `start_dynamic_chat` without asking to begin the vision building process.
-    
+    - If `user_profile` is "not_generated", use `start_dynamic_chat` without asking to begin the vision building process. Ask the user about their business.
+
     **Blog Generation Triggers:**
     - **CRITICAL: If you receive the message "[DYNAMIC CHAT COMPLETED USE `generate_blog` TO CREATE BLOG]", IMMEDIATELY call `generate_blog`**
     - **After calling `generate_blog`, output the blog content in markdown format to the user**
