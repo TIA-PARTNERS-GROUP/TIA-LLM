@@ -1,6 +1,7 @@
 # TIA-LLM
 
 TIA-LLM is an AI-powered chatbot system built with FastAPI and Google ADK for managing conversations, agent switching, and session handling. It utilizes Google ADK for general agentic actions and includes a dynamic chat object implemented under `DynamicChatAssistant` for handling conversational chains, such as those involving long questions.
+<img width="2282" height="1252" alt="diagram_blizzard" src="https://github.com/user-attachments/assets/54855732-be78-40c3-87cb-c9c42c0e6c9f" />
 
 ## Setup
 
